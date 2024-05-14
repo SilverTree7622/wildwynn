@@ -1,0 +1,62 @@
+.frmu95mobile .rectangle-13-6KHUpA.active{
+  background-color: #665d33;
+}
+
+.frmu95mobile .rectangle-13-aHCQs6.active{
+  background-color: #665d33;
+}
+
+.frmu95mobile .rectangle-13-OLUYfE.active{
+  background-color: #665d33;
+}
+
+.frmu95mobile .rectangle-13-YjCcoO.active{
+  background-color: #665d33;
+}
+
+.frmu95mobile .rectangle-13-rM1Yhy.active{
+  background-color: #665d33;
+}
+
+.frmu95mobile .rectangle-13-pJW32y.active{
+  background-color: #665d33;
+}
+
+
+.frmu95mobile .score .txt-live{
+letter-spacing: -0.30px;
+    color: #ffffff;
+    line-height: normal;
+    position: relative;
+    width: 21px;
+    font-family: var(--font-family-pretendard-semibold);
+    font-weight: 600;
+    font-size: var(--font-size-s);
+    margin-left: 40%;
+}
+
+.frmu95mobile .x100new {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 17px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobile .leagueFrame {
+    background-color: var(--bggray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.frmu95mobile .live-match-25G9i2 {
+  height: 108px;
+}
+
+/* ODDS Tab */

@@ -1,0 +1,4244 @@
+/* screen - desktop1 */
+
+.desktop1 {
+  background-color: var(--bg);
+  height: 1597px;
+  overflow-x: hidden;
+  position: relative;
+  width: 1024px;
+}
+
+.desktop1 .contents-footer-moU7rB {
+  align-items: flex-start;
+  background-color: var(--eerie-black);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px 20px;
+  height: 274px;
+  justify-content: center;
+  left: 0px;
+  overflow: hidden;
+  padding: 31px 10px 15px;
+  position: absolute;
+  top: 1323px;
+  width: 1024px;
+}
+
+.desktop1 .general-info-about-u-xxaId7 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 113px;
+}
+
+.desktop1 .span0-UMVBwM {
+}
+
+.desktop1 .span1-UMVBwM {
+}
+
+.desktop1 .promotions-sports-pr-xxaId7 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 163px;
+}
+
+.desktop1 .span0-Y9dTQX {
+}
+
+.desktop1 .span1-Y9dTQX {
+}
+
+.desktop1 .help-help-bet-slip-c-xxaId7 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 194px;
+}
+
+.desktop1 .span0-4eeygq {
+}
+
+.desktop1 .span1-4eeygq {
+}
+
+.desktop1 .copyright-2024-oddsn-xxaId7 {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: 487px;
+}
+
+.desktop1 .contents_-football_-live-moU7rB {
+  background-color: transparent;
+  height: 1351px;
+  left: 214px;
+  position: absolute;
+  top: 0px;
+  width: 594px;
+}
+
+.desktop1 .contents_-right_-event-moU7rB {
+  background-color: transparent;
+  height: 283px;
+  left: 808px;
+  position: absolute;
+  top: 171px;
+  width: 192px;
+}
+
+.desktop1 .mask-group-UEv65l {
+  height: 283px;
+}
+
+.desktop1 .contents_-right_-sponsor-moU7rB {
+  background-color: transparent;
+  height: 850px;
+  left: 808px;
+  position: absolute;
+  top: 461px;
+  width: 192px;
+}
+
+.desktop1 .mask-group-y5SPQX {
+  height: 850px;
+}
+
+.desktop1 .sub-tap-moU7rB {
+  background-color: transparent;
+  height: 38px;
+  left: 218px;
+  position: absolute;
+  top: 164px;
+  width: 590px;
+}
+
+.desktop1 .rectangle-13-OJ9een {
+  height: 38px;
+  width: 590px;
+}
+
+.desktop1 .frame-24-OJ9een {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  height: 24px;
+  justify-content: space-between;
+  left: 0px;
+  padding: 0px 15px 0px 10px;
+  position: absolute;
+  top: 7px;
+  width: 590px;
+}
+
+.desktop1 .frame-23-uVp03b {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 24px;
+  position: relative;
+}
+
+.desktop1 .btn_-favorite-5jiqx6 {
+  background-color: transparent;
+  height: 24px;
+  left: 55px;
+  position: relative;
+  top: 0px;
+  width: 87px;
+}
+
+.desktop1 .rectangle-24-9gbM4D {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 87px;
+}
+
+.desktop1 .ellipse-1-9gbM4D {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.desktop1 .star-1-9gbM4D {
+  background-color: transparent;
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 17px;
+}
+
+.desktop1 .favorite_count-9gbM4D {
+  align-items: flex-end;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 16px;
+  justify-content: center;
+  left: 38px;
+  padding: 1px 0px 1px 13px;
+  position: absolute;
+  top: 5px;
+  width: 37px;
+}
+
+.desktop1 .x0-DmFQNI {
+  background-color: transparent;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: 23px;
+}
+
+.desktop1 .frame-22-uVp03b {
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  width: 113.33332824707031px;
+}
+
+.desktop1 .btn_-bytime-DNJ9Pa {
+  background-color: transparent;
+  height: 24px;
+  left: 38px;
+  position: relative;
+  top: 0px;
+  width: 65px;
+}
+
+.desktop1 .rectangle-25-x1wXTy {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 65px;
+}
+
+.desktop1 .by-time-x1wXTy {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .frame-21-uVp03b {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.desktop1 .btn_-calendar_-set-ZIfbRw {
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  width: 134px;
+}
+
+.desktop1 .btn_-calendar-rQswFw {
+  background-color: transparent;
+  cursor: pointer;
+  height: 24px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 134px;
+}
+
+.desktop1 .rectangle-26-1ThGyn {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  height: 24px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 108px;
+}
+
+.desktop1 .x28-april-1ThGyn {
+  background-color: transparent;
+  height: auto;
+  left: 50px;
+  letter-spacing: -0.30px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-previous-day-1ThGyn {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.desktop1 .ellipse-3-ij80mq {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.desktop1 .polygon-2-ij80mq {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  width: 6px;
+}
+
+.desktop1 .btn_-next-day-1ThGyn {
+  background-color: transparent;
+  height: 24px;
+  left: 110px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.desktop1 .ellipse-2-YC606Q {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.desktop1 .polygon-1-YC606Q {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  width: 6px;
+}
+
+.desktop1 .menu-moU7rB::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.desktop1 .menu-moU7rB {
+  background-color: transparent;
+  height: 730px;
+  left: 23px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 165px;
+  width: 192px;
+}
+
+.desktop1 .rectangle-33-9W67KO {
+  background-color: var(--bg);
+  height: 730px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 192px;
+}
+
+.desktop1 .x1-9W67KO {
+  left: 19px;
+  top: 64px;
+}
+
+.desktop1 .group-8-9W67KO {
+  background-color: transparent;
+  height: 157px;
+  left: 1px;
+  position: absolute;
+  top: 12px;
+  width: 190px;
+}
+
+.desktop1 .rectangle-34-LFV0pr {
+  background-color: var(--frblue);
+  border-radius: 5px;
+  height: 157px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.desktop1 .btn_-horizon_-favorites-LFV0pr {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.desktop1 .star-2-XUy34U {
+  background-color: transparent;
+  height: 20px;
+  left: 8px;
+  position: absolute;
+  top: 3px;
+  width: 20px;
+}
+
+.desktop1 .favorites-XUy34U {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-horizon_-live-LFV0pr {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 66px;
+  width: 190px;
+}
+
+.desktop1 .vector-ij7GVk {
+  height: 10px;
+  left: 8px;
+  top: 8px;
+  width: 20px;
+}
+
+.desktop1 .live-ij7GVk {
+  left: 32px;
+  text-align: left;
+  top: 5px;
+}
+
+.desktop1 .btn_-horizon_-promotions-LFV0pr {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 33px;
+  width: 190px;
+}
+
+.desktop1 .vector-2oGApu {
+  height: 18px;
+  left: 8px;
+  top: 3px;
+  width: 19px;
+}
+
+.desktop1 .promotions-2oGApu {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-horizon_-challenge-LFV0pr {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 99px;
+  width: 190px;
+}
+
+.desktop1 .vector-uamMUI {
+  height: 20px;
+  left: 10px;
+  top: 3px;
+  width: 16px;
+}
+
+.desktop1 .challenge-uamMUI {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-horizon_-league-LFV0pr {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 132px;
+  width: 190px;
+}
+
+.desktop1 .vector-P6mtxy {
+  height: 20px;
+  left: 8px;
+  top: 3px;
+  width: 20px;
+}
+
+.desktop1 .league-P6mtxy {
+  left: 32px;
+  text-align: left;
+  top: 4px;
+}
+
+.desktop1 .group-7-9W67KO {
+  background-color: transparent;
+  height: 222px;
+  left: 1px;
+  position: absolute;
+  top: 183px;
+  width: 192px;
+}
+
+.desktop1 .rectangle-36-fbY5vo {
+  background-color: var(--frblue);
+  border-radius: 5px;
+  height: 222px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.desktop1 .sports-fbY5vo {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 45px;
+}
+
+.desktop1 .line-9-fbY5vo {
+  background-color: transparent;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 32px;
+  width: 184px;
+}
+
+.desktop1 .btn_-horizon_-football-fbY5vo {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 32px;
+  width: 190px;
+}
+
+.desktop1 .football-WKxh4P {
+  left: 32px;
+  letter-spacing: -0.36px;
+  text-align: left;
+  top: 5px;
+}
+
+.desktop1 .vector-WKxh4P {
+  height: 20px;
+  left: 8px;
+  top: 3px;
+  width: 20px;
+}
+
+.desktop1 .btn_-horizon_-basketball-fbY5vo {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 65px;
+  width: 190px;
+}
+
+.desktop1 .basketball-7P4Hht {
+  left: 32px;
+  letter-spacing: -0.36px;
+  text-align: left;
+  top: 5px;
+}
+
+.desktop1 .vector-7P4Hht {
+  height: 20px;
+  left: 8px;
+  top: 3px;
+  width: 20px;
+}
+
+.desktop1 .btn_-horizon_-baseball-fbY5vo {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 98px;
+  width: 190px;
+}
+
+.desktop1 .baseball-kWHff1 {
+  left: 32px;
+  letter-spacing: -0.36px;
+  text-align: left;
+  top: 5px;
+}
+
+.desktop1 .vector-kWHff1 {
+  height: 20px;
+  left: 9px;
+  top: 3px;
+  width: 17px;
+}
+
+.desktop1 .btn_-horizon_-vollyball-fbY5vo {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 131px;
+  width: 190px;
+}
+
+.desktop1 .vollyball-R7zxli {
+  left: 32px;
+  letter-spacing: -0.36px;
+  text-align: left;
+  top: 5px;
+}
+
+.desktop1 .vector-R7zxli {
+  height: 20px;
+  left: 8px;
+  top: 3px;
+  width: 20px;
+}
+
+.desktop1 .btn_-horizon_-tennis-fbY5vo {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 164px;
+  width: 190px;
+}
+
+.desktop1 .tennis-AjDxIh {
+  left: 32px;
+  letter-spacing: -0.36px;
+  text-align: left;
+  top: 5px;
+}
+
+.desktop1 .vector-AjDxIh {
+  height: 20px;
+  left: 10px;
+  top: 3px;
+  width: 16px;
+}
+
+.desktop1 .btn_-horizon_-icehockey-fbY5vo {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 197px;
+  width: 190px;
+}
+
+.desktop1 .ice-hockey-654eu7 {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .vector-654eu7 {
+  height: 19px;
+  left: 8px;
+  top: 3px;
+  width: 20px;
+}
+
+.desktop1 .component-2-9W67KO {
+  background-color: transparent;
+  height: 25px;
+  left: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 425px;
+  width: 190px;
+}
+
+.desktop1 .frame-26-phUZTJ {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 190px;
+}
+
+.desktop1 .btn_-horizon_-language-x62ZBx {
+  align-self: stretch;
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.desktop1 .vector-YuBz5A {
+  height: 20px;
+  left: 8px;
+  top: 2px;
+  width: 20px;
+}
+
+.desktop1 .language-YuBz5A {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .vector-1-YuBz5A {
+  background-color: transparent;
+  height: 6px;
+  left: 167px;
+  position: absolute;
+  top: 9px;
+  width: 10px;
+}
+
+.desktop1 .frame-25-x62ZBx {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.desktop1 .btn_-horizon_-language_-eng-1jvt9j {
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  width: 190px;
+}
+
+.desktop1 .english-Y1xze9 {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .flag_-circle_us-2-Y1xze9 {
+  background-color: transparent;
+  height: 20px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.desktop1 .btn_-horizon_-language_-kor-1jvt9j {
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  width: 190px;
+}
+
+.desktop1 .korean-LOF7Sr {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .flag_-circle_kor-LOF7Sr {
+  background-color: transparent;
+  height: 20px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.desktop1 .tap-moU7rB {
+  height: 42px;
+  top: 123px;
+}
+
+.desktop1 .rectangle-12-gxGIR9 {
+  background-color: var(--frblue);
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1024px;
+}
+
+.desktop1 .tap-gxGIR9 {
+  align-items: flex-start;
+  display: flex;
+  top: 17px;
+}
+
+.desktop1 .frame-16-7T0Q8X {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.desktop1 .tap_-live-KKKLdb {
+  background-color: transparent;
+  height: 25px;
+  left: 11px;
+  position: relative;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .group-4-d5O7mf {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 184px;
+}
+
+.desktop1 .rectangle-15-FL5KHm {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-14-FL5KHm {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 182px;
+}
+
+.desktop1 .live-FL5KHm {
+  left: 77px;
+  text-align: center;
+  top: 6px;
+}
+
+.desktop1 .frame-17-7T0Q8X {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.desktop1 .tap_-fixtures-6xMp0B {
+  background-color: transparent;
+  height: 25px;
+  left: 11px;
+  position: relative;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-16-gxxtyJ {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-17-gxxtyJ {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 182px;
+}
+
+.desktop1 .fixtures-gxxtyJ {
+  background-color: transparent;
+  height: auto;
+  left: 66px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .frame-18-7T0Q8X {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.desktop1 .tap_-odds-dx5WA3 {
+  background-color: transparent;
+  height: 25px;
+  left: 11px;
+  position: relative;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-18-Ix4cQi {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-19-Ix4cQi {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 182px;
+}
+
+.desktop1 .odds-Ix4cQi {
+  background-color: transparent;
+  height: auto;
+  left: 76px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .frame-19-7T0Q8X {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.desktop1 .tap_-league-iMk1sO {
+  background-color: transparent;
+  height: 25px;
+  left: 11px;
+  position: relative;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-22-fxvlGf {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-23-fxvlGf {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 182px;
+}
+
+.desktop1 .league-fxvlGf {
+  left: 68px;
+  text-align: center;
+  top: 5px;
+}
+
+.desktop1 .frame-20-7T0Q8X {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.desktop1 .tap_-result-ihXqZA {
+  background-color: transparent;
+  height: 25px;
+  left: 11px;
+  position: relative;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-20-asZwRo {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.desktop1 .rectangle-21-asZwRo {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 182px;
+}
+
+.desktop1 .result-asZwRo {
+  background-color: transparent;
+  height: auto;
+  left: 70px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .rectangle-92-moU7rB {
+  background-color: var(--bg);
+  height: 87px;
+  left: 0px;
+  position: absolute;
+  top: 37px;
+  width: 1024px;
+}
+
+.desktop1 .sub-header-moU7rB {
+  background-color: transparent;
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 40px;
+  width: 1023px;
+}
+
+.desktop1 .icons-phqu7V::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.desktop1 .icons-phqu7V {
+  align-items: flex-start;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  height: 68px;
+  left: 24px;
+  overflow-x: scroll;
+  position: relative;
+  top: 8px;
+  width: 975px;
+}
+
+.desktop1 .btn_-football-djU6eG {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.desktop1 .btn_-football-uESPgy {
+  left: 0px;
+  top: 0px;
+  width: 160px;
+}
+
+.desktop1 .rectangle-13-7lSLCu {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 160px;
+}
+
+.desktop1 .football-7lSLCu {
+  left: 57px;
+  letter-spacing: 0.00px;
+  text-align: center;
+  top: 48px;
+}
+
+.desktop1 .vector-7lSLCu {
+  height: 38px;
+  left: 61px;
+  top: 8px;
+  width: 38px;
+}
+
+.desktop1 .btn_-basketball-djU6eG {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 68px;
+  position: relative;
+}
+
+.desktop1 .btn_basket-xvKx3u {
+  background-color: transparent;
+  height: 68px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 160px;
+}
+
+.desktop1 .rectangle-13-mdPKSi {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 160px;
+}
+
+.desktop1 .basketball-mdPKSi {
+  left: 49px;
+  letter-spacing: 0.00px;
+  text-align: center;
+  top: 48px;
+}
+
+.desktop1 .x498-ball-basketball-nba-sport-mdPKSi {
+  background-color: transparent;
+  height: 38px;
+  left: 61px;
+  position: absolute;
+  top: 8px;
+  width: 38px;
+}
+
+.desktop1 .btn_-baseball-djU6eG {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 68px;
+  position: relative;
+}
+
+.desktop1 .btn_base-cPJxZU {
+  background-color: transparent;
+  height: 68px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 160px;
+}
+
+.desktop1 .rectangle-13-cJpxFG {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 160px;
+}
+
+.desktop1 .baseball-cJpxFG {
+  left: 55px;
+  letter-spacing: 0.00px;
+  text-align: center;
+  top: 48px;
+}
+
+.desktop1 .vector-cJpxFG {
+  height: 38px;
+  left: 63px;
+  top: 8px;
+  width: 33px;
+}
+
+.desktop1 .btn_vollyball-djU6eG {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.desktop1 .btn_vollyball-b0Dl3b {
+  left: 0px;
+  top: 0px;
+  width: 160px;
+}
+
+.desktop1 .rectangle-13-ma0xTl {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 160px;
+}
+
+.desktop1 .vollyball-ma0xTl {
+  left: 55px;
+  letter-spacing: 0.00px;
+  text-align: center;
+  top: 48px;
+}
+
+.desktop1 .x491-ball-volley-volleyball-sport-ma0xTl {
+  background-color: transparent;
+  height: 38px;
+  left: 60px;
+  position: absolute;
+  top: 8px;
+  width: 38px;
+}
+
+.desktop1 .btn_tennis-djU6eG {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.desktop1 .btn_tennis-6HNx4o {
+  left: 0px;
+  top: 0px;
+  width: 160px;
+}
+
+.desktop1 .rectangle-13-2Da5OG {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 160px;
+}
+
+.desktop1 .tennis-2Da5OG {
+  left: 62px;
+  letter-spacing: 0.00px;
+  text-align: center;
+  top: 48px;
+}
+
+.desktop1 .vector-2Da5OG {
+  height: 38px;
+  left: 65px;
+  top: 8px;
+  width: 30px;
+}
+
+.desktop1 .btn_icehockey-djU6eG {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.desktop1 .btn_icehockey-FB85uR {
+  left: 0px;
+  top: 0px;
+  width: 160px;
+}
+
+.desktop1 .rectangle-13-CxJOuM {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 160px;
+}
+
+.desktop1 .icehockey-CxJOuM {
+  background-color: transparent;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .vector-CxJOuM {
+  height: 38px;
+  left: 60px;
+  top: 8px;
+  width: 39px;
+}
+
+.desktop1 .header-moU7rB {
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: -3px;
+  width: 1024px;
+}
+
+.desktop1 .rectangle-6-ZwnVoD {
+  background-color: var(--frblue);
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1024px;
+}
+
+.desktop1 .oddsnavicom-ZwnVoD {
+  background-color: transparent;
+  height: auto;
+  left: 23px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-join_-default-ZwnVoD {
+  background-color: transparent;
+  height: 26px;
+  left: 816px;
+  position: absolute;
+  top: 7px;
+  width: 88px;
+}
+
+.desktop1 .rectangle-7-0Pl0CX {
+  background-color: var(--btblue);
+  border-color: var(--onahau);
+}
+
+.desktop1 .join-0Pl0CX {
+  background-color: transparent;
+  height: auto;
+  left: 30px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-log-in_-default-ZwnVoD {
+  background-color: transparent;
+  height: 26px;
+  left: 912px;
+  position: absolute;
+  top: 7px;
+  width: 88px;
+}
+
+.desktop1 .rectangle-7-5yyWqx {
+  background-color: var(--frblue);
+  border-color: var(--ptyellow);
+}
+
+.desktop1 .login-5yyWqx {
+  background-color: transparent;
+  height: auto;
+  left: 24px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .group-9-ZwnVoD {
+  background-color: transparent;
+  height: 24px;
+  left: 638px;
+  position: absolute;
+  top: 8px;
+  width: 167px;
+}
+
+.desktop1 .rectangle-35-ToLZeX {
+  background-color: var(--cultured-pearl);
+  border-radius: 5px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 167px;
+}
+
+.desktop1 .x1-ToLZeX {
+  left: 4px;
+  top: 3px;
+}
+
+.desktop1 .baseball {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .basketball {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .btn_-football {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.desktop1 .btn_icehockey {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.desktop1 .btn_tennis {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.desktop1 .btn_vollyball {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.desktop1 .football {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .league {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .live {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .mask-group {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 192px;
+}
+
+.desktop1 .rectangle-13 {
+  background-color: var(--bg);
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.desktop1 .rectangle-37 {
+  background-color: var(--frblue);
+  border-radius: 5px;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.desktop1 .rectangle-7 {
+  border: 1.4825397729873657px solid;
+  border-radius: 8.15px;
+  height: 26px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 88px;
+}
+
+.desktop1 .tap {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+  width: 1024px;
+}
+
+.desktop1 .tennis {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .vector {
+  background-color: transparent;
+  position: absolute;
+}
+
+.desktop1 .vollyball {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  width: auto;
+}
+
+.desktop1 .x1 {
+  background-color: transparent;
+  height: 18px;
+  position: absolute;
+  width: 15px;
+}
+/* screen - mobile */
+
+.mobile {
+  background-color: var(--bg);
+  height: 1834px;
+  overflow-x: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.mobile .contents-footer-LP8vkM {
+  align-items: flex-start;
+  background-color: var(--eerie-black);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px 20px;
+  height: 512px;
+  left: 0px;
+  overflow: hidden;
+  padding: 31px 48px 15px;
+  position: absolute;
+  top: 1322px;
+  width: 360px;
+}
+
+.mobile .general-info-about-u-azyg15 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 113px;
+}
+
+.mobile .span0-Grm7cu {
+}
+
+.mobile .span1-Grm7cu {
+}
+
+.mobile .promotions-sports-pr-azyg15 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  width: 163px;
+}
+
+.mobile .span0-qlhSBy {
+}
+
+.mobile .span1-qlhSBy {
+}
+
+.mobile .help-help-bet-slip-c-azyg15 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  width: 194px;
+}
+
+.mobile .span0-RmJ3Hg {
+}
+
+.mobile .span1-RmJ3Hg {
+}
+
+.mobile .copyright-2024-oddsn-azyg15 {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: -6.00px;
+  position: relative;
+  text-align: left;
+  width: 270px;
+}
+
+.mobile .contents_-football_-live-LP8vkM {
+  background-color: transparent;
+  height: 1351px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.mobile .sub-tap-LP8vkM {
+  background-color: transparent;
+  height: 38px;
+  left: 0px;
+  position: absolute;
+  top: 164px;
+  width: 360px;
+}
+
+.mobile .rectangle-13-1AbzuS {
+  height: 38px;
+  width: 360px;
+}
+
+.mobile .frame-24-1AbzuS {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  height: 24px;
+  justify-content: space-between;
+  left: 0px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 7px;
+  width: 360px;
+}
+
+.mobile .frame-23-mZibJs {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 24px;
+  position: relative;
+}
+
+.mobile .btn_-favorite-LIxwiP {
+  background-color: transparent;
+  height: 24px;
+  left: 30px;
+  position: relative;
+  top: 0px;
+  width: 57px;
+}
+
+.mobile .rectangle-24-3lkByj {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 57px;
+}
+
+.mobile .ellipse-1-3lkByj {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.mobile .star-1-3lkByj {
+  background-color: transparent;
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 17px;
+}
+
+.mobile .favorite_count-3lkByj {
+  align-items: flex-end;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 16px;
+  justify-content: center;
+  left: 25px;
+  padding: 1px 0px 1px 13px;
+  position: absolute;
+  top: 5px;
+  width: 24px;
+}
+
+.mobile .x0-Wq0Y1p {
+  background-color: transparent;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  margin-left: -12.00px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: 23px;
+}
+
+.mobile .frame-22-mZibJs {
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  width: 113.33332824707031px;
+}
+
+.mobile .btn_-bytime-O0o4NW {
+  background-color: transparent;
+  height: 24px;
+  left: 39px;
+  position: relative;
+  top: 0px;
+  width: 65px;
+}
+
+.mobile .rectangle-25-K7UCn7 {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 65px;
+}
+
+.mobile .by-time-K7UCn7 {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .frame-21-mZibJs {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 10px 0px 0px;
+  position: relative;
+  width: 104px;
+}
+
+.mobile .btn_-calendar_-set-zjNDQh {
+  background-color: transparent;
+  height: 24px;
+  margin-right: -10.00px;
+  position: relative;
+  width: 104px;
+}
+
+.mobile .btn_-calendar-BPQeet {
+  background-color: transparent;
+  cursor: pointer;
+  height: 24px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 104px;
+}
+
+.mobile .rectangle-26-2FdxRF {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  height: 24px;
+  left: 11px;
+  position: absolute;
+  top: 0px;
+  width: 84px;
+}
+
+.mobile .x28-april-2FdxRF {
+  background-color: transparent;
+  height: auto;
+  left: 35px;
+  letter-spacing: -0.30px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .btn_-previous-day-2FdxRF {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.mobile .ellipse-3-5qc9C0 {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.mobile .polygon-2-5qc9C0 {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  width: 6px;
+}
+
+.mobile .btn_-next-day-2FdxRF {
+  background-color: transparent;
+  height: 24px;
+  left: 80px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.mobile .ellipse-2-v19w5M {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.mobile .polygon-1-v19w5M {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  width: 6px;
+}
+
+.mobile .footer-LP8vkM {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 1794px;
+  width: 360px;
+}
+
+.mobile .rectangle-27-N06ZOS {
+  background-color: var(--frblue);
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.mobile .bottom_-btn_-set-N06ZOS {
+  align-items: flex-end;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.mobile .frame-11-x6WLEx {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.mobile .btn_-bottom_-live-vfkMLe {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.mobile .vector-hx4MZK {
+  height: 10px;
+  left: 26px;
+  top: 11px;
+  width: 20px;
+}
+
+.mobile .live-hx4MZK {
+  left: 29px;
+  letter-spacing: -0.24px;
+  top: 25px;
+}
+
+.mobile .frame-12-x6WLEx {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+.mobile .btn_-bottom_-favorites-qi7ML5 {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.mobile .star-2-Mgpxxx {
+  background-color: transparent;
+  height: 20px;
+  left: 26px;
+  position: absolute;
+  top: 6px;
+  width: 20px;
+}
+
+.mobile .favorites-Mgpxxx {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: auto;
+}
+
+.mobile .frame-13-x6WLEx {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.mobile .btn_menu-cuxvWR {
+  background-color: transparent;
+  height: 30px;
+  left: 21px;
+  position: relative;
+  top: 5px;
+  width: 30px;
+}
+
+.mobile .btn_menu-U769ZL {
+  background-color: transparent;
+  height: 30px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 30px;
+}
+
+.mobile .rectangle-2-pxCydT {
+  background-color: var(--ptyellow);
+  height: 6px;
+  width: 30px;
+}
+
+.mobile .rectangle-3-pxCydT {
+  background-color: var(--ptyellow);
+  height: 6px;
+  top: 12px;
+  width: 30px;
+}
+
+.mobile .rectangle-4-pxCydT {
+  background-color: var(--ptyellow);
+  height: 6px;
+  top: 24px;
+  width: 30px;
+}
+
+.mobile .frame-14-x6WLEx {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.mobile .btn_-bottom_-league-CBmz1n {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.mobile .vector-kZEV6o {
+  height: 20px;
+  left: 26px;
+  top: 6px;
+  width: 20px;
+}
+
+.mobile .league-kZEV6o {
+  left: 23px;
+  letter-spacing: -0.24px;
+  top: 25px;
+}
+
+.mobile .frame-15-x6WLEx {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 0;
+}
+
+.mobile .btn_-bottom_-challenge-QnoHK7 {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.mobile .vector-RFPu5J {
+  height: 20px;
+  left: 28px;
+  top: 6px;
+  width: 16px;
+}
+
+.mobile .challenge-RFPu5J {
+  background-color: transparent;
+  height: auto;
+  left: 18px;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: auto;
+}
+
+.mobile .tap-LP8vkM {
+  height: 42px;
+  top: 123px;
+}
+
+.mobile .rectangle-12-av1edJ {
+  background-color: var(--frblue);
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.mobile .tap-av1edJ {
+  align-items: flex-start;
+  display: flex;
+  top: 17px;
+}
+
+.mobile .frame-16-D639vY {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.mobile .tap_-live-B4pgyx {
+  background-color: transparent;
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .group-4-MHlCg1 {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 66px;
+}
+
+.mobile .rectangle-15-IYmmU7 {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-14-IYmmU7 {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 64px;
+}
+
+.mobile .live-IYmmU7 {
+  left: 19px;
+  letter-spacing: -0.36px;
+  top: 6px;
+  white-space: nowrap;
+}
+
+.mobile .frame-17-D639vY {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.mobile .tap_-fixtures-sxbXUm {
+  background-color: transparent;
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-16-pxylzD {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-17-pxylzD {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 64px;
+}
+
+.mobile .fixtures-pxylzD {
+  background-color: transparent;
+  height: auto;
+  left: 6px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .frame-18-D639vY {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.mobile .tap_-odds-xAXquG {
+  background-color: transparent;
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-18-MAGJDq {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-19-MAGJDq {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 64px;
+}
+
+.mobile .odds-MAGJDq {
+  background-color: transparent;
+  height: auto;
+  left: 16px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .frame-19-D639vY {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.mobile .tap_-league-NxLtHi {
+  background-color: transparent;
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-22-wBBhm9 {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-23-wBBhm9 {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 64px;
+}
+
+.mobile .league-wBBhm9 {
+  left: 10px;
+  letter-spacing: -0.36px;
+  top: 5px;
+  white-space: nowrap;
+}
+
+.mobile .frame-20-D639vY {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.mobile .tap_-result-K90t6V {
+  background-color: transparent;
+  height: 25px;
+  left: 4px;
+  position: relative;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-20-pCnuAh {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+
+.mobile .rectangle-21-pCnuAh {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 64px;
+}
+
+.mobile .result-pCnuAh {
+  background-color: transparent;
+  height: auto;
+  left: 11px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .header-LP8vkM {
+  background-color: transparent;
+  height: 43px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.mobile .rectangle-6-mzUr9p {
+  background-color: var(--frblue);
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.mobile .x1-mzUr9p {
+  background-color: transparent;
+  height: 18px;
+  left: 271px;
+  position: absolute;
+  top: 12px;
+  width: 15px;
+}
+
+.mobile .oddsnavicom-mzUr9p {
+  background-color: transparent;
+  height: auto;
+  left: 55px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .btn_-log-in_-default-mzUr9p {
+  background-color: transparent;
+  height: 24px;
+  left: 297px;
+  position: absolute;
+  top: 9px;
+  width: 53px;
+}
+
+.mobile .rectangle-7-xncAZ0 {
+  background-color: var(--frblue);
+  border: 1px solid;
+  border-color: var(--ptyellow);
+  border-radius: 6px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 53px;
+}
+
+.mobile .login-xncAZ0 {
+  background-color: transparent;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .btn_menu-mzUr9p {
+  background-color: transparent;
+  cursor: pointer;
+  height: 16px;
+  left: 21px;
+  position: absolute;
+  top: 13px;
+  width: 20px;
+}
+
+.mobile .btn_menu-vP4jxF {
+  background-color: transparent;
+  height: 16px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 20px;
+}
+
+.mobile .rectangle-2-uSJPkp {
+  background-color: var(--wt);
+  height: 3px;
+  width: 20px;
+}
+
+.mobile .rectangle-3-uSJPkp {
+  background-color: var(--wt);
+  height: 3px;
+  top: 6px;
+  width: 20px;
+}
+
+.mobile .rectangle-4-uSJPkp {
+  background-color: var(--wt);
+  height: 3px;
+  top: 13px;
+  width: 20px;
+}
+
+.mobile .rectangle-9-LP8vkM {
+  background-color: var(--bg);
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 40px;
+  width: 360px;
+}
+
+.mobile .sub-header-LP8vkM {
+  background-color: transparent;
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 40px;
+  width: 360px;
+}
+
+.mobile .icons-bqL7Vw::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.mobile .icons-bqL7Vw {
+  align-items: flex-start;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  height: 68px;
+  left: 9px;
+  overflow-x: scroll;
+  position: relative;
+  top: 8px;
+  width: 351px;
+}
+
+.mobile .btn_-football-DRqcWI {
+  left: 0px;
+  top: 0px;
+}
+
+.mobile .rectangle-13-KqGsGo {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 69px;
+}
+
+.mobile .football-KqGsGo {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .vector-KqGsGo {
+  height: 38px;
+  left: 16px;
+  top: 8px;
+  width: 38px;
+}
+
+.mobile .btn_-basketball-8wlLxs {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 69px;
+}
+
+.mobile .btn_basket-94o9hL {
+  background-color: transparent;
+  height: 68px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 69px;
+}
+
+.mobile .rectangle-13-cWtJSm {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 69px;
+}
+
+.mobile .basketball-cWtJSm {
+  background-color: transparent;
+  height: auto;
+  left: 3px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .x498-ball-basketball-nba-sport-cWtJSm {
+  background-color: transparent;
+  height: 38px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  width: 38px;
+}
+
+.mobile .btn_-baseball-8wlLxs {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 71px;
+}
+
+.mobile .btn_base-WXjQ98 {
+  background-color: transparent;
+  height: 68px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 71px;
+}
+
+.mobile .rectangle-13-6bCvQn {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 71px;
+}
+
+.mobile .baseball-6bCvQn {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .vector-6bCvQn {
+  height: 38px;
+  left: 19px;
+  top: 8px;
+  width: 33px;
+}
+
+.mobile .btn_vollyball-312hz6 {
+  left: 0px;
+  top: 0px;
+}
+
+.mobile .rectangle-13-CdIxKN {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 71px;
+}
+
+.mobile .vollyball-CdIxKN {
+  background-color: transparent;
+  height: auto;
+  left: 9px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .x491-ball-volley-volleyball-sport-CdIxKN {
+  background-color: transparent;
+  height: 38px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  width: 38px;
+}
+
+.mobile .btn_tennis-629LZQ {
+  left: 0px;
+  top: 0px;
+}
+
+.mobile .rectangle-13-0cfiYb {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 69px;
+}
+
+.mobile .tennis-0cfiYb {
+  background-color: transparent;
+  height: auto;
+  left: 17px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .vector-0cfiYb {
+  height: 38px;
+  left: 20px;
+  top: 8px;
+  width: 30px;
+}
+
+.mobile .btn_icehockey-ZcDZxc {
+  left: 0px;
+  top: 0px;
+}
+
+.mobile .rectangle-13-ZS1Kjn {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 69px;
+}
+
+.mobile .icehockey-ZS1Kjn {
+  background-color: transparent;
+  height: auto;
+  left: 7px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.mobile .vector-ZS1Kjn {
+  height: 38px;
+  left: 15px;
+  top: 8px;
+  width: 39px;
+}
+
+.mobile .btn_-football {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 69px;
+}
+
+.mobile .btn_icehockey {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 69px;
+}
+
+.mobile .btn_tennis {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 69px;
+}
+
+.mobile .btn_vollyball {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 71px;
+}
+
+.mobile .league {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  width: auto;
+}
+
+.mobile .live {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  width: auto;
+}
+
+.mobile .rectangle-13 {
+  background-color: var(--bg);
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.mobile .tap {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+  width: 360px;
+}
+
+.mobile .vector {
+  background-color: transparent;
+  position: absolute;
+}
+/* screen - tabletmin-all-breakpoints */
+
+.tabletmin-all-breakpoints {
+  background-color: var(--bg);
+  height: 1709px;
+  overflow-x: hidden;
+  position: relative;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .contents-footer-DSJxaD {
+  align-items: flex-start;
+  background-color: #16181a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px 20px;
+  height: 388px;
+  left: 0px;
+  overflow: hidden;
+  padding: 31px 10px 15px;
+  position: absolute;
+  top: 1321px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .general-info-about-u-xny8oS {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 113px;
+}
+
+.tabletmin-all-breakpoints .span0-CrpOxw {
+}
+
+.tabletmin-all-breakpoints .span1-CrpOxw {
+}
+
+.tabletmin-all-breakpoints .promotions-sports-pr-xny8oS {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 163px;
+}
+
+.tabletmin-all-breakpoints .span0-AoR6Kp {
+}
+
+.tabletmin-all-breakpoints .span1-AoR6Kp {
+}
+
+.tabletmin-all-breakpoints .help-help-bet-slip-c-xny8oS {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  width: 194px;
+}
+
+.tabletmin-all-breakpoints .span0-vwdfqO {
+}
+
+.tabletmin-all-breakpoints .span1-vwdfqO {
+}
+
+.tabletmin-all-breakpoints .copyright-2024-oddsn-xny8oS {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: 487px;
+}
+
+.tabletmin-all-breakpoints .contents_-football_-live-DSJxaD {
+  background-color: transparent;
+  height: 1351px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.tabletmin-all-breakpoints .contents_-right_-event-DSJxaD {
+  background-color: transparent;
+  height: 283px;
+  left: 361px;
+  position: absolute;
+  top: 171px;
+  width: 134px;
+}
+
+.tabletmin-all-breakpoints .mask-group-JouSYI {
+  height: 283px;
+}
+
+.tabletmin-all-breakpoints .contents_-right_-sponsor-DSJxaD {
+  background-color: transparent;
+  height: 850px;
+  left: 361px;
+  position: absolute;
+  top: 461px;
+  width: 134px;
+}
+
+.tabletmin-all-breakpoints .mask-group-oA7Guc {
+  height: 850px;
+}
+
+.tabletmin-all-breakpoints .footer-DSJxaD {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 1669px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .rectangle-27-rdxjzf {
+  background-color: var(--frblue);
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .bottom_-btn_-set-rdxjzf {
+  align-items: flex-end;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .frame-11-YZ7GFp {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.tabletmin-all-breakpoints .btn_-bottom_-live-926RB9 {
+  background-color: transparent;
+  height: 40px;
+  left: 15px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.tabletmin-all-breakpoints .vector-ku86S3 {
+  height: 10px;
+  left: 26px;
+  top: 11px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .live-ku86S3 {
+  left: 29px;
+  letter-spacing: -0.24px;
+  top: 25px;
+}
+
+.tabletmin-all-breakpoints .frame-12-YZ7GFp {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+.tabletmin-all-breakpoints .btn_-bottom_-favorites-sXcjou {
+  background-color: transparent;
+  height: 40px;
+  left: 15px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.tabletmin-all-breakpoints .star-2-EcLDpD {
+  background-color: transparent;
+  height: 20px;
+  left: 26px;
+  position: absolute;
+  top: 6px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .favorites-EcLDpD {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .frame-13-YZ7GFp {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.tabletmin-all-breakpoints .btn_menu-RYxtRx {
+  background-color: transparent;
+  height: 30px;
+  left: 36px;
+  position: relative;
+  top: 5px;
+  width: 30px;
+}
+
+.tabletmin-all-breakpoints .btn_menu-Ok4SoE {
+  background-color: transparent;
+  height: 30px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 30px;
+}
+
+.tabletmin-all-breakpoints .rectangle-2-Vdv2La {
+  background-color: var(--ptyellow);
+  height: 6px;
+  width: 30px;
+}
+
+.tabletmin-all-breakpoints .rectangle-3-Vdv2La {
+  background-color: var(--ptyellow);
+  height: 6px;
+  top: 12px;
+  width: 30px;
+}
+
+.tabletmin-all-breakpoints .rectangle-4-Vdv2La {
+  background-color: var(--ptyellow);
+  height: 6px;
+  top: 24px;
+  width: 30px;
+}
+
+.tabletmin-all-breakpoints .frame-14-YZ7GFp {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.tabletmin-all-breakpoints .btn_-bottom_-league-JhVj6s {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.tabletmin-all-breakpoints .vector-d2YTCx {
+  height: 20px;
+  left: 26px;
+  top: 6px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .league-d2YTCx {
+  letter-spacing: -0.24px;
+  top: 25px;
+}
+
+.tabletmin-all-breakpoints .frame-15-YZ7GFp {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 40px;
+  position: relative;
+  z-index: 0;
+}
+
+.tabletmin-all-breakpoints .btn_-bottom_-challenge-yuxIih {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 72px;
+}
+
+.tabletmin-all-breakpoints .vector-S0t61o {
+  height: 20px;
+  left: 28px;
+  top: 6px;
+  width: 16px;
+}
+
+.tabletmin-all-breakpoints .challenge-S0t61o {
+  background-color: transparent;
+  height: auto;
+  left: 18px;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 25px;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .sub-tap-DSJxaD {
+  background-color: transparent;
+  height: 38px;
+  left: 0px;
+  position: absolute;
+  top: 164px;
+  width: 360px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-DrAPYy {
+  height: 38px;
+  width: 360px;
+}
+
+.tabletmin-all-breakpoints .frame-24-DrAPYy {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  height: 24px;
+  justify-content: space-between;
+  left: 0px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 7px;
+  width: 360px;
+}
+
+.tabletmin-all-breakpoints .frame-23-FPIBJ7 {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 24px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_-favorite-SW1I2G {
+  background-color: transparent;
+  height: 24px;
+  left: 1px;
+  position: relative;
+  top: 0px;
+  width: 82px;
+}
+
+.tabletmin-all-breakpoints .rectangle-24-WTTUHx {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 82px;
+}
+
+.tabletmin-all-breakpoints .ellipse-1-WTTUHx {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.tabletmin-all-breakpoints .star-1-WTTUHx {
+  background-color: transparent;
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 17px;
+}
+
+.tabletmin-all-breakpoints .favorite_count-WTTUHx {
+  align-items: flex-end;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 16px;
+  justify-content: center;
+  left: 36px;
+  padding: 1px 0px 1px 13px;
+  position: absolute;
+  top: 5px;
+  width: 35px;
+}
+
+.tabletmin-all-breakpoints .x0-raKI8l {
+  background-color: transparent;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  margin-left: -1.47px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: 23px;
+}
+
+.tabletmin-all-breakpoints .frame-22-FPIBJ7 {
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  width: 113.33332824707031px;
+}
+
+.tabletmin-all-breakpoints .btn_-bytime-mqhxzM {
+  background-color: transparent;
+  height: 24px;
+  left: 37px;
+  position: relative;
+  top: 0px;
+  width: 65px;
+}
+
+.tabletmin-all-breakpoints .rectangle-25-BioYnr {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 65px;
+}
+
+.tabletmin-all-breakpoints .by-time-BioYnr {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .frame-21-FPIBJ7 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_-calendar_-set-oaQjq7 {
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  width: 112px;
+}
+
+.tabletmin-all-breakpoints .btn_-calendar-UqDHyL {
+  background-color: transparent;
+  cursor: pointer;
+  height: 24px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 112px;
+}
+
+.tabletmin-all-breakpoints .rectangle-26-77K5sn {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  height: 24px;
+  left: 11px;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .x28-april-77K5sn {
+  background-color: transparent;
+  height: auto;
+  left: 39px;
+  letter-spacing: -0.30px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .btn_-previous-day-77K5sn {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.tabletmin-all-breakpoints .ellipse-3-PkeZXe {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.tabletmin-all-breakpoints .polygon-2-PkeZXe {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  width: 6px;
+}
+
+.tabletmin-all-breakpoints .btn_-next-day-77K5sn {
+  background-color: transparent;
+  height: 24px;
+  left: 88px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.tabletmin-all-breakpoints .ellipse-2-koax3D {
+  background-color: var(--ltblue);
+  border-radius: 12px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+
+.tabletmin-all-breakpoints .polygon-1-koax3D {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+  width: 6px;
+}
+
+.tabletmin-all-breakpoints .tap-DSJxaD {
+  height: 42px;
+  top: 123px;
+}
+
+.tabletmin-all-breakpoints .rectangle-12-FEwDxx {
+  background-color: var(--frblue);
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .tap-FEwDxx {
+  align-items: flex-start;
+  display: flex;
+  top: 17px;
+}
+
+.tabletmin-all-breakpoints .frame-16-xlfZnM {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .tap_-live-c3nc1w {
+  background-color: transparent;
+  height: 25px;
+  left: 6px;
+  position: relative;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .group-4-OuZw1t {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 92px;
+}
+
+.tabletmin-all-breakpoints .rectangle-15-n0b1A1 {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-14-n0b1A1 {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .live-n0b1A1 {
+  left: 31px;
+  letter-spacing: -0.36px;
+  top: 6px;
+  white-space: nowrap;
+}
+
+.tabletmin-all-breakpoints .frame-17-xlfZnM {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .tap_-fixtures-zxNRhf {
+  background-color: transparent;
+  height: 25px;
+  left: 6px;
+  position: relative;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-16-6IJnoZ {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-17-6IJnoZ {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .fixtures-6IJnoZ {
+  background-color: transparent;
+  height: auto;
+  left: 18px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .frame-18-xlfZnM {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .tap_-odds-SSgsil {
+  background-color: transparent;
+  height: 25px;
+  left: 6px;
+  position: relative;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-18-ytwdoF {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-19-ytwdoF {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .odds-ytwdoF {
+  background-color: transparent;
+  height: auto;
+  left: 29px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .frame-19-xlfZnM {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .tap_-league-myrpW8 {
+  background-color: transparent;
+  height: 25px;
+  left: 6px;
+  position: relative;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-22-9KTxFd {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-23-9KTxFd {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .league-9KTxFd {
+  letter-spacing: -0.36px;
+  top: 5px;
+  white-space: nowrap;
+}
+
+.tabletmin-all-breakpoints .frame-20-xlfZnM {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .tap_-result-ARlXDx {
+  background-color: transparent;
+  height: 25px;
+  left: 6px;
+  position: relative;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-20-GTDnaQ {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .rectangle-21-GTDnaQ {
+  background-color: var(--frblue);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0px;
+  position: absolute;
+  top: 4px;
+  width: 90px;
+}
+
+.tabletmin-all-breakpoints .result-GTDnaQ {
+  background-color: transparent;
+  height: auto;
+  left: 23px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .rectangle-91-DSJxaD {
+  background-color: var(--bg);
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 40px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .sub-header-DSJxaD {
+  background-color: transparent;
+  height: 84px;
+  left: 0px;
+  position: absolute;
+  top: 40px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .icons-HQJzVs::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.tabletmin-all-breakpoints .icons-HQJzVs {
+  align-items: flex-start;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  height: 68px;
+  left: 9px;
+  overflow-x: scroll;
+  position: relative;
+  top: 8px;
+  width: 487px;
+}
+
+.tabletmin-all-breakpoints .btn_-football-kpOJin {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.tabletmin-all-breakpoints .btn_-football-zFktfw {
+  left: 0px;
+  top: 0px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-iPi1CN {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .football-iPi1CN {
+  background-color: transparent;
+  height: auto;
+  left: 15px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .vector-iPi1CN {
+  height: 38px;
+  left: 20px;
+  top: 8px;
+  width: 38px;
+}
+
+.tabletmin-all-breakpoints .btn_-basketball-kpOJin {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 68px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_basket-MF9xi7 {
+  background-color: transparent;
+  height: 68px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-Max5Xg {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .basketball-Max5Xg {
+  background-color: transparent;
+  height: auto;
+  left: 7px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .x498-ball-basketball-nba-sport-Max5Xg {
+  background-color: transparent;
+  height: 38px;
+  left: 20px;
+  position: absolute;
+  top: 8px;
+  width: 38px;
+}
+
+.tabletmin-all-breakpoints .btn_-baseball-kpOJin {
+  background-color: transparent;
+  flex: 1;
+  flex-grow: 1;
+  height: 68px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_base-9W9Nc1 {
+  background-color: transparent;
+  height: 68px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-i1KG5F {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .baseball-i1KG5F {
+  background-color: transparent;
+  height: auto;
+  left: 14px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .vector-i1KG5F {
+  height: 38px;
+  left: 22px;
+  top: 8px;
+  width: 33px;
+}
+
+.tabletmin-all-breakpoints .btn_vollyball-kpOJin {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.tabletmin-all-breakpoints .btn_vollyball-JH73VJ {
+  left: 0px;
+  top: 0px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-rKaN6b {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .vollyball-rKaN6b {
+  background-color: transparent;
+  height: auto;
+  left: 13px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .x491-ball-volley-volleyball-sport-rKaN6b {
+  background-color: transparent;
+  height: 38px;
+  left: 19px;
+  position: absolute;
+  top: 8px;
+  width: 38px;
+}
+
+.tabletmin-all-breakpoints .btn_tennis-kpOJin {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.tabletmin-all-breakpoints .btn_tennis-dEd6kQ {
+  left: 0px;
+  top: 0px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-7CQ1ga {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .tennis-7CQ1ga {
+  background-color: transparent;
+  height: auto;
+  left: 21px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .vector-7CQ1ga {
+  height: 38px;
+  left: 24px;
+  top: 8px;
+  width: 30px;
+}
+
+.tabletmin-all-breakpoints .btn_icehockey-kpOJin {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.tabletmin-all-breakpoints .btn_icehockey-FslJgx {
+  left: 0px;
+  top: 0px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13-ncbuxV {
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 68px;
+  width: 79px;
+}
+
+.tabletmin-all-breakpoints .icehockey-ncbuxV {
+  background-color: transparent;
+  height: auto;
+  left: 12px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .vector-ncbuxV {
+  height: 38px;
+  left: 19px;
+  top: 8px;
+  width: 39px;
+}
+
+.tabletmin-all-breakpoints .header-DSJxaD {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .rectangle-6-qr911a {
+  background-color: var(--frblue);
+  height: 43px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .x1-qr911a {
+  background-color: transparent;
+  height: 18px;
+  left: 418px;
+  position: absolute;
+  top: 12px;
+  width: 15px;
+}
+
+.tabletmin-all-breakpoints .oddsnavicom-qr911a {
+  background-color: transparent;
+  height: auto;
+  left: 55px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .btn_-log-in_-default-qr911a {
+  background-color: transparent;
+  height: 24px;
+  left: 444px;
+  position: absolute;
+  top: 9px;
+  width: 53px;
+}
+
+.tabletmin-all-breakpoints .rectangle-7-bpIFjO {
+  background-color: var(--frblue);
+  border: 1px solid;
+  border-color: var(--ptyellow);
+  border-radius: 6px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 53px;
+}
+
+.tabletmin-all-breakpoints .login-bpIFjO {
+  background-color: transparent;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .btn_menu-qr911a {
+  background-color: transparent;
+  cursor: pointer;
+  height: 16px;
+  left: 21px;
+  position: absolute;
+  top: 13px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .btn_menu-VXyFD8 {
+  background-color: transparent;
+  height: 16px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .rectangle-2-AIxJrC {
+  background-color: var(--wt);
+  height: 3px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .rectangle-3-AIxJrC {
+  background-color: var(--wt);
+  height: 3px;
+  top: 6px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .rectangle-4-AIxJrC {
+  background-color: var(--wt);
+  height: 3px;
+  top: 13px;
+  width: 20px;
+}
+
+.tabletmin-all-breakpoints .btn_-football {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_icehockey {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_tennis {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .btn_vollyball {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+}
+
+.tabletmin-all-breakpoints .league {
+  background-color: transparent;
+  height: auto;
+  left: 23px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .live {
+  background-color: transparent;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  width: auto;
+}
+
+.tabletmin-all-breakpoints .mask-group {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 134px;
+}
+
+.tabletmin-all-breakpoints .rectangle-13 {
+  background-color: var(--bg);
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.tabletmin-all-breakpoints .tap {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+  width: 507px;
+}
+
+.tabletmin-all-breakpoints .vector {
+  background-color: transparent;
+  position: absolute;
+}
+@media screen and (max-width: 506px) {
+  .screen.tabletmin-all-breakpoints { 
+    display: none;
+   }
+  .screen.desktop1 { 
+    display: none;
+   }
+}
+@media screen and (min-width: 507px) and (max-width: 1023px) {
+  .screen.mobile { 
+    display: none;
+   }
+  .screen.desktop1 { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1024px) {
+  .screen.mobile { 
+    display: none;
+   }
+  .screen.tabletmin-all-breakpoints { 
+    display: none;
+   }
+}
