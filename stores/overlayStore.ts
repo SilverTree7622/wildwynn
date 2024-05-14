@@ -4,11 +4,12 @@ import { defineStore } from "pinia";
 export const useOverlayStore = defineStore('overlayStore', () => {
 
     const ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
         console.log('overlayName, animationName: ', overlayName, animationName);
         const overlay = document.getElementById(overlayName);
         console.log('overlay: ', overlay);
         if (!overlay) return;
-        overlayName = "overlay-" + overlayName;
+
         var cssClasses = overlay.className.split(" ");
         var last = cssClasses.slice(-1)[0];
         if (last.lastIndexOf("animate") == -1) {
@@ -21,9 +22,9 @@ export const useOverlayStore = defineStore('overlayStore', () => {
     };
     
     const HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
         const overlay = document.getElementById(overlayName);
         if (!overlay) return;
-        overlayName = "overlay-" + overlayName;
         var cssClasses = overlay.className.split(" ");
         var last = cssClasses.slice(-1)[0];
         if (last.lastIndexOf("animate") != -1) {

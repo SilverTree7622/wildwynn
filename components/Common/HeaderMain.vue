@@ -1,10 +1,10 @@
 <template>
     <div>
         <header class="header-Mzx5SR">
-            <a href="/index" target="_self">
+            <a href="/" target="_self">
                 <div class="oddsnavicom-rhojcY">ODDSNAVI.COM</div>
             </a>
-            <a :onclick="overlayStore.ShowOverlay('left', 'animate-appear')">
+            <a @click="overlayStore.ShowOverlay('left', 'animate-appear')">
                 <div class="btn_menu-rhojcY">
                     <div class="group-35-AhxpXh">
                         <div class="rectangle-2-NjWEv0 rectangle-2"></div>
