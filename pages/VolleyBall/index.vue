@@ -63,6 +63,7 @@ onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
 });
 
+definePageMeta({ layout: false });
 </script>
 
 <style scoped>

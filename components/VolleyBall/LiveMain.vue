@@ -2,12 +2,12 @@
     <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
         <div class="leagueFrame">
             <template v-for="league in props.result_league">
-                <div class="group-17" onclick="go_league('home')" style="cursor: pointer">
+                <div class="group-17" @click="goStore.go_league('home')" style="cursor: pointer">
                     <div class="rectangle-28-lE9kB9 rectangle-28"></div>
                     <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
                     <div class="premier-league-lE9kB9 premier-league headline2">{{ league['lg_name'] }}</div>
                 </div>
-                <div class="live_-match" onclick="go_matchup('home')">
+                <div class="live_-match" @click="goStore.go_matchup('home')">
                     <div class="live-match-Jbo1mR live-match">
                         <div class="group-5-AKR3e5 group-5">
                             <img class="aston-villa-oDU2Nu aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="live-tracker">
-                        <a href="javascript:;" :onclick="go_livetraker()">
+                        <a href="javascript:;" @click="goStore.go_livetraker()">
                             <img class="btn_-live-tracker" src="/img/btn-livetracker-9@2x.png" alt="Btn_LiveTracker" />
                         </a>
                     </div>
@@ -88,25 +88,9 @@ const props = defineProps<{
     result_league;
 }>();
 
-function go_matchup(loc) {
-    if (loc == 'home') {
-        location.href = '/Matchup?tab=stats'
-    } else {
-        location.href = '/Matchup?tab=stats'
-    }
-}
+const goStore = useGoStore();
 
-function go_league(loc) {
-    if (loc == 'home') {
-        location.href = '/League?tab=matchup'
-    } else {
-        location.href = '/League?tab=matchup'
-    }
-}
 
-function go_livetraker() {
-    console.log('go livetraker');
-};
 
 </script>
 

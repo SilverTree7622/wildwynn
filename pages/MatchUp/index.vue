@@ -1,29 +1,25 @@
 <template>
     <NuxtLayout
-        name="tabcontent"
+        name="matchupcontent"
         :isPending="opt.isPending"
-        :sName="'FootBall'"
+        :sName="'MatchUp'"
         :tab="opt.tab"
         :result="opt.result"
     >
-        <FootBallLiveMain
-            v-if="opt.tab === 'live'"
-            :result_league="opt.result.league"
+        <MatchUpStatsMain
+            v-if="opt.tab === 'stats'"
         />
-        <FootBallFixturesMain
-            v-if="opt.tab === 'fixtures'"
-            :result_league="opt.result.league"
+        <MatchUpNavitalkMain
+            v-if="opt.tab === 'navitalk'"
         />
-        <FootBallOddsMain
+        <MatchUpOddsMain
             v-if="opt.tab === 'odds'"
-            :result_league="opt.result.league"
         />
-        <FootBallResultMain
-            v-if="opt.tab === 'result'"
-            :result_league="opt.result.league"
+        <MatchUpLineUpMain
+            v-if="opt.tab === 'lineup'"
         />
-        <FootBallLeagueMain
-            v-if="opt.tab === 'league'"
+        <MatchUpH2hMain
+            v-if="opt.tab === 'h2h'"
         />
     </NuxtLayout>
 </template>
@@ -34,14 +30,14 @@ const route = useRoute();
 
 const opt = reactive({
     isPending: <boolean> true,
-    tab: <string> 'live',
+    tab: <string> 'stats',
     result: <any> {
-        nav_code: 'S001',
+        nav_code: '',
         sName: 'dummy_sName',
         league: [],
     },
 });
-opt.tab = route.query['tab'] as string ?? 'live';
+opt.tab = route.query['tab'] as string ?? 'stats';
 
 onMounted(async () => {
     opt.isPending = true;
@@ -62,7 +58,6 @@ onMounted(async () => {
 onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
 });
-
 definePageMeta({ layout: false });
 </script>
 

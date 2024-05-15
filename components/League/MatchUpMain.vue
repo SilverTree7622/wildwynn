@@ -4,13 +4,13 @@
             <template v-for="a of props.result_dateList">
                 {{ console.log('a: ', a) }}
 
-                <div class="group-17" onclick="go_league()" style="cursor: pointer">
+                <div class="group-17" @click="goStore.go_league()" style="cursor: pointer">
                     <div class="rectangle-28-lE9kB9 rectangle-28"></div>
                     <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
                     <div class="premier-league-lE9kB9 premier-league headline2">{{ a }}</div>
                 </div>
 
-                <div class="live_-match" onclick="go_matchup('home')">
+                <div class="live_-match" @click="goStore.go_matchup('home')">
                     <div class="live-match-Y6utjY live-match">
                         <div class="group-5-Z7bohL group-5">
                             <img class="aston-villa-1xcxXp aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
@@ -50,7 +50,10 @@
 <script setup lang="ts">
 const props = defineProps<{
     result_dateList;
+    
 }>();
+
+const goStore = useGoStore();
 
 onMounted(async () => {
     await nextTick();

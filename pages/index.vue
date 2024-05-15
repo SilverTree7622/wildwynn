@@ -6,4 +6,5 @@
 onBeforeMount(() => {
 	navigateTo('/FootBall');
 });
+definePageMeta({ layout: false });
 </script>

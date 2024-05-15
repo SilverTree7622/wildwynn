@@ -1,0 +1,22 @@
+<template>
+    <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
+        <div class="leagueFrame">
+
+            <div>
+                <ul style="width:100%">
+                    <li style="width:100%"><img src="/img/matchup_lineup.png" style="width:100%" /></li>
+
+
+                </ul>
+
+
+            </div>
+            <!--
+        <img class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
+        -->
+
+
+        </div>
+    </div>
+
+</template>

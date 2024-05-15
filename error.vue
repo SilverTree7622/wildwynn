@@ -4,5 +4,5 @@
 </template>
 
 <script lang="ts" setup>
-window.location.href = '/';
+navigateTo('/');
 </script>
