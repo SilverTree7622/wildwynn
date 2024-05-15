@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="tap-Mzx5SR">
-            <NuxtLink :to="`/${ props.sName }?tab=live`">
-            <!-- <a :href="`/${ props.sName }?tab=live`"> -->
+            <NuxtLink :to="`/${props.sName}?tab=live`">
+                <!-- <a :href="`/${ props.sName }?tab=live`"> -->
                 <div class="tap_-live-6bZO9Y ">
                     <div class="btn_-tap_-dis-selected">
                         <div class="btn_-tap_-hov">
@@ -23,10 +23,10 @@
                         </div>
                     </div>
                 </div>
-            <!-- </a> -->
+                <!-- </a> -->
             </NuxtLink>
-            <NuxtLink :to="`/${ props.sName }?tab=fixtures`">
-            <!-- <a :href="`/${ props.sName }?tab=fixtures`"> -->
+            <NuxtLink :to="`/${props.sName}?tab=fixtures`">
+                <!-- <a :href="`/${ props.sName }?tab=fixtures`"> -->
                 <div class="tap_-fixtures-6bZO9Y">
                     <div class="btn_-tap_-dis-selected">
                         <div class="btn_-tap_-hov">
@@ -47,10 +47,10 @@
                         </div>
                     </div>
                 </div>
-            <!-- </a> -->
+                <!-- </a> -->
             </NuxtLink>
-            <NuxtLink :to="`/${ props.sName }?tab=odds`">
-            <!-- <a :href="`/${ props.sName }?tab=odds`"> -->
+            <NuxtLink :to="`/${props.sName}?tab=odds`">
+                <!-- <a :href="`/${ props.sName }?tab=odds`"> -->
                 <div class="tap_-odds-6bZO9Y">
                     <div class="btn_-tap_-dis-selected">
                         <div class="btn_-tap_-hov">
@@ -71,10 +71,10 @@
                         </div>
                     </div>
                 </div>
-            <!-- </a> -->
+                <!-- </a> -->
             </NuxtLink>
-            <NuxtLink :to="`/${ props.sName }?tab=result`">
-            <!-- <a :href="`/${ props.sName }?tab=result`"> -->
+            <NuxtLink :to="`/${props.sName}?tab=result`">
+                <!-- <a :href="`/${ props.sName }?tab=result`"> -->
                 <div class="tap_-league-6bZO9Y">
                     <div class="btn_-tap_-dis-selected">
                         <div class="btn_-tap_-hov">
@@ -95,10 +95,10 @@
                         </div>
                     </div>
                 </div>
-            <!-- </a> -->
+                <!-- </a> -->
             </NuxtLink>
-            <NuxtLink :to="`/${ props.sName }?tab=league`">
-            <!-- <a :href="`/${ props.sName }?tab=league`"> -->
+            <NuxtLink :to="`/${props.sName}?tab=league`">
+                <!-- <a :href="`/${ props.sName }?tab=league`"> -->
                 <div class="tap_-result-6bZO9Y">
                     <div class="btn_-tap_-dis-selected">
                         <div class="btn_-tap_-hov">
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-            <!-- </a> -->
+                <!-- </a> -->
             </NuxtLink>
         </div>
         <div class="live-Mzx5SR live headline2">&nbsp;</div>
@@ -133,8 +133,12 @@ const props = defineProps<{
     tab: string;
 }>();
 
+const router = useRouter();
+
+const navigate = (tab: string) => {
+    router.push({ path: `/${props.sName}`, query: { tab } })
+}
+
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -68,7 +68,7 @@
                         </div>
                     <!-- </a> -->
                     </NuxtLink>
-                    <NuxtLink :to="`/VollyBall`">
+                    <NuxtLink :to="`/VolleyBall`">
                     <!-- <a href="/VollyBall" target="_self"> -->
                         <div class="btn_-sports-icon_-vollyball-geZ0fe">
                             <div :class="`rectangle-13-YjCcoO ${ (props.result_nav_code === 'S005') && 'active' }`"></div>
