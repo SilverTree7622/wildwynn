@@ -13,8 +13,13 @@ export const useLocalStorageStore = defineStore('localStorageStore', () => {
 
     };
 
+    const onBeforeUnmount = () => {
+
+    };
+
     return {
         getItem,
         setItem,
+        onBeforeUnmount,
     };
 });
