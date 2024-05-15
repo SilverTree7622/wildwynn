@@ -5,9 +5,7 @@ export const useOverlayStore = defineStore('overlayStore', () => {
 
     const ShowOverlay = function (overlayName, animationName) {
         overlayName = "overlay-" + overlayName;
-        console.log('overlayName, animationName: ', overlayName, animationName);
         const overlay = document.getElementById(overlayName);
-        console.log('overlay: ', overlay);
         if (!overlay) return;
 
         var cssClasses = overlay.className.split(" ");

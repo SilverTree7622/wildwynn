@@ -6,23 +6,23 @@
         :tab="opt.tab"
         :result="opt.result"
     >
-        <FootBallLiveMain
+        <BaseBallLiveMain
             v-if="opt.tab === 'live'"
             :result_league="opt.result.league"
         />
-        <FootBallFixturesMain
+        <BaseBallFixturesMain
             v-if="opt.tab === 'fixtures'"
             :result_league="opt.result.league"
         />
-        <FootBallOddsMain
+        <BaseBallOddsMain
             v-if="opt.tab === 'odds'"
             :result_league="opt.result.league"
         />
-        <FootBallResultMain
+        <BaseBallResultMain
             v-if="opt.tab === 'result'"
             :result_league="opt.result.league"
         />
-        <FootBallLeagueMain
+        <BaseBallLeagueMain
             v-if="opt.tab === 'league'"
         />
     </NuxtLayout>
@@ -36,7 +36,7 @@ const opt = reactive({
     isPending: <boolean> true,
     tab: <string> 'live',
     result: <any> {
-        nav_code: 'S001',
+        nav_code: 'S004',
         sName: 'dummy_sName',
         league: [],
     },

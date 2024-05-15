@@ -6,38 +6,24 @@
         :tab="opt.tab"
         :result="opt.result"
     >
-        {% if result.tab == 'matchup' %}
-            {% include 'League/matchup_main.html' %}
-        {% elif result.tab == 'table' %}
-            {% include 'League/table_main.html' %}
-        {% elif result.tab == 'odds' %}
-            {% include 'League/odds_main.html' %}
-        {% elif result.tab == 'result' %}
-            {% include 'League/result_main.html' %}
-        {% elif result.tab == 'players' %}
-            {% include 'League/players_main.html' %}
-        {% else %}
-            {% include 'League/matchup_main.html' %}
-        {% endif %}
-        <!-- <FootBallLiveMain
-            v-if="opt.tab === 'live'"
-            :result_league="opt.result.league"
+        <LeagueMatchUpMain
+            v-if="opt.tab == 'matchup'"
+            :result_dateList="opt.result.dateList"
         />
-        <FootBallFixturesMain
-            v-if="opt.tab === 'fixtures'"
-            :result_league="opt.result.league"
+        <LeagueTableMain
+            v-if="opt.tab == 'table'"
         />
-        <FootBallOddsMain
-            v-if="opt.tab === 'odds'"
-            :result_league="opt.result.league"
+        <LeagueOddsMain
+            v-if="opt.tab == 'odds'"
+            :result_dateList="opt.result.dateList"
         />
-        <FootBallResultMain
-            v-if="opt.tab === 'result'"
-            :result_league="opt.result.league"
+        <LeagueResultMain
+            v-if="opt.tab == 'result'"
+            :result_dateList="opt.result.dateList"
         />
-        <FootBallLeagueMain
-            v-if="opt.tab === 'league'"
-        /> -->
+        <LeaguePlayersMain
+            v-if="opt.tab == 'players'"
+        />
     </NuxtLayout>
 </template>
 
@@ -47,26 +33,24 @@ const route = useRoute();
 
 const opt = reactive({
     isPending: <boolean> true,
-    tab: <string> 'live',
+    tab: <string> 'matchup',
     result: <any> {
-        nav_code: 'S001',
+        nav_code: '',
         sName: 'dummy_sName',
         league: [],
+        dateList: [],
     },
 });
-opt.tab = route.query['tab'] as string ?? 'live';
+opt.tab = route.query['tab'] as string ?? 'matchup';
 
 onMounted(async () => {
     opt.isPending = true;
     await nextTick();
 
     setTimeout(() => {
-        opt.result.league.push(
-            { lg_name: 'dummy_lg_name' },
-            { lg_name: 'dummy_lg_name2' },
-            { lg_name: 'dummy_lg_name3' },
-            { lg_name: 'dummy_lg_name4' },
-            { lg_name: 'dummy_lg_name5' },
+        opt.result.dateList.push(
+            '04/09/2024, Tue',
+            '04/08/2024, Mon'
         );
         opt.isPending = false;
     }, Math.random() * 3 * 1000);
