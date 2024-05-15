@@ -1,6 +1,5 @@
 <template>
     <NuxtLayout
-        name="tabcontent"
         :isPending="opt.isPending"
         :sName="'FootBall'"
         :tab="opt.tab"
@@ -63,7 +62,9 @@ onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
 });
 
-definePageMeta({ layout: false });
+definePageMeta({
+    layout: 'tabcontent',
+});
 </script>
 
 <style scoped>
