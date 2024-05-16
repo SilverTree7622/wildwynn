@@ -1,0 +1,704 @@
+/* screen - menu-2 */
+
+.menu-2 {
+  background-color: var(--black);
+  height: 730px;
+  overflow-x: hidden;
+  position: relative;
+  width: 210px;
+}
+
+#overlay-menu-2 {
+  align-items: start;
+  background-color: #00000080;
+  justify-content: flex-start;
+}
+
+.menu-2 .menu-KynBra::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.menu-2 .menu-KynBra {
+  background-color: transparent;
+  height: 730px;
+  left: 0px;
+  overflow-y: scroll;
+  position: relative;
+  top: 0px;
+  width: 210px;
+}
+
+.menu-2 .rectangle-33-jFbG5o {
+  background-color: var(--bg);
+  height: 730px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 210px;
+}
+
+.menu-2 .btn_-log-in_-default-jFbG5o {
+  background-color: transparent;
+  height: 26px;
+  position: absolute;
+  right: 11px;
+  top: 22px;
+  width: 88px;
+}
+
+.menu-2 .rectangle-7-rP3gUD {
+  background-color: var(--frblue);
+  border-color: var(--ptyellow);
+}
+
+.menu-2 .login-rP3gUD {
+  background-color: transparent;
+  height: 57.69%;
+  left: 27.65%;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 22.22%;
+  white-space: nowrap;
+  width: 43.18%;
+}
+
+.menu-2 .btn_-join_-default-jFbG5o {
+  background-color: transparent;
+  height: 26px;
+  position: absolute;
+  right: 109px;
+  top: 22px;
+  width: 88px;
+}
+
+.menu-2 .rectangle-7-0ulJC4 {
+  background-color: var(--btblue);
+  border-color: var(--onahau);
+}
+
+.menu-2 .join-0ulJC4 {
+  background-color: transparent;
+  height: 57.69%;
+  left: 33.71%;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 22.22%;
+  white-space: nowrap;
+  width: 32.95%;
+}
+
+.menu-2 .rectangle-35-jFbG5o {
+  background-color: var(--cultured-pearl);
+  border-radius: 5px;
+  height: 24px;
+  left: 10px;
+  position: absolute;
+  top: 61px;
+  width: 190px;
+}
+
+.menu-2 .x1-jFbG5o {
+  background-color: transparent;
+  height: 18px;
+  left: 19px;
+  position: absolute;
+  top: 64px;
+  width: 15px;
+}
+
+.menu-2 .cmp_-group2-jFbG5o {
+  background-color: transparent;
+  height: 157px;
+  left: 10px;
+  position: absolute;
+  top: 100px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-34-SsLfl4 {
+  background-color: var(--frblue);
+  border-radius: 5px;
+  height: 157px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.menu-2 .btn_-horizon_-favorites-SsLfl4 {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-xtfyxk {
+  width: 100%;
+}
+
+.menu-2 .star-2-xtfyxk {
+  background-color: transparent;
+  height: 20px;
+  left: calc(50.00% - 87px);
+  position: absolute;
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .favorites-xtfyxk {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .btn_-horizon_-live-SsLfl4 {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 66px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-aM8M4i {
+  width: 100%;
+}
+
+.menu-2 .vector-aM8M4i {
+  height: 10px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 4px);
+  width: 20px;
+}
+
+.menu-2 .live-aM8M4i {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .btn_-horizon_-promotions-SsLfl4 {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 33px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-u7IsPK {
+  width: 100%;
+}
+
+.menu-2 .vector-u7IsPK {
+  height: 18px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 19px;
+}
+
+.menu-2 .promotions-u7IsPK {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .btn_-horizon_-challenge-SsLfl4 {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 99px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-rjpn2n {
+  width: 100%;
+}
+
+.menu-2 .vector-rjpn2n {
+  height: 20px;
+  left: calc(50.00% - 85px);
+  top: calc(50.00% - 10px);
+  width: 16px;
+}
+
+.menu-2 .challenge-rjpn2n {
+  background-color: transparent;
+  bottom: 6px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .btn_-horizon_-league-SsLfl4 {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 132px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-y6Z2Hv {
+  width: 100%;
+}
+
+.menu-2 .vector-y6Z2Hv {
+  height: 20px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .league-y6Z2Hv {
+  background-color: transparent;
+  bottom: 6px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .cmp_-group1-jFbG5o {
+  background-color: transparent;
+  height: 222px;
+  left: 10px;
+  position: absolute;
+  top: 271px;
+  width: 192px;
+}
+
+.menu-2 .rectangle-36-ifft0J {
+  background-color: var(--frblue);
+  border-radius: 5px;
+  height: 222px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 190px;
+}
+
+.menu-2 .sports-ifft0J {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 45px;
+}
+
+.menu-2 .line-9-ifft0J {
+  background-color: transparent;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 32px;
+  width: 184px;
+}
+
+.menu-2 .btn_-horizon_-football-ifft0J {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 32px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-mMkLQs {
+  width: 100%;
+}
+
+.menu-2 .football-mMkLQs {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-mMkLQs {
+  height: 20px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .btn_-horizon_-basketball-ifft0J {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 65px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-7KHfxE {
+  width: 100%;
+}
+
+.menu-2 .basketball-7KHfxE {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-7KHfxE {
+  height: 20px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .btn_-horizon_-baseball-ifft0J {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 98px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-jQKETI {
+  width: 100%;
+}
+
+.menu-2 .baseball-jQKETI {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-jQKETI {
+  height: 20px;
+  left: calc(50.00% - 86px);
+  top: calc(50.00% - 10px);
+  width: 17px;
+}
+
+.menu-2 .btn_-horizon_-vollyball-ifft0J {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 131px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-oN03t0 {
+  width: 100%;
+}
+
+.menu-2 .vollyball-oN03t0 {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-oN03t0 {
+  height: 20px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .btn_-horizon_-tennis-ifft0J {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 164px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-7R7RIc {
+  width: 100%;
+}
+
+.menu-2 .tennis-7R7RIc {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-7R7RIc {
+  height: 20px;
+  left: calc(50.00% - 85px);
+  top: calc(50.00% - 10px);
+  width: 16px;
+}
+
+.menu-2 .btn_-horizon_-icehockey-ifft0J {
+  background-color: transparent;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 197px;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-gWVm6s {
+  width: 190px;
+}
+
+.menu-2 .ice-hockey-gWVm6s {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-gWVm6s {
+  height: 19px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .cmp_-no-name3-jFbG5o {
+  background-color: transparent;
+  height: 25px;
+  left: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 513px;
+  width: 190px;
+}
+
+.menu-2 .frame-26-9nKxTe {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.menu-2 .btn_-horizon_-language-fhJ18Z {
+  align-self: stretch;
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.menu-2 .rectangle-37-SwfYct {
+  width: 100%;
+}
+
+.menu-2 .vector-SwfYct {
+  height: 20px;
+  left: calc(50.00% - 87px);
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .language-SwfYct {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .vector-1-SwfYct {
+  background-color: transparent;
+  height: 6px;
+  left: calc(50.00% + 72px);
+  position: absolute;
+  top: 9px;
+  width: 10px;
+}
+
+.menu-2 .frame-25-fhJ18Z {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.menu-2 .btn_-horizon_-language_-eng-7KueXl {
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-ceAMjk {
+  width: 100%;
+}
+
+.menu-2 .english-ceAMjk {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .flag_-circle_us-2-ceAMjk {
+  background-color: transparent;
+  height: 20px;
+  left: calc(50.00% - 87px);
+  object-fit: cover;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .btn_-horizon_-language_-kor-7KueXl {
+  background-color: transparent;
+  height: 25px;
+  position: relative;
+  width: 190px;
+}
+
+.menu-2 .rectangle-37-0s8xdb {
+  width: 100%;
+}
+
+.menu-2 .korean-0s8xdb {
+  background-color: transparent;
+  bottom: 5px;
+  height: auto;
+  left: calc(50.00% - 63px);
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.menu-2 .flag_-circle_kor-0s8xdb {
+  background-color: transparent;
+  height: 20px;
+  left: calc(50.00% - 87px);
+  object-fit: cover;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.menu-2 .rectangle-37 {
+  background-color: var(--frblue);
+  border-radius: 5px;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.menu-2 .rectangle-7 {
+  border: 1.4825397729873657px solid;
+  border-radius: 8.15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.menu-2 .vector {
+  background-color: transparent;
+  position: absolute;
+}

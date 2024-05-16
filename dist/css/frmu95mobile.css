@@ -1,0 +1,4225 @@
+/* screen - frmu95mobile */
+
+.frmu95mobile {
+
+}
+
+.frmu95mobile .header-Mzx5SR {
+  align-self: stretch;
+  background-color: var(--frblue);
+  height: 38.68598937988281px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .btn_-left_-language-rhojcY {
+  background-color: transparent;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 62px;
+}
+
+.frmu95mobile .btn_-round-square2-SU0hiE {
+  height: 22px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .eng-SU0hiE {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 13px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .vector-2-SU0hiE {
+  background-color: transparent;
+  height: 5px;
+  left: calc(50.00% + 13px);
+  position: absolute;
+  top: calc(50.00% - 3px);
+  width: 10px;
+}
+
+.frmu95mobile .oddsnavicom-rhojcY {
+  background-color: transparent;
+  color: var(--ptyellow);
+  cursor: pointer;
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 42px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .btn_menu-rhojcY {
+  background-color: transparent;
+  cursor: pointer;
+  height: 16px;
+  left: 11px;
+  position: absolute;
+  top: 11px;
+  width: 20px;
+}
+
+.frmu95mobile .group-35-AhxpXh {
+  background-color: transparent;
+  height: 100.00%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-2-NjWEv0 {
+  background-color: var(--ptyellow);
+}
+
+.frmu95mobile .rectangle-3-NjWEv0 {
+  background-color: var(--ptyellow);
+}
+
+.frmu95mobile .rectangle-4-NjWEv0 {
+  background-color: var(--ptyellow);
+}
+
+.frmu95mobile .group-36-AhxpXh {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100.00%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .group-36-AhxpXh:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .rectangle-2-4re5zK {
+  background-color: var(--wt);
+}
+
+.frmu95mobile .rectangle-3-4re5zK {
+  background-color: var(--wt);
+}
+
+.frmu95mobile .rectangle-4-4re5zK {
+  background-color: var(--wt);
+}
+
+.frmu95mobile .frame-322-Mzx5SR::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.frmu95mobile .frame-322-Mzx5SR {
+  align-self: stretch;
+  background-color: transparent;
+  height: 78px;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .sub-header-Ec7wbx {
+  align-items: flex-start;
+  background-color: transparent;
+  display: inline-flex;
+  gap: 10px;
+  left: 0px;
+  padding: 5px 0px 5px 10px;
+  position: relative;
+  top: 1px;
+}
+
+.frmu95mobile .frame-321-4QEj8e {
+  background-color: transparent;
+  height: 68px;
+  position: relative;
+  width: 349px;
+}
+
+.frmu95mobile .btn_-sports-icon_-football-geZ0fe {
+  background-color: transparent;
+  cursor: pointer;
+  height: 68px;
+  left: 0px;
+  position: absolute;
+  top: -1px;
+  width: 22.49%;
+}
+
+.frmu95mobile .rectangle-13-6KHUpA {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .icon_-square_-football-6KHUpA {
+  background-color: transparent;
+  height: 77.94%;
+  left: 13.04%;
+  position: absolute;
+  top: 11.76%;
+  width: 73.91%;
+}
+
+.frmu95mobile .football-NgKg72 {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: 26.42%;
+  left: -1.72%;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 77.36%;
+  white-space: nowrap;
+  width: 105.16%;
+}
+
+.frmu95mobile .icon_-football-NgKg72 {
+  background-color: transparent;
+  height: 38px;
+  left: calc(50.00% - 20px);
+  position: absolute;
+  top: calc(50.00% - 26px);
+  width: 38px;
+}
+
+.frmu95mobile .rectangle-13-wNx6Ix {
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-13-wNx6Ix:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .btn_-sports-icon_-basketball-geZ0fe {
+  background-color: transparent;
+  cursor: pointer;
+  height: 68px;
+  left: 24.21%;
+  position: absolute;
+  top: -1px;
+  width: 22.49%;
+}
+
+.frmu95mobile .rectangle-13-aHCQs6 {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .icon_-square_-basketball-aHCQs6 {
+  background-color: transparent;
+  height: 77.94%;
+  left: calc(50.00% - 32px);
+  position: absolute;
+  top: 11.76%;
+  width: 63px;
+}
+
+.frmu95mobile .basketball-qpufFK {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: 26.42%;
+  left: -9.52%;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 77.36%;
+  white-space: nowrap;
+  width: 119.05%;
+}
+
+.frmu95mobile .icon_-basketball-qpufFK {
+  background-color: transparent;
+  height: 38px;
+  left: calc(50.00% - 18px);
+  position: absolute;
+  top: calc(50.00% - 26px);
+  width: 38px;
+}
+
+.frmu95mobile .rectangle-13-1eiwpF {
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-13-1eiwpF:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .btn_-sports-icon_-baseball-geZ0fe {
+  background-color: transparent;
+  cursor: pointer;
+  height: 68px;
+  left: 48.41%;
+  position: absolute;
+  top: -1px;
+  width: 22.49%;
+}
+
+.frmu95mobile .rectangle-13-OLUYfE {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .icon_-square_-baseball-OLUYfE {
+  background-color: transparent;
+  height: 77.95%;
+  left: 14.49%;
+  position: absolute;
+  top: 11.76%;
+  width: 72.46%;
+}
+
+.frmu95mobile .icon_-baseball-MAhgx4 {
+  background-color: transparent;
+  height: 38px;
+  left: calc(50.00% - 17px);
+  position: absolute;
+  top: calc(50.00% - 27px);
+  width: 33px;
+}
+
+.frmu95mobile .baseball-MAhgx4 {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: 26.41%;
+  left: -3.52%;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 77.35%;
+  white-space: nowrap;
+  width: 105.50%;
+}
+
+.frmu95mobile .rectangle-13-Qipmt9 {
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-13-Qipmt9:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .btn_-sports-icon_-vollyball-geZ0fe {
+  background-color: transparent;
+  cursor: pointer;
+  height: 68px;
+  left: 72.62%;
+  position: absolute;
+  top: -1px;
+  width: 22.49%;
+}
+
+.frmu95mobile .rectangle-13-YjCcoO {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .icon_-square_-vollyball-YjCcoO {
+  background-color: transparent;
+  height: 77.94%;
+  left: 10.14%;
+  position: absolute;
+  top: 11.76%;
+  width: 79.71%;
+}
+
+.frmu95mobile .vollyball-0JJwzm {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: 26.42%;
+  left: -3.20%;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 77.36%;
+  white-space: nowrap;
+  width: 105.50%;
+}
+
+.frmu95mobile .icon_-vollyball-0JJwzm {
+  background-color: transparent;
+  height: 38px;
+  left: calc(50.00% - 22px);
+  position: absolute;
+  top: calc(50.00% - 26px);
+  width: 38px;
+}
+
+.frmu95mobile .rectangle-13-rqOa25 {
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-13-rqOa25:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .btn_-sports-icon_-tennis-geZ0fe {
+  background-color: transparent;
+  cursor: pointer;
+  height: 68px;
+  left: 96.82%;
+  position: absolute;
+  top: -1px;
+  width: 22.49%;
+}
+
+.frmu95mobile .rectangle-13-rM1Yhy {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .icon_-square_-tennis-rM1Yhy {
+  background-color: transparent;
+  height: 77.94%;
+  left: 23.19%;
+  position: absolute;
+  top: 11.76%;
+  width: 52.17%;
+}
+
+.frmu95mobile .tennis-sZ6USP {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: 26.41%;
+  left: -2.44%;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 77.36%;
+  white-space: nowrap;
+  width: 105.02%;
+}
+
+.frmu95mobile .icon_-tennis-sZ6USP {
+  background-color: transparent;
+  height: 38px;
+  left: calc(50.00% - 15px);
+  position: absolute;
+  top: calc(50.00% - 27px);
+  width: 30px;
+}
+
+.frmu95mobile .rectangle-13-RAsSWo {
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-13-RAsSWo:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .btn_-sports-icon_-ice-hockey-geZ0fe {
+  background-color: transparent;
+  cursor: pointer;
+  height: 68px;
+  left: 121.03%;
+  position: absolute;
+  top: -1px;
+  width: 22.49%;
+}
+
+.frmu95mobile .rectangle-13-pJW32y {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .icon_-square_-icehockey-pJW32y {
+  background-color: transparent;
+  height: 77.94%;
+  left: 8.70%;
+  position: absolute;
+  top: 11.76%;
+  width: 82.61%;
+}
+
+.frmu95mobile .icehockey-PRqgRn {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  height: 26.42%;
+  left: -3.08%;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 77.36%;
+  white-space: nowrap;
+  width: 104.89%;
+}
+
+.frmu95mobile .icon_-icehackey-PRqgRn {
+  background-color: transparent;
+  height: 38px;
+  left: calc(50.00% - 21px);
+  position: absolute;
+  top: calc(50.00% - 26px);
+  width: 39px;
+}
+
+.frmu95mobile .rectangle-13-N0PwXl {
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-13-N0PwXl:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .tap-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  display: flex;
+  height: 42px;
+  padding: 17px 10px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .tap_-live-6bZO9Y {
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .fixtures-qbwaZH {
+  color: var(--ptyellow);
+  height: 17px;
+  left: calc(50.00% - 15px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .btn_-tap_-def-Lux0a9 {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 103.03%;
+}
+
+.frmu95mobile .btn_-tap_-def-Lux0a9:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .fixtures-c3kZMm {
+  color: var(--wt);
+  height: 17px;
+  left: calc(50.00% - 15px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .tap_-fixtures-6bZO9Y {
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .fixtures-LrzrRe {
+  color: var(--ptyellow);
+  height: 17px;
+  left: calc(50.00% - 32px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .btn_-tap_-def-1Psg5i {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 103.03%;
+}
+
+.frmu95mobile .btn_-tap_-def-1Psg5i:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .fixtures-0OqZlW {
+  color: var(--wt);
+  height: 17px;
+  left: calc(50.00% - 32px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .tap_-odds-6bZO9Y {
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .fixtures-ifjvvx {
+  color: var(--ptyellow);
+  height: 17px;
+  left: calc(50.00% - 19px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .btn_-tap_-def-yUFm6E {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 103.03%;
+}
+
+.frmu95mobile .btn_-tap_-def-yUFm6E:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .fixtures-8485cn {
+  color: var(--wt);
+  height: 17px;
+  left: calc(50.00% - 19px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .tap_-league-6bZO9Y {
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .fixtures-aLf6B4 {
+  color: var(--ptyellow);
+  height: 17px;
+  left: calc(50.00% - 25px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .btn_-tap_-def-5FcGMS {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 103.03%;
+}
+
+.frmu95mobile .btn_-tap_-def-5FcGMS:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .fixtures-YT1vnF {
+  color: var(--wt);
+  height: 17px;
+  left: calc(50.00% - 25px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .tap_-result-6bZO9Y {
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .fixtures-qnaMQx {
+  color: var(--ptyellow);
+  height: 17px;
+  left: calc(50.00% - 26px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .btn_-tap_-def-2tDpsJ {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 103.03%;
+}
+
+.frmu95mobile .btn_-tap_-def-2tDpsJ:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .fixtures-1AFXNR {
+  color: var(--wt);
+  height: 17px;
+  left: calc(50.00% - 26px);
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 6px);
+  width: auto;
+}
+
+.frmu95mobile .sub-tap-Mzx5SR {
+  align-self: stretch;
+  background-color: transparent;
+  height: 35px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-38-rkUyvw {
+  background-color: var(--bg);
+  height: 35px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 360px;
+}
+
+.frmu95mobile .frame-279-rkUyvw {
+  background-color: transparent;
+  height: 25px;
+  left: 2.78%;
+  position: absolute;
+  top: 5px;
+  width: 94.44%;
+}
+
+.frmu95mobile .group-15-ppRdQV {
+  background-color: transparent;
+  height: 25px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 70px;
+}
+
+.frmu95mobile .btn_-round-square-eqKfdS {
+  left: 1px;
+  width: 69px;
+}
+
+.frmu95mobile .group-24-lHViIx {
+  width: 102.90%;
+}
+
+.frmu95mobile .rectangle-13-Tz4L9L {
+  background-color: var(--ltblue);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 97.18%;
+}
+
+.frmu95mobile .text-Tz4L9L {
+  left: calc(50.00% - 4px);
+}
+
+.frmu95mobile .group-25-lHViIx {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 102.90%;
+}
+
+.frmu95mobile .group-25-lHViIx:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .rectangle-13-Z2ybf4 {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 97.18%;
+}
+
+.frmu95mobile .text-Z2ybf4 {
+  left: calc(50.00% - 4px);
+}
+
+.frmu95mobile .btn_-circle-eqKfdS {
+  left: 0px;
+}
+
+.frmu95mobile .polygon-3-03xxxm {
+  background-color: transparent;
+  cursor: pointer;
+  height: 8px;
+  left: calc(50.00% - 4px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 5px);
+  transition: all 0.2s ease;
+  width: 8px;
+}
+
+.frmu95mobile .polygon-3-03xxxm:hover {
+  transform: translate(0, 1px);
+}
+
+.frmu95mobile .star-3-eqKfdS {
+  background-color: transparent;
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.frmu95mobile .group-14-ppRdQV {
+  background-color: transparent;
+  cursor: pointer;
+  height: 25px;
+  position: absolute;
+  right: 118px;
+  top: 0px;
+  width: 69px;
+}
+
+.frmu95mobile .btn_-round-square-6PjiIf {
+  right: 0px;
+  width: 69px;
+}
+
+.frmu95mobile .group-24-b9oapg {
+  width: 102.90%;
+}
+
+.frmu95mobile .rectangle-13-PHX7OD {
+  background-color: var(--ltblue);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 97.18%;
+}
+
+.frmu95mobile .text-PHX7OD {
+  left: calc(50.00% - 22px);
+}
+
+.frmu95mobile .group-25-b9oapg {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 102.90%;
+}
+
+.frmu95mobile .group-25-b9oapg:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .rectangle-13-989EQc {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 97.18%;
+}
+
+.frmu95mobile .text-989EQc {
+  left: calc(50.00% - 22px);
+}
+
+.frmu95mobile .group-13-ppRdQV {
+  background-color: transparent;
+  height: 25px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 107px;
+}
+
+.frmu95mobile .btn_-round-square-SqVRvm {
+  right: 0px;
+  width: 107px;
+}
+
+.frmu95mobile .group-24-vpjhxn {
+  width: 101.87%;
+}
+
+.frmu95mobile .rectangle-13-NyCxgV {
+  background-color: var(--ltblue);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 98.17%;
+}
+
+.frmu95mobile .text-NyCxgV {
+  left: calc(50.00% - 14px);
+}
+
+.frmu95mobile .group-25-vpjhxn {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 101.87%;
+}
+
+.frmu95mobile .rectangle-13-JxJyba {
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 98.17%;
+}
+
+.frmu95mobile .text-JxJyba {
+  left: calc(50.00% - 14px);
+}
+
+.frmu95mobile .group-11-SqVRvm {
+  background-color: transparent;
+  height: 25px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 25px;
+}
+
+.frmu95mobile .btn_-circle-Px0qxZ {
+  right: 0px;
+}
+
+.frmu95mobile .polygon-3-O6vvrF {
+  background-color: transparent;
+  cursor: pointer;
+  height: 8px;
+  left: calc(50.00% - 4px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 5px);
+  transition: all 0.2s ease;
+  width: 8px;
+}
+
+.frmu95mobile .polygon-3-O6vvrF:hover {
+  transform: translate(0, 1px);
+}
+
+.frmu95mobile .group-12-SqVRvm {
+  background-color: transparent;
+  height: 25px;
+  position: absolute;
+  right: 82px;
+  top: 0px;
+  transform: rotate(180deg);
+  width: 25px;
+}
+
+.frmu95mobile .btn_-circle-722jqV {
+  right: 0px;
+}
+
+.frmu95mobile .polygon-3-VuSxuy {
+  background-color: transparent;
+  cursor: pointer;
+  height: 8px;
+  left: calc(50.00% - 4px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 3px);
+  transform: rotate(-180deg);
+  transition: all 0.2s ease;
+  width: 8px;
+}
+
+.frmu95mobile .polygon-3-VuSxuy:hover {
+  transform: translate(0, 1px);
+}
+
+.frmu95mobile .live-Mzx5SR {
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobile .contents_-football_-live-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-29-dguGrZ {
+  align-self: stretch;
+  height: 514px;
+  margin-bottom: -8.00px;
+  width: 100%;
+}
+
+.frmu95mobile .frame-315-dguGrZ {
+  height: 262px;
+  top: -1px;
+}
+
+.frmu95mobile .live_-match-ir6mqu {
+  top: 35px;
+}
+
+.frmu95mobile .live-match-Jbo1mR {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-AKR3e5 {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-oDU2Nu {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-ADr9KY {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-AKR3e5 {
+  height: 49px;
+  top: calc(50.00% - 24px);
+}
+
+.frmu95mobile .vector-eyBPRK {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 12px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-n1oFur {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 10px);
+  width: 41px;
+}
+
+.frmu95mobile .vector-z3kuGS {
+  height: 11px;
+  left: calc(50.00% - 27px);
+  top: calc(50.00% - 24px);
+  width: 45px;
+}
+
+.frmu95mobile .live-eyBPRK {
+  height: auto;
+  left: calc(50.00% - 15px);
+  letter-spacing: -0.30px;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 24px);
+  width: 21px;
+}
+
+.frmu95mobile .span0-TpclY9 {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.frmu95mobile .span1-TpclY9 {
+  letter-spacing: -0.08px;
+}
+
+.frmu95mobile .x000-eyBPRK {
+  left: calc(50.00% + 19px);
+}
+
+.frmu95mobile .x000-n1oFur {
+  left: calc(50.00% - 68px);
+}
+
+.frmu95mobile .group-6-AKR3e5 {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-x4WW4Z {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-tGhDC5 {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-cDzWbx {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-cDzWbx:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-XNcMq5 {
+  top: 144px;
+}
+
+.frmu95mobile .live-match-Z8S3Mz {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-JPjjkW {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-C6cxS2 {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-IUgz6A {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-JPjjkW {
+  height: 49px;
+  top: calc(50.00% - 24px);
+}
+
+.frmu95mobile .vector-ObTp0X {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 12px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-OAAx9a {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 10px);
+  width: 41px;
+}
+
+.frmu95mobile .vector-ZxumY6 {
+  height: 11px;
+  left: calc(50.00% - 27px);
+  top: calc(50.00% - 24px);
+  width: 45px;
+}
+
+.frmu95mobile .live-ObTp0X {
+  height: auto;
+  left: calc(50.00% - 15px);
+  letter-spacing: -0.30px;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 24px);
+  width: 21px;
+}
+
+.frmu95mobile .span0-ZxM3Sm {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.frmu95mobile .span1-ZxM3Sm {
+  letter-spacing: -0.08px;
+}
+
+.frmu95mobile .x000-ObTp0X {
+  left: calc(50.00% + 19px);
+}
+
+.frmu95mobile .x000-OAAx9a {
+  left: calc(50.00% - 68px);
+}
+
+.frmu95mobile .group-6-JPjjkW {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-d6UNXu {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-UtAjcp {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-UKpxel {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-UKpxel:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-1-ir6mqu {
+  top: 144px;
+}
+
+.frmu95mobile .line-2-ir6mqu {
+  left: 6.94%;
+  top: 253px;
+  width: 86.67%;
+}
+
+.frmu95mobile .group-17-ir6mqu {
+  height: 34px;
+}
+
+.frmu95mobile .rectangle-28-lE9kB9 {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.frmu95mobile .premier-league-lE9kB9 {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .frame-316-dguGrZ {
+  height: 252px;
+  top: 261px;
+}
+
+.frmu95mobile .group-17-Pg28xo {
+  height: 34px;
+}
+
+.frmu95mobile .premier-league-48PoK5 {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .live_-match-Pg28xo {
+  top: 35px;
+}
+
+.frmu95mobile .live-match-WsPFMj {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-C7txzk {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-WOd9d9 {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-nEr4Yo {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-C7txzk {
+  height: 49px;
+  top: calc(50.00% - 24px);
+}
+
+.frmu95mobile .vector-Oa153E {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 12px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-FfOaiw {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 10px);
+  width: 41px;
+}
+
+.frmu95mobile .vector-WK0Avw {
+  height: 11px;
+  left: calc(50.00% - 27px);
+  top: calc(50.00% - 24px);
+  width: 45px;
+}
+
+.frmu95mobile .live-Oa153E {
+  height: auto;
+  left: calc(50.00% - 15px);
+  letter-spacing: -0.30px;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 24px);
+  width: 21px;
+}
+
+.frmu95mobile .span0-0IEdqF {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.frmu95mobile .span1-0IEdqF {
+  letter-spacing: -0.08px;
+}
+
+.frmu95mobile .x000-Oa153E {
+  left: calc(50.00% + 19px);
+}
+
+.frmu95mobile .x000-FfOaiw {
+  left: calc(50.00% - 68px);
+}
+
+.frmu95mobile .group-6-C7txzk {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-XTntTg {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-6Wj8tB {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-9ZhVc6 {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-9ZhVc6:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-h0RpFC {
+  top: 144px;
+}
+
+.frmu95mobile .live-match-4684jf {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-YehTUu {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-HOdsWQ {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-BmSV3f {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-YehTUu {
+  height: 49px;
+  top: calc(50.00% - 24px);
+}
+
+.frmu95mobile .vector-sIIqh5 {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 12px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-iAlDGF {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 10px);
+  width: 41px;
+}
+
+.frmu95mobile .vector-278Cwx {
+  height: 11px;
+  left: calc(50.00% - 27px);
+  top: calc(50.00% - 24px);
+  width: 45px;
+}
+
+.frmu95mobile .live-sIIqh5 {
+  height: auto;
+  left: calc(50.00% - 15px);
+  letter-spacing: -0.30px;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 24px);
+  width: 21px;
+}
+
+.frmu95mobile .span0-QOWWeJ {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.frmu95mobile .span1-QOWWeJ {
+  letter-spacing: -0.08px;
+}
+
+.frmu95mobile .x000-sIIqh5 {
+  left: calc(50.00% + 19px);
+}
+
+.frmu95mobile .x000-iAlDGF {
+  left: calc(50.00% - 68px);
+}
+
+.frmu95mobile .group-6-YehTUu {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-NBqi20 {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-EJDhlQ {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-CEt5QC {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-CEt5QC:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-1-Pg28xo {
+  top: 144px;
+}
+
+.frmu95mobile .line-2-Pg28xo {
+  left: 6.94%;
+  top: 253px;
+  width: 86.67%;
+}
+
+.frmu95mobile .fixtures-Mzx5SR {
+  color: var(--wt);
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobile .contents_-football_-fixtures-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  height: 511px;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-29-Pup877 {
+  flex: 1;
+  flex-grow: 1;
+  height: 511px;
+  margin-bottom: -8.00px;
+}
+
+.frmu95mobile .frame-315-Pup877 {
+  height: 261px;
+  top: 1px;
+}
+
+.frmu95mobile .group-17-GPxf6b {
+  height: 34px;
+}
+
+.frmu95mobile .rectangle-28-Ul7R2k {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.frmu95mobile .premier-league-Ul7R2k {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .live_-match-GPxf6b {
+  top: 34px;
+}
+
+.frmu95mobile .live-match-Y6utjY {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-Z7bohL {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-1xcxXp {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-O0Qend {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-Z7bohL {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 34px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-ij0TdP {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 23px;
+}
+
+.frmu95mobile .group-6-Z7bohL {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-xEfJsb {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-ex9GAr {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .frame-303-Z7bohL {
+  left: calc(50.00% - 36px);
+  top: calc(50.00% + 10px);
+}
+
+.frmu95mobile .btn_-round-square2-qGs8vj {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .group-29-rplUIj {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-rplUIj:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-fQ8379 {
+  top: 142px;
+}
+
+.frmu95mobile .live-match-3u8Jsb {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-zoqwp3 {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-xjyiH1 {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-OHSFNl {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-zoqwp3 {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 34px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-xvi1sx {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 23px;
+}
+
+.frmu95mobile .group-6-zoqwp3 {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-j9KLuM {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-uqI6tM {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .frame-303-zoqwp3 {
+  left: calc(50.00% - 36px);
+  top: calc(50.00% + 10px);
+}
+
+.frmu95mobile .btn_-round-square2-kZP4xo {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .group-29-aNjjYD {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-aNjjYD:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-1-GPxf6b {
+  top: 142px;
+}
+
+.frmu95mobile .line-2-GPxf6b {
+  left: 6.94%;
+  top: 250px;
+  width: 86.67%;
+}
+
+.frmu95mobile .frame-316-Pup877 {
+  height: 250px;
+  top: 261px;
+}
+
+.frmu95mobile .group-17-xXn83D {
+  height: 34px;
+}
+
+.frmu95mobile .premier-league-UF5EGU {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .live_-match-xXn83D {
+  top: 34px;
+}
+
+.frmu95mobile .live-match-7Mnbjx {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-igiC8h {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-GOPcwb {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-emAhvo {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-igiC8h {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 34px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-9xxI0M {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 23px;
+}
+
+.frmu95mobile .group-6-igiC8h {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-8keREE {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-IE6Pd8 {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .frame-303-igiC8h {
+  left: calc(50.00% - 36px);
+  top: calc(50.00% + 10px);
+}
+
+.frmu95mobile .btn_-round-square2-QveMux {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .group-29-0UlkVj {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-0UlkVj:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-gZbGsM {
+  top: 142px;
+}
+
+.frmu95mobile .live-match-WCeBoi {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-dNvUo8 {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-y3Na9H {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-a3XUTv {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-dNvUo8 {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 34px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-xdOFNM {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 23px;
+}
+
+.frmu95mobile .group-6-dNvUo8 {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-Df4zK8 {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-0vpmzR {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .frame-303-dNvUo8 {
+  left: calc(50.00% - 36px);
+  top: calc(50.00% + 10px);
+}
+
+.frmu95mobile .btn_-round-square2-2Nfvg4 {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .group-29-6ogIqT {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-6ogIqT:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-1-xXn83D {
+  top: 142px;
+}
+
+.frmu95mobile .line-2-xXn83D {
+  left: 6.94%;
+  top: 250px;
+  width: 86.67%;
+}
+
+.frmu95mobile .odds-Mzx5SR {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobile .contents_-football_odds-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  height: 641px;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-29-Q0RCcx {
+  flex: 1;
+  flex-grow: 1;
+  height: 641px;
+  margin-bottom: -8.00px;
+}
+
+.frmu95mobile .frame-315-Q0RCcx {
+  height: 321px;
+  top: -1px;
+}
+
+.frmu95mobile .group-17-KH8sPn {
+  height: 34px;
+}
+
+.frmu95mobile .rectangle-28-rNToxA {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.frmu95mobile .premier-league-rNToxA {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .live_-match-KH8sPn {
+  top: 35px;
+}
+
+.frmu95mobile .live-match-oRR707 {
+  height: 143px;
+}
+
+.frmu95mobile .group-5-umanRh {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .aston-villa-KnC9o8 {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-4Wzxnj {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-umanRh {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 52px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-KPkZgH {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 26px;
+}
+
+.frmu95mobile .group-6-umanRh {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .arsenal-FOQ7SG {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-QAQltK {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .btn_-round-square2-BitoRc {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-ChwNZc {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-nnGKdW {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .frame-303-umanRh {
+  left: calc(50.00% - 38px);
+  top: calc(50.00% - 10px);
+}
+
+.frmu95mobile .btn_-round-square2-AiuZVL {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .btn_-favorite_-check-fy9wEI {
+  left: 0px;
+  top: 1px;
+}
+
+.frmu95mobile .group-29-mpqw5X {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-mpqw5X:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-BaguVn {
+  top: 178px;
+}
+
+.frmu95mobile .live-match-JenB9C {
+  height: 143px;
+}
+
+.frmu95mobile .group-5-94xyob {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .aston-villa-utve9p {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-xJj1Fc {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-94xyob {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 52px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-KSmiyQ {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 26px;
+}
+
+.frmu95mobile .group-6-94xyob {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .arsenal-q1vr2m {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-KmNypU {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .btn_-round-square2-iSqv0x {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-GIkl9D {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-UTmEUS {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .frame-303-94xyob {
+  left: calc(50.00% - 38px);
+  top: calc(50.00% - 10px);
+}
+
+.frmu95mobile .btn_-round-square2-ZS6nZk {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .btn_-favorite_-check-eIE1R4 {
+  left: 0px;
+  top: 1px;
+}
+
+.frmu95mobile .group-29-pGjzYQ {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-pGjzYQ:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-2-KH8sPn {
+  left: 6.94%;
+  top: 178px;
+  width: 86.67%;
+}
+
+.frmu95mobile .line-3-KH8sPn {
+  left: 6.94%;
+  width: 86.67%;
+}
+
+.frmu95mobile .frame-316-Q0RCcx {
+  height: 321px;
+  top: 320px;
+}
+
+.frmu95mobile .group-17-iFPNkN {
+  height: 321.0000305175781px;
+}
+
+.frmu95mobile .premier-league-7TKxHR {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .line-2-7TKxHR {
+  left: 4.39%;
+  top: 178px;
+  width: 91.23%;
+}
+
+.frmu95mobile .line-3-7TKxHR {
+  left: 4.39%;
+  width: 91.23%;
+}
+
+.frmu95mobile .live_-match-iFPNkN {
+  top: 35px;
+}
+
+.frmu95mobile .live-match-IxGxGE {
+  height: 143px;
+}
+
+.frmu95mobile .group-5-RfXFGV {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .aston-villa-3XqZcV {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-xMWowa {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-RfXFGV {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 52px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-jOEMOf {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 26px;
+}
+
+.frmu95mobile .group-6-RfXFGV {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .arsenal-gPvux2 {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-vL2ZFO {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .btn_-round-square2-v8WScJ {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-z5ESGp {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-OABQfl {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .frame-303-RfXFGV {
+  left: calc(50.00% - 38px);
+  top: calc(50.00% - 10px);
+}
+
+.frmu95mobile .btn_-round-square2-IILaxg {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .btn_-favorite_-check-C8c63g {
+  left: 0px;
+  top: 1px;
+}
+
+.frmu95mobile .group-29-dqUDsL {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-dqUDsL:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-ohT6r8 {
+  top: 178px;
+}
+
+.frmu95mobile .live-match-BxqVVx {
+  height: 143px;
+}
+
+.frmu95mobile .group-5-oYF7yK {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .aston-villa-NALz2g {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-u1wXMy {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .vs-oYF7yK {
+  height: 33px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 52px);
+  width: 55px;
+}
+
+.frmu95mobile .vs-DX2xHo {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 14px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 4px);
+  white-space: nowrap;
+  width: 26px;
+}
+
+.frmu95mobile .group-6-oYF7yK {
+  top: calc(50.00% - 72px);
+}
+
+.frmu95mobile .arsenal-6tAfSD {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-KtX6Wt {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 26px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 55px;
+}
+
+.frmu95mobile .btn_-round-square2-0EycA9 {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-50ux6Q {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square2-OxdxLj {
+  height: 30px;
+  left: 0px;
+  top: calc(50.00% - 15px);
+  width: 100%;
+}
+
+.frmu95mobile .frame-303-oYF7yK {
+  left: calc(50.00% - 38px);
+  top: calc(50.00% - 10px);
+}
+
+.frmu95mobile .btn_-round-square2-c4ZpHo {
+  height: 20px;
+  left: calc(50.00% - 36px);
+  top: calc(50.00% - 10px);
+  width: 72px;
+}
+
+.frmu95mobile .btn_-favorite_-check-5jv0vE {
+  left: 0px;
+  top: 1px;
+}
+
+.frmu95mobile .group-29-8bawkL {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-8bawkL:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .result-Mzx5SR {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobile .contents_-football_-result-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  height: 501px;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-29-cNnC3K {
+  flex: 1;
+  flex-grow: 1;
+  height: 501px;
+  margin-bottom: -8.00px;
+}
+
+.frmu95mobile .frame-315-cNnC3K {
+  height: 251px;
+  top: -1px;
+}
+
+.frmu95mobile .group-17-2nlm5A {
+  height: 34px;
+}
+
+.frmu95mobile .rectangle-28-SrZbg4 {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.frmu95mobile .premier-league-SrZbg4 {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .live_-match-2nlm5A {
+  top: 35px;
+}
+
+.frmu95mobile .live-match-qxeIHG {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-M9MdXb {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-wkiAUz {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-IGpN1E {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-M9MdXb {
+  height: 50px;
+  top: calc(50.00% - 25px);
+}
+
+.frmu95mobile .vector-toJuEV {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 11px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-bFrutP {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 9px);
+  width: 41px;
+}
+
+.frmu95mobile .group-6-M9MdXb {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-vAxC6t {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-YSuCZj {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-39Ki9H {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-39Ki9H:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-CuczPP {
+  top: 143px;
+}
+
+.frmu95mobile .live-match-mmpIFN {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-rDUxDl {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-ax3XsR {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-XpCmEw {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-rDUxDl {
+  height: 50px;
+  top: calc(50.00% - 25px);
+}
+
+.frmu95mobile .vector-xkRj8b {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 11px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-k9MZxD {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 9px);
+  width: 41px;
+}
+
+.frmu95mobile .group-6-rDUxDl {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-Ap37Cl {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-iaD7kx {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-FnpYHt {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-FnpYHt:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-1-2nlm5A {
+  top: 251px;
+}
+
+.frmu95mobile .line-1-CuczPP {
+  top: 143px;
+}
+
+.frmu95mobile .frame-316-cNnC3K {
+  height: 256px;
+  top: 250px;
+}
+
+.frmu95mobile .group-17-keaHnX {
+  height: 34px;
+}
+
+.frmu95mobile .premier-league-WbAFwE {
+  font-weight: 600;
+  left: 44px;
+  top: 8px;
+  white-space: nowrap;
+}
+
+.frmu95mobile .live_-match-keaHnX {
+  top: 35px;
+}
+
+.frmu95mobile .live-match-QxRuVF {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-gsMniV {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-XMvYrQ {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-dAZkCh {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-gsMniV {
+  height: 50px;
+  top: calc(50.00% - 25px);
+}
+
+.frmu95mobile .vector-KTlriI {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 11px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-y29tHt {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 9px);
+  width: 41px;
+}
+
+.frmu95mobile .group-6-gsMniV {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-wOHVaF {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-YB2jzX {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-vg5rcX {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-vg5rcX:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .live_-match-znLXoE {
+  top: 143px;
+}
+
+.frmu95mobile .live-match-Ps6RQd {
+  height: 108px;
+}
+
+.frmu95mobile .group-5-wJxnao {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .aston-villa-Q7XSwU {
+  height: 60px;
+  left: calc(50.00% - 27px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 52px;
+}
+
+.frmu95mobile .aston-villa-lG6Pfx {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 28px;
+  left: calc(50.00% - 32px);
+  line-height: normal;
+  text-align: center;
+  top: calc(50.00% + 18px);
+  width: 62px;
+}
+
+.frmu95mobile .score-wJxnao {
+  height: 50px;
+  top: calc(50.00% - 25px);
+}
+
+.frmu95mobile .vector-Zfhqnw {
+  height: 28px;
+  left: calc(50.00% - 71px);
+  top: calc(50.00% - 11px);
+  width: 132px;
+}
+
+.frmu95mobile .vector-VKFSBL {
+  height: 19px;
+  left: calc(50.00% - 26px);
+  top: calc(50.00% - 9px);
+  width: 41px;
+}
+
+.frmu95mobile .group-6-wJxnao {
+  top: calc(50.00% - 54px);
+}
+
+.frmu95mobile .arsenal-9Oe6lU {
+  height: 60px;
+  left: calc(50.00% - 26px);
+  object-fit: cover;
+  top: calc(50.00% - 42px);
+  width: 55px;
+}
+
+.frmu95mobile .arsenal-xwfxGD {
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 28px);
+  line-height: normal;
+  text-align: right;
+  top: calc(50.00% + 18px);
+  width: 58px;
+}
+
+.frmu95mobile .group-29-dN5vb3 {
+  background-color: transparent;
+  cursor: pointer;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% - 10px);
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .group-29-dN5vb3:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-2-keaHnX {
+  left: 6.94%;
+  top: 251px;
+  width: 86.67%;
+}
+
+.frmu95mobile .line-1-keaHnX {
+  top: 143px;
+}
+
+.frmu95mobile .league-Mzx5SR {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobile .contents_-football_-league-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-29-ZfQThX {
+  flex: 1;
+  flex-grow: 1;
+  height: 473px;
+}
+
+.frmu95mobile .frame-315-ZfQThX {
+  height: 107px;
+  top: -1px;
+}
+
+.frmu95mobile .group-17-hxIi9J {
+  height: 34px;
+}
+
+.frmu95mobile .rectangle-28-pwmDwx {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.frmu95mobile .best-league-pwmDwx {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 17px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .frame-309-hxIi9J {
+  background-color: transparent;
+  height: 36px;
+  left: 2.78%;
+  position: absolute;
+  top: 35px;
+  width: 94.44%;
+}
+
+.frmu95mobile .rectangle-39-06hhnP {
+  background-color: var(--bggray);
+}
+
+.frmu95mobile .icon_-line-arrow-4ZjzAT {
+  height: 19px;
+  right: 10px;
+  top: 8px;
+  width: 10px;
+}
+
+.frmu95mobile .frame-318-hxIi9J {
+  background-color: transparent;
+  height: 36px;
+  left: 2.78%;
+  position: absolute;
+  top: 71px;
+  width: 94.44%;
+}
+
+.frmu95mobile .rectangle-39-1KhKyQ {
+  background-color: var(--bggray);
+}
+
+.frmu95mobile .icon_-line-arrow-CJYTA0 {
+  height: 19px;
+  right: 10px;
+  top: 8px;
+  width: 10px;
+}
+
+.frmu95mobile .frame-316-ZfQThX {
+  height: 141px;
+  top: 197px;
+}
+
+.frmu95mobile .frame-310-IPzD5Y {
+  background-color: transparent;
+  height: 107px;
+  left: 2.78%;
+  position: absolute;
+  top: 34px;
+  width: 94.44%;
+}
+
+.frmu95mobile .frame-311-x6WHvx {
+  background-color: transparent;
+  height: 36px;
+  left: 0px;
+  position: absolute;
+  top: 36px;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-39-OHlxdu {
+  background-color: var(--bggray);
+}
+
+.frmu95mobile .icon_-line-arrow-lOdyim {
+  height: 19px;
+  right: 10px;
+  top: 8px;
+  width: 10px;
+}
+
+.frmu95mobile .la-liga-lOdyim {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 48px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: auto;
+}
+
+.frmu95mobile .frame-312-x6WHvx {
+  background-color: transparent;
+  height: 36px;
+  left: 0px;
+  position: absolute;
+  top: 72px;
+  width: 100%;
+}
+
+.frmu95mobile .rectangle-39-eVEatM {
+  background-color: var(--bggray);
+}
+
+.frmu95mobile .icon_-line-arrow-aKvwME {
+  height: 19px;
+  right: 10px;
+  top: 8px;
+  width: 10px;
+}
+
+.frmu95mobile .premier-league-aKvwME {
+  font-weight: 400;
+  left: 48px;
+  top: 10px;
+}
+
+.frmu95mobile .frame-348-x6WHvx {
+  background-color: transparent;
+  height: 36px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 340px;
+}
+
+.frmu95mobile .rectangle-39-u9Cgoy {
+  background-color: var(--wild-sand);
+}
+
+.frmu95mobile .icon_-line-arrow-uMpEiA {
+  height: 10px;
+  right: 6px;
+  top: 12px;
+  width: 19px;
+}
+
+.frmu95mobile .korea-uMpEiA {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 48px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .flag_-circle_kor-uMpEiA {
+  background-color: transparent;
+  height: 25px;
+  left: 17px;
+  position: absolute;
+  top: 5px;
+  width: 25px;
+}
+
+.frmu95mobile .group-17-IPzD5Y {
+  height: 34px;
+}
+
+.frmu95mobile .frame-317-ZfQThX {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 107px;
+  left: 0px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 338px;
+  width: 100%;
+}
+
+.frmu95mobile .frame-313-x5x9PK {
+  background-color: transparent;
+  height: 36px;
+  left: 2.78%;
+  position: absolute;
+  top: 35px;
+  width: 94.44%;
+}
+
+.frmu95mobile .rectangle-39-UvvjqF {
+  background-color: var(--wild-sand);
+}
+
+.frmu95mobile .icon_-line-arrow-wxrBIA {
+  height: 10px;
+  right: 6px;
+  top: 12px;
+  width: 19px;
+}
+
+.frmu95mobile .chilei-wxrBIA {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 48px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .flag_-circle_cl-wxrBIA {
+  background-color: transparent;
+  height: 25px;
+  left: 17px;
+  position: absolute;
+  top: 5px;
+  width: 25px;
+}
+
+.frmu95mobile .frame-314-x5x9PK {
+  background-color: transparent;
+  height: 36px;
+  left: 2.78%;
+  position: absolute;
+  top: 71px;
+  width: 94.44%;
+}
+
+.frmu95mobile .rectangle-39-ttEaEQ {
+  background-color: var(--wild-sand);
+}
+
+.frmu95mobile .icon_-line-arrow-IPPCof {
+  height: 10px;
+  right: 6px;
+  top: 12px;
+  width: 19px;
+}
+
+.frmu95mobile .brazil-IPPCof {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 48px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .flag_-circle_br-IPPCof {
+  background-color: transparent;
+  height: 25px;
+  left: 17px;
+  position: absolute;
+  top: 5px;
+  width: 25px;
+}
+
+.frmu95mobile .group-17-x5x9PK {
+  height: 34px;
+}
+
+.frmu95mobile .contents-footer-Mzx5SR {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #17191b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px 21px;
+  height: 512px;
+  margin-bottom: -489.69px;
+  overflow: hidden;
+  padding: 31px 48px 15px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .general-info-about-u-x8kSQ4 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: left;
+  width: 113px;
+}
+
+.frmu95mobile .span0-5wTw67 {
+  color: #3473d5;
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.frmu95mobile .span1-5wTw67 {
+}
+
+.frmu95mobile .promotions-sports-pr-x8kSQ4 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  width: 163px;
+}
+
+.frmu95mobile .span0-jzEYhq {
+  color: var(--navy-blue);
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.frmu95mobile .span1-jzEYhq {
+}
+
+.frmu95mobile .help-help-bet-slip-c-x8kSQ4 {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  width: 194px;
+}
+
+.frmu95mobile .span0-D1RQ1P {
+  color: var(--navy-blue);
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.frmu95mobile .span1-D1RQ1P {
+}
+
+.frmu95mobile .copyright-2024-oddsn-x8kSQ4 {
+  background-color: transparent;
+  color: var(--wt);
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  height: 12px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 256px;
+}
+
+.frmu95mobile .btn_-circle {
+  background-color: transparent;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+  width: 25px;
+}
+
+.frmu95mobile .btn_-league-select {
+  background-color: transparent;
+  cursor: pointer;
+  height: 36px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .btn_-live-tracker {
+  background-color: transparent;
+  cursor: pointer;
+  height: 24px;
+  left: calc(50.00% - 18px);
+  position: absolute;
+  top: 0px;
+  width: 36px;
+}
+
+.frmu95mobile .btn_-round-square {
+  background-color: transparent;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+}
+
+.frmu95mobile .btn_-sports-icon_-hover {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .btn_-statistics {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 34px);
+  position: absolute;
+  top: 72px;
+  width: 67px;
+}
+
+.frmu95mobile .btn_-tap_-hov {
+  background-color: transparent;
+  height: 96.15%;
+  left: 1.47%;
+  position: absolute;
+  top: 3.85%;
+  width: 100.09%;
+}
+
+.frmu95mobile .ellipse-4 {
+  background-color: var(--ltblue);
+  border-radius: 12.5px;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 25px;
+}
+
+.frmu95mobile .fixtures {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.frmu95mobile .flag_-circle_eng {
+  background-color: transparent;
+  height: 25px;
+  left: 13px;
+  position: absolute;
+  top: 4px;
+  width: 25px;
+}
+
+.frmu95mobile .flag_-circle_us {
+  background-color: transparent;
+  height: 25px;
+  left: 17px;
+  position: absolute;
+  top: 5px;
+  width: 25px;
+}
+
+.frmu95mobile .frame-304 {
+  background-color: transparent;
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: calc(50.00% - 15px);
+  width: 28.62%;
+}
+
+.frmu95mobile .frame-305 {
+  background-color: transparent;
+  height: 30px;
+  left: 30.23%;
+  position: absolute;
+  top: calc(50.00% - 15px);
+  width: 28.62%;
+}
+
+.frmu95mobile .frame-306 {
+  background-color: transparent;
+  height: 30px;
+  left: 60.45%;
+  position: absolute;
+  top: calc(50.00% - 15px);
+  width: 28.62%;
+}
+
+.frmu95mobile .frame-307 {
+  background-color: transparent;
+  height: 30px;
+  left: 90.68%;
+  position: absolute;
+  top: calc(50.00% - 15px);
+  width: 8.04%;
+}
+
+.frmu95mobile .frame-308 {
+  background-color: transparent;
+  height: 60px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobile .frame-315 {
+  align-items: flex-start;
+    background-color: var(--bggray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 0px;
+    padding: 0px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.frmu95mobile .frame-316 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0px;
+  padding: 0px 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.frmu95mobile .ft {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 17px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 8px);
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobile .group-17 {
+  align-self: stretch;
+  background-color: transparent;
+  margin-right: -2.00px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .group-24 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.frmu95mobile .icon_-line-arrow {
+  background-color: transparent;
+  position: absolute;
+}
+
+.frmu95mobile .line-1 {
+    background-color: transparent;
+    height: 1px;
+    object-fit: cover;
+    position: static;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.frmu95mobile .line-11 {
+  background-color: transparent;
+  bottom: -2px;
+  height: 1px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.frmu95mobile .line-2 {
+  background-color: transparent;
+  height: 1px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.frmu95mobile .line-3 {
+  background-color: transparent;
+  height: 1px;
+  object-fit: cover;
+  position: absolute;
+  top: 321px;
+}
+
+.frmu95mobile .live {
+  background-color: transparent;
+  line-height: normal;
+}
+
+.frmu95mobile .live-tracker {
+  background-color: transparent;
+  height: 24px;
+  left: calc(50.00% - 30px);
+  position: absolute;
+  top: 75px;
+  width: 36px;
+}
+
+.frmu95mobile .live_-match {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  gap: 4px;
+  left: 6.94%;
+  position: relative;
+  width: 86.11%;
+}
+
+.frmu95mobile .msl {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 48px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .odds_-grop {
+  background-color: transparent;
+  height: 30px;
+  left: calc(50.00% - 140px);
+  position: absolute;
+  top: calc(50.00% + 31px);
+  width: 311px;
+}
+
+.frmu95mobile .popular-countries {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 17px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 7px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .premier-league {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: auto;
+}
+
+.frmu95mobile .rectangle-2044 {
+  background-color: var(--btblue);
+  border-radius: 6px 6px 0px 0px;
+  height: 84.00%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 96.97%;
+}
+
+.frmu95mobile .rectangle-21 {
+  background-color: var(--bg);
+  border-radius: 5px 5px 0px 0px;
+  height: 84.00%;
+  left: 0px;
+  position: absolute;
+  top: 16.00%;
+  width: 96.97%;
+}
+
+.frmu95mobile .rectangle-28 {
+  background-color: var(--ctgray);
+  height: 34px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+}
+
+.frmu95mobile .rectangle-29 {
+  background-color: var(--bggray);
+  border-radius: 10px;
+  position: relative;
+}
+
+.frmu95mobile .rectangle-39 {
+  height: 100.00%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.frmu95mobile .score {
+  background-color: transparent;
+  left: calc(50.00% - 66px);
+  position: absolute;
+  width: 142px;
+}
+
+.frmu95mobile .star {
+  background-color: transparent;
+  height: 20px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 10px);
+  width: 20px;
+}
+
+.frmu95mobile .statistics {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 0px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .text {
+  background-color: transparent;
+  color: var(--wt);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 8px);
+  width: auto;
+}
+
+.frmu95mobile .x000 {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: -0.60px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 10px);
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobile .x1 {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 68px);
+  letter-spacing: -0.60px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 10px);
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobile .x100 {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 17px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 8px);
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobile .x105 {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 12px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .x1350 {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 16px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 7px);
+  white-space: nowrap;
+  width: auto;
+}
+
+.frmu95mobile .x1930 {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: calc(50.00% - 21px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 25px);
+  width: 33px;
+}
+
+.frmu95mobile .x2 {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 19px);
+  letter-spacing: -0.60px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 9px);
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobile .x25 {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 7px;
+  width: auto;
+}
+
+.frmu95mobile .x5600 {
+  background-color: transparent;
+  color: var(--bk);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  left: calc(50.00% - 16px);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 7px);
+  white-space: nowrap;
+  width: auto;
+}

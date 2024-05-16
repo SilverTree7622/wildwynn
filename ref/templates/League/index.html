@@ -1,0 +1,50 @@
+  {% include 'common/header/top_main.html' %}
+    <div class="frmu95mobile screen">
+      {% include 'common/header/header_main.html' %}
+      <div class="live-Mzx5SR live headline2">&nbsp;</div>
+      <div><img src="img/league_header.png" style="width:100%"></div>
+      {% include 'common/header/tab_league.html' %}
+
+
+
+
+
+      {% if result.tab == 'matchup' %}
+        {% include 'League/matchup_main.html' %}
+      {% elif result.tab == 'table' %}
+        {% include 'League/table_main.html' %}
+      {% elif result.tab == 'odds' %}
+        {% include 'League/odds_main.html' %}
+      {% elif result.tab == 'result' %}
+        {% include 'League/result_main.html' %}
+      {% elif result.tab == 'players' %}
+        {% include 'League/players_main.html' %}
+      {% else %}
+        {% include 'League/matchup_main.html' %}
+      {% endif %}
+
+      {% include 'common/footer/footer_main.html' %}
+
+    </div>
+    {% include 'common/left/left_main.html' %}
+
+  <script language="javascript">
+    function go_matchup(loc){
+      if (loc == 'home'){
+        location.href='/Matchup?tab=matchup'
+      }else{
+        location.href='/Matchup?tab=matchup'
+      }
+    }
+
+    function go_league(loc){
+      if (loc == 'home'){
+        location.href='/League?tab=stats'
+      }else{
+        location.href='/League?tab=stats'
+      }
+    }
+
+  </script>
+  </body>
+</html>
