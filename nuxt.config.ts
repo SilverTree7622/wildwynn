@@ -4,6 +4,9 @@ export default defineNuxtConfig({
 	ssr: false,
 	components: true,
 
+	nitro : {
+		preset : 'github-pages' 
+	},
 	modules: [
 		'@pinia/nuxt',
 	],
