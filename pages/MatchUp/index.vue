@@ -30,19 +30,25 @@ const route = useRoute();
 
 const opt = reactive({
     isPending: <boolean> true,
-    tab: <string> 'stats',
+    tab: <string> route.query['tab'] as string ?? 'stats',
     result: <any> {
         nav_code: '',
         sName: 'dummy_sName',
         league: [],
     },
 });
-opt.tab = route.query['tab'] as string ?? 'stats';
 
-onMounted(async () => {
-    opt.isPending = true;
-    await nextTick();
+watch(
+    () => route.fullPath,
+    async (p) => {
+        opt.tab = route.query['tab'] as string;
+        opt.result.league = [];
+        opt.isPending = true;
+        await res();
+    }
+);
 
+const res = async () => {
     setTimeout(() => {
         opt.result.league.push(
             { lg_name: 'dummy_lg_name' },
@@ -53,12 +59,17 @@ onMounted(async () => {
         );
         opt.isPending = false;
     }, Math.random() * 3 * 1000);
+};
+
+onMounted(async () => {
+    opt.isPending = true;
+    await nextTick();
+    await res();
 });
 
 onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
 });
-definePageMeta({ layout: false });
 </script>
 
 <style scoped>

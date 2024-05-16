@@ -9,8 +9,10 @@
             :sName="props.sName"
             :tab="props.tab"
         />
-        <LoadingSpinner v-show="props.isPending" style="margin-top: 2px;" />
-        <slot></slot>
+        <LoadingSpinner v-show="props.isPending" style="margin-top: 30px; margin-bottom: 50px;" />
+        <div v-show="!props.isPending">
+            <slot></slot>
+        </div>
 
         <CommonFooterMain />
     </div>

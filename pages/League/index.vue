@@ -33,7 +33,7 @@ const route = useRoute();
 
 const opt = reactive({
     isPending: <boolean> true,
-    tab: <string> 'matchup',
+    tab: <string> route.query['tab'] as string ?? 'matchup',
     result: <any> {
         nav_code: '',
         sName: 'dummy_sName',
@@ -41,12 +41,18 @@ const opt = reactive({
         dateList: [],
     },
 });
-opt.tab = route.query['tab'] as string ?? 'matchup';
 
-onMounted(async () => {
-    opt.isPending = true;
-    await nextTick();
+watch(
+    () => route.fullPath,
+    async (p) => {
+        opt.tab = route.query['tab'] as string;
+        opt.result.dateList = [];
+        opt.isPending = true;
+        await res();
+    }
+);
 
+const res = async () => {
     setTimeout(() => {
         opt.result.dateList.push(
             '04/09/2024, Tue',
@@ -54,6 +60,12 @@ onMounted(async () => {
         );
         opt.isPending = false;
     }, Math.random() * 3 * 1000);
+};
+
+onMounted(async () => {
+    opt.isPending = true;
+    await nextTick();
+    await res();
 });
 
 onBeforeUnmount(async () => {

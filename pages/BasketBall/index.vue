@@ -1,5 +1,6 @@
 <template>
     <NuxtLayout
+        name="tabcontent"
         :isPending="opt.isPending"
         :sName="'BasketBall'"
         :tab="opt.tab"
@@ -33,19 +34,25 @@ const route = useRoute();
 
 const opt = reactive({
     isPending: <boolean> true,
-    tab: <string> 'live',
+    tab: route.query['tab'] as string ?? 'live',
     result: <any> {
         nav_code: 'S003',
         sName: 'dummy_sName',
         league: [],
     },
 });
-opt.tab = route.query['tab'] as string ?? 'live';
 
-onMounted(async () => {
-    opt.isPending = true;
-    await nextTick();
+watch(
+    () => route.fullPath,
+    async (p) => {
+        opt.tab = route.query['tab'] as string;
+        opt.result.league = [];
+        opt.isPending = true;
+        await res();
+    }
+);
 
+const res = async () => {
     setTimeout(() => {
         opt.result.league.push(
             { lg_name: 'dummy_lg_name' },
@@ -56,14 +63,16 @@ onMounted(async () => {
         );
         opt.isPending = false;
     }, Math.random() * 3 * 1000);
+};
+
+onMounted(async () => {
+    opt.isPending = true;
+    await nextTick();
+    await res();
 });
 
 onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
-});
-
-definePageMeta({
-    layout: 'tabcontent',
 });
 </script>
 
