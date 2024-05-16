@@ -4,14 +4,7 @@ export default defineNuxtConfig({
 	ssr: false,
 	components: true,
 
-    postcss: {
-        plugins: {
-            // tailwindcss: {},
-            // autoprefixer: {}
-        },
-    },
 	modules: [
 		'@pinia/nuxt',
-		// '@ant-design-vue/nuxt',
 	],
 });
