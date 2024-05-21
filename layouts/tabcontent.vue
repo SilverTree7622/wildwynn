@@ -18,8 +18,8 @@
 
         <LoadingSpinner v-show="props.isPending" style="margin-top: 2px; margin-bottom: 50px;" />
 
-        <div v-show="!props.isPending">
-            <slot></slot>
+        <div>
+            <slot v-if="!props.isPending"></slot>
         </div>
 
         <CommonFooterMain />
@@ -48,9 +48,9 @@ watch(
 );
 
 const nextTab = () => {
-    let tab = route.query['tab'];
+    const tab = route.query['tab'];
     let resultTab = 'live';
-    if (tab === 'live') resultTab = 'fixtures';
+    if (tab === 'live' || tab === undefined) resultTab = 'fixtures';
     if (tab === 'fixtures') resultTab = 'odds';
     if (tab === 'odds') resultTab = 'result';
     if (tab === 'result') resultTab = 'league';

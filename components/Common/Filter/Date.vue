@@ -4,11 +4,11 @@
             <div class="btn_-round-square-SqVRvm btn_-round-square" style="cursor: pointer;">
                 <div class="group-24-vpjhxn group-24">
                     <div class="rectangle-13-NyCxgV"></div>
-                    <div class="text-NyCxgV text body" style="left: 26px;">{{ opt.displayDate }}</div>
+                    <div class="text-NyCxgV text body" style="left: 27px;">{{ opt.displayDate }}</div>
                 </div>
                 <div class="group-25-vpjhxn">
                     <div class="rectangle-13-JxJyba"></div>
-                    <div class="text-JxJyba text body" style="left: 26px;">{{ opt.displayDate }}</div>
+                    <div class="text-JxJyba text body" style="left: 27px;">{{ opt.displayDate }}</div>
                 </div>
             </div>
             <template #panel="{ close }">
@@ -49,6 +49,8 @@ const emit = defineEmits<{
     (e: 'next-tab'): void;
 }>();
 
+const dateStore = useDateStore();
+
 const getFormat = (time: Date) => {
     const year = JSON.stringify(time.getFullYear()).slice(2, 4);
     const month = (time.getMonth() + 1).toString().length === 1 ? `0${ time.getMonth() + 1 }` : (time.getMonth() + 1);
@@ -69,11 +71,13 @@ const opt = reactive({
     date: props.date,
     displayDate: getFormat(new Date(props.date)),
 });
+dateStore.setDate(opt.date);
 
 watch(
     () => opt.date,
     async (p) => {
         setFormat();
+        dateStore.setDate(opt.date);
     }
 );
 

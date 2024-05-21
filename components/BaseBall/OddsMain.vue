@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="live_-match">
-                    <div style="width:100%;text-align:center;"><img src="/img/odds_temp_01.png" style="height: 155px"
+                    <div style="width:100%;text-align:center;"><img src="/img/odds_temp_01.png" style="height: 155px; margin-left: auto; margin-right: auto;"
                             @click="goStore.go_matchup('home')" /></div>
 
                 </div>

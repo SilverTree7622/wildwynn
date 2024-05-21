@@ -9,9 +9,10 @@
                 </div>
 
                 <div class="live_-match">
-                    <div style="width:100%;text-align:center;"><img src="/img/odds_temp_01.png" style="height: 155px"
-                            @click="goStore.go_matchup('home')" /></div>
-
+                    <div style="width:100%;text-align:center; ">
+                        <img src="/img/odds_temp_01.png" style="height: 155px; margin-left: auto; margin-right: auto;"
+                            @click="goStore.go_matchup('home')" />
+                    </div>
                 </div>
                 <!--
         <img class="line-1" src="img/line-1@2x.png" alt="Line 1" />
