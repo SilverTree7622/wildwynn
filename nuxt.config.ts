@@ -4,10 +4,18 @@ export default defineNuxtConfig({
 	ssr: false,
 	components: true,
 
-	nitro : {
-		preset : 'github-pages' 
+	css: ['@/assets/css/main.css'],
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {},
+		},
+	},
+	nitro: {
+		preset: 'github-pages'
 	},
 	modules: [
 		'@pinia/nuxt',
+		'@nuxt/ui',
 	],
 });

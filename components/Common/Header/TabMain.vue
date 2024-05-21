@@ -133,12 +133,6 @@ const props = defineProps<{
     tab: string;
 }>();
 
-const router = useRouter();
-
-const navigate = (tab: string) => {
-    router.push({ path: `/${props.sName}`, query: { tab } })
-}
-
 </script>
 
 <style scoped></style>

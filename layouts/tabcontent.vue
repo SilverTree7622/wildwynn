@@ -1,24 +1,16 @@
 <template>
     <div class="frmu95mobile screen" style="background: #001226;">
         <KeepAlive>
-            <CommonHeaderMain
-                :result_nav_code="props.result.nav_code"
-            />
+            <CommonHeaderMain :result_nav_code="props.result.nav_code" />
         </KeepAlive>
-        <CommonHeaderTabMain
-            :sName="props.sName"
-            :tab="props.tab"
-        />
+        <CommonHeaderTabMain :sName="props.sName" :tab="opt.tab" />
 
         <div class="sub-tap-Mzx5SR">
             <div class="rectangle-38-rkUyvw"></div>
             <div class="frame-279-rkUyvw">
                 <CommonFilterFavorite />
                 <CommonFilterByTime />
-                <CommonFilterDate
-                    :date="new Date().toString()"
-                    :next-tab="nextTab"
-                />
+                <CommonFilterDate :date="new Date()" @next-tab="nextTab" />
             </div>
         </div>
 
@@ -42,12 +34,35 @@ const props = defineProps<{
     result: any;
 }>();
 
+const opt = reactive({
+    tab: <string> props.tab,
+});
+
+const route = useRoute();
+
+watch(
+    () => route.fullPath,
+    async (p) => {
+        opt.tab = route.query['tab'] as string;
+    }
+);
+
 const nextTab = () => {
-    console.log(`next tab function`);
+    let tab = route.query['tab'];
+    let resultTab = 'live';
+    if (tab === 'live') resultTab = 'fixtures';
+    if (tab === 'fixtures') resultTab = 'odds';
+    if (tab === 'odds') resultTab = 'result';
+    if (tab === 'result') resultTab = 'league';
+    if (tab === 'league') resultTab = 'live';
+    navigateTo({
+        path: `/${ props.sName }`,
+        query: {
+            tab: resultTab,
+        }
+    });
 };
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
