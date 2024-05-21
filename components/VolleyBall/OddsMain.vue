@@ -6,6 +6,7 @@
                     <div class="rectangle-28-lE9kB9 rectangle-28"></div>
                     <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
                     <div class="premier-league-lE9kB9 premier-league headline2">{{ league['lg_name'] }}</div>
+                    <div style="color: black;">{{ dateStore.getLeagueFormat(league.date) }}</div>
                 </div>
 
                 <div class="live_-match">
@@ -27,6 +28,7 @@
 const props = defineProps<{
     result_league;
 }>();
+const dateStore = useDateStore();
 
 const goStore = useGoStore();
 

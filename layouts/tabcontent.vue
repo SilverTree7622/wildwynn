@@ -1,8 +1,8 @@
 <template>
     <div class="frmu95mobile screen" style="background: #001226;">
-        <KeepAlive>
+        <!-- <KeepAlive> -->
             <CommonHeaderMain :result_nav_code="props.result.nav_code" />
-        </KeepAlive>
+        <!-- </KeepAlive> -->
         <CommonHeaderTabMain :sName="props.sName" :tab="opt.tab" />
 
         <div class="sub-tap-Mzx5SR">

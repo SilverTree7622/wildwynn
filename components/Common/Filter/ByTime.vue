@@ -7,7 +7,7 @@
                     <div class="text-PHX7OD text body">By time</div>
                 </div>
                 <div class="group-25-b9oapg smart-layers-pointers">
-                    <div :class="opt.isToggle ? 'bg-[#315b99]' : 'rectangle-13-989EQc'"></div>
+                    <div :class="opt.isToggled ? 'bg-[#315b99]' : 'rectangle-13-989EQc'"></div>
                     <div class="text-989EQc text body">By time</div>
                 </div>
             </div>
@@ -20,11 +20,18 @@
 const filterStore = useFilterStore();
 
 const opt = reactive({
-    isToggle: <boolean> filterStore.getTimeIsToggled(),
+    isToggled: <boolean> filterStore.getTimeIsToggled(),
 });
 
+watch(
+    () => filterStore.getTimeIsToggled(),
+    (p) => {
+        opt.isToggled = filterStore.getTimeIsToggled();
+    }
+)
+
 const toggle = () => {
-    opt.isToggle = filterStore.toggle();
+    opt.isToggled = filterStore.toggle();
 };
 
 </script>

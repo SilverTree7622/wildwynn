@@ -8,7 +8,7 @@ export const useDateStore = defineStore('dateStore', () => {
     });
 
     const init = () => {
-        
+        opt.date = new Date();
     };
 
     const setDate = (date: Date) => {
@@ -19,9 +19,27 @@ export const useDateStore = defineStore('dateStore', () => {
         return opt.date;
     };
 
+    const getFilterFormat = (time: Date) => {
+        const year = JSON.stringify(time.getFullYear()).slice(2, 4);
+        const month = (time.getMonth() + 1).toString().length === 1 ? `0${ time.getMonth() + 1 }` : (time.getMonth() + 1);
+        const day = time.getDate().toString().length === 1 ? `0${ time.getDate() }` : time.getDate();
+        return month + '/' + day + '/' + year;
+    };
+
+    const getLeagueFormat = (time: Date, isShowInDetail: boolean = true) => {
+        const year = time.getFullYear();
+        const month = (time.getMonth() + 1).toString().length === 1 ? `0${ time.getMonth() + 1 }` : (time.getMonth() + 1);
+        const day = time.getDate().toString().length === 1 ? `0${ time.getDate() }` : time.getDate();
+        const weekDay = time.getDay(); 
+        const dayNames = ["Sun", "Mon", "Tue", 'Wed', 'Thu', 'Fri', 'Sat'];
+        return month + '/' + day + '/' + year + ', ' + dayNames[weekDay] + (isShowInDetail ? ` // ${ time.toString() }` : '');
+    };
+
     return {
         init,
         setDate,
         getDate,
+        getFilterFormat,
+        getLeagueFormat,
     };
 });

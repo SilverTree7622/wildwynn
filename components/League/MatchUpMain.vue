@@ -1,13 +1,11 @@
 <template>
     <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
         <div class="leagueFrame">
-            <template v-for="a of props.result_dateList">
-                {{ console.log('a: ', a) }}
-
+            <template v-for="league of props.result_league">
                 <div class="group-17" @click="goStore.go_league()" style="cursor: pointer">
                     <div class="rectangle-28-lE9kB9 rectangle-28"></div>
                     <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
-                    <div class="premier-league-lE9kB9 premier-league headline2">{{ a }}</div>
+                    <div class="premier-league-lE9kB9 premier-league headline2">{{ dateStore.getLeagueFormat(league.date) }}</div>
                 </div>
 
                 <div class="live_-match" @click="goStore.go_matchup('home')">
@@ -49,16 +47,15 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-    result_dateList;
-    
+    result_league;
 }>();
 
+const dateStore = useDateStore();
 const goStore = useGoStore();
 
 onMounted(async () => {
     await nextTick();
 
-    console.log('props.result_dateList: ', props.result_dateList);
 });
 
 </script>

@@ -118,6 +118,7 @@ onMounted(async () => {
 
 onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
+    filterStore.init();
 });
 </script>
 

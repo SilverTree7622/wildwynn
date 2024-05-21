@@ -51,25 +51,18 @@ const emit = defineEmits<{
 
 const dateStore = useDateStore();
 
-const getFormat = (time: Date) => {
-    const year = JSON.stringify(time.getFullYear()).slice(2, 4);
-    const month = (time.getMonth() + 1).toString().length === 1 ? `0${ time.getMonth() + 1 }` : (time.getMonth() + 1);
-    const day = time.getDate().toString().length === 1 ? `0${ time.getDate() }` : time.getDate();
-    return year + '/' + month + '/' + day;
-};
-
 const setFormat = (date?: Date) => {
     if (date) {
         opt.date = date;
     }
     const time = opt.date;
-    opt.displayDate = getFormat(time);
+    opt.displayDate = dateStore.getFilterFormat(time);
     return opt.displayDate;
 };
 
 const opt = reactive({
     date: props.date,
-    displayDate: getFormat(new Date(props.date)),
+    displayDate: dateStore.getFilterFormat(new Date(props.date)),
 });
 dateStore.setDate(opt.date);
 
@@ -101,9 +94,5 @@ const updateCalendar = (value) => {
     }
     setFormat(new Date());
 };
-
-defineExpose({
-    date: opt.date,
-});
 
 </script>
