@@ -8,6 +8,11 @@ export const useFilterStore = defineStore('filterStore', () => {
         sortLogic: <Function> (list: any[]) => {
             return list;
         },
+        basicLogic: <Function> (list: any[]) => {
+            // 1. 일단 그룹별로 가장 최신 경기 찾기
+            // 2. 그룹별 가장 최신 경기 위에만 hasGroupTag 속성 true로 해주기
+            return list;
+        },
     });
 
     const time = reactive({
@@ -58,7 +63,11 @@ export const useFilterStore = defineStore('filterStore', () => {
             opt.sortedList = favorite.sortLogic(opt.sortedList);
         }
         if (time.isToggled) {
+            // time 활성화시 분류
             opt.sortedList = time.sortLogic(opt.sortedList);
+        } else {
+            // time 비활성화시 분류
+            
         }
         return opt.sortedList;
     };

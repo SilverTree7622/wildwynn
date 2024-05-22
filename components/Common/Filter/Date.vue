@@ -11,14 +11,14 @@
                     <div class="text-JxJyba text body" style="left: 27px;">{{ opt.displayDate }}</div>
                 </div>
             </div>
-            <template #panel="{ close }">
+            <!-- <template #panel="{ close }">
                 <CommonFilterDatePicker 
                     v-model="opt.date"
                     @update:model-value="updateCalendar"
                     is-required
                     @close="close"
                 />
-            </template>
+            </template> -->
         </UPopover>
 
         <div class="group-11-SqVRvm" style="cursor: pointer;" @click="next">
@@ -49,6 +49,9 @@ const emit = defineEmits<{
     (e: 'next-tab'): void;
 }>();
 
+const {
+    ONE_DAY_MILLISECOND,
+} = useRuntimeConfig().public.CONSTANTS;
 const dateStore = useDateStore();
 
 const setFormat = (date?: Date) => {
@@ -64,6 +67,7 @@ const opt = reactive({
     date: props.date,
     displayDate: dateStore.getFilterFormat(new Date(props.date)),
 });
+
 dateStore.setDate(opt.date);
 
 watch(
@@ -74,18 +78,23 @@ watch(
     }
 );
 
+const init = () => {
+    setFormat(new Date(Date.now()));
+    dateStore.setDate(opt.date);
+};
+
 const prev = () => {
-    const yesterday = new Date(opt.date.getTime() - (24 * 60 * 60 * 1000));
+    const yesterday = new Date(opt.date.getTime() - ONE_DAY_MILLISECOND);
     setFormat(yesterday);
 };
 
 const next = () => {
-    const tmpDate = new Date(opt.date.getTime() + (24 * 60 * 60 * 1000));
+    const tmpDate = new Date(opt.date.getTime() + ONE_DAY_MILLISECOND);
     if (new Date().getTime() > tmpDate.getTime()) {
         setFormat(tmpDate);
         return;
     }
-    emit('next-tab');
+    // emit('next-tab');
 };
 
 const updateCalendar = (value) => {
@@ -95,4 +104,7 @@ const updateCalendar = (value) => {
     setFormat(new Date());
 };
 
+defineExpose({
+    init,
+});
 </script>

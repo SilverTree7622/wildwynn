@@ -18,4 +18,12 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'@nuxt/ui',
 	],
+
+	runtimeConfig: {
+		public: {
+			CONSTANTS: {
+				ONE_DAY_MILLISECOND: 24 * 60 * 60 * 1000,
+			},
+		},
+	},
 });

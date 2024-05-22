@@ -1,5 +1,5 @@
 <template>
-    <div style="margin-left: auto; margin-right: auto; text-align: center;">
+    <div style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 2px; margin-bottom: 50px;">
         <svg
             aria-hidden="true" role="status"
             viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"

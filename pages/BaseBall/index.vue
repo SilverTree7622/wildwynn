@@ -2,6 +2,7 @@
     <NuxtLayout
         name="tabcontent"
         :isPending="opt.isPending"
+        :centerIsPending="false"
         :sName="'BaseBall'"
         :tab="opt.tab"
         :result="opt.result"
@@ -43,16 +44,6 @@ const opt = reactive({
         league: [],
     },
 });
-
-watch(
-    () => route.fullPath,
-    async (p) => {
-        opt.tab = route.query['tab'] as string;
-        opt.result.league = [];
-        opt.isPending = true;
-        await res();
-    }
-);
 
 const list = reactive({
     sortedLeagueList: <any[]> [],
@@ -117,6 +108,12 @@ const res = async () => {
         );
         sort();
         opt.isPending = false;
+    }, Math.random() * 1 * 1000);
+};
+
+const loadRes = async (pageIdx: number) => {
+    setTimeout(() => {
+        
     }, Math.random() * 1 * 1000);
 };
 

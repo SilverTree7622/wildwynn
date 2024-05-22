@@ -10,16 +10,21 @@
             <div class="frame-279-rkUyvw">
                 <CommonFilterFavorite />
                 <CommonFilterByTime />
-                <CommonFilterDate :date="new Date()" @next-tab="nextTab" />
+                <CommonFilterDate ref="$date" :date="new Date()" @next-tab="nextTab" />
             </div>
         </div>
 
         <div class="live-Mzx5SR live headline2">&nbsp;</div>
 
-        <LoadingSpinner v-show="props.isPending" style="margin-top: 2px; margin-bottom: 50px;" />
+        <!-- init content loading skeletons -->
+        <LoadingSkeleton v-show="props.isPending" />
+        <LoadingSkeleton v-show="props.isPending" />
+        <LoadingSkeleton v-show="props.isPending" />
 
-        <div>
+        <div class="">
             <slot v-if="!props.isPending"></slot>
+            <!-- center content loading -->
+            <LoadingSpinner v-show="props.centerIsPending" />
         </div>
 
         <CommonFooterMain />
@@ -29,6 +34,7 @@
 <script lang="ts" setup>
 const props = defineProps<{
     isPending: boolean;
+    centerIsPending: boolean;
     sName: string;
     tab: string;
     result: any;
@@ -38,11 +44,16 @@ const opt = reactive({
     tab: <string> props.tab,
 });
 
+const filterStore = useFilterStore();
 const route = useRoute();
+
+const $date = ref();
 
 watch(
     () => route.fullPath,
     async (p) => {
+        filterStore.init();
+        $date.value.init();
         opt.tab = route.query['tab'] as string;
     }
 );
