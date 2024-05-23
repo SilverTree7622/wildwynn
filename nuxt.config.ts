@@ -23,6 +23,7 @@ export default defineNuxtConfig({
 		public: {
 			CONSTANTS: {
 				ONE_DAY_MILLISECOND: 24 * 60 * 60 * 1000,
+				MAX_PAGINATION_CONTENT: 10,
 			},
 		},
 	},

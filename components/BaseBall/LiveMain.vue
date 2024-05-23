@@ -60,7 +60,7 @@ const dateStore = useDateStore();
 const goStore = useGoStore();
 
 const setLeagueGroup = (league): boolean => {
-    return league.hasGroupTag ?? false;
+    return league.hasLeagueTag ?? false;
 };
 
 </script>

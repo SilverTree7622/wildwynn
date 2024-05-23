@@ -24,7 +24,22 @@
         <div class="">
             <slot v-if="!props.isPending"></slot>
             <!-- center content loading -->
-            <LoadingSpinner v-show="props.centerIsPending" />
+            <div v-show="props.pageIsPending" class="mt-10">
+                <LoadingSkeleton />
+                <LoadingSkeleton />
+                <LoadingSkeleton />
+            </div>
+            <div
+                v-show="!props.isOutOfContent && !props.isPending && !props.pageIsPending"
+                class="mx-auto my-4"
+            >
+                <svg
+                    data-slot="icon" data-darkreader-inline-stroke="" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                    class="mx-auto h-8 w-8 text-gray-500"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"></path>
+                </svg>
+            </div>
         </div>
 
         <CommonFooterMain />
@@ -34,7 +49,8 @@
 <script lang="ts" setup>
 const props = defineProps<{
     isPending: boolean;
-    centerIsPending: boolean;
+    pageIsPending: boolean;
+    isOutOfContent: boolean;
     sName: string;
     tab: string;
     result: any;
