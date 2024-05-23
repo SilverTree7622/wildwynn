@@ -31,7 +31,7 @@ export const useDateStore = defineStore('dateStore', () => {
         const month = (time.getMonth() + 1).toString().length === 1 ? `0${ time.getMonth() + 1 }` : (time.getMonth() + 1);
         const day = time.getDate().toString().length === 1 ? `0${ time.getDate() }` : time.getDate();
         const weekDay = time.getDay(); 
-        const dayNames = ["Sun", "Mon", "Tue", 'Wed', 'Thu', 'Fri', 'Sat'];
+        const dayNames = ["SUN", "MON", "TUE", 'WED', 'THU', 'FRI', 'SAT'];
         return month + '/' + day + '/' + year + ', ' + dayNames[weekDay] + (isShowInDetail ? ` // ${ time.toString() }` : '');
     };
 
