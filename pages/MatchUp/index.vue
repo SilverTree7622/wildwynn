@@ -29,6 +29,7 @@
 const route = useRoute();
 
 const opt = reactive({
+    isBooting: <boolean> true,
     isPending: <boolean> true,
     tab: <string> route.query['tab'] as string ?? 'stats',
     result: <any> {
@@ -57,6 +58,7 @@ const res = async () => {
             { lg_name: 'dummy_lg_name4' },
             { lg_name: 'dummy_lg_name5' },
         );
+        opt.isBooting = false;
         opt.isPending = false;
     }, Math.random() * 3 * 1000);
 };

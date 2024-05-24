@@ -88,7 +88,6 @@ watch(
         opt.isPending = true;
         await callNextContents();
         opt.isPending = false;
-        console.log('opt.isOutOfContent: ', opt.isOutOfContent);
     }
 );
 
@@ -181,13 +180,12 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
     if ((pagedList.length === list.sortedLeagueList.length) && pagedList.length !== 0) {
         if (isFilter) list.sortedLeagueList = pagedList;
         opt.isOutOfContent = true;
-        console.log('list.sortedLeagueList from end: ', opt.isOutOfContent, list.sortedLeagueList);
+        // console.log('list.sortedLeagueList from end: ', opt.isOutOfContent, list.sortedLeagueList);
         return opt.isOutOfContent;
     }
     list.sortedLeagueList = await loadRes(isFilter, pagedList);
     opt.isOutOfContent = (pagedList.length === list.sortedLeagueList.length);
-        console.log('list.sortedLeagueList: ', opt.isOutOfContent, list.sortedLeagueList);
-    // opt.isOutOfContent = ((pagedList.length - list.sortedLeagueList.length) <= MAX_PAGINATION_CONTENT);
+    // console.log('list.sortedLeagueList: ', opt.isOutOfContent, list.sortedLeagueList);
     return opt.isOutOfContent;
 };
 

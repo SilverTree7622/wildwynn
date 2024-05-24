@@ -5,6 +5,7 @@
         />
         <div class="live-Mzx5SR live headline2">&nbsp;</div>
         <div><img src="@/public/img/matchup_header.png" style="width:100%"></div>
+        <CommonHeaderMatchUp />
         <CommonHeaderTabMatchUp
             :sName="props.sName"
             :tab="props.tab"
