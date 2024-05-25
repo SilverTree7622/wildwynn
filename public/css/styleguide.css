@@ -10,18 +10,20 @@
   --ltblue: #315b99;
   --magic-potion: #002246;
   --navy-blue: #3574d6;
+  --pink-swan: #b9b9b9;
   --ptyellow: #f6d04e;
-  --wild-sand: #f3f3f3;
+  --selago: #efecf9;
+  --soft-peach: #f5eef6;
   --wt: #ffffff;
+  --zircon: #f2f6ff;
  
-  --font-size-24px: 24px;
   --font-size-l: 13px;
   --font-size-m: 12px;
   --font-size-s: 10px;
   --font-size-xl: 14px;
-  --font-size-xxl: 15px;
-  --font-size-xxxl: 16px;
-  --font-size-xxxxl: 17px;
+  --font-size-xxl: 16px;
+  --font-size-xxxl: 17px;
+  --font-size-xxxxl: 24px;
  
   --font-family-pretendard-medium: "Pretendard-Medium", Helvetica;
   --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
@@ -29,18 +31,18 @@
 }
 .headline {
   font-family: var(--font-family-pretendard-semibold);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .headline2 {
   font-family: var(--font-family-pretendard-semibold);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .headline3 {
@@ -56,7 +58,7 @@
   font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .caption {
@@ -64,7 +66,7 @@
   font-size: var(--font-size-s);
   font-style: normal;
   font-weight: 500;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .body2 {
@@ -72,15 +74,15 @@
   font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .leaguetitle {
   font-family: var(--font-family-pretendard-semibold);
-  font-size: var(--font-size-24px);
+  font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 .pretendard-semi-bold-black-20px {
@@ -104,7 +106,4 @@
   font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 400;
-}
-
-:root {
 }

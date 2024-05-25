@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 export const useDateStore = defineStore('dateStore', () => {
 
     const opt = reactive({
-        date: <any> '',
+        date: <any> new Date(),
     });
 
     const init = () => {

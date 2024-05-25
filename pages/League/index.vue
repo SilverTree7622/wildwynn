@@ -65,6 +65,13 @@ const page = reactive({
     idx: <number> 0,
 });
 
+const setTabException = () => {
+    if (opt.tab === 'table' || opt.tab === 'players') {
+        opt.isOutOfContent = true;
+        scrollStore.setIsOutOfContent(scroll.key, true);
+    }
+};
+
 // tab changed event
 watch(
     () => route.fullPath,
@@ -87,7 +94,6 @@ watch(
         opt.isPending = true;
         await callNextContents();
         opt.isPending = false;
-        console.log('opt.isOutOfContent: ', opt.isOutOfContent);
     }
 );
 
@@ -105,6 +111,7 @@ const init = () => {
     page.idx = 0;
     list.sortedLeagueList = [];
     scrollStore.setIsOutOfContent(scroll.key, false);
+    opt.isOutOfContent = false;
 };
 
 const res = async () => {
@@ -151,6 +158,7 @@ const res = async () => {
         await callNextContents();
         opt.isPending = false;
         opt.isBooting = false;
+        setTabException();
     }, Math.random() * 1 * 1000);
 };
 
@@ -180,13 +188,10 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
     if ((pagedList.length === list.sortedLeagueList.length) && pagedList.length !== 0) {
         if (isFilter) list.sortedLeagueList = pagedList;
         opt.isOutOfContent = true;
-        console.log('list.sortedLeagueList from end: ', opt.isOutOfContent, list.sortedLeagueList);
         return opt.isOutOfContent;
     }
     list.sortedLeagueList = await loadRes(isFilter, pagedList);
     opt.isOutOfContent = (pagedList.length === list.sortedLeagueList.length);
-        console.log('list.sortedLeagueList: ', opt.isOutOfContent, list.sortedLeagueList);
-    // opt.isOutOfContent = ((pagedList.length - list.sortedLeagueList.length) <= MAX_PAGINATION_CONTENT);
     return opt.isOutOfContent;
 };
 
@@ -194,8 +199,8 @@ onMounted(async () => {
     opt.isPending = true;
     await nextTick();
     scrollStore.setScroll2Top();
-    await res();
     scrollStore.register(scroll.key, callNextContents);
+    await res();
 });
 
 onBeforeUnmount(async () => {

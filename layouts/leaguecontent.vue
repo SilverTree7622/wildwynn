@@ -3,21 +3,29 @@
         <CommonHeaderMain
             :result_nav_code="props.result.nav_code"
         />
-        <div class="live-Mzx5SR live headline2">&nbsp;</div>
-        <div><img src="@/public/img/league_header.png" style="width:100%"></div>
+        
+        <CommonHeaderLeague
+            :title="'Premier League'"
+            :flag="'/img/flag-circle-eng@2x.png'"
+            :country="'England'"
+            :level="'Division Level 1'"
+            :bet="'11.1 B€'"
+            :isStarToggled="false"
+        />
+
         <CommonHeaderTabLeague
             :sName="'League'"
             :tab="opt.tab"
         />
 
-        <div class="sub-tap-Mzx5SR">
+        <!-- <div class="sub-tap-Mzx5SR">
             <div class="rectangle-38-rkUyvw"></div>
             <div class="frame-279-rkUyvw">
                 <CommonFilterFavorite />
                 <CommonFilterByTime />
                 <CommonFilterDate ref="$date" :date="new Date()" @next-tab="nextTab" />
             </div>
-        </div>
+        </div> -->
 
         <div class="live-Mzx5SR live headline2">&nbsp;</div>
         
@@ -34,8 +42,9 @@
                 <LoadingSkeleton />
                 <LoadingSkeleton />
             </div>
+            <!-- page scroll guide indicator -->
             <div
-                v-show="!props.isOutOfContent && !props.isPending && !props.pageIsPending"
+                v-if="!props.isOutOfContent && !props.isPending && !props.pageIsPending"
                 class="mx-auto my-4"
             >
                 <svg
