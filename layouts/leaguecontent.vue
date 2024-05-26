@@ -104,7 +104,3 @@ const nextTab = () => {
 
 
 </script>
-
-<style scoped>
-
-</style>
