@@ -1,0 +1,3840 @@
+/* screen - frmu95mobileu95league */
+
+.frmu95mobileu95league {
+  align-items: flex-start;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.frmu95mobileu95league .header {
+  gap: 11px;
+  height: 38.69px;
+}
+
+.frmu95mobileu95league .btn_menu {
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  margin-left: 11px;
+  margin-top: 11px;
+  min-width: 20px;
+}
+
+.frmu95mobileu95league .group-container {
+  height: 16px;
+  margin-bottom: 0;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .group-35 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  left: 0;
+  min-height: 16px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.frmu95mobileu95league .rectangle {
+  background-color: var(--ptyellow);
+  height: 3px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .group-36 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  left: 0;
+  min-height: 16px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobileu95league .group-36:hover {
+  opacity: 0;
+}
+
+.frmu95mobileu95league .rectangle-1 {
+  background-color: var(--wt);
+  height: 3px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .oddsnavicom {
+  color: var(--ptyellow);
+  cursor: pointer;
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: 18px;
+  font-weight: 600;
+  height: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 9px;
+  white-space: nowrap;
+  width: 138px;
+}
+
+.frmu95mobileu95league .frame-322::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.frmu95mobileu95league .frame-322 {
+  align-self: stretch;
+  display: flex;
+  height: 78px;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .sub-header {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 10px;
+  height: 78px;
+  margin-top: 0.3px;
+  padding: 5px 0px 5px 10px;
+  position: relative;
+  width: 359px;
+}
+
+.frmu95mobileu95league .frame-321 {
+  height: 68px;
+  position: relative;
+  width: 349px;
+}
+
+.frmu95mobileu95league .btn_sportsicon_-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 6px;
+  min-width: 501px;
+  position: relative;
+  top: -1px;
+}
+
+.frmu95mobileu95league .btn_-sports-icon {
+  align-items: flex-start;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  min-width: 78px;
+}
+
+.frmu95mobileu95league .icon_-container {
+  height: 68px;
+  position: relative;
+  width: 78px;
+}
+
+.frmu95mobileu95league .icon_-square_-football {
+  left: 10px;
+  width: 58px;
+}
+
+.frmu95mobileu95league .icon_-football {
+  height: 38px;
+  margin-right: 2.01px;
+  width: 38px;
+}
+
+.frmu95mobileu95league .football {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0.99px;
+  min-height: 14px;
+  min-width: 61px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .btn_-sports-icon_-hover {
+  display: flex;
+  height: 68px;
+  left: 0;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  width: 78px;
+}
+
+.frmu95mobileu95league .rectangle-13 {
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.2s ease;
+  width: 78.48px;
+}
+
+.frmu95mobileu95league .rectangle-13:hover {
+  background-color: #665d33
+}
+
+.frmu95mobileu95league .icon_-square_-basketball {
+  left: 7px;
+  width: 63px;
+}
+
+.frmu95mobileu95league .icon_-basketball {
+  height: 38px;
+  margin-left: 1.0px;
+  width: 38px;
+}
+
+.frmu95mobileu95league .basketball {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 75px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .icon_-square_-baseball {
+  left: 11px;
+  width: 57px;
+}
+
+.frmu95mobileu95league .icon_-baseball {
+  height: 38px;
+  margin-right: 0.37px;
+  width: 33px;
+}
+
+.frmu95mobileu95league .baseball {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 0.87px;
+  min-height: 14px;
+  min-width: 60px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .icon_-square_-vollyball {
+  left: 8px;
+  width: 63px;
+}
+
+.frmu95mobileu95league .icon_-vollyball {
+  height: 38px;
+  margin-right: 5.02px;
+  width: 38px;
+}
+
+.frmu95mobileu95league .vollyball {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 0.56px;
+  min-height: 14px;
+  min-width: 66px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .icon_-square_-tennis {
+  left: 18px;
+  width: 41px;
+}
+
+.frmu95mobileu95league .icon_-tennis {
+  height: 38px;
+  margin-right: 1.05px;
+  width: 30px;
+}
+
+.frmu95mobileu95league .tennis {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0.05px;
+  min-height: 14px;
+  min-width: 43px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .icon_-square_-icehockey {
+  left: 7px;
+  width: 65px;
+}
+
+.frmu95mobileu95league .icon_-icehackey {
+  height: 38px;
+  margin-right: 3.7px;
+  width: 39px;
+}
+
+.frmu95mobileu95league .icehockey {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 0.83px;
+  min-height: 14px;
+  min-width: 68px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .header-1 {
+  align-items: center;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+.frmu95mobileu95league .frame-562 {
+  align-self: stretch;
+  display: flex;
+  height: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .icon_-line-arrow {
+  cursor: pointer;
+  height: 14px;
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 8.07px;
+}
+
+.frmu95mobileu95league .frame-397 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.frmu95mobileu95league .premier_-league_logo-1 {
+  background-image: url(../img/premier-league-logo-1@2x.png);
+  background-size: 100% 100%;
+  height: 60px;
+  position: relative;
+  width: 47.37px;
+}
+
+.frmu95mobileu95league .frame-401 {
+  height: 49px;
+  position: relative;
+  width: 224px;
+}
+
+.frmu95mobileu95league .title {
+  color: var(--wt);
+  font-weight: 600;
+  left: 1px;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+}
+
+.frmu95mobileu95league .flex-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 9px;
+  height: 21px;
+  left: 0;
+  min-width: 224px;
+  position: absolute;
+  top: 28px;
+}
+
+.frmu95mobileu95league .flag_-circle_eng {
+  align-self: flex-end;
+  background-image: url(../img/flag-circle-eng@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .surname {
+  color: var(--wt);
+  font-weight: 400;
+  line-height: normal;
+  min-height: 16px;
+}
+
+.frmu95mobileu95league .btn_-favorite_-check2 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .frame-container-2 {
+  height: 20px;
+  position: relative;
+}
+
+.frmu95mobileu95league .frame-411 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobileu95league .frame-411:hover {
+  background-color: #F6D04E
+}
+
+.frmu95mobileu95league .star {
+  height: 18.09px;
+  margin-top: -1.9px;
+  width: 19.02px;
+}
+
+.frmu95mobileu95league .frame {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobileu95league .frame:hover {
+  opacity: 0;
+}
+
+.frmu95mobileu95league .tap-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  height: 42px;
+  padding: 17px 10px 0px;
+  width: 100%;
+}
+
+.frmu95mobileu95league .tap {
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 1px;
+}
+
+.frmu95mobileu95league .btn_-tap_-dis-selected {
+  align-self: stretch;
+  border-radius: 5px 5px 0px 0px;
+  height: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .overlap-group1 {
+  border-radius: 4px 4px 0px 0px;
+  height: 26px;
+  position: relative;
+  width: 66px;
+}
+
+.frmu95mobileu95league .overlap-group-2 {
+  height: 25px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 65px;
+}
+
+.frmu95mobileu95league .rectangle-2044 {
+  background-color: var(--btblue);
+  border-radius: 6px 6px 0px 0px;
+  height: 21px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.frmu95mobileu95league .rectangle-21 {
+  background-color: var(--bg);
+  border-radius: 5px 5px 0px 0px;
+  height: 21px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 64px;
+}
+
+.frmu95mobileu95league .fixtures {
+  color: var(--ptyellow);
+  left: 0;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobileu95league .frame-371 {
+  align-items: center;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 66px;
+}
+
+.frmu95mobileu95league .frame-371:hover {
+  opacity: 0;
+}
+
+.frmu95mobileu95league .fixtures-1 {
+  color: var(--wt);
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 65px;
+}
+
+.frmu95mobileu95league .overlap-group {
+  height: 25px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 64px;
+}
+
+.frmu95mobileu95league .fixtures-2 {
+  color: var(--ptyellow);
+  left: 12px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobileu95league .fixtures-3 {
+  color: var(--wt);
+  margin-top: 5px;
+  width: 40px;
+}
+
+.frmu95mobileu95league .fixtures-4 {
+  color: var(--ptyellow);
+  left: 14px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobileu95league .fixtures-5 {
+  color: var(--wt);
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 37px;
+}
+
+.frmu95mobileu95league .fixtures-6 {
+  color: var(--ptyellow);
+  left: 8px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobileu95league .fixtures-7 {
+  color: var(--wt);
+  margin-top: 5px;
+  width: 48px;
+}
+
+.frmu95mobileu95league .fixtures-8 {
+  color: var(--ptyellow);
+  left: 4px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobileu95league .fixtures-9 {
+  color: var(--wt);
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 57px;
+}
+
+.frmu95mobileu95league .frmu95mobileu95league-item {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .contents_-football {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .fr_-contents_-football_-fixtures_-upper {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-384 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--ctgray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  gap: 6px;
+  height: 34px;
+  padding: 4px 13px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .x04092024-tue {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .live_-match {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-3 {
+  height: 108px;
+  position: relative;
+  width: 71px;
+}
+
+.frmu95mobileu95league .aston-villa-1 {
+  height: 44px;
+  left: 13px;
+  position: absolute;
+  top: 25px;
+  width: 44px;
+}
+
+.frmu95mobileu95league .aston-villa {
+  color: var(--bk);
+  font-weight: 600;
+  height: 28px;
+  left: 4px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 71px;
+  width: 62px;
+}
+
+.frmu95mobileu95league .frame-386 {
+  height: 65px;
+  position: relative;
+  width: 83px;
+}
+
+.frmu95mobileu95league .flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 5px;
+  min-height: 66px;
+  position: relative;
+  width: 72px;
+}
+
+.frmu95mobileu95league .text {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 3.0px;
+  min-height: 20px;
+  text-align: center;
+  width: 51px;
+}
+
+.frmu95mobileu95league .overlap-group-1 {
+  align-items: flex-start;
+  background-image: url(../img/btn-roundsquare2@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 20px;
+  margin-top: 13px;
+  min-width: 72px;
+  padding: 2.0px 7px;
+}
+
+.frmu95mobileu95league .matchup {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  min-width: 58px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .arsenal-2 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 16px;
+  position: absolute;
+  top: 25px;
+  width: 44px;
+}
+
+.frmu95mobileu95league .arsenal {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  left: 11px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 71px;
+  width: 55px;
+}
+
+.frmu95mobileu95league .btn_-favorite_-check {
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobileu95league .frame-container {
+  height: 20px;
+  left: 2px;
+  position: relative;
+  top: 2px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .frame-382 {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.frmu95mobileu95league .star-1 {
+  height: 18.89px;
+  margin-top: -1.9px;
+  width: 19.82px;
+}
+
+.frmu95mobileu95league .star-2 {
+  height: 18.09px;
+  margin-top: -1.9px;
+  width: 19.02px;
+}
+
+.frmu95mobileu95league .line {
+  align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-31 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-17 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--ctgray);
+  display: flex;
+  gap: 6px;
+  height: 34px;
+  padding: 4px 13px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .x04082024-mon {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .frame-315 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--ctgray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 34px;
+  justify-content: center;
+  padding: 0px 5px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-402 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  justify-content: center;
+  padding: 4px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .btn_-round-square5-1 {
+  width: 61.15px;
+}
+
+.frmu95mobileu95league .overlap-group-3 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-13-16@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 26px;
+  min-width: 61px;
+  padding: 5px 19px;
+  position: relative;
+  top: -4px;
+}
+
+.frmu95mobileu95league .text-13 {
+  color: var(--ctgray2);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 22px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .btn_-round-square5-2 {
+  width: 110.07px;
+}
+
+.frmu95mobileu95league .overlap-group1-1 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-13-17@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 26px;
+  min-width: 110px;
+  padding: 5px 17px;
+  position: relative;
+  top: -4px;
+}
+
+.frmu95mobileu95league .text-14 {
+  color: var(--ctgray2);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 74px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .btn_-round-square5 {
+  height: 18px;
+  position: relative;
+  width: 73.38px;
+}
+
+.frmu95mobileu95league .overlap-group2 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-13-18@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 26px;
+  min-width: 73px;
+  padding: 5px 19px;
+  position: relative;
+  top: -4px;
+}
+
+.frmu95mobileu95league .text-15 {
+  color: var(--ctgray2);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 35px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .overlap-group3 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-13-19@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 26px;
+  min-width: 73px;
+  padding: 5px 19px;
+  position: relative;
+  top: -4px;
+}
+
+.frmu95mobileu95league .text-16 {
+  color: var(--ctgray2);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 34px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .table-1 {
+  align-self: stretch;
+  height: 644px;
+  width: 100%;
+}
+
+.frmu95mobileu95league .row {
+  justify-content: center;
+}
+
+.frmu95mobileu95league .cell {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 16px;
+}
+
+.frmu95mobileu95league .content-11 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 5px 2px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .h {
+  flex: 1;
+  text-align: center;
+}
+
+.frmu95mobileu95league .cell-1 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.frmu95mobileu95league .content-12 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 1;
+  flex-grow: 1;
+  padding: 5px 2px;
+  position: relative;
+}
+
+.frmu95mobileu95league .h-1 {
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-2 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 4px;
+}
+
+.frmu95mobileu95league .content {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 5px 2px;
+  position: relative;
+}
+
+.frmu95mobileu95league .h-2 {
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-3 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frmu95mobileu95league .content-13 {
+  align-items: center;
+  display: inline-flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 5px 4px;
+  position: relative;
+}
+
+.frmu95mobileu95league .a {
+  margin-top: -1.00px;
+}
+
+.frmu95mobileu95league .h-3 {
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .h-4 {
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .h-5 {
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .content-14 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 5px 8px;
+  position: relative;
+}
+
+.frmu95mobileu95league .h-6 {
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .h-7 {
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .table-1-item {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #ffffff00;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .content-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 5px 2px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .cell-4 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 2px;
+  justify-content: center;
+  padding: 0px 2px;
+}
+
+.frmu95mobileu95league .content-2 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 4px;
+  padding: 5px 2px;
+  position: relative;
+}
+
+.frmu95mobileu95league .arsenal-3 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b {
+  flex: 1;
+}
+
+.frmu95mobileu95league .cell-17 {
+  align-items: center;
+  background-color: var(--selago);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20px;
+}
+
+.frmu95mobileu95league .cell-5 {
+  align-items: flex-start;
+  background-color: var(--selago);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20px;
+}
+
+.frmu95mobileu95league .cell-6 {
+  align-items: flex-start;
+  background-color: var(--selago);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 21px;
+}
+
+.frmu95mobileu95league .cell-7 {
+  align-items: flex-start;
+  background-color: var(--selago);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 19px;
+}
+
+.frmu95mobileu95league .cell-8 {
+  align-items: flex-start;
+  background-color: var(--soft-peach);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 44px;
+}
+
+.frmu95mobileu95league .text-2-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-18 {
+  align-items: center;
+  background-color: var(--soft-peach);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24px;
+}
+
+.frmu95mobileu95league .x75-74 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-9 {
+  align-items: flex-start;
+  background-color: var(--zircon);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 27px;
+}
+
+.frmu95mobileu95league .number {
+  color: var(--btblue);
+}
+
+.frmu95mobileu95league .manchester-city-4 {
+  background-image: url(../img/manchestercity@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-1 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .text-3-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-10 {
+  align-items: flex-start;
+  background-color: var(--soft-peach);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 24px;
+}
+
+.frmu95mobileu95league .liverpool-1 {
+  height: 20px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-2 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-4-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .aston-villa-2 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-3 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-5-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .tottenham-hotspur {
+  background-image: url(../img/tottenhamhotspur@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-4 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-6-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .manchester-united {
+  background-image: url(../img/manchesterunited@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-5 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-7-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .newcastle {
+  height: 20px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-6 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-8-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .west-ham {
+  background-image: url(../img/westham@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-7 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-9-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .burnley {
+  background-image: url(../img/burnley@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-8 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-10-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-46 {
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+}
+
+.frmu95mobileu95league .bournemouth {
+  height: 20px;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-9 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-11-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .wolverhampton-wanderers-1 {
+  background-image: url(../img/wolverhampton-wanderers@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-10 {
+  width: fit-content;
+}
+
+.frmu95mobileu95league .text-12-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-56 {
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+}
+
+.frmu95mobileu95league .brighton_-hove-albion {
+  background-image: url(../img/brighton-hove-albion@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-11 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-13-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-61 {
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+}
+
+.frmu95mobileu95league .fullham {
+  background-image: url(../img/fullham@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-12 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-14-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .content-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px 2px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .text-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: -6.50px;
+  margin-right: -2.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-66 {
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+}
+
+.frmu95mobileu95league .crystal_-palace {
+  background-image: url(../img/crystal-palace@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-13 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-16-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-71 {
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+}
+
+.frmu95mobileu95league .everton {
+  background-image: url(../img/everton@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-14 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-18 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-76 {
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+}
+
+.frmu95mobileu95league .brentford {
+  background-image: url(../img/brentford@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-15 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-19 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-81 {
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+}
+
+.frmu95mobileu95league .nottingham-forest {
+  background-image: url(../img/nottinghamforest@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-16 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-20 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-86 {
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+}
+
+.frmu95mobileu95league .luton-town {
+  background-image: url(../img/lutontown@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-17 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-21 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-91 {
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+}
+
+.frmu95mobileu95league .b-18 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-22 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .a-96 {
+  margin-left: -1.50px;
+  margin-right: -1.50px;
+}
+
+.frmu95mobileu95league .sheffield-united {
+  background-image: url(../img/sheffieldunited@2x.png);
+  background-size: 100% 100%;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .b-19 {
+  flex: 1;
+  height: 19px;
+  margin-top: -0.50px;
+}
+
+.frmu95mobileu95league .text-23 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .table {
+  align-self: stretch;
+  background-color: var(--wt);
+  border: 1px solid;
+  border-color: var(--pink-swan);
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.frmu95mobileu95league .cell-19 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22px;
+}
+
+.frmu95mobileu95league .content-4 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 10px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .text-24 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-20 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.frmu95mobileu95league .cell-11 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55px;
+}
+
+.frmu95mobileu95league .cell-12 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22px;
+}
+
+.frmu95mobileu95league .content-5 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 5px 2px;
+  position: relative;
+}
+
+.frmu95mobileu95league .number-1 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .cell-13 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.frmu95mobileu95league .content-6 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 5px 2px;
+  position: relative;
+}
+
+.frmu95mobileu95league .erling-haland {
+  background-image: url(../img/erling-haland@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-2 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .cell-14 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0px 2px;
+}
+
+.frmu95mobileu95league .content-7 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 5px 4px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .manchester-city {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--bk);
+  display: -webkit-box;
+  flex: 1;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.frmu95mobileu95league .cell-15 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55px;
+}
+
+.frmu95mobileu95league .number-2 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-3 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .erling-haland-3 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-4 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-5 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .alexander-isak {
+  background-image: url(../img/alexander-isak@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-4 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-6 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-7 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .ollie-watkins {
+  background-image: url(../img/ollie-watkins@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-5 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-8 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-9 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .dominic-solanke {
+  background-image: url(../img/dominic-solanke@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-6 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-10 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-11 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .mohamed-salah {
+  background-image: url(../img/mohamed-salah@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-7 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-12 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-13 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .phil-foden {
+  background-image: url(../img/phil-foden@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-8 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-14 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-15 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .heung-min-son {
+  background-image: url(../img/heung-min-son@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-9 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-16 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-17 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .jarrod-bowen {
+  background-image: url(../img/jarrod-bowen@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-10 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-18 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-19 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .bukayo-saka {
+  background-image: url(../img/bukayo-saka@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-11 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-20 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-21 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .chris-wood {
+  background-image: url(../img/chris-wood@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-12 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-22 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-23 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-24 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .erling-haland-13 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-25 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-26 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .jean-philippe-mateta {
+  background-image: url(../img/jean-philippe-mateta@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-14 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-27 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-28 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .matheus-cunha {
+  background-image: url(../img/matheus-cunha@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-15 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .manchester-city-5 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--bk);
+  display: -webkit-box;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .number-29 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-30 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .darwin-nunez {
+  background-image: url(../img/darwin-nunez@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-16 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-31 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-32 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .leandro-trossard {
+  background-image: url(../img/leandro-trossard@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-17 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-33 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-34 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .bruno-fernandes {
+  background-image: url(../img/bruno-fernandes@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-18 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-35 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-36 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .carlton-morris {
+  background-image: url(../img/carlton-morris@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-19 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-37 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-38 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .erling-haland-20 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-39 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-40 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .kai-havertz {
+  background-image: url(../img/kai-havertz@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .erling-haland-21 {
+  flex: 1;
+}
+
+.frmu95mobileu95league .number-41 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .number-42 {
+  color: var(--bk);
+  margin-top: -1.00px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95league .contents_-bottom-bg {
+  align-self: stretch;
+  background-color: #f3f3f3;
+  border-radius: 0px 0px 10px 10px;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-317 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .x04092024-tue-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .frame-388 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .aston-villa-3 {
+  height: 44px;
+  left: 13px;
+  position: absolute;
+  top: 23px;
+  width: 44px;
+}
+
+.frmu95mobileu95league .arsenal-4 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 16px;
+  position: absolute;
+  top: 23px;
+  width: 44px;
+}
+
+.frmu95mobileu95league .odds_-grop {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 5px;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-30 {
+  align-items: center;
+  background-image: url(../img/btn-roundsquare2-2@2x.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  width: 89px;
+}
+
+.frmu95mobileu95league .text-26 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 33px;
+}
+
+.frmu95mobileu95league .text-27 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  margin-left: -1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 32px;
+}
+
+.frmu95mobileu95league .frame-306 {
+  background-image: url(../img/btn-roundsquare2-2@2x.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  width: 89px;
+}
+
+.frmu95mobileu95league .text-28 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  margin-left: -1px;
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.frmu95mobileu95league .frame-307 {
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobileu95league .text-29 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  margin-top: 7px;
+  text-align: center;
+  width: 25px;
+}
+
+.frmu95mobileu95league .x04082024-mon-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .frame-317-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .flag_-circle_br {
+  background-image: url(../img/flag-circle-br@2x.png);
+  background-size: 100% 100%;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobileu95league .premier-league {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .live_-match-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 4px 0px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .aston-villa-4 {
+  height: 44px;
+  left: 14px;
+  position: absolute;
+  top: 22px;
+  width: 44px;
+}
+
+.frmu95mobileu95league .frame-390 {
+  height: 57px;
+  position: relative;
+  width: 134.5px;
+}
+
+.frmu95mobileu95league .arsenal-5 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 18px;
+  position: absolute;
+  top: 22px;
+  width: 44px;
+}
+
+.frmu95mobileu95league .arsenal-6 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  left: 8px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 71px;
+  width: 58px;
+}
+
+.frmu95mobileu95league .frame-383 {
+  display: flex;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobileu95league .btn_-favorite_-check-1 {
+  align-items: center;
+  display: flex;
+  height: 25px;
+  min-width: 25px;
+  padding: 0 2.5px;
+}
+
+.frmu95mobileu95league .frame-container-3 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95mobileu95league .premier-league-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .frame-408 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-330::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.frmu95mobileu95league .frame-330 {
+  align-items: flex-start;
+  background-color: var(--geyser);
+  border-radius: 10px 0px 0px 10px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  height: 972px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0px 4px;
+  position: relative;
+}
+
+.frmu95mobileu95league .btn_-round-square68 {
+  height: 30px;
+  position: relative;
+  width: 78px;
+}
+
+.frmu95mobileu95league .frame-container-1 {
+  height: 30px;
+  position: relative;
+}
+
+.frmu95mobileu95league .frame-564 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-radius: 9px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 78px;
+}
+
+.frmu95mobileu95league .text-2 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 26px;
+}
+
+.frmu95mobileu95league .frame-563 {
+  align-items: center;
+  background-color: var(--geyser);
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 78px;
+}
+
+.frmu95mobileu95league .frame-563:hover {
+  opacity: 0;
+}
+
+.frmu95mobileu95league .text-3 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 26px;
+}
+
+.frmu95mobileu95league .text-4 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 33px;
+}
+
+.frmu95mobileu95league .text-5 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 33px;
+}
+
+.frmu95mobileu95league .text-17 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 70px;
+}
+
+.frmu95mobileu95league .text-25 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 70px;
+}
+
+.frmu95mobileu95league .text-30 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 41px;
+}
+
+.frmu95mobileu95league .text-31 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 41px;
+}
+
+.frmu95mobileu95league .text-32 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 53px;
+}
+
+.frmu95mobileu95league .text-33 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 53px;
+}
+
+.frmu95mobileu95league .text-34 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 50px;
+}
+
+.frmu95mobileu95league .text-35 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 50px;
+}
+
+.frmu95mobileu95league .text-36 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.frmu95mobileu95league .text-37 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 72px;
+}
+
+.frmu95mobileu95league .text-38 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 57px;
+}
+
+.frmu95mobileu95league .text-39 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 57px;
+}
+
+.frmu95mobileu95league .text-40 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 52px;
+}
+
+.frmu95mobileu95league .text-41 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 52px;
+}
+
+.frmu95mobileu95league .text-42 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 60px;
+}
+
+.frmu95mobileu95league .text-43 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 60px;
+}
+
+.frmu95mobileu95league .text-44 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 29px;
+}
+
+.frmu95mobileu95league .text-45 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 29px;
+}
+
+.frmu95mobileu95league .text-6 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 51px;
+}
+
+.frmu95mobileu95league .text-7 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 51px;
+}
+
+.frmu95mobileu95league .text-46 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobileu95league .text-47 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobileu95league .text-48 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.frmu95mobileu95league .text-49 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.frmu95mobileu95league .text-50 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 47px;
+}
+
+.frmu95mobileu95league .text-51 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 47px;
+}
+
+.frmu95mobileu95league .text-52 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 48px;
+}
+
+.frmu95mobileu95league .text-53 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 48px;
+}
+
+.frmu95mobileu95league .text-54 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobileu95league .text-55 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobileu95league .text-8 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 64px;
+}
+
+.frmu95mobileu95league .text-9 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 64px;
+}
+
+.frmu95mobileu95league .text-56 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 28px;
+}
+
+.frmu95mobileu95league .text-57 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 28px;
+}
+
+.frmu95mobileu95league .text-10 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 40px;
+}
+
+.frmu95mobileu95league .text-11 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 40px;
+}
+
+.frmu95mobileu95league .text-58 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 65px;
+}
+
+.frmu95mobileu95league .text-59 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 65px;
+}
+
+.frmu95mobileu95league .text-60 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 74px;
+}
+
+.frmu95mobileu95league .text-61 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 74px;
+}
+
+.frmu95mobileu95league .text-62 {
+  color: var(--ltblue);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 77px;
+}
+
+.frmu95mobileu95league .text-63 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  margin-left: 1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 77px;
+}
+
+.frmu95mobileu95league .table-2 {
+  border-radius: 0px 10px 10px 0px;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.frmu95mobileu95league .frame-409 {
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 0px 10px 0px 0px;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .cell-21 {
+  align-items: center;
+  background-color: var(--bggray);
+  border: 0px none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22px;
+}
+
+.frmu95mobileu95league .content-15 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin-left: -5.50px;
+  margin-right: -5.50px;
+  padding: 10px 12px;
+  position: relative;
+  width: 33px;
+}
+
+.frmu95mobileu95league .a-101 {
+  margin-top: -1.00px;
+  text-align: center;
+}
+
+.frmu95mobileu95league .cell-22 {
+  align-items: center;
+  background-color: var(--bggray);
+  border: 0px none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.frmu95mobileu95league .content-8 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 10px 12px;
+  position: relative;
+}
+
+.frmu95mobileu95league .a-102 {
+  margin-top: -1.00px;
+  text-align: center;
+}
+
+.frmu95mobileu95league .cell-23 {
+  align-items: center;
+  background-color: var(--bggray);
+  border: 0px none;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frmu95mobileu95league .a-103 {
+  margin-top: -1.00px;
+  text-align: center;
+}
+
+.frmu95mobileu95league .content-9 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 10px 12px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .x {
+  margin-left: -4.00px;
+  margin-right: -4.00px;
+}
+
+.frmu95mobileu95league .content-10 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 6px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .frame-406 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2px;
+  justify-content: center;
+  position: relative;
+}
+
+.frmu95mobileu95league .erling-haland-1 {
+  align-self: stretch;
+  margin-top: -1.00px;
+}
+
+.frmu95mobileu95league .frame-407 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 3px;
+  justify-content: center;
+  position: relative;
+}
+
+.frmu95mobileu95league .manchester-city-1 {
+  background-image: url(../img/manchestercity@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .manchester-city-2 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .cell-16 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 64px;
+}
+
+.frmu95mobileu95league .text-12 {
+  color: var(--navy-blue);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .x-1 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .non_-available_-player1 {
+  background-image: url(../img/non-available-player1@2x.png);
+  background-size: 100% 100%;
+}
+
+.frmu95mobileu95league .chelsea {
+  background-image: url(../img/chelsea@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-2 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .aston-villa-5 {
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-3 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .newcastle-1 {
+  height: 15px;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-4 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .bournemouth-1 {
+  height: 15px;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-5 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .liverpool {
+  height: 15px;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-6 {
+  margin-left: -4.50px;
+  margin-right: -4.50px;
+}
+
+.frmu95mobileu95league .tottenham-hotspur-1 {
+  background-image: url(../img/tottenhamhotspur@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-7 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .west-ham-1 {
+  background-image: url(../img/westham@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-8 {
+  margin-left: -5.00px;
+  margin-right: -5.00px;
+}
+
+.frmu95mobileu95league .x-9 {
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+
+.frmu95mobileu95league .arsenal-1 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-10 {
+  margin-left: -7.00px;
+  margin-right: -7.00px;
+}
+
+.frmu95mobileu95league .nottingham-forest-1 {
+  background-image: url(../img/nottinghamforest@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-11 {
+  margin-left: -7.50px;
+  margin-right: -7.50px;
+}
+
+.frmu95mobileu95league .x-12 {
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+
+.frmu95mobileu95league .wolverhampton-wanderers {
+  background-image: url(../img/wolverhampton-wanderers@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .manchester-city-3 {
+  color: var(--ctgray2);
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .x-13 {
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+
+.frmu95mobileu95league .crystal_-palace-1 {
+  background-image: url(../img/crystal-palace@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-14 {
+  margin-left: -7.50px;
+  margin-right: -7.50px;
+}
+
+.frmu95mobileu95league .x-15 {
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+
+.frmu95mobileu95league .x-16 {
+  margin-left: -7.50px;
+  margin-right: -7.50px;
+}
+
+.frmu95mobileu95league .x-17 {
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+
+.frmu95mobileu95league .manchester-united-1 {
+  background-image: url(../img/manchesterunited@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-18 {
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+}
+
+.frmu95mobileu95league .luton-town-1 {
+  background-image: url(../img/lutontown@2x.png);
+  background-size: 100% 100%;
+  height: 15px;
+  position: relative;
+  width: 15px;
+}
+
+.frmu95mobileu95league .x-19 {
+  margin-left: -8.50px;
+  margin-right: -8.50px;
+}
+
+.frmu95mobileu95league .frame-409-1 {
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 0px 0px 10px 0px;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .a-104 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .aston-villa-6 {
+  background-image: url(../img/astonvilla@2x.png);
+  background-size: 100% 100%;
+}
+
+.frmu95mobileu95league .b-20 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--bk);
+  display: -webkit-box;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.frmu95mobileu95league .bournemouth-2 {
+  background-image: url(../img/bournemouth@2x.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.frmu95mobileu95league .btn_-round-square5-3 {
+  height: 18px;
+  position: relative;
+}
+
+.frmu95mobileu95league .cell-24 {
+  align-self: stretch;
+  position: relative;
+}
+
+.frmu95mobileu95league .erling-haland-22 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--bk);
+  display: -webkit-box;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.frmu95mobileu95league .fixtures-10 {
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  text-align: center;
+}
+
+.frmu95mobileu95league .h-8 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.frmu95mobileu95league .header-2 {
+  align-self: stretch;
+  background-color: var(--frblue);
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .icon_-square_ {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 53px;
+  position: absolute;
+  top: 8px;
+}
+
+.frmu95mobileu95league .liverpool-2 {
+  background-image: url(../img/liverpool@2x.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.frmu95mobileu95league .newcastle-2 {
+  background-image: url(../img/newcastle@2x.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.frmu95mobileu95league .non_-available_ {
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+.frmu95mobileu95league .number-43 {
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .row-43 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #ffffff00;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobileu95league .table-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.frmu95mobileu95league .tap-2 {
+  display: flex;
+  position: relative;
+}
+
+.frmu95mobileu95league .vs-2 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1.0px;
+  min-height: 13px;
+  text-align: center;
+  white-space: nowrap;
+  width: 23px;
+}
+
+.frmu95mobileu95league .x-20 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .x123-22 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobileu95league .x75-74-18 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

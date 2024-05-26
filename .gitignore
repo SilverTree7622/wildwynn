@@ -6,7 +6,6 @@
 .cache
 dist
 
-figma
 ref
 
 # Node dependencies
