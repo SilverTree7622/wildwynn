@@ -18,15 +18,6 @@
             :tab="opt.tab"
         />
 
-        <!-- <div class="sub-tap-Mzx5SR">
-            <div class="rectangle-38-rkUyvw"></div>
-            <div class="frame-279-rkUyvw">
-                <CommonFilterFavorite />
-                <CommonFilterByTime />
-                <CommonFilterDate ref="$date" :date="new Date()" @next-tab="nextTab" />
-            </div>
-        </div> -->
-
         <div class="live-Mzx5SR live headline2">&nbsp;</div>
         
         <!-- init content loading skeletons -->

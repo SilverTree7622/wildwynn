@@ -16,22 +16,9 @@
                     <p class="surname body">{{ `${props.country} / ${props.level} / ${props.bet}` }}</p>
                 </div>
             </div>
-            <div class="btn_-favorite_-check2" @click="toggleStar">
-                <div class="frame-container-2">
-                    <div v-show="!opt.isStarToggled">
-                        <div :class="`frame-411`"><img class="star" src="/img/star@2x.png"
-                            alt="Star" /></div>
-                        <!-- <div class="frame"><img class="star" src="/img/star-1@2x.png"
-                                alt="Star" /></div> -->
-                    </div>
-                    <div v-show="opt.isStarToggled">
-                        <div class="frame-411"><img class="star" src="/img/star@2x.png"
-                            alt="Star" /></div>
-                        <div class="frame"><img class="star" src="/img/star-1@2x.png"
-                                alt="Star" /></div>
-                    </div>
-                </div>
-            </div>
+            <CommonFavoriteStar
+                :isToggled="props.isStarToggled"
+            />
         </div>
     </div>
 </template>
@@ -46,14 +33,7 @@ const props = defineProps<{
     isStarToggled: boolean;
 }>();
 
-const opt = reactive({
-    isStarToggled: <boolean>props.isStarToggled ?? false,
-});
 
-const toggleStar = () => {
-    opt.isStarToggled = !opt.isStarToggled;
-    console.log('opt.isStarToggled: ', opt.isStarToggled);
-};
 
 </script>
 
@@ -164,53 +144,6 @@ const toggleStar = () => {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-}
-
-.btn_-favorite_-check2 {
-    height: 20px;
-    position: relative;
-    width: 20px;
-}
-
-.frame-container-2 {
-    height: 20px;
-    position: relative;
-}
-
-.frame-411 {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    height: 20px;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.2s ease;
-    width: 20px;
-}
-
-.frame {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    height: 20px;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.2s ease;
-    width: 20px;
-}
-
-.frame:hover {
-  opacity: 0;
-}
-
-.star {
-  height: 18.09px;
-  margin-top: -1.9px;
-  width: 19.02px;
 }
 
 </style>
