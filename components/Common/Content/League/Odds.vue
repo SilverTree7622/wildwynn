@@ -6,7 +6,7 @@
         />
         <div class="live_-match">
             <CommonContentCountry :title="'ASTON VILLA'" :src="'/img/astonvilla@2x.png'" />
-            <CommonContentMatch :time="'19: 30'" />
+            <CommonContentMatch :time="'19:30'" />
             <CommonContentCountry :title="'ARSENAL'" :src="'/img/arsenal@2x.png'" />
             <CommonFavoriteStar
                 :isToggled="false"

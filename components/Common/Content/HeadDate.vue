@@ -1,3 +1,4 @@
+
 <template>
     <div :class="props.idx === 0 ? 'frame-384' : 'frame-17'">
         <div class="x04092024-tue valign-text-middle headline2">

@@ -1,13 +1,13 @@
 <template>
     <div class="fr_-contents_-football_-fixtures_-upper" :class="props.isLast ? 'rounded-b-lg' : 'rounded-t-lg'">
-        <CommonContentHeadDate
+        <CommonContentHeadName
             :idx="props.idx"
-            :name="'league_name'"
             :date="props.date"
+            :name="props.name"
         />
         <div class="live_-match">
             <CommonContentCountry :title="'ASTON VILLA'" :src="'/img/astonvilla@2x.png'" />
-            <CommonContentMatch :time="'19:30'" />
+            <CommonContentStatistics :time="'19: 30'" />
             <CommonContentCountry :title="'ARSENAL'" :src="'/img/arsenal@2x.png'" />
             <CommonFavoriteStar
                 :isToggled="false"
@@ -21,9 +21,9 @@
 const props = defineProps<{
     idx: number;
     date: Date;
+    name: string;
     isLast?: boolean;
 }>();
-
 
 </script>
 

@@ -1,24 +1,13 @@
 <template>
-    <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
-        <div class="leagueFrame">
-            <template v-for="league in props.result_league">
-                <div class="group-17">
-                    <div class="rectangle-28-lE9kB9 rectangle-28"></div>
-                    <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
-                    <div class="premier-league-lE9kB9 premier-league headline2">{{ dateStore.getLeagueFormat(league.date) }}</div>
-                </div>
-
-                <div class="live_-match">
-                    <div style="width:100%;text-align:center;"><img src="/img/result_temp_01.png"
-                            style="height: 120px; margin-left: auto; margin-right: auto;" /></div>
-
-                </div>
-                <!--
-        <img class="line-1" src="img/line-1@2x.png" alt="Line 1" />
-        -->
-
-            </template>
-        </div>
+    <div class="contents_-football">
+        <template v-for="(league, idx) of props.result_league">
+            <CommonContentLeagueResult
+                :idx="idx"
+                :date="league.date"
+                :name="'tmp'"
+                :isLast="chckIsLast(idx)"
+            />
+        </template>
     </div>
 </template>
 
@@ -27,8 +16,22 @@
 const props = defineProps<{
     result_league;
 }>();
-const dateStore = useDateStore();
+
+const chckIsLast = (idx: number) => {
+    return idx === (props.result_league.length - 1);
+};
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.contents_-football {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+</style>
