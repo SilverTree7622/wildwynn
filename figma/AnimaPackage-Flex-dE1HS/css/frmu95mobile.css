@@ -1,0 +1,1252 @@
+/* screen - frmu95mobile */
+
+.frmu95mobile {
+  align-items: flex-start;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.frmu95mobile .group-36:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .sub-header {
+  display: inline-flex;
+  gap: 10px;
+  height: 78px;
+  margin-top: 0.3px;
+  padding: 5px 0px 5px 10px;
+  width: 359px;
+}
+
+.frmu95mobile .frame-321 {
+  height: 68px;
+  position: relative;
+  width: 349px;
+}
+
+.frmu95mobile .btn_sportsicon_-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 6px;
+  min-width: 501px;
+  position: relative;
+  top: -1px;
+}
+
+.frmu95mobile .btn_-sports-icon {
+  align-items: flex-start;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  min-width: 78px;
+}
+
+.frmu95mobile .football {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0.99px;
+  min-height: 14px;
+  min-width: 61px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobile .btn_-sports-icon_-hover {
+  display: flex;
+  height: 68px;
+  left: 0;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  width: 78px;
+}
+
+.frmu95mobile .rectangle-13 {
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.2s ease;
+  width: 78.48px;
+}
+
+.frmu95mobile .rectangle-13:hover {
+  background-color: #665d33
+}
+
+.frmu95mobile .basketball {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  min-height: 14px;
+  min-width: 75px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobile .tennis {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 0.05px;
+  min-height: 14px;
+  min-width: 43px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobile .tap-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  height: 42px;
+  padding: 17px 10px 0px;
+  width: 100%;
+}
+
+.frmu95mobile .tap {
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+}
+
+.frmu95mobile .btn_-tap_-dis-selected {
+  align-items: flex-end;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex: 1;
+  height: 25px;
+  margin-left: 1.39%;
+  margin-right: 1.55%;
+  margin-top: 0.3px;
+  min-width: 66px;
+}
+
+.frmu95mobile .overlap-group1 {
+  border-radius: 4px 4px 0px 0px;
+  height: 26px;
+  margin-bottom: -1px;
+  position: relative;
+  width: 66px;
+}
+
+.frmu95mobile .overlap-group {
+  height: 25px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 64px;
+}
+
+.frmu95mobile .fixtures {
+  color: var(--ptyellow);
+  left: 18px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobile .frame-371:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .fixtures-1 {
+  color: var(--wt);
+  margin-top: 5px;
+  width: 28px;
+}
+
+.frmu95mobile .fixtures-6 {
+  color: var(--ptyellow);
+  left: 8px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobile .fixtures-7 {
+  color: var(--wt);
+  margin-top: 5px;
+  width: 48px;
+}
+
+.frmu95mobile .fixtures-8 {
+  color: var(--ptyellow);
+  left: 7px;
+  position: absolute;
+  top: 5px;
+}
+
+.frmu95mobile .fixtures-9 {
+  color: var(--wt);
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 51px;
+}
+
+.frmu95mobile .sub-tap {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.frmu95mobile .fr_-favorite {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.frmu95mobile .overlap-group1-2 {
+  height: 25px;
+  position: relative;
+  width: 70px;
+}
+
+.frmu95mobile .btn_-round-square {
+  align-items: flex-start;
+  display: flex;
+  height: 25px;
+  left: 1px;
+  min-width: 69px;
+  position: absolute;
+  top: 0;
+}
+
+.frmu95mobile .frame-container {
+  border-radius: 15px;
+  height: 25px;
+  position: relative;
+  width: 69px;
+}
+
+.frmu95mobile .frame-376 {
+  align-items: center;
+  background-color: var(--ltblue);
+  border-radius: 15px;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 69px;
+}
+
+.frmu95mobile .text {
+  color: var(--wt);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  margin-left: 1px;
+  margin-top: 1px;
+  text-align: center;
+  width: 8px;
+}
+
+.frmu95mobile .frame-375 {
+  align-items: center;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 69px;
+}
+
+.frmu95mobile .frame-375:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .btn_-circle {
+  align-items: center;
+  background-color: var(--ltblue);
+  border-radius: 12.5px;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.frmu95mobile .polygon-3 {
+  cursor: pointer;
+  height: 8px;
+  margin-left: 1.0px;
+  margin-top: -1.0px;
+  transition: all 0.2s ease;
+  width: 8px;
+}
+
+.frmu95mobile .polygon-3:hover {
+  transform: translate(0, 1px);
+}
+
+.frmu95mobile .star-3 {
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  top: 2px;
+  width: 20px;
+}
+
+.frmu95mobile .fr_-by-time {
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  height: 25px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.frmu95mobile .btn_-round-square-1 {
+  margin-right: -0.5px;
+  min-width: 69px;
+}
+
+.frmu95mobile .text-1 {
+  color: var(--wt);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  margin-left: 1px;
+  margin-top: 1px;
+  text-align: center;
+  width: 44px;
+}
+
+.frmu95mobile .fr_-date {
+  width: 107px;
+}
+
+.frmu95mobile .btn_-container {
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .btn_-round-square-2 {
+  height: 25px;
+  left: 0;
+  min-width: 107px;
+  position: absolute;
+  top: 0;
+}
+
+.frmu95mobile .frame-container-1 {
+  border-radius: 15px;
+  height: 25px;
+  position: relative;
+  width: 107px;
+}
+
+.frmu95mobile .frame-376-1 {
+  align-items: center;
+  background-color: var(--ltblue);
+  border-radius: 15px;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 107px;
+}
+
+.frmu95mobile .text-2 {
+  color: var(--wt);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  margin-left: 1px;
+  margin-top: 1px;
+  text-align: center;
+  width: 26px;
+}
+
+.frmu95mobile .frame-375-1 {
+  align-items: center;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 107px;
+}
+
+.frmu95mobile .btn_-circle-1 {
+  align-items: center;
+  background-color: var(--ltblue);
+  border-radius: 12.5px;
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 82px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 25px;
+}
+
+.frmu95mobile .btn_-circle-1:hover {
+  transform: translate(0, 5px);
+}
+
+.frmu95mobile .polygon-3-1 {
+  margin-top: -1.0px;
+}
+
+.frmu95mobile .btn_-circle-2 {
+  align-items: center;
+  background-color: var(--ltblue);
+  border-radius: 12.5px;
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+  width: 25px;
+}
+
+.frmu95mobile .btn_-circle-2:hover {
+  transform: translate(0, 5px);
+}
+
+.frmu95mobile .polygon-3-2 {
+  margin-top: 1.0px;
+  transform: rotate(-180deg);
+}
+
+.frmu95mobile .contents_-football {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-315 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-368 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--ctgray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  gap: 6px;
+  height: 34px;
+  overflow: hidden;
+  padding: 4px 13px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .flag_-circle_eng {
+  background-image: url(../img/flag-circle-eng@2x.png);
+  position: relative;
+}
+
+.frmu95mobile .premier-league {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95mobile .live_-match {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 4px 0px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-3 {
+  height: 108px;
+  position: relative;
+  width: 71px;
+}
+
+.frmu95mobile .aston-villa {
+  background-image: url(../img/astonvilla@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 14px;
+  position: absolute;
+  top: 22px;
+  width: 44px;
+}
+
+.frmu95mobile .aston-villa-1 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 28px;
+  left: 4px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 71px;
+  width: 62px;
+}
+
+.frmu95mobile .frame-379 {
+  height: 68px;
+  position: relative;
+  width: 134px;
+}
+
+.frmu95mobile .overlap-group-1 {
+  background-image: url(../img/img-livetracker-1@2x.png);
+  height: 70px;
+  min-width: 134px;
+  padding: 14.9px 3.5px;
+  position: relative;
+  top: -1px;
+}
+
+.frmu95mobile .text-4 {
+  color: var(--bk);
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 13px;
+  margin-top: 2.0px;
+  min-height: 13px;
+  text-align: center;
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobile .span1 {
+  font-size: var(--font-size-l);
+  letter-spacing: -0.08px;
+}
+
+.frmu95mobile .number-1 {
+  margin-left: 11px;
+  margin-top: 0.5px;
+}
+
+.frmu95mobile .arsenal {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 18px;
+  position: absolute;
+  top: 22px;
+  width: 44px;
+}
+
+.frmu95mobile .arsenal-1 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  left: 8px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 71px;
+  width: 58px;
+}
+
+.frmu95mobile .frame-383 {
+  display: flex;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobile .btn_-favorite_-check {
+  align-items: center;
+  display: flex;
+  height: 25px;
+  min-width: 25px;
+  padding: 0 2.5px;
+}
+
+.frmu95mobile .overlap-group-2 {
+  background-image: url(../img/star@2x.png);
+  min-width: 20px;
+}
+
+.frmu95mobile .frame-381 {
+  background-image: url(../img/star-1@2x.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  height: 20px;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .frame-381:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .line-1 {
+  margin-bottom: -1.00px;
+}
+
+.frmu95mobile .frame-31 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-17 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--ctgray);
+  display: flex;
+  gap: 6px;
+  height: 34px;
+  padding: 4px 13px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .fr_-contents_-football_-fixtures_-upper {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-384 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--ctgray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  gap: 6px;
+  height: 34px;
+  padding: 4px 13px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .flag_-circle_us-1 {
+  background-image: url(../img/flag-circle-us@2x.png);
+  background-size: 100% 100%;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobile .live_-match-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .aston-villa-2 {
+  background-image: url(../img/astonvilla@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 13px;
+  position: absolute;
+  top: 25px;
+  width: 44px;
+}
+
+.frmu95mobile .frame-386 {
+  height: 65px;
+  position: relative;
+  width: 83px;
+}
+
+.frmu95mobile .flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 5px;
+  min-height: 66px;
+  position: relative;
+  width: 72px;
+}
+
+.frmu95mobile .text-4-1 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 3.0px;
+  min-height: 20px;
+  text-align: center;
+  width: 51px;
+}
+
+.frmu95mobile .overlap-group-3 {
+  background-image: url(../img/btn-roundsquare2@2x.png);
+  height: 20px;
+  margin-top: 13px;
+  min-width: 72px;
+  padding: 2.0px 7px;
+}
+
+.frmu95mobile .matchup {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  min-width: 58px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frmu95mobile .arsenal-3 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 16px;
+  position: absolute;
+  top: 25px;
+  width: 44px;
+}
+
+.frmu95mobile .arsenal-2 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  left: 11px;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 71px;
+  width: 55px;
+}
+
+.frmu95mobile .btn_-favorite_-check-1 {
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobile .overlap-group1-1 {
+  align-items: flex-start;
+  background-image: url(../img/star-5@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  left: 2px;
+  min-width: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.frmu95mobile .frame-381-1 {
+  background-image: url(../img/star-6@2x.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  height: 20px;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobile .frame-381-1:hover {
+  opacity: 0;
+}
+
+.frmu95mobile .flag_-circle_cl {
+  background-image: url(../img/flag-circle-cl@2x.png);
+  position: relative;
+}
+
+.frmu95mobile .frame-317 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .flag_-circle_eng-1 {
+  background-image: url(../img/flag-circle-eng-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobile .frame-388 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .aston-villa-3 {
+  background-image: url(../img/astonvilla@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 13px;
+  position: absolute;
+  top: 23px;
+  width: 44px;
+}
+
+.frmu95mobile .arsenal-4 {
+  background-image: url(../img/arsenal@2x.png);
+  background-size: 100% 100%;
+  height: 44px;
+  left: 16px;
+  position: absolute;
+  top: 23px;
+  width: 44px;
+}
+
+.frmu95mobile .odds_-grop {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 5px;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-30 {
+  align-items: center;
+  background-image: url(../img/btn-roundsquare2-2@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  width: 89px;
+}
+
+.frmu95mobile .text-46 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 33px;
+}
+
+.frmu95mobile .text-47 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  margin-left: -1px;
+  text-align: center;
+  white-space: nowrap;
+  width: 32px;
+}
+
+.frmu95mobile .frame-306 {
+  background-image: url(../img/btn-roundsquare2-2@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  position: relative;
+  width: 89px;
+}
+
+.frmu95mobile .text-48 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  margin-left: -1px;
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.frmu95mobile .frame-307 {
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobile .text-49 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  margin-top: 7px;
+  text-align: center;
+  width: 25px;
+}
+
+.frmu95mobile .frame-317-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--bggray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-390 {
+  height: 57px;
+  position: relative;
+  width: 134px;
+}
+
+.frmu95mobile .frame-31-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-392-1 {
+  align-self: stretch;
+  background-color: var(--ctgray);
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  height: 34px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .surname {
+  color: var(--bk);
+  font-weight: 600;
+  height: 19px;
+  line-height: normal;
+  margin-left: 17px;
+  margin-top: 8px;
+  white-space: nowrap;
+  width: 104px;
+}
+
+.frmu95mobile .frame-3-1 {
+  align-self: stretch;
+  display: flex;
+  height: 36px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .btn_-league-select {
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+}
+
+.frmu95mobile .frame {
+  background-color: var(--bggray);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: var(--silver-chalice);
+  display: flex;
+  flex: 1;
+  height: 36px;
+  justify-content: space-between;
+}
+
+.frmu95mobile .frame-56 {
+  display: flex;
+  gap: 5px;
+  margin-left: 11px;
+  margin-top: 5px;
+  width: 73px;
+}
+
+.frmu95mobile .flag_-circle_us {
+  background-image: url(../img/flag-circle-us@2x.png);
+}
+
+.frmu95mobile .text-5 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 20px;
+  line-height: normal;
+  margin-top: 3px;
+  white-space: nowrap;
+  width: 35px;
+}
+
+.frmu95mobile .icon_-line-arrow {
+  height: 12px;
+  margin-right: 13.0px;
+  margin-top: 12.0px;
+  width: 6px;
+}
+
+.frmu95mobile .text-6 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 20px;
+  line-height: normal;
+  margin-top: 3px;
+  white-space: nowrap;
+  width: 30px;
+}
+
+.frmu95mobile .frame-392 {
+  align-self: stretch;
+  background-color: var(--ctgray);
+  display: flex;
+  height: 34px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .btn_-league-select-1 {
+  align-self: stretch;
+  cursor: pointer;
+  display: flex;
+  height: 36px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .frame-399 {
+  background-color: var(--wild-sand);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: var(--silver-chalice);
+  display: flex;
+  flex: 1;
+  height: 36px;
+  justify-content: space-between;
+}
+
+.frmu95mobile .flag_-circle_kor {
+  background-image: url(../img/flag-circle-kor@2x.png);
+}
+
+.frmu95mobile .text-3 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 20px;
+  line-height: normal;
+  margin-top: 3px;
+  white-space: nowrap;
+  width: 56px;
+}
+
+.frmu95mobile .icon_-line-arrow-1 {
+  height: 6px;
+  margin-right: 10px;
+  margin-top: 15px;
+  width: 12px;
+}
+
+.frmu95mobile .text-7 {
+  color: var(--ctgray2);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  margin-left: 41px;
+  margin-top: 10px;
+  width: 42px;
+}
+
+.frmu95mobile .text-8 {
+  color: var(--ctgray2);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  margin-left: 41px;
+  margin-top: 10px;
+  width: 91px;
+}
+
+.frmu95mobile .popular-countries {
+  color: var(--bk);
+  font-weight: 600;
+  height: 19px;
+  line-height: normal;
+  margin-left: 17px;
+  margin-top: 8px;
+  white-space: nowrap;
+  width: 167px;
+}
+
+.frmu95mobile .flag_-circle_cl-1 {
+  background-image: url(../img/flag-circle-cl@2x.png);
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+.frmu95mobile .text-9 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 20px;
+  line-height: normal;
+  margin-top: 3px;
+  white-space: nowrap;
+  width: 53px;
+}
+
+.frmu95mobile .flag_-circle_br {
+  background-image: url(../img/flag-circle-br-1@2x.png);
+}
+
+.frmu95mobile .text-10 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 20px;
+  line-height: normal;
+  margin-top: 3px;
+  white-space: nowrap;
+  width: 58px;
+}
+
+.frmu95mobile .frame-403 {
+  align-self: stretch;
+  background-color: var(--wild-sand);
+  border-radius: 0px 0px 10px 10px;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .btn_-round-square-3 {
+  align-items: flex-start;
+  display: flex;
+}
+
+.frmu95mobile .flag_ {
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+.frmu95mobile .fr_ {
+  height: 25px;
+  position: relative;
+}
+
+.frmu95mobile .line-2 {
+  align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95mobile .number-2 {
+  letter-spacing: -0.60px;
+  line-height: normal;
+  min-height: 23px;
+  text-align: center;
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobile .overlap-group-4 {
+  align-items: flex-start;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.frmu95mobile .polygon-3-3 {
+  height: 8px;
+  margin-left: 1.0px;
+  width: 8px;
+}
+
+.frmu95mobile .sub {
+  align-items: flex-start;
+  position: relative;
+}
+
+.frmu95mobile .tap-2 {
+  display: flex;
+  position: relative;
+}
+
+.frmu95mobile .vs-2 {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1.0px;
+  min-height: 13px;
+  text-align: center;
+  white-space: nowrap;
+  width: 23px;
+}

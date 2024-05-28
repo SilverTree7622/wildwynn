@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "ref": "cd ref && http-server -p 9999 -c-1 -o",
     "deploy": "npm run generate && gh-pages --dotfiles -d .output/public",
-    "figma": "cd figma/AnimaPackage-Flex-UN9ul && http-server -p 9999 -c-1"
+    "figma": "cd figma/AnimaPackage-Flex-dE1HS && http-server -p 9999 -c-1"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",

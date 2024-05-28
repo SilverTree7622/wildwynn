@@ -1,0 +1,275 @@
+/* screen - left */
+
+.left {
+  align-items: flex-start;
+  background-color: #00000040;
+  display: flex;
+  height: 857px;
+  min-width: 210px;
+}
+
+#overlay-left {
+  align-items: start;
+  background-color: #00000040;
+  justify-content: flex-start;
+}
+
+.left .left-1 {
+  align-items: flex-end;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 857px;
+  padding: 26px 8.0px;
+  width: 210px;
+}
+
+.left .btn_-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 5px;
+  margin-right: 0.04px;
+  min-width: 193px;
+}
+
+.left .btn {
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  width: 94px;
+}
+
+.left .group-3 {
+  min-width: 96px;
+}
+
+.left .overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--btblue);
+  border: 1px solid;
+  border-color: var(--wt);
+  border-radius: 6px;
+  display: flex;
+  height: 22px;
+  min-width: 94px;
+  padding: 2px 31px;
+}
+
+.left .join {
+  color: var(--wt);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  min-width: 29px;
+  text-align: center;
+}
+
+.left .overlap-group-2 {
+  align-items: flex-start;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ptyellow);
+  border-radius: 6px;
+  display: flex;
+  height: 22px;
+  min-width: 94px;
+  padding: 2px 27px;
+}
+
+.left .login {
+  color: var(--wt);
+  font-weight: 400;
+  height: 16px;
+  line-height: normal;
+  min-width: 38px;
+  text-align: center;
+}
+
+.left .searcher {
+  display: flex;
+  margin-top: 13px;
+  width: 192px;
+}
+
+.left .group-16 {
+  min-width: 101.04%;
+}
+
+.left .overlap-group-3 {
+  align-items: center;
+  background-color: var(--cultured-pearl);
+  border-radius: 5px;
+  display: flex;
+  gap: 8px;
+  height: 24px;
+  justify-content: flex-end;
+  min-width: 192px;
+  padding: 0 9.1px;
+}
+
+.left .x1 {
+  height: 18px;
+  width: 15px;
+}
+
+.left .search {
+  background-color: transparent;
+  border: 0;
+  color: var(--silver-chalice);
+  font-weight: 400;
+  height: 14px;
+  line-height: normal;
+  padding: 0;
+  white-space: nowrap;
+  width: 151px;
+}
+
+.left .frame-302 {
+  align-self: center;
+  background-color: var(--frblue);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 668px;
+  margin-top: 9px;
+  width: 194px;
+}
+
+.left .popular-leagues {
+  color: var(--wt);
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  margin-left: 19px;
+  margin-top: 5px;
+  white-space: nowrap;
+  width: 148px;
+}
+
+.left .line-10 {
+  flex: 1;
+  margin-top: 7px;
+  max-height: 1px;
+  object-fit: cover;
+}
+
+.left .football {
+  color: var(--wt);
+  font-weight: 600;
+  height: 16px;
+  line-height: normal;
+  margin-left: 19px;
+  margin-top: 11px;
+  width: 81px;
+}
+
+.left .btn_-round-square3 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-13@2x.png);
+  background-size: 100% 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  margin-left: 3.61%;
+  margin-right: 3.19%;
+  margin-top: 8px;
+  max-height: 26px;
+  min-width: 93.20%;
+}
+
+.left .overlap-group {
+  height: 26px;
+  position: relative;
+  width: 181px;
+}
+
+.left .champions-league {
+  color: var(--wt);
+  font-weight: 400;
+  left: 15px;
+  line-height: normal;
+  position: absolute;
+  top: 4px;
+}
+
+.left .btn_-sports-icon_-hover {
+  display: flex;
+  height: 26px;
+  left: 0;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  width: 181px;
+}
+
+.left .rectangle-13 {
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.2s ease;
+  width: 180.81px;
+}
+
+.left .rectangle-13:hover {
+  background-color: #315B99
+}
+
+.left .btn_-round-square3-1 {
+  margin-top: 4px;
+}
+
+.left .tennis {
+  color: var(--wt);
+  font-weight: 600;
+  height: 16px;
+  line-height: normal;
+  margin-left: 19px;
+  margin-top: 21px;
+  width: 47px;
+}
+
+.left .basketball {
+  color: var(--wt);
+  font-weight: 600;
+  height: 15px;
+  line-height: normal;
+  margin-left: 24px;
+  margin-top: 21px;
+  width: 82px;
+}
+
+.left .btn_-round-square3-2 {
+  margin-top: 1px;
+}
+
+.left .ice-hockey {
+  color: var(--wt);
+  font-weight: 600;
+  height: 15px;
+  line-height: normal;
+  margin-left: 19px;
+  margin-top: 21px;
+  width: 78px;
+}
+
+.left .btn_-round-square3-3 {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-13@2x.png);
+  background-size: 100% 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  margin-left: 3.61%;
+  margin-right: 3.19%;
+  max-height: 26px;
+  min-width: 93.20%;
+}
+
+.left .group {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+}

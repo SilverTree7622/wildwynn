@@ -10,6 +10,7 @@
             v-if="opt.tab === 'stats'"
         />
         <MatchUpNavitalkMain
+            :result_league="list.sortedLeagueList"
             v-if="opt.tab === 'navitalk'"
         />
         <MatchUpOddsMain
@@ -39,6 +40,11 @@ const opt = reactive({
     },
 });
 
+const list = reactive({
+    sortedLeagueList: <any[]> [],
+});
+
+
 watch(
     () => route.fullPath,
     async (p) => {
@@ -58,6 +64,7 @@ const res = async () => {
             { lg_name: 'dummy_lg_name4' },
             { lg_name: 'dummy_lg_name5' },
         );
+        list.sortedLeagueList = opt.result.league;
         opt.isBooting = false;
         opt.isPending = false;
     }, Math.random() * 3 * 1000);

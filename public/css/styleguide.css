@@ -5,39 +5,52 @@
   --btblue: #00b1ff;
   --ctgray: #d9d9d9;
   --ctgray2: #616161;
+  --cultured-pearl: #f5f5f5;
   --frblue: #011e3d;
+  --gallery: #ebecf0;
+  --gallery-2: #efeff0;
   --geyser: #d6ddeb;
+  --havelock-blue: #558fe3;
+  --international-orange: #ff5500;
   --ltblue: #315b99;
   --magic-potion: #002246;
+  --midnight: #001a32;
+  --mystic: #e2e7ed;
   --navy-blue: #3574d6;
+  --pastel-green: #80e355;
   --pink-swan: #b9b9b9;
   --ptyellow: #f6d04e;
-  --selago: #efecf9;
-  --soft-peach: #f5eef6;
+  --silver-chalice: #afafaf;
+  --wild-sand: #f3f3f3;
   --wt: #ffffff;
   --zircon: #f2f6ff;
  
-  --font-size-l: 13px;
-  --font-size-m: 12px;
-  --font-size-s: 10px;
-  --font-size-xl: 14px;
-  --font-size-xxl: 16px;
-  --font-size-xxxl: 17px;
-  --font-size-xxxxl: 24px;
+  --font-size-15px: 15px;
+  --font-size-24px: 24px;
+  --font-size-35px: 35px;
+  --font-size-l: 14px;
+  --font-size-m: 13px;
+  --font-size-s: 12px;
+  --font-size-xl: 16px;
+  --font-size-xs: 10px;
+  --font-size-xxl: 17px;
+  --font-size-xxs: 8px;
  
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-pretendard-extrabold: "Pretendard-ExtraBold", Helvetica;
   --font-family-pretendard-medium: "Pretendard-Medium", Helvetica;
   --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
   --font-family-pretendard-semibold: "Pretendard-SemiBold", Helvetica;
 }
-.headline {
-  font-family: var(--font-family-pretendard-semibold);
-  font-size: var(--font-size-xxxl);
+.title {
+  font-family: var(--font-family-pretendard-extrabold);
+  font-size: var(--font-size-35px);
   font-style: normal;
-  font-weight: 600;
-  letter-spacing: 0;
+  font-weight: 800;
+  letter-spacing: -1.75px;
 }
 
-.headline2 {
+.headline {
   font-family: var(--font-family-pretendard-semibold);
   font-size: var(--font-size-xxl);
   font-style: normal;
@@ -45,9 +58,17 @@
   letter-spacing: 0;
 }
 
-.headline3 {
+.headline2 {
   font-family: var(--font-family-pretendard-semibold);
   font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.headline3 {
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-l);
   font-style: normal;
   font-weight: 600;
   letter-spacing: -0.56px;
@@ -55,7 +76,7 @@
 
 .body {
   font-family: var(--font-family-pretendard-regular);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
@@ -63,7 +84,7 @@
 
 .caption {
   font-family: var(--font-family-pretendard-medium);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0;
@@ -71,7 +92,7 @@
 
 .body2 {
   font-family: var(--font-family-pretendard-semibold);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0;
@@ -79,10 +100,34 @@
 
 .leaguetitle {
   font-family: var(--font-family-pretendard-semibold);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-24px);
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0;
+}
+
+.smallsportsicon {
+  font-family: var(--font-family-pretendard-medium);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.biggerbody {
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-15px);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.inter-normal-black-12px {
+  color: var(--bk);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
 }
 
 .pretendard-semi-bold-black-20px {
@@ -93,17 +138,18 @@
   font-weight: 600;
 }
 
-.pretendard-regular-normal-white-15px {
+.pretendard-regular-normal-storm-dust-6-5px {
+  color: var(--ctgray2);
   font-family: var(--font-family-pretendard-regular);
-  font-size: var(--font-size-xxl);
+  font-size: 6.5px;
   font-style: normal;
   font-weight: 400;
 }
 
-.pretendard-regular-normal-white-15px-2 {
-  color: var(--wt);
-  font-family: var(--font-family-pretendard-regular);
-  font-size: var(--font-size-xxl);
+.pretendard-semi-bold-storm-dust-9px {
+  color: var(--ctgray2);
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: 9px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
