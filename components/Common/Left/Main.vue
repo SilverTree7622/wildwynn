@@ -9,7 +9,7 @@
                         <input class="search-w5grIQ body" name="search" placeholder="search" type="text" required />
                     </div>
                 </div>
-                <a href="#">
+                <NuxtLink to='/SignIn'>
                     <div class="btn_-log-in-2AWpWu">
                         <div class="group-32-1jS6aQ">
                             <div class="rectangle-13-PmwrQq"></div>
@@ -20,8 +20,8 @@
                             <div class="login valign-text-middle body">LOGIN</div>
                         </div>
                     </div>
-                </a>
-                <a href="#">
+                </NuxtLink>
+                <NuxtLink to='/SignUp'>
                     <div class="btn_-join-2AWpWu">
                         <div class="group-30-Ktd1hs">
                             <div class="rectangle-13-xrvEYA"></div>
@@ -32,7 +32,7 @@
                             <div class="join valign-text-middle body">JOIN</div>
                         </div>
                     </div>
-                </a>
+                </NuxtLink>
                 <div class="frame-302-2AWpWu">
                     <div class="popular-leagues-RD63qm headline2">POPULAR LEAGUES</div>
                     <div class="football-RD63qm body2">FOOTBALL</div>

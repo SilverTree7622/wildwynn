@@ -1,0 +1,169 @@
+/* screen - frmu95signu95in */
+
+.frmu95signu95in {
+  align-items: flex-start;
+  background-color: #00000040;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 660px;
+  position: relative;
+}
+
+#overlay-frmu95signu95in {
+  align-items: center;
+  background-color: #00000040;
+  justify-content: center;
+}
+
+.frmu95signu95in .frm_-sign_-in {
+  align-items: flex-start;
+  background-color: var(--wt);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 660px;
+  width: 360px;
+}
+
+.frmu95signu95in .text {
+  font-weight: 600;
+  height: 19px;
+  left: 62px;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.frmu95signu95in .text-1 {
+  font-weight: 600;
+  height: 19px;
+  left: 59px;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.frmu95signu95in .sign_-in_-contents {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px;
+}
+
+.frmu95signu95in .sign_-in_-title {
+  align-items: center;
+  flex-direction: column;
+}
+
+.frmu95signu95in .title {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frmu95signu95in .sign_-in_-input_id_pw {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.frmu95signu95in .the {
+  color: var(--international-orange);
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95signu95in .sign_-in_-password_txt {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.frmu95signu95in .password {
+  color: var(--bk);
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frmu95signu95in .forgot-your-password {
+  color: var(--ctgray2);
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95signu95in .join {
+  color: var(--wt);
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  margin-left: -2px;
+  margin-top: 1px;
+  text-align: center;
+  width: 46px;
+}
+
+.frmu95signu95in .sign_-in_-resister {
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.frmu95signu95in .no-account-register-here {
+  color: var(--btblue);
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frmu95signu95in .sign_-in_-resister-item {
+  color: var(--btblue);
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frmu95signu95in .text-2 {
+  font-weight: 400;
+  left: 88px;
+  top: 10px;
+}
+
+.frmu95signu95in .text-3 {
+  font-weight: 400;
+  left: 96px;
+  top: 10px;
+}
+
+.frmu95signu95in .sign_-in_ {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95signu95in .text-4 {
+  color: var(--ctgray2);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+}

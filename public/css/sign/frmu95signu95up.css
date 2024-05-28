@@ -1,0 +1,207 @@
+/* screen - frmu95signu95up */
+
+.frmu95signu95up {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  position: relative;
+}
+
+#overlay-frmu95signu95up {
+  align-items: center;
+  background-color: #ffffff00;
+  justify-content: center;
+}
+
+.frmu95signu95up .frm_-sign_up {
+  align-items: flex-start;
+  background-color: var(--wt);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* height: 660px;
+  width: 360px; */
+  height: 100%;
+  width: 100%;
+}
+
+.frmu95signu95up .text {
+  font-weight: 600;
+  height: 19px;
+  left: 62px;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.frmu95signu95up .text-1 {
+  font-weight: 600;
+  height: 19px;
+  left: 59px;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.frmu95signu95up .sign_-in_-contents {
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px 20px;
+}
+
+.frmu95signu95up .sign_-in_-title {
+  align-items: center;
+  gap: 4px;
+}
+
+.frmu95signu95up .title {
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frmu95signu95up .sign-up-to-the-bigge {
+  color: var(--bk);
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frmu95signu95up .sign_-in_-input_id_pw {
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.frmu95signu95up .the-email-address-field-is-required {
+  color: var(--international-orange);
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frmu95signu95up .sign_-in_-password_txt {
+  align-items: flex-start;
+}
+
+.frmu95signu95up .create-a-password {
+  color: var(--bk);
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frmu95signu95up .your-password-should {
+  align-self: stretch;
+  color: var(--international-orange);
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+}
+
+.frmu95signu95up .sign_-in {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95signu95up .btn_-sign_-checkbox_-dis-select {
+  background-color: var(--wt);
+  border: 1px solid;
+  border-color: var(--ctgray2);
+  border-radius: 3px;
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95signu95up .i-hereby-confirm-tha {
+  color: var(--bk);
+  flex: 1;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.frmu95signu95up .btn_-sign_-checkbox_-select {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frmu95signu95up .i-want-to-receive-newsletters {
+  color: var(--bk);
+  flex: 1;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+
+.frmu95signu95up .join {
+  color: var(--wt);
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  margin-left: -1px;
+  margin-top: 1px;
+  text-align: center;
+  width: 51px;
+}
+
+.frmu95signu95up .sign_-in_-resister {
+  align-items: center;
+  gap: 10px;
+}
+
+.frmu95signu95up .already-have-an-account-sign-in {
+  color: var(--btblue);
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frmu95signu95up .text-2 {
+  font-weight: 400;
+  left: 88px;
+  top: 10px;
+}
+
+.frmu95signu95up .text-3 {
+  font-weight: 400;
+  left: 96px;
+  top: 10px;
+}
+
+.frmu95signu95up .sign_-in_ {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.frmu95signu95up .text-4 {
+  color: var(--ctgray2);
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+}
