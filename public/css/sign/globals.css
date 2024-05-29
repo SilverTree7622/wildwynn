@@ -447,7 +447,8 @@ input:focus {
   left: 0;
   position: absolute;
   top: 0;
-  width: 180px;
+  /* width: 180px; */
+  width: 100%;
 }
 
 .tap_-sign_-dis-select {

@@ -16,6 +16,7 @@
 			<NuxtPage />
 			<CommonLeftMain />
 		</Body>
+		<SignModal />
 	</Html>
 </template>
 

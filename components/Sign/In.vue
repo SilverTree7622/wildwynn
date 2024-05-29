@@ -1,71 +1,81 @@
 <template>
-    <div class="frmu95signu95in screen">
-        <div class="frm_-sign_-in w-full mx-auto px-auto">
-            <div class="sign_-in_-upper-tap">
-                <div class="tap_-sign_-select">
-                    <div class="top-rectangle2105"></div>
-                    <div class="text valign-text-middle text-4 headline2">SIGN IN</div>
-                </div>
-                <NuxtLink to='/SignUp'>
-                    <div class="tap_-sign_-dis-select">
-                        <div class="text-1 valign-text-middle text-4 headline2">SIGN UP</div>
+    <div style="margin: 0" class="h-full">
+        <input type="hidden" id="anPageName" name="page" value="frmu95signu95in" />
+        <div class="frmu95signu95in screen">
+            <div class="frm_-sign_-in w-full mx-auto px-auto h-screen">
+                <div class="sign_-in_-upper-tap">
+                    <div class="tap_-sign_-select">
+                        <div class="top-rectangle2105"></div>
+                        <div class="valign-text-middle text-4 headline2 w-full h-full m-auto">SIGN IN</div>
                     </div>
-                </NuxtLink>
-            </div>
-            <div class="sign_-in_-contents sign_-in_ body">
-                <div class="sign_-in_-title sign_-in_">
-                    <h1 class="title valign-text-middle leaguetitle">hey howdy, come on in!</h1>
-                </div>
-                <div class="sign_-in_-input_id_pw sign_-in_">
-                    <p class="please-enter-your-email-address valign-text-middle body">Please, enter your email address:
-                    </p>
-                    <div class="txt-input_-sign">
-                        <input class="email-address body" name="emailaddress" placeholder="search" type="text"
-                            required />
-                    </div>
-                    <p class="the valign-text-middle caption">The Email Address Field is required</p>
-                    <div class="sign_-in_-password_txt sign_-in_">
-                        <div class="password valign-text-middle body">Password</div>
-                        <div class="forgot-your-password valign-text-middle caption">Forgot your password?</div>
-                    </div>
-                    <div class="txt-input_-sign">
-                        <input class="email-address body" name="emailaddress" placeholder="search" type="text"
-                            required />
-                    </div>
-                    <p class="the valign-text-middle caption">The Password Field is required</p>
-                    <a href="frmu95signu95complate1.html">
-                        <div class="btn_-join_-membership_-blue">
-                            <div class="join valign-text-middle headline3">SIGN IN</div>
+                    <a @click="clickSignUp">
+                        <div class="tap_-sign_-dis-select">
+                            <div class="valign-text-middle text-4 headline2 w-full h-full m-auto">SIGN UP</div>
                         </div>
                     </a>
                 </div>
-                <div class="sign_-in_-resister sign_-in_">
-                    <div class="no-account-register-here valign-text-middle">No account? Register here</div>
-                    <div class="sign_-in_-resister-item valign-text-middle">Terms and Conditions</div>
-                    <div class="sign_-in_-resister-item valign-text-middle">Privacy Policy</div>
-                </div>
-                <div class="sign_-in_-social-join">
-                    <div class="sign_-in_-social-join_or-line">
-                        <img class="line" src="/img/line29@2x.png" alt="Line29" />
-                        <div class="or valign-text-middle headline3">OR</div>
-                        <img class="line" src="/img/line30@2x.png" alt="Line30" />
+                <div class="sign_-in_-contents sign_-in_ body">
+                    <div class="sign_-in_-title sign_-in_">
+                        <h1 class="title valign-text-middle leaguetitle">hey howdy, come on in!</h1>
                     </div>
-                    <div class="btn_-sign_-social">
-                        <div class="text-2 text-4">Continue with Facebook</div>
-                        <img class="logo" src="/img/logo-facebooklogo@2x.png" alt="Logo_facebooklogo" />
+                    <div class="sign_-in_-input_id_pw sign_-in_">
+                        <p class="please-enter-your-email-address valign-text-middle body">Please, enter your email
+                            address:
+                        </p>
+                        <div class="txt-input_-sign">
+                            <input class="email-address body" name="emailaddress" placeholder="search" type="text"
+                                required />
+                        </div>
+                        <p class="the valign-text-middle caption">The Email Address Field is required</p>
+                        <div class="sign_-in_-password_txt sign_-in_">
+                            <div class="password valign-text-middle body">Password</div>
+                            <div class="forgot-your-password valign-text-middle caption">Forgot your password?</div>
+                        </div>
+                        <div class="txt-input_-sign">
+                            <input class="email-address body" name="emailaddress" placeholder="search" type="text"
+                                required />
+                        </div>
+                        <p class="the valign-text-middle caption">The Password Field is required</p>
+                        <NuxtLink to="/Sign/Complete/1">
+                            <div class="btn_-join_-membership_-blue">
+                                <div class="join valign-text-middle headline3">SIGN IN</div>
+                            </div>
+                        </NuxtLink>
                     </div>
-                    <div class="btn_-sign_-social">
-                        <div class="text-3 text-4">Continue with Google</div>
-                        <img class="logo" src="/img/logo-googlelogo@2x.png" alt="Logo_googlelogo" />
+                    <div class="sign_-in_-resister sign_-in_">
+                        <NuxtLink to="/SignUp" class="no-account-register-here valign-text-middle">No account?
+                            Register here</NuxtLink>
+                        <div class="sign_-in_-resister-item valign-text-middle">Terms and Conditions</div>
+                        <div class="sign_-in_-resister-item valign-text-middle">Privacy Policy</div>
+                    </div>
+                    <div class="sign_-in_-social-join">
+                        <div class="sign_-in_-social-join_or-line">
+                            <img class="line" src="/img/line29@2x.png" alt="Line29" />
+                            <div class="or valign-text-middle headline3">OR</div>
+                            <img class="line" src="/img/line30@2x.png" alt="Line30" />
+                        </div>
+                        <div class="btn_-sign_-social">
+                            <div class="text-2 text-4">Continue with Facebook</div>
+                            <img class="logo" src="/img/logo-facebooklogo@2x.png" alt="Logo_facebooklogo" />
+                        </div>
+                        <div class="btn_-sign_-social">
+                            <div class="text-3 text-4">Continue with Google</div>
+                            <img class="logo" src="/img/logo-googlelogo@2x.png" alt="Logo_googlelogo" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </template>
 
 <script setup lang="ts">
+const authStore = useAuthStore();
+
+const clickSignUp = () => {
+    authStore.show('signup');
+};
+
 
 </script>
 

@@ -9,7 +9,7 @@
                         <input class="search-w5grIQ body" name="search" placeholder="search" type="text" required />
                     </div>
                 </div>
-                <NuxtLink to='/SignIn'>
+                <a @click="clickLogin">
                     <div class="btn_-log-in-2AWpWu">
                         <div class="group-32-1jS6aQ">
                             <div class="rectangle-13-PmwrQq"></div>
@@ -20,8 +20,8 @@
                             <div class="login valign-text-middle body">LOGIN</div>
                         </div>
                     </div>
-                </NuxtLink>
-                <NuxtLink to='/SignUp'>
+                </a>
+                <a @click="clickJoin">
                     <div class="btn_-join-2AWpWu">
                         <div class="group-30-Ktd1hs">
                             <div class="rectangle-13-xrvEYA"></div>
@@ -32,7 +32,7 @@
                             <div class="join valign-text-middle body">JOIN</div>
                         </div>
                     </div>
-                </NuxtLink>
+                </a>
                 <div class="frame-302-2AWpWu">
                     <div class="popular-leagues-RD63qm headline2">POPULAR LEAGUES</div>
                     <div class="football-RD63qm body2">FOOTBALL</div>
@@ -227,9 +227,18 @@
 
 <script lang="ts" setup>
 const overlayStore = useOverlayStore();
+const authStore = useAuthStore();
 
 const hide = () => {
     overlayStore.HideOverlay('left', 'animate-appear');
+};
+
+const clickJoin = async () => {
+    authStore.show('signup');
+};
+
+const clickLogin = async () => {
+    authStore.show('signin');
 };
 
 onMounted(async () => {

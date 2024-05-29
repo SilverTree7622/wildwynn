@@ -2,3 +2,9 @@
 1. 리그 (dummy_lg_name3) 누르면 매치홈 -> figma 에서 가져오기
 2. 경기 누르면 리그홈 -> figma에서 가져오기
 3. 로그인 페이지 폼만 가져오기
+
+
+league, match쪽 관련 페이지들 data fetching 2주
+navitalk 1주
+종목 result는 이번 주 내로 data가 오게 되는 것
+2 ~ 3주
