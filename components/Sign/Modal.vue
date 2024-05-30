@@ -5,18 +5,27 @@
             base: 'p-0 m-0',
             rounded: 'rounded-lg',
             width: 'w-[360px]',
-            height: 'h-full',
+            height: 'h-[calc(100% - 20px)]',
         }"
     >
         <SignIn v-if="authStore.getTab() === 'signin'" />
         <SignUp v-if="authStore.getTab() === 'signup'" />
-        <SignComplete1 v-if="authStore.getTab() === 'complete1'" />
-        <SignComplete2 v-if="authStore.getTab() === 'complete2'" />
+        <SignComplete1 v-if="
+            authStore.getTab() === 'complete1'||
+            authStore.getTab() === 'complete1country'
+        "/>
+        <SignComplete1SelectCountry v-if="authStore.getTab() === 'complete1country'" />
+        <SignComplete2 v-if="
+            authStore.getTab() === 'complete2' ||
+            authStore.getTab() === 'complete2league'
+        "/>
+        <SignComplete2SelectLeagues v-if="authStore.getTab() === 'complete2league'" />
+        <SignComplete2SelectTeam v-if="authStore.getTab() === 'complete2team'" />
+        <SignComplete2SelectTeamDetail v-if="authStore.getTab() === 'complete2teamdetail'" />
     </UModal>
 </template>
 
 <script setup lang="ts">
-
 const authStore = useAuthStore();
 
 const opt = reactive({

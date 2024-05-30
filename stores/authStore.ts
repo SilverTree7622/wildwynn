@@ -1,7 +1,10 @@
 import { defineStore } from "pinia";
 
 
-export type TAuthStoreTabType = 'signin' | 'signup' | 'complete1' | 'complete2';
+export type TAuthStoreTabType =
+    'signin' | 'signup' |
+    'complete1' | 'complete1country' |
+    'complete2' | 'complete2league' | 'complete2team' | 'complete2teamdetail';
 
 export const useAuthStore = defineStore('authStore', () => {
 
@@ -18,6 +21,7 @@ export const useAuthStore = defineStore('authStore', () => {
     const show = (tab?: TAuthStoreTabType) => {
         opt.isOpen = true;
         opt.tab = tab ?? 'signin';
+        console.log('opt.tab: ', opt.tab);
     };
     
     const hide = () => {

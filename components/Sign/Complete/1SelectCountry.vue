@@ -1,6 +1,6 @@
 <template>
-    <!-- <div class="frmu95signu95complate1 screen"> -->
-        <div id="overlay-frmu95signu95complate1u95selectcountry" class="overlay-base">
+    <div style="margin: 0;" class="h-full">
+        <div id="overlay-frmu95signu95complate1u95selectcountry" class="overlay-base left-[0px]">
             <div class="frmu95signu95complate1u95selectcountry screen">
                 <div class="frm_-sign_-complate1_-select-country">
                     <div class="sign_-in_-contents sign_-in_">
@@ -9,7 +9,7 @@
                                 class="icon_-line-arrow cursor-pointer"
                                 src="/img/icon-linearrow-9@2x.png"
                                 alt="Icon_LineArrow"
-                                @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');"
+                                @click="clickBack"
                             />
                             <div class="pick-a-country valign-text-middle headline2">PICK A COUNTRY</div>
                             <div class="empty"></div>
@@ -31,7 +31,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -50,7 +50,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -69,7 +69,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -89,7 +89,7 @@
                                         </div>
                                     </div>
                                     <div class="cell-3 cell-5">
-                                        <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                        <div @click="clickBack">
                                             <div class="content-3 content-4">
                                                 <div class="select headline3">SELECT</div>
                                             </div>
@@ -107,7 +107,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -126,7 +126,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -145,7 +145,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -164,7 +164,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -183,7 +183,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -202,7 +202,7 @@
                                             <div class="country inter-normal-black-12px">country</div>
                                         </div>
                                     </div>
-                                    <div @click="HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');">
+                                    <div @click="clickBack">
                                         <div class="cell-1 cell-5">
                                             <div class="content-2 content-4">
                                                 <div class="select headline3">SELECT</div>
@@ -386,10 +386,26 @@
                 </div>
             </div>
         </div>
-    <!-- </div> -->
+    </div>
 </template>
 
 <script setup lang="ts">
+const authStore = useAuthStore();
+
+const ShowOverlay = function (overlayName, animationName) {
+    overlayName = "overlay-" + overlayName;
+    let overlayEle = document.getElementById(overlayName);
+    if (!overlayEle) return;
+    var cssClasses = overlayEle.className.split(" ");
+    var last = cssClasses.slice(-1)[0];
+    if (last.lastIndexOf("animate") == -1) {
+        overlayEle.className =
+            overlayEle.className + " " + animationName;
+    }
+    if (window['loadAsyncSrc'] !== undefined) {
+        window['loadAsyncSrc']();
+    }
+};
 
 const HideOverlay = function (overlayName, animationName) {
     overlayName = "overlay-" + overlayName;
@@ -415,6 +431,16 @@ const HideOverlay = function (overlayName, animationName) {
         }
     }
 };
+
+const clickBack = () => {
+    authStore.show('complete1');
+    HideOverlay('frmu95signu95complate1u95selectcountry', 'animate-disappear');
+};
+
+onMounted(async () => {
+    await nextTick();
+    ShowOverlay('frmu95signu95complate1u95selectcountry', 'animate-appear');
+});
 </script>
 
 <style scoped>
