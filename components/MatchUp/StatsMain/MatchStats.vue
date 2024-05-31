@@ -115,6 +115,14 @@
     </div>
 </template>
 
+<script setup lang="ts">
+
+onMounted(async () => {
+    await nextTick();
+    console.log('match stats mounted');
+});
+</script>
+
 <style scoped>
 @import '@/public/css/frmu95mobileu95matchup.css';
 </style>

@@ -659,9 +659,9 @@
   flex-direction: column;
   gap: 4px;
   height: 82px;
-  margin-left: -1.00px;
+  /* margin-left: -1.00px;
   margin-right: -1.00px;
-  margin-top: -1.00px;
+  margin-top: -1.00px; */
   position: relative;
   width: 100%;
 }
@@ -721,8 +721,8 @@
   border-top-style: solid;
   border-top-width: 1px;
   height: 159px;
-  margin-left: -1.00px;
-  margin-right: -1.00px;
+  /* margin-left: -1.00px;
+  margin-right: -1.00px; */
   position: relative;
   width: 100%;
   margin-left: auto;
@@ -1361,8 +1361,6 @@
   border-top-style: solid;
   border-top-width: 1px;
   height: 136px;
-  margin-left: -1.00px;
-  margin-right: -1.00px;
 }
 
 .frmu95mobileu95matchup .live-match {
@@ -4245,8 +4243,8 @@
   flex-direction: column;
   gap: 4px;
   height: 82px;
-  margin-left: -1.00px;
-  margin-right: -1.00px;
+  /* margin-left: -1.00px;
+  margin-right: -1.00px; */
   position: relative;
   width: 100%;
 }

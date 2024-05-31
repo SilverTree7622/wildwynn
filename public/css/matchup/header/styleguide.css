@@ -1,0 +1,346 @@
+
+:root {
+  --bg: rgba(0, 18, 38, 1);
+  --frblue: rgba(1, 30, 61, 1);
+  --stblue: rgba(28, 60, 95, 1);
+  --ltblue: rgba(49, 91, 153, 1);
+  --btblue: rgba(0, 177, 255, 1);
+  --ptyellow: rgba(246, 208, 78, 1);
+  --btyellow: rgba(98, 94, 54, 1);
+  --wt: rgba(255, 255, 255, 1);
+  --bk: rgba(0, 0, 0, 1);
+  --bggray: rgba(248, 248, 248, 1);
+  --ctgray: rgba(217, 217, 217, 1);
+  --ctgray-2: rgba(98, 98, 98, 1);
+  --title-font-family: "Pretendard", Helvetica;
+  --title-font-weight: 800;
+  --title-font-size: 35px;
+  --title-letter-spacing: -1.75px;
+  --title-line-height: normal;
+  --title-font-style: normal;
+  --head-line-font-family: "Pretendard", Helvetica;
+  --head-line-font-weight: 600;
+  --head-line-font-size: 17px;
+  --head-line-letter-spacing: 0px;
+  --head-line-line-height: normal;
+  --head-line-font-style: normal;
+  --head-line-2-font-family: "Pretendard", Helvetica;
+  --head-line-2-font-weight: 600;
+  --head-line-2-font-size: 16px;
+  --head-line-2-letter-spacing: 0px;
+  --head-line-2-line-height: normal;
+  --head-line-2-font-style: normal;
+  --head-line-3-font-family: "Pretendard", Helvetica;
+  --head-line-3-font-weight: 600;
+  --head-line-3-font-size: 14px;
+  --head-line-3-letter-spacing: -0.56px;
+  --head-line-3-line-height: normal;
+  --head-line-3-font-style: normal;
+  --body-font-family: "Pretendard", Helvetica;
+  --body-font-weight: 400;
+  --body-font-size: 13px;
+  --body-letter-spacing: 0px;
+  --body-line-height: normal;
+  --body-font-style: normal;
+  --caption-font-family: "Pretendard", Helvetica;
+  --caption-font-weight: 500;
+  --caption-font-size: 10px;
+  --caption-letter-spacing: 0px;
+  --caption-line-height: normal;
+  --caption-font-style: normal;
+  --body2-font-family: "Pretendard", Helvetica;
+  --body2-font-weight: 600;
+  --body2-font-size: 12px;
+  --body2-letter-spacing: 0px;
+  --body2-line-height: normal;
+  --body2-font-style: normal;
+  --league-title-font-family: "Pretendard", Helvetica;
+  --league-title-font-weight: 600;
+  --league-title-font-size: 24px;
+  --league-title-letter-spacing: 0px;
+  --league-title-line-height: normal;
+  --league-title-font-style: normal;
+  --small-sports-icon-font-family: "Pretendard", Helvetica;
+  --small-sports-icon-font-weight: 500;
+  --small-sports-icon-font-size: 8px;
+  --small-sports-icon-letter-spacing: 0px;
+  --small-sports-icon-line-height: normal;
+  --small-sports-icon-font-style: normal;
+  --bigger-body-font-family: "Pretendard", Helvetica;
+  --bigger-body-font-weight: 600;
+  --bigger-body-font-size: 15px;
+  --bigger-body-letter-spacing: 0px;
+  --bigger-body-line-height: normal;
+  --bigger-body-font-style: normal;
+}
+
+.wrapper-matchup {
+  background-color: #011e3d;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2px;
+  position: relative;
+}
+
+.frame .icon-linearrow {
+  position: relative;
+  width: 8.07px;
+  height: 14px;
+  margin-left: -1px;
+}
+
+.frame .div {
+  position: relative;
+  width: 174px;
+  height: 46px;
+  text-align: center;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  top: -1px;
+  left: 0;
+  font-family: var(--league-title-font-family);
+  font-weight: var(--league-title-font-weight);
+  color: #ffffff;
+  font-size: var(--league-title-font-size);
+  letter-spacing: var(--league-title-letter-spacing);
+  line-height: var(--league-title-line-height);
+  font-style: var(--league-title-font-style);
+  
+}
+
+.frame .element-tue {
+  position: relative;
+  /* top: 31px;
+  left: 25px; */
+  font-family: var(--body2-font-family);
+  font-weight: var(--body2-font-weight);
+  color: #ffffff;
+  font-size: var(--body2-font-size);
+  letter-spacing: var(--body2-letter-spacing);
+  line-height: var(--body2-line-height);
+  white-space: nowrap;
+  font-style: var(--body2-font-style);
+}
+
+.frame .btn-favorite {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  height: 20px;
+}
+
+.frame .star-wrapper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.frame .star {
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  top: 0;
+  left: 0;
+}
+
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 6px 12px;
+  position: relative;
+  background-color: #011e3d;
+}
+
+.header .frame {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.header .live-match {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.header .btn-favorite {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.header .overlap-group {
+  position: relative;
+  height: 20px;
+}
+
+.header .star-wrapper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.header .star {
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  top: 0;
+  left: 0;
+}
+
+.header .div {
+  position: relative;
+  width: 262px;
+  height: 108px;
+}
+
+.header .frame-2 {
+  position: absolute;
+  width: 71px;
+  height: 108px;
+  top: 0;
+  left: -10px;
+}
+
+.header .aston-villa {
+  position: absolute;
+  width: 43px;
+  height: 50px;
+  top: 12px;
+  left: 13px;
+  object-fit: cover;
+}
+
+.header .text-wrapper {
+  position: absolute;
+  width: 62px;
+  height: 28px;
+  top: 71px;
+  left: 4px;
+  /* font-family: var(--body2-font-family); */
+  font-family: var(--font-family-pretendard-semibold);
+  font-weight: var(--body2-font-weight);
+  color: #ffffff;
+  font-size: var(--body2-font-size);
+  text-align: center;
+  letter-spacing: var(--body2-letter-spacing);
+  line-height: var(--body2-line-height);
+  font-style: var(--body2-font-style);
+}
+
+.header .overlap {
+  position: absolute;
+  width: 71px;
+  height: 83px;
+  top: 20px;
+  left: 94px;
+}
+
+.header .frame-3 {
+  position: absolute;
+  width: 71px;
+  height: 62px;
+  top: 0;
+  left: 0;
+}
+
+.header .finished {
+  position: absolute;
+  top: -1px;
+  left: 7px;
+  font-family: var(--head-line-3-font-family);
+  font-weight: var(--head-line-3-font-weight);
+  color: #ffffff;
+  font-size: var(--head-line-3-font-size);
+  text-align: center;
+  letter-spacing: var(--head-line-3-letter-spacing);
+  line-height: var(--head-line-3-line-height);
+  font-style: var(--head-line-3-font-style);
+}
+
+.header .text-wrapper-2 {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+  color: #ffffff;
+  font-size: var(--title-font-size);
+  text-align: center;
+  letter-spacing: var(--title-letter-spacing);
+  line-height: var(--title-line-height);
+  white-space: nowrap;
+  font-style: var(--title-font-style);
+}
+
+.header .btn-livetracker {
+  position: absolute;
+  width: 36px;
+  height: 24px;
+  top: 59px;
+  left: 19px;
+}
+
+.header .frame-4 {
+  position: absolute;
+  width: 71px;
+  height: 108px;
+  top: 0;
+  left: 200px;
+}
+
+.header .arsenal {
+  position: absolute;
+  width: 46px;
+  height: 50px;
+  top: 12px;
+  left: 16px;
+  object-fit: cover;
+}
+
+.header .arsenal-2 {
+  position: absolute;
+  width: 55px;
+  height: 14px;
+  top: 71px;
+  left: 11px;
+  font-family: var(--body2-font-family);
+  font-weight: var(--body2-font-weight);
+  color: #ffffff;
+  font-size: var(--body2-font-size);
+  text-align: right;
+  letter-spacing: var(--body2-letter-spacing);
+  line-height: var(--body2-line-height);
+  font-style: var(--body2-font-style);
+}
+
+.header .img-wrapper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
