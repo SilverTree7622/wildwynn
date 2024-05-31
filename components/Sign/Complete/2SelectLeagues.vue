@@ -490,6 +490,7 @@ const HideOverlay = function (overlayName, animationName) {
 
         cssClasses.splice(-1);
         setTimeout(function () {
+            if (!overlayEle) return;
             overlayEle.className = cssClasses.join(" ");
         }, 1100);
     }

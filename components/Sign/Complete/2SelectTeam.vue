@@ -8,7 +8,7 @@
                         <img
                             class="icon_-line-arrow-1" src="/img/icon-linearrow-9@2x.png" alt="Icon_LineArrow" />
                     </a>
-                    <div class="select-your-teams valign-text-middle headline2">SELECT YOUR TEAMS</div>
+                    <div class="select-your-teams valign-text-middle headline2 text-black">SELECT YOUR TEAMS</div>
                     <div class="empty"></div>
                 </div>
                 <div class="sign_-in_-country_-serch_-select">
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="cell-1 cell-4" @click="clickTeamDetail">
                                     <div class="content-2 content-3">
-                                        <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png"
+                                        <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png"
                                             alt="Icon_LineArrow" />
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@
                             </div>
                             <div class="cell-1 cell-4" @click="clickTeamDetail">
                                 <div class="content-2 content-3">
-                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png" alt="Icon_LineArrow" />
+                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png" alt="Icon_LineArrow" />
                                 </div>
                             </div>
                         </article>
@@ -152,7 +152,7 @@
                             </div>
                             <div class="cell-1 cell-4" @click="clickTeamDetail">
                                 <div class="content-2 content-3">
-                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png" alt="Icon_LineArrow" />
+                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png" alt="Icon_LineArrow" />
                                 </div>
                             </div>
                         </article>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="cell-1 cell-4" @click="clickTeamDetail">
                                 <div class="content-2 content-3">
-                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png" alt="Icon_LineArrow" />
+                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png" alt="Icon_LineArrow" />
                                 </div>
                             </div>
                         </article>
@@ -186,7 +186,7 @@
                             </div>
                             <div class="cell-1 cell-4" @click="clickTeamDetail">
                                 <div class="content-2 content-3">
-                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png" alt="Icon_LineArrow" />
+                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png" alt="Icon_LineArrow" />
                                 </div>
                             </div>
                         </article>
@@ -203,7 +203,7 @@
                             </div>
                             <div class="cell-1 cell-4" @click="clickTeamDetail">
                                 <div class="content-2 content-3">
-                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png" alt="Icon_LineArrow" />
+                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png" alt="Icon_LineArrow" />
                                 </div>
                             </div>
                         </article>
@@ -220,7 +220,7 @@
                             </div>
                             <div class="cell-1 cell-4" @click="clickTeamDetail">
                                 <div class="content-2 content-3">
-                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-2@2x.png" alt="Icon_LineArrow" />
+                                    <img class="icon_-line-arrow" src="/img/icon-linearrow-7@2x.png" alt="Icon_LineArrow" />
                                 </div>
                             </div>
                         </article>
@@ -495,6 +495,7 @@ const HideOverlay = function (overlayName, animationName) {
 
         cssClasses.splice(-1);
         setTimeout(function () {
+            if (!overlayEle) return;
             overlayEle.className = cssClasses.join(" ");
         }, 100);
     }
@@ -524,8 +525,35 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-@import '@/public/css/sign/complete2select/styleguide.css';
 @import '@/public/css/sign/complete2select/globals.css';
-@import '@/public/css/sign/complete2select/frmu95signu95complate2u95selectyourteams1.css';
-/* @import '@/public/css/sign/complete2select/frmu95signu95complate2u95selectyourteams2.css'; */
+/* @import '@/public/css/sign/complete2select/2selectteamstyle.css';
+@import '@/public/css/sign/complete2select/2selectteamstyleguide.css'; */
+@import '@/public/css/sign/complete2select/styleguide.css';
+@import '@/public/css/sign/frmu95signu95complate2u95selectyourteams1.css';
+/* @import '@/public/css/sign/frmu95signu95complate2u95selectyourteams2.css'; */
+
+.sign_-in_-teams_ {
+  align-self: stretch;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+
+.sign_-in_-teams_-table {
+  align-items: flex-start;
+  background-color: var(--wt);
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+
+.sign_-in_-teams_-table-item {
+  align-items: center;
+  align-self: stretch;
+  background-color: #ffffff00;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
 </style>
