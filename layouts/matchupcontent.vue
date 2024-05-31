@@ -4,7 +4,7 @@
             :result_nav_code="props.result.nav_code"
         />
         
-        <!-- <CommonHeaderMatchUp /> -->
+        <CommonHeaderMatchUp />
 
         <CommonHeaderTabMatchUp
             :sName="props.sName"

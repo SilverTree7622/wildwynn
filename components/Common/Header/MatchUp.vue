@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <!-- <img src="@/public//img/matchup_header.png" style="width:100%"> -->
+    <div class="frmu95mobileu95matchup headline screen">
         <header class="header">
             <div class="frame-410">
                 <a href="/FootBall" target="_self"><img class="icon_-line-arrow" src="/img/icon-linearrow-1@2x.png"
@@ -38,7 +37,6 @@
                 <CommonFavoriteStar />
             </div>
         </header>
-
     </div>
 </template>
 
@@ -47,7 +45,8 @@
 </script>
 
 <style scoped>
-.header {
+@import '@/public/css/frmu95mobileu95matchup.css';
+/* .header {
   align-self: stretch;
   background-color: var(--frblue);
   display: flex;
@@ -132,6 +131,5 @@
   margin-top: 1px;
   text-align: right;
   width: 55px;
-}
-
+} */
 </style>

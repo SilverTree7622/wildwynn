@@ -1,24 +1,17 @@
 <template>
-    <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
-        <div class="leagueFrame">
-
-            <div>
-                <ul style="width:100%">
-                    <li style="width:100%"><img src="/img/matchup_stats_00.png" style="width:100%" /></li>
-                    <li style="width:100%"><img src="/img/matchup_stats_01.png" style="width:100%" /></li>
-                    <li style="width:100%"><img src="/img/matchup_stats_02.png" style="width:100%" /></li>
-                    <li style="width:100%"><img src="/img/matchup_stats_03.png" style="width:100%" /></li>
-                    <li style="width:100%"><img src="/img/matchup_stats_04.png" style="width:100%" /></li>
-
-                </ul>
-
-
-            </div>
-            <!--
-        <img class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
-        -->
-
-
-        </div>
+    <div class="">
+        <MatchUpStatsMainTab :selectedIdx="opt.selectedIdx" />
+        <MatchUpStatsMainStats v-if="opt.selectedIdx === 0" />
+        <MatchUpStatsMainMatchStats v-if="opt.selectedIdx === 1" />
     </div>
 </template>
+
+<script setup lang="ts">
+const opt = reactive({
+    selectedIdx: <number> 0,
+});
+</script>
+
+<style scoped>
+@import '@/public/css/frmu95mobileu95matchup.css';
+</style>
