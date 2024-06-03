@@ -5,13 +5,15 @@
         :sName="'MatchUp'"
         :tab="opt.tab"
         :result="opt.result"
+        @clickTab="clickTab"
     >
         <MatchUpStatsMain
             v-if="opt.tab === 'stats'"
+            :selectedIdx="statsOpt.selectedIdx"
         />
         <MatchUpNavitalkMain
-            :result_league="list.sortedLeagueList"
             v-if="opt.tab === 'navitalk'"
+            :result_league="list.sortedLeagueList"
         />
         <MatchUpOddsMain
             v-if="opt.tab === 'odds'"
@@ -40,10 +42,17 @@ const opt = reactive({
     },
 });
 
+const statsOpt = reactive({
+    selectedIdx: <number> 0,
+});
+
 const list = reactive({
     sortedLeagueList: <any[]> [],
 });
 
+const clickTab = (idx: number) => {
+    statsOpt.selectedIdx = idx;
+};
 
 watch(
     () => route.fullPath,
@@ -74,6 +83,7 @@ onMounted(async () => {
     opt.isPending = true;
     await nextTick();
     await res();
+
 });
 
 onBeforeUnmount(async () => {

@@ -1,5 +1,5 @@
 <template>
-    <div class="frmu95mobileu95matchup">
+    <div class="frmu95mobileu95matchup !bg-opacity-0 !bg-white">
         <div class="frame-492 mb-[12px]">
             <article class="btn-1">
                 <div class="frame-container">
@@ -61,7 +61,6 @@ const emit = defineEmits<{
 }>();
 
 const clickTab = (idx: number) => {
-    console.log('idx: ', idx);
     if (props.selectedIdx === idx) return;
     emit('selectTab', idx);
 };
@@ -73,4 +72,5 @@ onMounted(async () => {
 
 <style scoped>
 @import '@/public/css/frmu95mobileu95matchup.css';
+
 </style>
