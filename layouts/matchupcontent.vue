@@ -52,6 +52,7 @@ onMounted(async () => {
     await nextTick();
     scrollStore.setScroll2Top();
     if ($stickyHeader.value) {
+        opt.observer = undefined;
         opt.observer = new IntersectionObserver(
             ([ e ]) => {
                 if (!e.isIntersecting) {
@@ -60,14 +61,20 @@ onMounted(async () => {
                     opt.isSticky = false;
                 }
             },
-            { threshold: [ 1 ], rootMargin: "-3% 0px 0px 0px" }
+            {
+                threshold: [ 1 ],
+                rootMargin: "-4% 0px 0px 0px"
+            }
         );
         opt.observer.observe($stickyHeader.value);
     }
 });
 
 onBeforeUnmount(() => {
-    if (opt.observer) opt.observer.disconnect();
+    if (opt.observer) {
+        opt.observer.unobserve($stickyHeader.value);
+        opt.observer.disconnect();
+    }
 });
 </script>
 
