@@ -1,0 +1,158 @@
+/* screen - statchart3 */
+
+.statchart3 {
+  align-items: flex-start;
+  background-color: var(--wt);
+  display: flex;
+  height: 68px;
+  width: 340px;
+}
+
+.statchart3 .match_-stats_chart3 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 5px;
+  position: relative;
+  width: 340px;
+}
+
+.statchart3 .frame-462 {
+  height: 32px;
+  position: relative;
+  width: 101px;
+}
+
+.statchart3 .frame-container {
+  height: 32px;
+  position: relative;
+}
+
+.statchart3 .frame-460 {
+  align-items: flex-end;
+  display: flex;
+  gap: 4px;
+  height: 30px;
+  left: 0;
+  min-width: 101px;
+  position: absolute;
+  top: 2px;
+}
+
+.statchart3 .kai-havertz {
+  background-image: url(../img/kai-havertz@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.statchart3 .name {
+  color: var(--ctgray2);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1px;
+  min-height: 16px;
+  min-width: 67px;
+}
+
+.statchart3 .frame-459 {
+  align-items: flex-start;
+  background-color: var(--international-orange);
+  border-radius: 5px;
+  display: flex;
+  gap: 3px;
+  height: 18px;
+  left: 34px;
+  min-width: 49px;
+  padding: 0 2.4px;
+  position: absolute;
+  top: 0;
+}
+
+.statchart3 .star-4 {
+  align-self: center;
+  height: 14px;
+  margin-bottom: 0.43px;
+  width: 14px;
+}
+
+.statchart3 .text {
+  color: var(--wt);
+  font-weight: 400;
+  line-height: normal;
+  min-height: 16px;
+}
+
+.statchart3 .frame-461 {
+  height: 48px;
+  position: relative;
+  width: 40px;
+}
+
+.statchart3 .ratings {
+  color: var(--ctgray2);
+  font-weight: 400;
+  left: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+}
+
+.statchart3 .btn_-rating-to-line-up {
+  height: 25px;
+  left: 8px;
+  position: absolute;
+  top: 23px;
+  width: 25px;
+}
+
+.statchart3 .frame-458 {
+  height: 32px;
+  position: relative;
+  width: 136px;
+}
+
+.statchart3 .frame-457 {
+  align-items: flex-end;
+  display: flex;
+  gap: 4px;
+  height: 30px;
+  left: 0;
+  min-width: 136px;
+  position: absolute;
+  top: 2px;
+}
+
+.statchart3 .leandro-trossard {
+  color: var(--ctgray2);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1px;
+  min-height: 16px;
+  min-width: 102px;
+  text-align: right;
+}
+
+.statchart3 .leandro-trossard-1 {
+  background-image: url(../img/leandro-trossard@2x.png);
+  background-size: 100% 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.statchart3 .frame-456 {
+  align-items: flex-start;
+  background-color: var(--midnight);
+  border-radius: 5px;
+  display: flex;
+  gap: 1px;
+  height: 18px;
+  left: 53px;
+  min-width: 49px;
+  padding: 0 2.4px;
+  position: absolute;
+  top: 0;
+}

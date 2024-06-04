@@ -1,0 +1,794 @@
+/* screen - frame-342-all-breakpoints */
+
+.frame-342-all-breakpoints {
+  align-items: flex-start;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 360px;
+  padding: 0px 0px 10px;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .header_-short {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 4px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .frame-496 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .icon_-line-arrow {
+  cursor: pointer;
+  height: 14px;
+  margin-left: -1.00px;
+  position: relative;
+  width: 8.07px;
+}
+
+.frame-342-all-breakpoints .frame-497 {
+  height: 29px;
+  position: relative;
+  width: 271.65px;
+}
+
+.frame-342-all-breakpoints .flex-row-1 {
+  align-items: center;
+  display: flex;
+  gap: 21px;
+  height: 29px;
+  min-width: 272px;
+}
+
+.frame-342-all-breakpoints .frame-493 {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  min-width: 99px;
+}
+
+.frame-342-all-breakpoints .aston-villa-2 {
+  color: var(--wt);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  margin-bottom: 2.0px;
+  min-width: 77px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frame-342-all-breakpoints .aston-villa-3 {
+  height: 20px;
+  object-fit: cover;
+  width: 17px;
+}
+
+.frame-342-all-breakpoints .text-19 {
+  align-self: flex-start;
+  font-weight: 600;
+  margin-top: -1px;
+  min-height: 29px;
+  min-width: 52px;
+}
+
+.frame-342-all-breakpoints .frame-495 {
+  align-items: flex-start;
+  display: flex;
+  gap: 5px;
+  min-width: 78px;
+}
+
+.frame-342-all-breakpoints .arsenal-2 {
+  height: 20px;
+  object-fit: cover;
+  width: 18px;
+}
+
+.frame-342-all-breakpoints .arsenal-3 {
+  color: var(--wt);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  margin-top: 1px;
+  text-align: right;
+  width: 55px;
+}
+
+.frame-342-all-breakpoints .btn_-favorite_-check2-1 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.frame-342-all-breakpoints .frame-container-2 {
+  height: 20px;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .frame-411-1 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  left: 0;
+  min-width: 20px;
+  padding: 0 0.5px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-411-1:hover {
+  background-color: #F6D04E
+}
+
+.frame-342-all-breakpoints .frame-412-2 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  left: 0;
+  min-width: 20px;
+  padding: 0 0.5px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-412-2:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .tap-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  display: flex;
+  height: 42px;
+  padding: 17px 10px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .tap {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 1px;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .btn_-tap_-dis-selected {
+  align-self: stretch;
+  border-radius: 5px 5px 0px 0px;
+  height: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .overlap-group1-1 {
+  border-radius: 4px 4px 0px 0px;
+  height: 26px;
+  position: relative;
+  width: 66px;
+}
+
+.frame-342-all-breakpoints .overlap-group {
+  height: 25px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 64px;
+}
+
+.frame-342-all-breakpoints .rectangle-2044 {
+  background-color: var(--btblue);
+  border-radius: 6px 6px 0px 0px;
+  top: 0;
+}
+
+.frame-342-all-breakpoints .rectangle-21 {
+  background-color: var(--bg);
+  border-radius: 5px 5px 0px 0px;
+  top: 4px;
+}
+
+.frame-342-all-breakpoints .fixtures {
+  color: var(--ptyellow);
+  font-weight: 600;
+  height: 17px;
+  left: 12px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+}
+
+.frame-342-all-breakpoints .frame-371 {
+  align-items: flex-end;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 66px;
+  padding: 3px 12px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-371:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .fixtures-1 {
+  color: var(--wt);
+  min-width: 41px;
+}
+
+.frame-342-all-breakpoints .fixtures-2 {
+  color: var(--ptyellow);
+  left: 1px;
+  position: absolute;
+  top: 5px;
+}
+
+.frame-342-all-breakpoints .frame-371-1 {
+  align-items: flex-end;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  left: 0;
+  min-width: 66px;
+  padding: 3px 2px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-371-1:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .fixtures-3 {
+  color: var(--wt);
+  min-width: 62px;
+}
+
+.frame-342-all-breakpoints .fixtures-4 {
+  color: var(--ptyellow);
+  left: 14px;
+  position: absolute;
+  top: 5px;
+}
+
+.frame-342-all-breakpoints .frame-371-2 {
+  align-items: flex-end;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 66px;
+  padding: 3px 14px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-371-2:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .fixtures-5 {
+  color: var(--wt);
+  min-width: 37px;
+}
+
+.frame-342-all-breakpoints .fixtures-6 {
+  color: var(--ptyellow);
+  left: 9px;
+  position: absolute;
+  top: 5px;
+}
+
+.frame-342-all-breakpoints .frame-371-3 {
+  align-items: flex-end;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  left: 0;
+  min-width: 66px;
+  padding: 3px 10px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-371-3:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .fixtures-7 {
+  color: var(--wt);
+  min-width: 46px;
+}
+
+.frame-342-all-breakpoints .fixtures-8 {
+  color: var(--ptyellow);
+  left: 18px;
+  position: absolute;
+  top: 5px;
+}
+
+.frame-342-all-breakpoints .frame-371-4 {
+  align-items: flex-end;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  height: 26px;
+  left: 0;
+  min-width: 66px;
+  padding: 3px 19px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-371-4:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .fixtures-9 {
+  color: var(--wt);
+  min-width: 28px;
+}
+
+.frame-342-all-breakpoints .frame-492 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .btn_-round-square {
+  height: 22px;
+  position: relative;
+  width: 100px;
+}
+
+.frame-342-all-breakpoints .frame-container-1 {
+  border-radius: 15px;
+  height: 22px;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .frame-376 {
+  align-items: flex-start;
+  background-color: var(--ltblue);
+  border-radius: 15px;
+  display: flex;
+  height: 22px;
+  left: 0;
+  min-width: 100px;
+  padding: 2px 37px;
+  position: absolute;
+  top: 0;
+}
+
+.frame-342-all-breakpoints .text {
+  color: var(--wt);
+  font-weight: 400;
+  line-height: normal;
+  min-height: 16px;
+  min-width: 26px;
+  text-align: center;
+}
+
+.frame-342-all-breakpoints .frame-375 {
+  align-items: flex-start;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  left: 0;
+  min-width: 100px;
+  padding: 1px 6px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-375:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .text-1 {
+  font-weight: 400;
+  min-height: 16px;
+  min-width: 86px;
+}
+
+.frame-342-all-breakpoints .btn_-round-square-1 {
+  height: 22px;
+  position: relative;
+  width: 117px;
+}
+
+.frame-342-all-breakpoints .frame-376-1 {
+  align-items: flex-start;
+  background-color: var(--ltblue);
+  border-radius: 15px;
+  display: flex;
+  height: 22px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 117px;
+  padding: 2px 45px;
+  position: absolute;
+  top: 0;
+}
+
+.frame-342-all-breakpoints .frame-375-1 {
+  align-items: flex-start;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  left: 0;
+  min-width: 117px;
+  padding: 1px 11px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-375-1:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .text-2 {
+  font-weight: 400;
+  min-height: 16px;
+  min-width: 95px;
+}
+
+.frame-342-all-breakpoints .frame-375-2 {
+  align-items: flex-start;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  left: 0;
+  min-width: 100px;
+  padding: 1px 8px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.frame-342-all-breakpoints .frame-375-2:hover {
+  opacity: 0;
+}
+
+.frame-342-all-breakpoints .text-3 {
+  font-weight: 400;
+  min-height: 16px;
+  min-width: 83px;
+}
+
+.frame-342-all-breakpoints .fixtures-10 {
+  font-weight: 600;
+  height: 17px;
+  line-height: normal;
+  text-align: center;
+}
+
+.frame-342-all-breakpoints .rectangle {
+  height: 21px;
+  left: 0;
+  position: absolute;
+  width: 64px;
+}
+
+.frame-342-all-breakpoints .text-4 {
+  color: var(--wt);
+  line-height: normal;
+  text-align: center;
+}
+/* screen - header */
+
+.header {
+  align-items: center;
+  background-color: var(--frblue);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 360px;
+  padding: 6px 12px;
+  position: relative;
+}
+
+.header .frame-410 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.header .live_-match {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.header .btn_-favorite_-check2 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.header .frame-container {
+  height: 20px;
+  position: relative;
+}
+
+.header .frame-411 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  left: 0;
+  min-width: 20px;
+  padding: 0 0.5px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.header .frame-411:hover {
+  background-color: #F6D04E
+}
+
+.header .frame-412 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  left: 0;
+  min-width: 20px;
+  padding: 0 0.5px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.header .frame-412:hover {
+  opacity: 0;
+}
+
+.header .live-match {
+  height: 108px;
+  position: relative;
+  width: 262px;
+}
+
+.header .flex-row {
+  align-items: flex-end;
+  display: flex;
+  height: 108px;
+  left: -10px;
+  min-width: 281px;
+  position: relative;
+}
+
+.header .frame-414 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-height: 108px;
+  padding: 9px 4px;
+  width: 71px;
+}
+
+.header .aston-villa {
+  height: 50px;
+  margin-right: 1.56px;
+  margin-top: 3px;
+  object-fit: cover;
+  width: 43px;
+}
+
+.header .aston-villa-1 {
+  color: var(--wt);
+  font-weight: 600;
+  height: 28px;
+  line-height: normal;
+  margin-right: 1.0px;
+  text-align: center;
+  width: 62px;
+}
+
+.header .overlap-group1 {
+  height: 83px;
+  margin-bottom: 5px;
+  margin-left: 33px;
+  position: relative;
+  width: 71px;
+}
+
+.header .frame-413 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  left: 0;
+  min-height: 62px;
+  position: absolute;
+  top: 0;
+  width: 71px;
+}
+
+.header .finished {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 1.0px;
+  margin-top: -1px;
+  min-height: 17px;
+  min-width: 58px;
+  text-align: center;
+}
+
+.header .text-18 {
+  color: var(--wt);
+  font-weight: 800;
+  line-height: normal;
+  min-height: 42px;
+  min-width: 71px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.header .btn_-live-tracker {
+  cursor: pointer;
+  height: 24px;
+  left: 19px;
+  position: absolute;
+  top: 59px;
+  width: 36px;
+}
+
+.header .frame-412-1 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-left: 35px;
+  min-height: 108px;
+  padding: 11.7px 5px;
+  width: 71px;
+}
+
+.header .arsenal {
+  height: 50px;
+  margin-right: 4.38px;
+  object-fit: cover;
+  width: 46px;
+}
+
+.header .arsenal-1 {
+  color: var(--wt);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  text-align: right;
+  width: 55px;
+}
+
+.header .overlap-group2 {
+  height: 20px;
+  position: relative;
+}
+
+.header .star-1 {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+/* screen - startchart1 */
+
+.startchart1 {
+  align-items: flex-start;
+  background-color: var(--bggray);
+  display: flex;
+  height: 164px;
+  min-width: 340px;
+}
+
+.startchart1 .match_-stats_chart1 {
+  align-items: center;
+  background-color: var(--bggray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 2px;
+  position: relative;
+  width: 340px;
+}
+
+.startchart1 .match_-stats_chart1-1 {
+  height: 144px;
+  position: relative;
+  width: 336px;
+}
+@media screen and (max-width: 359px) {
+  .screen.header { 
+    display: none;
+   }
+  .screen.frame-342-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 360px) and (max-width: 359px) {
+  .screen.startchart1 { 
+    display: none;
+   }
+  .screen.header { 
+    display: none;
+   }
+  .screen.frame-342-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 360px) {
+  .screen.startchart1 { 
+    display: none;
+   }
+}
