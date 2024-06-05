@@ -5,7 +5,7 @@
                 <div class="searcher-2AWpWu">
                     <div class="group-16-OuNp0x">
                         <div class="rectangle-35-w5grIQ"></div>
-                        <img class="x1-w5grIQ" src="/img/-1-3@2x.png" alt="1" />
+                        <img class="x1-w5grIQ" src="/img/search.png" alt="1" />
                         <input class="search-w5grIQ body" name="search" placeholder="search" type="text" required />
                     </div>
                 </div>
