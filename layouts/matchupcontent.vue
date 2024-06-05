@@ -37,7 +37,7 @@ const opt = reactive({
     stickyStandardValue: <number>180,
     selectedIdx: <number>0,
     scrollPosition: <number>0,
-    observer: <IntersectionObserver | undefined>undefined,
+    observer: <IntersectionObserver | undefined> undefined,
 });
 
 const $stickyHeader = ref();

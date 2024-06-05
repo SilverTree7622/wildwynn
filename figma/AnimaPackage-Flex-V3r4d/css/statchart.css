@@ -1,0 +1,15 @@
+/* screen - statchart */
+
+.statchart {
+  background-color: var(--wt);
+  display: flex;
+  min-height: 958px;
+  min-width: 340px;
+  width: 100%;
+}
+
+.statchart .contents_-football_-match_-stats {
+  height: 958px;
+  position: relative;
+  width: 340px;
+}

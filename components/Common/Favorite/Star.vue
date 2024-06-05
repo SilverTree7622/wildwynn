@@ -22,12 +22,12 @@ const props = withDefaults(defineProps<{
     offEvt?: Function;
 }>(), {
     isToggled: false,
-    onEvt: () => {},
-    offEvt: () => {},
+    onEvt: () => { },
+    offEvt: () => { },
 });
 
 const opt = reactive({
-    isToggled: <boolean> props.isToggled ?? false,
+    isToggled: <boolean>props.isToggled ?? false,
 });
 
 const init = () => {
@@ -54,9 +54,11 @@ defineExpose({
 </script>
 
 <style scoped>
-
 .btn_-favorite_-check2 {
+    align-items: center;
+    display: flex;
     height: 20px;
+    justify-content: center;
     position: relative;
     width: 20px;
 }
@@ -93,13 +95,12 @@ defineExpose({
 }
 
 .frame:hover {
-  opacity: 0;
+    opacity: 0;
 }
 
 .star {
-  height: 18.09px;
-  margin-top: -1.9px;
-  width: 19.02px;
+    height: 18.09px;
+    margin-top: -1.9px;
+    width: 19.02px;
 }
-
 </style>

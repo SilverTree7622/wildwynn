@@ -1,9 +1,11 @@
 <template>
     <div class="frmu95mobileu95matchup headline screen">
-        <MatchUpStatsMainStatsChart1 />
+        <img class="frmu95mobileu95matchup-item" id="contents_-football_-match_-stats"
+            src="/img/contents-football-match-stats.svg" alt="Contents_Football_Match_Stats" />
+        <!-- <MatchUpStatsMainStatsChart1 />
         <MatchUpStatsMainStatsChart2 />
         <MatchUpStatsMainStatsChart3 />
-        <MatchUpStatsMainStatsChart4 />
+        <MatchUpStatsMainStatsChart4 /> -->
     </div>
 </template>
 
