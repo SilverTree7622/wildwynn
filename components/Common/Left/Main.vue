@@ -1,5 +1,5 @@
 <template>
-    <div id="overlay-left" class="overlay-base">
+    <div id="overlay-left" class="overlay-base z-10">
         <div class="left screen">
             <div class="left-sjwFMh">
                 <div class="searcher-2AWpWu">

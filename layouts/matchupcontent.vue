@@ -2,7 +2,7 @@
     <div class="frmu95mobile screen" style="background: #001226;">
         <CommonHeaderMain :result_nav_code="props.result.nav_code" />
 
-        <div ref="$stickyHeader" class="sticky top-0 z-50">
+        <div ref="$stickyHeader" class="sticky top-0 z-[1]">
             <CommonHeaderMatchUp v-show="!opt.isSticky" />
             <CommonHeaderMatchUpSticky v-show="opt.isSticky" />
             <CommonHeaderTabMatchUp :sName="props.sName" :tab="props.tab" />
