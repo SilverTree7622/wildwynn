@@ -1,0 +1,453 @@
+/* screen - frame-342-all-breakpoints */
+
+.frame-342-all-breakpoints {
+  align-items: flex-start;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 360px;
+  /* padding: 0px 0px 10px; */
+  position: relative;
+}
+
+.frame-342-all-breakpoints .header_-short {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 4px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .frame-496 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .icon_-line-arrow {
+  cursor: pointer;
+  height: 14px;
+  margin-left: -1.00px;
+  position: relative;
+  width: 8.07px;
+}
+
+.frame-342-all-breakpoints .frame-497 {
+  height: 29px;
+  position: relative;
+  width: 271.65px;
+}
+
+.frame-342-all-breakpoints .frame-container {
+  align-items: center;
+  display: flex;
+  gap: 21px;
+  min-width: 272px;
+}
+
+.frame-342-all-breakpoints .frame-49 {
+  align-items: center;
+  display: inline-flex;
+  gap: 5px;
+  justify-content: center;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .aston-villa {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-342-all-breakpoints .aston-villa-1 {
+  height: 20px;
+  object-fit: cover;
+  position: relative;
+  width: 17.37px;
+}
+
+.frame-342-all-breakpoints .frame-494 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 52px;
+  height: 40px;
+}
+
+.frame-342-all-breakpoints .text-1 {
+  color: var(--wt);
+  font-weight: 600;
+  /* height: 29px; */
+  line-height: normal;
+  text-align: center;
+  width: 52px;
+}
+
+.frame-342-all-breakpoints .arsenal {
+  height: 20px;
+  object-fit: cover;
+  position: relative;
+  width: 18.25px;
+}
+
+.frame-342-all-breakpoints .arsenal-1 {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: right;
+  width: 55px;
+}
+
+.frame-342-all-breakpoints .btn_-favorite_-check2 {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+}
+
+.frame-342-all-breakpoints .star {
+  height: 18.09px;
+  margin-left: -1px;
+  margin-top: -0.9px;
+  width: 19.02px;
+}
+
+.frame-342-all-breakpoints .tap-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--frblue);
+  display: flex;
+  height: 42px;
+  padding: 17px 10px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .tap {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 1px;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .btn_-tap_-dis-selected {
+  align-self: stretch;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  height: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .frame-371 {
+  align-items: center;
+  background-color: var(--magic-potion);
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  height: 25px;
+  justify-content: center;
+  padding: 4px 3px;
+  position: relative;
+  width: 66px;
+}
+
+.frame-342-all-breakpoints .fixtures {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frame-342-all-breakpoints .fixtures-1 {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frame-342-all-breakpoints .frame-492 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-342-all-breakpoints .btn_-round-square {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .frame-375 {
+  align-items: center;
+  background-color: var(--bg);
+  border: 1px solid;
+  border-color: var(--ltblue);
+  border-radius: 15px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 3px 8px;
+  position: relative;
+}
+
+.frame-342-all-breakpoints .text {
+  color: var(--wt);
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+/* screen - header */
+
+.header {
+  align-items: center;
+  background-color: var(--frblue);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 360px;
+  padding: 6px 12px;
+  position: relative;
+}
+
+.header .frame-410 {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2px;
+  width: 100%;
+}
+
+.header .icon_-line-arrow-1 {
+  cursor: pointer;
+  height: 14px;
+  margin-left: -1.00px;
+  position: relative;
+  width: 8.07px;
+}
+
+.header .frame-415 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 46px;
+  justify-content: space-between;
+}
+
+.header .premier-league {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.header .x0000-04092024-tue {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.header .btn_-favorite_-check2-1 {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+}
+
+.header .star-1 {
+  height: 18.09px;
+  margin-left: -1px;
+  margin-top: -0.9px;
+  width: 19.02px;
+}
+
+.header .live_-match {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.header .live-match {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 5px 2px;
+  position: relative;
+}
+
+.header .frame-414 {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 4px;
+}
+
+.header .aston-villa-2 {
+  height: 50px;
+  object-fit: cover;
+  position: relative;
+  width: 43.44px;
+}
+
+.header .aston-villa-3 {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: 62px;
+}
+
+.header .frame {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+}
+
+.header .finished {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.header .text-2 {
+  color: var(--wt);
+  font-weight: 800;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.header .btn_-live-tracker {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 36px;
+}
+
+.header .frame-412 {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 12px 5px;
+}
+
+.header .arsenal-2 {
+  height: 50px;
+  object-fit: cover;
+  position: relative;
+  width: 45.62px;
+}
+
+.header .arsenal-3 {
+  color: var(--wt);
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  text-align: right;
+  width: 55px;
+}
+
+.header .frame-1 {
+  align-items: center;
+  flex: 0 0 auto;
+  position: relative;
+}
+/* screen - startchart1 */
+
+.startchart1 {
+  background-color: var(--bggray);
+  display: flex;
+  min-height: 164px;
+  min-width: 340px;
+  width: 100%;
+}
+
+.startchart1 .match_-stats_chart1 {
+  height: 127.62px;
+  position: relative;
+  width: 340px;
+}
+@media screen and (max-width: 359px) {
+  .screen.frame-342-all-breakpoints { 
+    display: none;
+   }
+  .screen.header { 
+    display: none;
+   }
+}
+@media screen and (min-width: 360px) and (max-width: 359px) {
+  .screen.frame-342-all-breakpoints { 
+    display: none;
+   }
+  .screen.header { 
+    display: none;
+   }
+  .screen.startchart1 { 
+    display: none;
+   }
+}
+@media screen and (min-width: 360px) {
+  .screen.startchart1 { 
+    display: none;
+   }
+}

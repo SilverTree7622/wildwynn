@@ -1,0 +1,682 @@
+.frm-sign {
+    display: flex;
+    flex-direction: column;
+    height: 660px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0px;
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .frm-sign .sign-in-contents {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frm-sign .sign-in-title {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frm-sign .icon-linearrow {
+    position: relative;
+    width: 6.07px;
+    height: 12px;
+  }
+  
+  .frm-sign .select-your-teams {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--head-line-2-font-family);
+    font-weight: var(--head-line-2-font-weight);
+    color: #000000;
+    font-size: var(--head-line-2-font-size);
+    text-align: center;
+    letter-spacing: var(--head-line-2-letter-spacing);
+    line-height: var(--head-line-2-line-height);
+    white-space: nowrap;
+    font-style: var(--head-line-2-font-style);
+  }
+  
+  .frm-sign .empty {
+    position: relative;
+    width: 22px;
+    height: 14px;
+  }
+  
+  .frm-sign .sign-in-country {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    overflow-x: scroll;
+  }
+  
+  .frm-sign .navbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frm-sign .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: #616161;
+    font-size: var(--body-font-size);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    font-style: var(--body-font-style);
+  }
+  
+  .frm-sign .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--bigger-body-font-family);
+    font-weight: var(--bigger-body-font-weight);
+    color: #00b1ff;
+    font-size: var(--bigger-body-font-size);
+    letter-spacing: var(--bigger-body-letter-spacing);
+    line-height: var(--bigger-body-line-height);
+    white-space: nowrap;
+    font-style: var(--bigger-body-font-style);
+  }
+  
+  .frm-sign .sub-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 5px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  
+  .frm-sign .frame {
+    position: relative;
+    width: 501px;
+    height: 69px;
+  }
+  
+  .frm-sign .btn-sportsicon {
+    top: 1px;
+    left: 0;
+    background-color: #001226;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ffffff;
+    position: absolute;
+    width: 78px;
+    height: 68px;
+  }
+  
+  .frm-sign .overlap-group {
+    position: relative;
+    height: 68px;
+  }
+  
+  .frm-sign .icon-square-football {
+    width: 58px;
+    left: 10px;
+    position: absolute;
+    height: 53px;
+    top: 8px;
+  }
+  
+  .frm-sign .text-wrapper-2 {
+    position: absolute;
+    top: 40px;
+    left: -1px;
+    font-family: var(--body2-font-family);
+    font-weight: var(--body2-font-weight);
+    color: #ffffff;
+    font-size: var(--body2-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-letter-spacing);
+    line-height: var(--body2-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-font-style);
+  }
+  
+  .frm-sign .icon-football {
+    width: 38px;
+    left: 9px;
+    position: absolute;
+    height: 38px;
+    top: 0;
+  }
+  
+  .frm-sign .btn-sportsicon-hover {
+    top: 0;
+    left: 0;
+    mix-blend-mode: lighten;
+    position: absolute;
+    width: 78px;
+    height: 68px;
+  }
+  
+  .frm-sign .rectangle {
+    height: 68px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  
+  .frm-sign .overlap-wrapper {
+    top: 1px;
+    left: 84px;
+    background-color: #001226;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ffffff;
+    position: absolute;
+    width: 78px;
+    height: 68px;
+  }
+  
+  .frm-sign .icon-square {
+    width: 63px;
+    left: 7px;
+    position: absolute;
+    height: 53px;
+    top: 8px;
+  }
+  
+  .frm-sign .text-wrapper-3 {
+    position: absolute;
+    top: 40px;
+    left: -6px;
+    font-family: var(--body2-font-family);
+    font-weight: var(--body2-font-weight);
+    color: #ffffff;
+    font-size: var(--body2-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-letter-spacing);
+    line-height: var(--body2-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-font-style);
+  }
+  
+  .frm-sign .icon-basketball {
+    width: 38px;
+    left: 13px;
+    position: absolute;
+    height: 38px;
+    top: 0;
+  }
+  
+  .frm-sign .overlap-group-wrapper {
+    top: 1px;
+    left: 169px;
+    background-color: #001226;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ffffff;
+    position: absolute;
+    width: 78px;
+    height: 68px;
+  }
+  
+  .frm-sign .icon-square-baseball {
+    width: 57px;
+    left: 11px;
+    position: absolute;
+    height: 53px;
+    top: 8px;
+  }
+  
+  .frm-sign .icon-baseball {
+    width: 33px;
+    left: 12px;
+    position: absolute;
+    height: 38px;
+    top: 0;
+  }
+  
+  .frm-sign .text-wrapper-4 {
+    position: absolute;
+    top: 40px;
+    left: -2px;
+    font-family: var(--body2-font-family);
+    font-weight: var(--body2-font-weight);
+    color: #ffffff;
+    font-size: var(--body2-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-letter-spacing);
+    line-height: var(--body2-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-font-style);
+  }
+  
+  .frm-sign .div-wrapper {
+    top: 1px;
+    left: 253px;
+    background-color: #001226;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ffffff;
+    position: absolute;
+    width: 78px;
+    height: 68px;
+  }
+  
+  .frm-sign .icon-square-2 {
+    width: 63px;
+    left: 8px;
+    position: absolute;
+    height: 53px;
+    top: 8px;
+  }
+  
+  .frm-sign .icon-vollyball {
+    width: 38px;
+    left: 10px;
+    position: absolute;
+    height: 38px;
+    top: 0;
+  }
+  
+  .frm-sign .btn-sportsicon-2 {
+    top: 1px;
+    left: 338px;
+    background-color: #001226;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ffffff;
+    position: absolute;
+    width: 78px;
+    height: 68px;
+  }
+  
+  .frm-sign .icon-square-tennis {
+    width: 41px;
+    left: 18px;
+    position: absolute;
+    height: 53px;
+    top: 8px;
+  }
+  
+  .frm-sign .icon-tennis {
+    width: 30px;
+    left: 5px;
+    position: absolute;
+    height: 38px;
+    top: 0;
+  }
+  
+  .frm-sign .btn-sportsicon-3 {
+    position: absolute;
+    width: 78px;
+    height: 68px;
+    top: 1px;
+    left: 422px;
+    background-color: #001226;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #ffffff;
+  }
+  
+  .frm-sign .icon-square-3 {
+    width: 65px;
+    left: 7px;
+    position: absolute;
+    height: 53px;
+    top: 8px;
+  }
+  
+  .frm-sign .icon-icehackey {
+    width: 39px;
+    left: 11px;
+    position: absolute;
+    height: 38px;
+    top: 0;
+  }
+  
+  .frm-sign .sign-in-teams {
+    height: 30px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .frm-sign .element {
+    position: absolute;
+    width: 15px;
+    height: 18px;
+    top: 6px;
+    left: 9px;
+  }
+  
+  .frm-sign .search {
+    position: absolute;
+    width: 151px;
+    height: 14px;
+    top: 7px;
+    left: 32px;
+    background-color: transparent;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: #afafaf;
+    font-size: var(--body-font-size);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    font-style: var(--body-font-style);
+  }
+  
+  .frm-sign .sign-in-teams-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .frm-sign .row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff00;
+  }
+  
+  .frm-sign .cell {
+    display: inline-flex;
+    padding: 0px 2px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+    border: 0px none;
+  }
+  
+  .frm-sign .content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frm-sign .img-pouplar-teams {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #3574d6;
+  }
+  
+  .frm-sign .star {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 6px;
+    left: 6px;
+  }
+  
+  .frm-sign .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+    border: 0px none;
+  }
+  
+  .frm-sign .content-2 {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 6px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frm-sign .text-wrapper-5 {
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: #000000;
+    font-size: var(--body-font-size);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    font-style: var(--body-font-style);
+  }
+  
+  .frm-sign .cell-2 {
+    display: inline-flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+    border: 0px none;
+  }
+  
+  .frm-sign .icon-linearrow-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 10px 6px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frm-sign .cell-3 {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0px 2px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    background-color: #ffffff;
+    border: 0px none;
+  }
+  
+  .frm-sign .flag-circle-BR {
+    background-image: url(./img/flag-circle-BR-6.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-CL {
+    background-image: url(./img/flag-circle-CL.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-ENG {
+    background-image: url(./img/flag-circle-ENG.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-KOR {
+    background-image: url(./img/flag-circle-KOR.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-UK {
+    background-image: url(./img/flag-circle-UK.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-US {
+    background-image: url(./img/flag-circle-US.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-2 {
+    background-image: url(./img/flag-circle-BR-3.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-3 {
+    background-image: url(./img/flag-circle-BR-7.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-4 {
+    background-image: url(./img/flag-circle-BR-13.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-5 {
+    background-image: url(./img/flag-circle-BR-10.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-6 {
+    background-image: url(./img/flag-circle-BR-11.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-7 {
+    background-image: url(./img/flag-circle-BR-4.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-8 {
+    background-image: url(./img/flag-circle-BR.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-9 {
+    background-image: url(./img/flag-circle-BR-5.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-10 {
+    background-image: url(./img/flag-circle-BR-8.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-11 {
+    background-image: url(./img/flag-circle-BR-2.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-12 {
+    background-image: url(./img/flag-circle-BR-9.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-13 {
+    background-image: url(./img/flag-circle-BR-12.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .frm-sign .flag-circle-BR-14 {
+    background-image: url(./img/image.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  

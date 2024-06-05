@@ -1,0 +1,1 @@
+import{_ as o,c as r,$ as t,o as c}from"./CdHMHpy7.js";const s={},n={style:{margin:"0","background-color":"#001226"}};function a(e,_){return c(),r("div",n,[t(e.$slots,"default")])}const d=o(s,[["render",a]]);export{d as default};
