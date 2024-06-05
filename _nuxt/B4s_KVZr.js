@@ -1,0 +1,1 @@
+import{d as e,m as o,p as t,o as n,c as a}from"./C8jsJOkW.js";const s={style:{background:"#001226"}},d=e({__name:"index",setup(c){return o(()=>{t("/FootBall")}),(r,_)=>(n(),a("div",s))}});export{d as default};

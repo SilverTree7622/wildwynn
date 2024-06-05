@@ -1,0 +1,1 @@
+import{_ as n,c as t,x as a,a as o,o as c,B as s}from"./C8jsJOkW.js";const _={},r={style:{margin:"0",background:"#ffffff"},class:"h-screen"},f=o("input",{type:"hidden",id:"anPageName",name:"page",value:"frmu95signu95complate1"},null,-1);function d(i,m){const e=s;return c(),t("div",r,[f,a(e)])}const p=n(_,[["render",d]]);export{p as default};
