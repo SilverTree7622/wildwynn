@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'@nuxt/ui',
 	],
-
+	
 	runtimeConfig: {
 		public: {
 			CONSTANTS: {
