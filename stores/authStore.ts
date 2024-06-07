@@ -21,7 +21,6 @@ export const useAuthStore = defineStore('authStore', () => {
     const show = (tab?: TAuthStoreTabType) => {
         opt.isOpen = true;
         opt.tab = tab ?? 'signin';
-        console.log('opt.tab: ', opt.tab);
     };
     
     const hide = () => {

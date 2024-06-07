@@ -23,42 +23,42 @@
                             address:
                         </p>
                         <div class="txt-input_-sign">
-                            <input class="email-address body" name="emailaddress" placeholder="search" type="text"
-                                required />
+                            <input ref="$email" class="email-address body" name="emailaddress" placeholder="email" type="email"
+                                required @input="inputEmail" @keyup="keyUpEnter" />
                         </div>
-                        <p class="the valign-text-middle caption">The Email Address Field is required</p>
-                        <div class="sign_-in_-password_txt sign_-in_">
+                        <p v-show="required.email" class="the valign-text-middle caption">The Email Address Field is required</p>
+                        <div class="sign_-in_-password_txt sign_-in_ w-full">
                             <div class="password valign-text-middle body">Password</div>
-                            <div class="forgot-your-password valign-text-middle caption">Forgot your password?</div>
+                            <div class="forgot-your-password valign-text-middle caption cursor-pointer" @click="clickForgotPassword">Forgot your password?</div>
                         </div>
                         <div class="txt-input_-sign">
-                            <input class="email-address body" name="emailaddress" placeholder="search" type="text"
-                                required />
+                            <input ref="$password" class="email-address body" name="emailaddress" placeholder="password" type="password"
+                                required @input="inputPassword" @keyup="keyUpEnter" />
                         </div>
-                        <p class="the valign-text-middle caption">The Password Field is required</p>
-                        <NuxtLink to="/Sign/Complete/1">
-                            <div class="btn_-join_-membership_-blue">
+                        <p v-show="required.password" class="the valign-text-middle caption">The Password Field is required</p>
+                        <a @click="clickSignInBtn">
+                            <div class="btn_-join_-membership_-blue" :class="getBtnEnable()">
                                 <div class="join valign-text-middle headline3">SIGN IN</div>
                             </div>
-                        </NuxtLink>
+                        </a>
                     </div>
                     <div class="sign_-in_-resister sign_-in_">
-                        <NuxtLink to="/SignUp" class="no-account-register-here valign-text-middle">No account?
-                            Register here</NuxtLink>
-                        <div class="sign_-in_-resister-item valign-text-middle">Terms and Conditions</div>
-                        <div class="sign_-in_-resister-item valign-text-middle">Privacy Policy</div>
+                        <a @click="clickSignUpBtn" class="no-account-register-here valign-text-middle cursor-pointer">No account?
+                            Register here</a>
+                        <div class="sign_-in_-resister-item valign-text-middle cursor-pointer" @click="clickTermsConditions">Terms and Conditions</div>
+                        <div class="sign_-in_-resister-item valign-text-middle cursor-pointer" @click="clickPrivacyPolicy">Privacy Policy</div>
                     </div>
-                    <div class="sign_-in_-social-join">
+                    <div class="sign_-in_-social-join mb-6">
                         <div class="sign_-in_-social-join_or-line">
                             <img class="line" src="/img/line29@2x.png" alt="Line29" />
                             <div class="or valign-text-middle headline3">OR</div>
                             <img class="line" src="/img/line30@2x.png" alt="Line30" />
                         </div>
-                        <div class="btn_-sign_-social">
+                        <div class="btn_-sign_-social cursor-pointer" @click="clickOAuth('facebook')">
                             <div class="text-2 text-4">Continue with Facebook</div>
                             <img class="logo" src="/img/logo-facebooklogo@2x.png" alt="Logo_facebooklogo" />
                         </div>
-                        <div class="btn_-sign_-social">
+                        <div class="btn_-sign_-social cursor-pointer" @click="clickOAuth('google')">
                             <div class="text-3 text-4">Continue with Google</div>
                             <img class="logo" src="/img/logo-googlelogo@2x.png" alt="Logo_googlelogo" />
                         </div>
@@ -70,13 +70,111 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps<{
+    validate: (email: string, password: string) => {
+        isEmailFailed: boolean;
+        isEmailRequireAtMark: boolean;
+        isPasswordFailed: boolean;
+    },
+}>();
+
 const authStore = useAuthStore();
+const toastStore = useToastStore();
+
+const opt = reactive({
+    isSignInAble: <boolean> false,
+});
+
+const required = reactive({
+    email: <boolean> false,
+    password: <boolean> false,
+});
+
+const $email = ref();
+const $password = ref();
+
+const init = () => {
+    required.email = false;
+    required.password = false;
+    opt.isSignInAble = false;
+    if ($email.value) $email.value.value = '';
+    if ($password.value) $password.value.value = '';
+};
+
+const inputEmail = (evt) => {
+    validate();
+};
+
+const inputPassword = (evt) => {
+    validate();
+};
+
+const keyUpEnter = async (evt) => {
+    if (evt.key !== 'Enter') return;
+    await clickSignInBtn();
+};
+
+const validate = (): boolean => {
+    if (!$email.value) return false;
+    if (!$password.value) return false;
+    const res = props.validate($email.value.value, $password.value.value);
+    required.email = res.isEmailFailed;
+    required.password = res.isPasswordFailed;
+    opt.isSignInAble = !required.email && !required.password;
+    return opt.isSignInAble;
+};
+
+const getBtnEnable = () => {
+    return opt.isSignInAble ? '' : '!bg-gray-600';
+};
+
+const clickForgotPassword = () => {
+
+};
 
 const clickSignUp = () => {
     authStore.show('signup');
 };
 
+const clickSignInBtn = async () => {
+    if (!validate()) return;
+    if (props.validate($email.value.value, $password.value.value).isEmailRequireAtMark) {
+        toastStore.warn(`in email input @ required`);
+        return;
+    }
+    // authStore.hide();
+};
 
+const clickSignUpBtn = () => {
+    clickSignUp();
+};
+
+const clickTermsConditions = () => {
+
+};
+
+const clickPrivacyPolicy = () => {
+
+};
+
+const clickOAuth = (company: string) => {
+    if (company === 'facebook') {
+        
+    }
+    if (company === 'google')
+    {
+
+    }
+};
+
+onMounted(async () => {
+    await nextTick();
+
+});
+
+onUnmounted(() => {
+    // init();
+});
 </script>
 
 <style scoped>

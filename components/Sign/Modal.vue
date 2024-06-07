@@ -8,8 +8,8 @@
             height: 'h-[calc(100% - 20px)]',
         }"
     >
-        <SignIn v-if="authStore.getTab() === 'signin'" />
-        <SignUp v-if="authStore.getTab() === 'signup'" />
+        <SignIn v-if="authStore.getTab() === 'signin'" :validate="validate" />
+        <SignUp v-if="authStore.getTab() === 'signup'" :validate="validate" />
         <SignComplete1 v-if="
             authStore.getTab() === 'complete1'||
             authStore.getTab() === 'complete1country'
@@ -46,5 +46,23 @@ watch(
         authStore.hide();
     }
 );
+
+const validate = (email: string, password: string): {
+    isEmailFailed: boolean;
+    isEmailRequireAtMark: boolean;
+    isPasswordFailed: boolean;
+} => {
+    const res = {
+        isEmailFailed: false,
+        isEmailRequireAtMark: false,
+        isPasswordFailed: false,
+    };
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    res.isEmailFailed = !(email ?? '');
+    res.isEmailRequireAtMark = !emailRegex.test(email ?? '');
+    res.isPasswordFailed = !(password ?? '');
+    return res;
+};
+
 
 </script>
