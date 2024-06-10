@@ -14,10 +14,12 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'github-pages'
 	},
-	modules: [
-		'@pinia/nuxt',
-		'@nuxt/ui',
-	],
+	modules: ['@pinia/nuxt', '@nuxt/ui', "@nuxtjs/i18n"],
+
+	i18n: {
+		strategy: 'prefix_except_default',
+		defaultLocale: 'en',
+	},
 	
 	runtimeConfig: {
 		public: {
