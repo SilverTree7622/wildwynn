@@ -1,11 +1,13 @@
 <template>
-    <UModal v-model="opt.isOpen"
+    <UModal
+        v-model="opt.isOpen"
         :ui="{
             wrapper: 'bg-transparent p-0 m-0',
-            base: 'p-0 m-0',
+            base: 'p-0 m-0 items-center',
             rounded: 'rounded-lg',
             width: 'w-[360px]',
-            height: 'h-[calc(100% - 20px)]',
+            height: 'h-full',
+            container: '!items-center',
         }"
     >
         <SignIn v-if="authStore.getTab() === 'signin'" :validate="validate" />
