@@ -4,10 +4,11 @@
         :ui="{
             wrapper: 'bg-transparent p-0 m-0',
             base: 'p-0 m-0 items-center',
-            rounded: 'rounded-lg',
-            width: 'w-[360px]',
+            rounded: '',
+            width: 'w-[350px]',
             height: 'h-full',
             container: '!items-center',
+            
         }"
     >
         <SignIn v-if="authStore.getTab() === 'signin'" :validate="validate" />

@@ -181,7 +181,7 @@ const clickOAuth = (company: string) => {
 
 onMounted(async () => {
     await nextTick();
-    
+    $email.value.focus();
 });
 
 onUnmounted(() => {
