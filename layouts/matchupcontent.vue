@@ -8,8 +8,7 @@
             <CommonHeaderTabMatchUp :sName="props.sName" :tab="props.tab" />
             <MatchUpStatsMainTab v-if="props.tab === 'stats'" :selectedIdx="opt.selectedIdx" @selectTab="clickTab" />
         </div>
-        <CommonSelectorSection />
-
+        
         <LoadingSpinner v-show="props.isPending" style="margin-top: 30px; margin-bottom: 50px;" />
         <div ref="$content" class="">
             <slot v-if="!props.isPending"></slot>

@@ -17,6 +17,7 @@
     "@pinia/nuxt": "^0.5.1",
     "chart.js": "^4.4.3",
     "date-fns": "^2.30.0",
+    "moment-timezone": "^0.5.45",
     "nuxt": "^3.5.0",
     "pinia": "^2.1.7",
     "v-calendar": "^3.1.2",

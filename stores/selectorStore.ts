@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import moment from 'moment-timezone';
 
 
 export const useSelectorStore = defineStore('selectorStore', () => {
@@ -10,6 +11,12 @@ export const useSelectorStore = defineStore('selectorStore', () => {
 
     const setTime = (time: string) => {
         opt.time = time;
+    };
+
+    const setTimeFormat = (nation: string): string => {
+        const now = moment().tz(nation);
+        const utcOffset = now.format('Z');
+        return `${ nation } (${ utcOffset })`;
     };
 
     const setOdds = (odds: string) => {
@@ -26,6 +33,7 @@ export const useSelectorStore = defineStore('selectorStore', () => {
 
     return {
         setTime,
+        setTimeFormat,
         setOdds,
         getTime,
         getOdds,

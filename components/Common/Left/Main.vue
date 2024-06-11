@@ -8,6 +8,7 @@
                         <img class="x1-w5grIQ" src="/img/search.png" alt="1" />
                         <input class="search-w5grIQ body" name="search" placeholder="search" type="text" required />
                     </div>
+                    <CommonSelectorSection />
                 </div>
                 <a @click="clickLogin">
                     <div class="btn_-log-in-2AWpWu">
@@ -33,6 +34,7 @@
                         </div>
                     </div>
                 </a>
+
                 <div class="frame-302-2AWpWu">
                     <div class="popular-leagues-RD63qm headline2">POPULAR LEAGUES</div>
                     <div class="football-RD63qm body2">FOOTBALL</div>

@@ -1,9 +1,15 @@
 <template>
-    <USelect
-        v-model="odds"
-        variant="outline"
-        :options="props.options"
-    />
+    <div class="w-[97%] mb-2">
+        <div class="mb-2">
+            Odds
+        </div>
+        <USelect 
+            v-model="odds"
+            variant="outline"
+            :options="props.options"
+            :class="`cursor-pointer`"
+        />
+    </div>
 </template>
 
 <script setup lang="ts">
