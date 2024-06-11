@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as t,a0 as c}from"./yVQJMz2a.js";const s={},a={style:{margin:"0","background-color":"#001226"}};function n(e,_){return r(),t("div",a,[c(e.$slots,"default")])}const d=o(s,[["render",n]]);export{d as default};
