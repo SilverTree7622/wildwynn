@@ -23,7 +23,10 @@ export default defineNuxtConfig({
 	
 	runtimeConfig: {
 		public: {
+			apiURL: '',
 			CONSTANTS: {
+				INIT_DATA: 'WILDWYNN_INIT_DATA',
+				FETCH_TRIAL_MAX_CNT: 3,
 				ONE_DAY_MILLISECOND: 24 * 60 * 60 * 1000,
 				MAX_PAGINATION_CONTENT: 10,
 			},

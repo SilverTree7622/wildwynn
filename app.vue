@@ -21,7 +21,28 @@
 </template>
 
 <script lang="ts" setup>
+import type { TInitData } from "~/types";
 
+const {
+	INIT_DATA,
+} = useRuntimeConfig().public.CONSTANTS;
+
+const getInitData = async () => {
+	let initData: TInitData = JSON.parse(localStorage.getItem(INIT_DATA) ?? '{}');
+	if (!Object.keys(initData).length) {
+		
+
+	}
+};
+
+onMounted(async () => {
+	await getInitData();
+	await nextTick();
+});
+
+onBeforeUnmount(() => {
+
+});
 </script>
 
 <style>
