@@ -1,26 +1,11 @@
+import type { TSelectorTime } from "./Selector";
 
 
 export type TInitData = {
     nav_code: string;
-    st_odds: {
-        sp_index: number;
-        sp_name: string;
-        sp_odds: string;
-        sp_view: string;
-    }[];
-    st_sports: {
-        sp_id: number;
-        sp_idx: number;
-        sp_name_eng: string;
-        sp_name_kor: string;
-        sp_sort: string;
-    }[];
-    st_time: {
-        "sp_index": number;
-        "sp_name": string;
-        "sp_timestamp": number;
-        "sp_timestamp_view": string;
-    }[];
+    st_odds: TSelectorOdds[];
+    st_sports: TSelectorSports[];
+    st_time: TSelectorTime[];
     result: number;
 };
 
@@ -35,10 +20,6 @@ export enum EError {
     BUSINESS_NOT_FOUND = { code: 900, type: 1, title: 'NOTICE', message: 'An error has occurred. Please try again under normal circumstances.', },
     BUSINESS_CONNECTION_FAIL = { code: 999, type: 1, title: 'NOTICE', message: 'An error has occurred. Please try again under normal circumstances.', },
     INTERNAL_SERVER_ERROR = { code: 20200103, type: 1, title: 'NOTICE', message: 'An error has occurred. Please try again under normal circumstances.', },
-};
-
-export type TError = {
-    
 };
 
 export type TContent = {

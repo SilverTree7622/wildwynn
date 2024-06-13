@@ -21,18 +21,30 @@
 </template>
 
 <script lang="ts" setup>
+import initDataJson from '~/dummy/initData.json';
 import type { TInitData } from "~/types";
 
 const {
 	INIT_DATA,
 } = useRuntimeConfig().public.CONSTANTS;
 
-const getInitData = async () => {
-	let initData: TInitData = JSON.parse(localStorage.getItem(INIT_DATA) ?? '{}');
-	if (!Object.keys(initData).length) {
-		
+const selectorStore = useSelectorStore();
 
+const getInitData = async () => {
+	let initData: TInitData | {} = JSON.parse(localStorage.getItem(INIT_DATA) ?? '{}');
+	if (!Object.keys(initData).length) {
+		const res = await useApiFetch<TInitData>(
+			'loading',
+			{ method: 'GET', },
+			initDataJson,
+		);
+		initData = res.data['data'] ?? {};
 	}
+	localStorage.setItem(INIT_DATA, JSON.stringify(initData));
+	selectorStore.onMounted(
+		initData['st_time'] ?? [],
+		initData['st_odds'] ?? [],
+	);
 };
 
 onMounted(async () => {

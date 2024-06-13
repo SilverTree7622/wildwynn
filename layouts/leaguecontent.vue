@@ -65,10 +65,7 @@ const opt = reactive({
     tab: <string> props.tab,
 });
 
-const filterStore = useFilterStore();
 const route = useRoute();
-
-const $date = ref();
 
 watch(
     () => route.fullPath,

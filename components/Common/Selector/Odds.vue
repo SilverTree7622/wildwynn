@@ -6,17 +6,40 @@
         <USelect 
             v-model="odds"
             variant="outline"
-            :options="props.options"
+            :options="opt.options"
             :class="`cursor-pointer`"
+            @change="change"
         />
     </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
-    options: string[];
-}>();
+import type { TSelectorOdds } from '~/types/Selector';
 
-const odds = ref(props.options[0]);
+const selectorStore = useSelectorStore();
+
+const opt = reactive({
+    options: <string[]> [],
+    idx: <number> 0,
+    list: <TSelectorOdds[]> [],
+});
+
+const odds = ref(opt.options[0] ?? '');
+
+watch(
+    () => selectorStore.getOdds(),
+    async (p) => {
+        opt.options = p.map( item => `${ item.sp_view }` );
+        odds.value = opt.options[0];
+        opt.idx = 0;
+        opt.list = p;
+    }
+);
+
+const change = (value: string) => {
+    const selectedIdx = opt.list.findIndex((item) => item.sp_view === value );
+    if (selectedIdx < 0) return;
+    opt.idx = selectedIdx;
+};
 
 </script>
