@@ -14,7 +14,16 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: 'github-pages'
 	},
-	modules: ['@pinia/nuxt', '@nuxt/ui', "@nuxtjs/i18n"],
+	modules: ['@pinia/nuxt', '@nuxt/ui', "@nuxtjs/i18n", 'nuxt-socket-io', ],
+
+	// https://nuxt.com/modules/socket-io
+	io: {
+		// module options
+		sockets: [{
+			name: 'main',
+			url: 'http://localhost:3000'
+		}]
+	},
 
 	i18n: {
 		strategy: 'prefix_except_default',
