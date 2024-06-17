@@ -31,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
+import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
 
 const {
     ONE_DAY_MILLISECOND,
@@ -202,7 +203,6 @@ onMounted(async () => {
 onBeforeUnmount(async () => {
     // TODO: save to localstorage for 
     init();
-    filterStore.init();
     scrollStore.onBeforeUnmount(scroll.key);
 });
 
