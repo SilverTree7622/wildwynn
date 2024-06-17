@@ -1,3 +1,4 @@
+import type { TAuthGuest, TAuthUser } from "./Auth";
 import type { TSelectorTime } from "./Selector";
 
 
@@ -26,6 +27,17 @@ export type TContent = {
     date: Date;
     lg_name: string;
     hasLeagueTag: boolean;
+};
+
+export type TFetchReq = {
+    // 로그인시 a, b 채워줘서 req
+    "a": {
+        "sessionid": number;
+        "ODDSNAVI_IS_CAKE": string;
+    };
+    "b": TAuthUser;
+    // 비로그인시 param 채워서 보내기
+    "c": TAuthGuest;
 };
 
 export type TFetchCommonRes = {

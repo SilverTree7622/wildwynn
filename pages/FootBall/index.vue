@@ -59,7 +59,7 @@ const opt = reactive({
 });
 
 const list = reactive({
-    sortedLeagueList: <any[]> [],
+    sortedLeagueList: <TFootBallFixtures[]> [],
 });
 
 const page = reactive({
@@ -89,7 +89,6 @@ watch(
         opt.isPending = true;
         await callNextContents();
         opt.isPending = false;
-        console.log('opt.isOutOfContent: ', opt.isOutOfContent);
     }
 );
 
@@ -118,37 +117,37 @@ const res = async () => {
             return tmpDate;
         };
         opt.result.league.push(
-            { lg_name: 'dummy_lg_name1', date: getTime(0) },
-            { lg_name: 'dummy_lg_name1', date: getTime(0) },
-            { lg_name: 'dummy_lg_name1', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name1', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name1', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name1', date: getTime(0) },
             
-            { lg_name: 'dummy_lg_name2', date: getTime(0) },
-            { lg_name: 'dummy_lg_name2', date: getTime(0) },
-            { lg_name: 'dummy_lg_name2', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name2', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name2', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name2', date: getTime(0) },
             
-            { lg_name: 'dummy_lg_name3', date: getTime(0) },
-            { lg_name: 'dummy_lg_name3', date: getTime(0) },
-            { lg_name: 'dummy_lg_name3', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name3', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name3', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name3', date: getTime(0) },
             
-            { lg_name: 'dummy_lg_name4', date: getTime(0) },
-            { lg_name: 'dummy_lg_name4', date: getTime(0) },
-            { lg_name: 'dummy_lg_name4', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name4', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name4', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name4', date: getTime(0) },
             
-            { lg_name: 'dummy_lg_name5', date: getTime(0) },
-            { lg_name: 'dummy_lg_name5', date: getTime(0) },
-            { lg_name: 'dummy_lg_name5', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name5', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name5', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name5', date: getTime(0) },
             
-            { lg_name: 'dummy_lg_name6', date: getTime(0) },
-            { lg_name: 'dummy_lg_name6', date: getTime(0) },
-            { lg_name: 'dummy_lg_name6', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name6', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name6', date: getTime(0) },
+            // { lg_name: 'dummy_lg_name6', date: getTime(0) },
 
-            { lg_name: 'dummy_lg_name7', date: getTime(1) },
-            { lg_name: 'dummy_lg_name7', date: getTime(1) },
-            { lg_name: 'dummy_lg_name7', date: getTime(1) },
+            // { lg_name: 'dummy_lg_name7', date: getTime(1) },
+            // { lg_name: 'dummy_lg_name7', date: getTime(1) },
+            // { lg_name: 'dummy_lg_name7', date: getTime(1) },
             
-            { lg_name: 'dummy_lg_name8', date: getTime(1) },
-            { lg_name: 'dummy_lg_name8', date: getTime(1) },
-            { lg_name: 'dummy_lg_name8', date: getTime(1) },
+            // { lg_name: 'dummy_lg_name8', date: getTime(1) },
+            // { lg_name: 'dummy_lg_name8', date: getTime(1) },
+            // { lg_name: 'dummy_lg_name8', date: getTime(1) },
         );
         await callNextContents();
         opt.isPending = false;
@@ -182,13 +181,10 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
     if ((pagedList.length === list.sortedLeagueList.length) && pagedList.length !== 0) {
         if (isFilter) list.sortedLeagueList = pagedList;
         opt.isOutOfContent = true;
-        console.log('list.sortedLeagueList from end: ', opt.isOutOfContent, list.sortedLeagueList);
         return opt.isOutOfContent;
     }
     list.sortedLeagueList = await loadRes(isFilter, pagedList);
     opt.isOutOfContent = (pagedList.length === list.sortedLeagueList.length);
-        console.log('list.sortedLeagueList: ', opt.isOutOfContent, list.sortedLeagueList);
-    // opt.isOutOfContent = ((pagedList.length - list.sortedLeagueList.length) <= MAX_PAGINATION_CONTENT);
     return opt.isOutOfContent;
 };
 
@@ -201,7 +197,6 @@ onMounted(async () => {
 });
 
 onBeforeUnmount(async () => {
-    // TODO: save to localstorage for 
     init();
     scrollStore.onBeforeUnmount(scroll.key);
 });

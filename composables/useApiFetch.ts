@@ -1,7 +1,8 @@
+import type { TFetchReq } from "~/types";
 
 
 const fetchTrial = async <T> (
-    apiURL: string, url: string, config, trialCnt: number,
+    apiURL: string, url: string, reqConfig: TFetchReq, config, trialCnt: number,
 ): Promise<{
     data: T | {};
     pending: boolean;
@@ -10,17 +11,23 @@ const fetchTrial = async <T> (
     const {
         FETCH_TRIAL_MAX_CNT,
     } = useRuntimeConfig().public.CONSTANTS;
-    
+
     const { data, pending, error, refresh } = await useFetch<T>(
-        `${ apiURL }/${ url }`, config
+        `${ apiURL }/${ url }`, {
+            // body: {
+            //     ...reqConfig,
+            // },
+            ...config,
+        }
     );
+    console.log('trialCnt, data, pending, error: ', trialCnt, data, pending, error);
     if (error.value) {
         if (trialCnt >= FETCH_TRIAL_MAX_CNT) {
             return {
                 data: {}, pending: pending.value, error: !!error.value,
             };
         }
-        return await fetchTrial(apiURL, url, config, trialCnt + 1);
+        return await fetchTrial(apiURL, url, reqConfig, config, trialCnt + 1);
     }
     if (!data.value) {
         if (trialCnt >= FETCH_TRIAL_MAX_CNT) {
@@ -28,7 +35,7 @@ const fetchTrial = async <T> (
                 data: {}, pending: pending.value, error: !!error.value,
             };
         }
-        return await fetchTrial(apiURL, url, config, trialCnt + 1);
+        return await fetchTrial(apiURL, url, reqConfig, config, trialCnt + 1);
     }
     return {
         data: data.value, pending: pending.value, error: !!error.value,
@@ -41,7 +48,6 @@ export const useApiFetch = async <T> (url: string, config, devConfig?): Promise<
     pending: boolean;
     error: boolean;
 }> => {
-
     if (devConfig && Object.keys(devConfig).length) {
         return await new Promise((res, rej) => {
             console.time(`${ url }_time`);
@@ -58,14 +64,62 @@ export const useApiFetch = async <T> (url: string, config, devConfig?): Promise<
             },
         );
     }
+
     const {
         apiURL,
     } = useRuntimeConfig().public;
 
+    const authStore = useAuthStore();
+    const reqConfig: TFetchReq = {
+        a: {
+            sessionid: 0,
+            ODDSNAVI_IS_CAKE: '',
+        },
+        b: {
+            _platform: '',
+            _platform_uid: 0,
+            _platform_gid: 0,
+            _platform_bid: 0,
+            _platform_ver: '',
+            _connect_time: 0,
+            _memid: 0,
+        },
+        c: {
+            param: {
+                sid: 0,
+                fromdate: 0,
+            }
+        },
+    };
+
+    if (authStore.getIsSignIn()) {
+        const {
+            _platform, _platform_uid, _platform_gid, _platform_bid, _platform_ver, _connect_time, _memid,
+        } = authStore.getUser();
+        reqConfig.a.sessionid = 1;
+        reqConfig.a.ODDSNAVI_IS_CAKE = '';
+        reqConfig.b._platform = _platform;
+        reqConfig.b._platform_uid = _platform_uid;
+        reqConfig.b._platform_gid = _platform_gid;
+        reqConfig.b._platform_bid = _platform_bid;
+        reqConfig.b._platform_ver = _platform_ver;
+        reqConfig.b._connect_time = _connect_time;
+        reqConfig.b._memid = _memid;
+    } else {
+        reqConfig.c.param.sid = 1;
+        reqConfig.c.param.fromdate = 1;
+    }
+
     const opt = reactive({
         delayTime: 1500,
-        trialCnt: <number> 0,
+        trialCnt: <number> 3,
     });
 
-    return await fetchTrial<T>(apiURL, url, config, opt.trialCnt);
+    return await fetchTrial<T>(
+        apiURL,
+        url,
+        reqConfig,
+        config,
+        opt.trialCnt
+    );
 };

@@ -44,6 +44,8 @@
 </template>
 
 <script setup lang="ts">
+import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
+
 const props = defineProps<{
     result_league;
 }>();
@@ -54,6 +56,16 @@ const goStore = useGoStore();
 const setLeagueGroup = (league): boolean => {
     return league.hasLeagueTag ?? false;
 };
+
+onMounted(async () => {
+    await nextTick();
+    const res = await useApiFetch<TFootBallFixtures>(
+        'fixtures',
+        { method: 'GET', },
+    );
+    console.log('res: ', res);
+
+});
 
 </script>
 

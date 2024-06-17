@@ -33,7 +33,7 @@ export default defineNuxtConfig({
 	
 	runtimeConfig: {
 		public: {
-			apiURL: '',
+			apiURL: 'https://dev-sports.wildwynn.com/V1/API/',
 			CONSTANTS: {
 				INIT_DATA: 'WILDWYNN_INIT_DATA',
 				FETCH_TRIAL_MAX_CNT: 3,

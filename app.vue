@@ -36,7 +36,6 @@ const getInitData = async () => {
 		const res = await useApiFetch<TInitData>(
 			'loading',
 			{ method: 'GET', },
-			initDataJson,
 		);
 		initData = res.data['data'] ?? {};
 	}
