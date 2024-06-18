@@ -1779,7 +1779,8 @@
 }
 
 .frmu95mobile .live-match-Y6utjY {
-  height: 108px;
+  /* height: 108px; */
+  min-height: 108px;
 }
 
 .frmu95mobile .group-5-Z7bohL {

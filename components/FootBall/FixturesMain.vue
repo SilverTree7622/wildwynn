@@ -5,7 +5,7 @@
                 <!-- set group tag or border line -->
                 <div v-if="setLeagueGroup(league)" class="group-17" @click="goStore.go_league()" style="cursor: pointer">
                     <div class="rectangle-28-lE9kB9 rectangle-28"></div>
-                    <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
+                    <img class="flag_-circle_eng" :src="getLeagueFlag(league)" :alt="getLeagueAlt(league)" />
                     <div class="premier-league-lE9kB9 premier-league headline2">{{ getLeagueName(league) }}</div>
                 </div>
                 <img v-else class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
@@ -45,6 +45,7 @@
 
 <script setup lang="ts">
 import UtilDate from "~/utils/date";
+import { ECommonCountry } from '~/types/Common/country';
 import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
 
 const props = defineProps<{
@@ -56,6 +57,15 @@ const goStore = useGoStore();
 
 const setLeagueGroup = (league): boolean => {
     return league.hasLeagueTag ?? false;
+};
+
+const getLeagueFlag = (league: TFootBallFixtures): string => {
+    console.log('league.Fixture.Location.Name: ', league.Fixture.Location.Name);
+    return `/img/${ ECommonCountry[ league.Fixture.Location.Name ] }.png`;
+};
+
+const getLeagueAlt = (league: TFootBallFixtures): string => {
+    return league.Fixture.Location.Name;
 };
 
 const getLeagueName = (league: TFootBallFixtures): string => {
