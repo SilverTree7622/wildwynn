@@ -1,0 +1,1 @@
+import{d as e,p as o,q as t,o as n,c as a}from"./DuN1MZxB.js";const s={style:{background:"#001226"}},d=e({__name:"index",setup(c){return o(()=>{t("/FootBall")}),(r,_)=>(n(),a("div",s))}});export{d as default};
