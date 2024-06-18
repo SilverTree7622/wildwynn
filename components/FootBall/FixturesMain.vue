@@ -15,7 +15,7 @@
                     <div class="live-match-Y6utjY live-match">
                         <div class="group-5-Z7bohL group-5">
                             <img class="aston-villa-1xcxXp aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
-                            <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">ASTON VILLA</div>
+                            <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(league, 0) }}</div>
                         </div>
                         <div class="vs-Z7bohL vs">
                             <div class="x19-30 headline">{{ getLeagueTime(league) }}</div>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="group-6-Z7bohL group-6">
                             <img class="arsenal-xEfJsb arsenal" src="/img/arsenal.png" alt="Arsenal" />
-                            <div class="arsenal-ex9GAr valign-text-middle arsenal body2">ARSENAL</div>
+                            <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(league, 1) }}</div>
                         </div>
                         <div class="frame-303-Z7bohL frame-303">
                             <img class="btn_-round-square2-qGs8vj btn_-round-square2"
@@ -66,6 +66,14 @@ const getLeagueTime = (league: TFootBallFixtures): string => {
     const date = new Date(league.Fixture.StartDate);
     const time = `${ UtilDate.syncDigit(date.getHours()) }:${ UtilDate.syncDigit(date.getMinutes()) }`;
     return time;
+};
+
+// const getParticipantSrc = (league: TFootBallFixtures, position: number = 1): string => {
+//     return league.Fixture.Participants[position].Id;
+// };
+
+const getParticipantName = (league: TFootBallFixtures, position: number = 0): string => {
+    return league.Fixture.Participants[position].Name;
 };
 
 onMounted(async () => {

@@ -169,7 +169,6 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
                 return new Date(item.Fixture.StartDate);
             },
             league: (item) => {
-                console.log('item: ', item);
                 return item.Fixture.League.Id;
             }
         }
