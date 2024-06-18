@@ -10,19 +10,19 @@
     >
         <FootBallLiveMain
             v-if="opt.tab === 'live'"
-            :result_league="list.sortedLeagueList"
+            :result_league="list.sortedList"
         />
         <FootBallFixturesMain
             v-if="opt.tab === 'fixtures'"
-            :result_league="list.sortedLeagueList"
+            :result_league_list="list.sortedList"
         />
         <FootBallOddsMain
             v-if="opt.tab === 'odds'"
-            :result_league="list.sortedLeagueList"
+            :result_league="list.sortedList"
         />
         <FootBallResultMain
             v-if="opt.tab === 'result'"
-            :result_league="list.sortedLeagueList"
+            :result_league="list.sortedList"
         />
         <FootBallLeagueMain
             v-if="opt.tab === 'league'"
@@ -40,6 +40,7 @@ const {
 const filterStore = useFilterStore();
 const dateStore = useDateStore();
 const scrollStore = useScrollStore();
+const cacheStore = useCacheStore();
 const route = useRoute();
 
 const scroll = reactive({
@@ -49,17 +50,18 @@ const scroll = reactive({
 const opt = reactive({
     isBooting: <boolean> true,
     isPending: <boolean> true,
-    tab: <string> route.query['tab'] as string ?? 'live',
-    result: <any> {
-        nav_code: 'S001',
-        sName: 'dummy_sName',
-        league: [],
-    },
+    tab: <string> route.query['tab'] as TCacheStoreTab ?? 'live',
     isOutOfContent: scrollStore.getIsOutOfContent(scroll.key) ?? false,
+    result: {
+        nav_code: 'S001',
+    },
 });
 
 const list = reactive({
-    sortedLeagueList: <TFootBallFixtures[]> [],
+    // total list
+    totalList: <TFootBallFixtures[]> [],
+    // sorted list from total list (= visaulized list)
+    sortedList: <TFootBallFixtures[]> [],
 });
 
 const page = reactive({
@@ -71,8 +73,8 @@ const page = reactive({
 watch(
     () => route.fullPath,
     async (p) => {
-        opt.tab = route.query['tab'] as string;
-        opt.result.league = [];
+        opt.tab = route.query['tab'] as TCacheStoreTab;
+        list.totalList = [];
         opt.isBooting = true;
         opt.isPending = true;
         init();
@@ -104,58 +106,33 @@ const init = () => {
     filterStore.init();
     scrollStore.setScroll2Top();
     page.idx = 0;
-    list.sortedLeagueList = [];
+    list.sortedList = [];
     scrollStore.setIsOutOfContent(scroll.key, false);
 };
 
+/**
+ * res from first page entrance
+ */
 const res = async () => {
-    setTimeout(async () => {
-        // tmp for dummies
-        const getTime = (day: number) => {
-            const tmpDate = new Date(new Date().getTime() - (day * ONE_DAY_MILLISECOND));
-            tmpDate.setTime(tmpDate.getTime() + (Math.random() * 5 * 60 * 1000));
-            return tmpDate;
-        };
-        opt.result.league.push(
-            // { lg_name: 'dummy_lg_name1', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name1', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name1', date: getTime(0) },
-            
-            // { lg_name: 'dummy_lg_name2', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name2', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name2', date: getTime(0) },
-            
-            // { lg_name: 'dummy_lg_name3', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name3', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name3', date: getTime(0) },
-            
-            // { lg_name: 'dummy_lg_name4', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name4', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name4', date: getTime(0) },
-            
-            // { lg_name: 'dummy_lg_name5', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name5', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name5', date: getTime(0) },
-            
-            // { lg_name: 'dummy_lg_name6', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name6', date: getTime(0) },
-            // { lg_name: 'dummy_lg_name6', date: getTime(0) },
-
-            // { lg_name: 'dummy_lg_name7', date: getTime(1) },
-            // { lg_name: 'dummy_lg_name7', date: getTime(1) },
-            // { lg_name: 'dummy_lg_name7', date: getTime(1) },
-            
-            // { lg_name: 'dummy_lg_name8', date: getTime(1) },
-            // { lg_name: 'dummy_lg_name8', date: getTime(1) },
-            // { lg_name: 'dummy_lg_name8', date: getTime(1) },
-        );
-        await callNextContents();
-        opt.isPending = false;
-        opt.isBooting = false;
-    }, Math.random() * 1 * 1000);
+    // const getTime = (day: number) => {
+    //     const tmpDate = new Date(new Date().getTime() - (day * ONE_DAY_MILLISECOND));
+    //     tmpDate.setTime(tmpDate.getTime() + (Math.random() * 5 * 60 * 1000));
+    //     return tmpDate;
+    // };
+    const res = await cacheStore.onMountedTab('football', opt.tab, opt.tab);
+    // opt.result.nav_code = res['nav_code'];
+    list.totalList = res['data']['Body'];
+    await callNextContents();
+    opt.isPending = false;
+    opt.isBooting = false;
 };
 
-const loadRes = async (isFilter: boolean, list: any[]) => {
+/**
+ * get paged list from total list (pagination)
+ * @param isFilter 
+ * @param list 
+ */
+const loadSortedContent = async (isFilter: boolean, list: any[]) => {
     if (list.length === 0) return list;
     if (isFilter) {
         return list.slice(0, MAX_PAGINATION_CONTENT * page.idx);
@@ -165,26 +142,45 @@ const loadRes = async (isFilter: boolean, list: any[]) => {
     }
     if (page.idx !== 0) page.isPending = true;
     page.idx++;
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            const pagedList = list.slice(0, MAX_PAGINATION_CONTENT * page.idx);
-            res(pagedList);
-            page.isPending = false;
-        }, (Math.random() + 1) * 1 * 1000);
-    }).then((itemList: any) => {
-        return itemList;
-    });
+    const slicedList = list.slice(0, MAX_PAGINATION_CONTENT * page.idx);
+    page.isPending = false;
+    return slicedList;
+    // return new Promise((res, rej) => {
+    //     setTimeout(() => {
+    //         const pagedList = list.slice(0, MAX_PAGINATION_CONTENT * page.idx);
+    //         res(pagedList);
+    //         page.isPending = false;
+    //     }, (Math.random() + 1) * 1 * 1000);
+    // }).then((itemList: any) => {
+    //     return itemList;
+    // });
 };
 
+/**
+ * call next content (pagination)
+ * @param isFilter 
+ */
 const callNextContents = async (isFilter: boolean = false): Promise<boolean> => {
-    const pagedList = filterStore.sortList(opt.result.league, dateStore.getDate());
-    if ((pagedList.length === list.sortedLeagueList.length) && pagedList.length !== 0) {
-        if (isFilter) list.sortedLeagueList = pagedList;
+    const pagedList = filterStore.sortList(
+        list.totalList,
+        dateStore.getDate(),
+        {
+            date: (item) => {
+                return new Date(item.Fixture.StartDate);
+            },
+            league: (item) => {
+                console.log('item: ', item);
+                return item.Fixture.League.Id;
+            }
+        }
+    );
+    if ((pagedList.length === list.sortedList.length) && pagedList.length !== 0) {
+        if (isFilter) list.sortedList = pagedList;
         opt.isOutOfContent = true;
         return opt.isOutOfContent;
     }
-    list.sortedLeagueList = await loadRes(isFilter, pagedList);
-    opt.isOutOfContent = (pagedList.length === list.sortedLeagueList.length);
+    list.sortedList = await loadSortedContent(isFilter, pagedList);
+    opt.isOutOfContent = (pagedList.length === list.sortedList.length);
     return opt.isOutOfContent;
 };
 
@@ -199,8 +195,8 @@ onMounted(async () => {
 onBeforeUnmount(async () => {
     init();
     scrollStore.onBeforeUnmount(scroll.key);
+    cacheStore.onBeforeUnmountTab();
 });
-
 </script>
 
 <style scoped>

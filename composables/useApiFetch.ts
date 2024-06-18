@@ -112,7 +112,7 @@ export const useApiFetch = async <T> (url: string, config, devConfig?): Promise<
 
     const opt = reactive({
         delayTime: 1500,
-        trialCnt: <number> 3,
+        trialCnt: <number> 0,
     });
 
     return await fetchTrial<T>(

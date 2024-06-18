@@ -29,6 +29,7 @@ const {
 } = useRuntimeConfig().public.CONSTANTS;
 
 const selectorStore = useSelectorStore();
+const cacheStore = useCacheStore();
 
 const getInitData = async () => {
 	let initData: TInitData | {} = JSON.parse(localStorage.getItem(INIT_DATA) ?? '{}');
@@ -49,10 +50,11 @@ const getInitData = async () => {
 onMounted(async () => {
 	await getInitData();
 	await nextTick();
+	cacheStore.onMountedBased();
 });
 
 onBeforeUnmount(() => {
-
+	cacheStore.onBeforeUnmountBased();
 });
 </script>
 

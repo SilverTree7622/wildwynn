@@ -1,41 +1,49 @@
 import { defineStore } from "pinia";
 
 
+export type TCustomDatePath = (item) => Date;
+export type TCustomLeaguePath = (item) => string;
+
 export const useFilterStore = defineStore('filterStore', () => {
 
     const favorite = reactive({
-        isToggled: <boolean>false,
-        sortLogic: <Function>(list: any[]) => {
+        isToggled: <boolean> false,
+        sortLogic: <Function>(list: any[], customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
             return list;
         },
     });
 
     const time = reactive({
-        isToggled: <boolean>false,
-        sortLogic: <Function> (list: any[]) => {
+        isToggled: <boolean> false,
+        sortLogic: <Function> (list: any[], customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+            const getDatePath = customPath?.date ?? ((item) => { return item.date });
+            const getLeaguePath = customPath?.league ?? ((item) => { return item.lg_name });
             const sortedList = list.sort((a, b) => {
-                return a.date.getTime() - b.date.getTime();
+                return getDatePath(a).getTime() - getDatePath(b).getTime();
             });
             return sortedList.map((match, index, array) => {
-                match.hasLeagueTag = index === 0 || array[index - 1].lg_name !== match.lg_name;
+                match.hasLeagueTag = index === 0 || getLeaguePath(array[index - 1]) !== getLeaguePath(match);
                 return match;
             });
         },
-        sortLogicBasic: <Function> (list: any[]) => {
+        sortLogicBasic: <Function> (list: any[], customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+            const getDatePath = customPath?.date ?? ((item) => { return item.date });
+            const getLeaguePath = customPath?.league ?? ((item) => { return item.lg_name });
             list.map((item) => {
                 item.hasLeagueTag = false;
             });
             const groupedLeague = list.reduce((acc, match) => {
-                if (!acc[match.lg_name]) {
-                    acc[match.lg_name] = [];
+                if (!acc[getLeaguePath(match)]) {
+                    acc[getLeaguePath(match)] = [];
                 }
-                acc[match.lg_name].push(match);
+                acc[getLeaguePath(match)].push(match);
                 return acc;
             }, {});
             const sortedLeague = Object.entries(groupedLeague).map((item) => {
                 const [ lg_name, matches, ] = item;
-                const matchesList = matches as any[];
-                matchesList.sort((a, b) => a.date.getTime() - b.date.getTime());
+                // const rlg_name = getLeaguePath(matches);
+                const matchesList = matches as any;
+                matchesList.sort((a, b) => getDatePath(a).getTime() - getDatePath(b).getTime());
                 matchesList.forEach((match, index) => {
                     match.hasLeagueTag = index === 0;
                 });
@@ -46,7 +54,7 @@ export const useFilterStore = defineStore('filterStore', () => {
             });
             const finalList: any[] = [];
             sortedLeague.sort((a, b) => {
-                return a.matches[0]['date'].getTime() - b.matches[0]['date'].getTime();
+                return getDatePath(a.matches[0]).getTime() - getDatePath(b.matches[0]).getTime();
             }).map((item) => {
                 finalList.push(...item.matches);
             });
@@ -55,12 +63,13 @@ export const useFilterStore = defineStore('filterStore', () => {
     });
 
     const date = reactive({
-        sortLogic: <Function>(list: any[], filterDate: Date) => {
+        sortLogic: <Function>(list: any[], filterDate: Date, customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+            const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const filteredList = list.filter((item) => {
                 const isSameDate = (
-                    item.date.getFullYear() === filterDate.getFullYear() &&
-                    item.date.getMonth() === filterDate.getMonth() &&
-                    item.date.getDate() === filterDate.getDate()
+                    getDatePath(item).getFullYear() === filterDate.getFullYear() &&
+                    getDatePath(item).getMonth() === filterDate.getMonth() &&
+                    getDatePath(item).getDate() === filterDate.getDate()
                 );
                 return isSameDate;
             });
@@ -85,20 +94,22 @@ export const useFilterStore = defineStore('filterStore', () => {
         return time.isToggled;
     };
 
-    const sortList = <T>(list: T[], filterDate: Date) => {
+    const sortList = <T>(list: T[], filterDate: Date, customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
         opt.list = list;
-        const returnList = date.sortLogic(list, filterDate);
+        const returnList = date.sortLogic(list, filterDate, customPath);
         opt.sortedList = returnList;
         if (favorite.isToggled) {
-            opt.sortedList = favorite.sortLogic(opt.sortedList);
+            opt.sortedList = favorite.sortLogic(opt.sortedList, customPath);
         }
         if (time.isToggled) {
             // time 활성화시 분류
-            opt.sortedList = time.sortLogic(opt.sortedList);
+            opt.sortedList = time.sortLogic(opt.sortedList, customPath);
         } else {
             // time 비활성화시 분류
-            opt.sortedList = time.sortLogicBasic(opt.sortedList);
+            opt.sortedList = time.sortLogicBasic(opt.sortedList, customPath);
         }
+        console.log('opt.sortedList: ', opt.sortedList);
+
         return opt.sortedList;
     };
 

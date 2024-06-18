@@ -1,16 +1,16 @@
 <template>
     <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
         <div class="leagueFrame">
-            <template v-for="league in props.result_league">
+            <template v-for="league in props.result_league_list">
                 <!-- set group tag or border line -->
                 <div v-if="setLeagueGroup(league)" class="group-17" @click="goStore.go_league()" style="cursor: pointer">
                     <div class="rectangle-28-lE9kB9 rectangle-28"></div>
                     <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
-                    <div class="premier-league-lE9kB9 premier-league headline2">{{ league['lg_name'] }}</div>
+                    <div class="premier-league-lE9kB9 premier-league headline2">{{ getLeagueName(league) }}</div>
                 </div>
                 <img v-else class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
                 <!-- match content -->
-                <div style="color: black;">{{ dateStore.getLeagueFormat(league.date) }}</div>
+                <!-- <div style="color: black;">{{ dateStore.getLeagueFormat(new Date(league.Fixture.LastUpdate)) }}</div> -->
                 <div class="live_-match" @click="goStore.go_matchup('home')">
                     <div class="live-match-Y6utjY live-match">
                         <div class="group-5-Z7bohL group-5">
@@ -18,7 +18,7 @@
                             <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">ASTON VILLA</div>
                         </div>
                         <div class="vs-Z7bohL vs">
-                            <div class="x19-30 headline">19: 30</div>
+                            <div class="x19-30 headline">{{ getLeagueTime(league) }}</div>
                             <div class="vs-ij0TdP vs headline">VS</div>
                         </div>
                         <div class="group-6-Z7bohL group-6">
@@ -44,10 +44,11 @@
 </template>
 
 <script setup lang="ts">
+import UtilDate from "~/utils/date";
 import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
 
 const props = defineProps<{
-    result_league;
+    result_league_list: TFootBallFixtures[];
 }>();
 
 const dateStore = useDateStore();
@@ -57,16 +58,19 @@ const setLeagueGroup = (league): boolean => {
     return league.hasLeagueTag ?? false;
 };
 
+const getLeagueName = (league: TFootBallFixtures): string => {
+    return league.Fixture.League.Name;
+};
+
+const getLeagueTime = (league: TFootBallFixtures): string => {
+    const date = new Date(league.Fixture.StartDate);
+    const time = `${ UtilDate.syncDigit(date.getHours()) }:${ UtilDate.syncDigit(date.getMinutes()) }`;
+    return time;
+};
+
 onMounted(async () => {
     await nextTick();
-    const res = await useApiFetch<TFootBallFixtures>(
-        'fixtures',
-        { method: 'GET', },
-    );
-    console.log('res: ', res);
-
 });
-
 </script>
 
 <style scoped></style>
