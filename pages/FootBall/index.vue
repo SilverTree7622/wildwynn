@@ -32,6 +32,7 @@
 
 <script setup lang="ts">
 import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
+import { ECommonSportValue } from '~/types/Common/sport';
 
 const {
     ONE_DAY_MILLISECOND,
@@ -41,6 +42,7 @@ const filterStore = useFilterStore();
 const dateStore = useDateStore();
 const scrollStore = useScrollStore();
 const cacheStore = useCacheStore();
+const selectorStore = useSelectorStore();
 const route = useRoute();
 
 const scroll = reactive({
@@ -118,9 +120,14 @@ const res = async () => {
     //     const tmpDate = new Date(new Date().getTime() - (day * ONE_DAY_MILLISECOND));
     //     tmpDate.setTime(tmpDate.getTime() + (Math.random() * 5 * 60 * 1000));
     //     return tmpDate;
-    // };
-    const res = await cacheStore.onMountedTab('football', opt.tab, opt.tab);
-    // opt.result.nav_code = res['nav_code'];
+    // };    
+    const res = await cacheStore.onMountedTab(
+        'football', opt.tab, opt.tab,
+        {
+            sid: ECommonSportValue['FootBall'],
+            fromdate: dateStore.getDate().getTime(),
+        }
+    );
     list.totalList = res['data']['Body'];
     await callNextContents();
     opt.isPending = false;

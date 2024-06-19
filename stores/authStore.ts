@@ -64,7 +64,6 @@ export const useAuthStore = defineStore('authStore', () => {
             return signInRes;
         }
         
-        
         sign.isSignIn = true;
         signInRes.isSuccess = true;
         return signInRes;

@@ -43,7 +43,12 @@ const fetchTrial = async <T> (
 };
 
 
-export const useApiFetch = async <T> (url: string, config, devConfig?): Promise<{
+export const useApiFetch = async <T> (
+    url: string,
+    config,
+    param?,
+    devConfig?
+): Promise<{
     data: T | {};
     pending: boolean;
     error: boolean;
@@ -70,6 +75,7 @@ export const useApiFetch = async <T> (url: string, config, devConfig?): Promise<
     } = useRuntimeConfig().public;
 
     const authStore = useAuthStore();
+    
     const reqConfig: TFetchReq = {
         a: {
             sessionid: 0,
@@ -106,8 +112,10 @@ export const useApiFetch = async <T> (url: string, config, devConfig?): Promise<
         reqConfig.b._connect_time = _connect_time;
         reqConfig.b._memid = _memid;
     } else {
-        reqConfig.c.param.sid = 1;
-        reqConfig.c.param.fromdate = 1;
+        if (param) {
+            reqConfig.c.param.sid = param['sid'] ?? 0;
+            reqConfig.c.param.fromdate = param['fromdate'] ?? 0;
+        }
     }
 
     const opt = reactive({

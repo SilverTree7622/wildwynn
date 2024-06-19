@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import moment from 'moment-timezone';
-import type { TSelectorLang, TSelectorOdds, TSelectorTime } from "~/types/Selector";
+import type { TSelectorLang, TSelectorOdds, TSelectorSports, TSelectorTime } from "~/types/Selector";
 
 
 export const useSelectorStore = defineStore('selectorStore', () => {
@@ -11,6 +11,7 @@ export const useSelectorStore = defineStore('selectorStore', () => {
         ],
         time: <TSelectorTime[]> [],
         odds: <TSelectorOdds[]> [],
+        sports: <TSelectorSports[]> [],
     });
 
     const setTimeFormat = (nation: string): string => {
@@ -22,9 +23,11 @@ export const useSelectorStore = defineStore('selectorStore', () => {
     const onMounted = (
         time: TSelectorTime[],
         odds: TSelectorOdds[],
+        sports: TSelectorSports[],
     ) => {
         opt.time = time;
         opt.odds = odds;
+        opt.sports = sports;
     };
 
     const getLang = () => {
@@ -39,11 +42,16 @@ export const useSelectorStore = defineStore('selectorStore', () => {
         return opt.odds;
     };
 
+    const getSports = () => {
+        return opt.sports;
+    };
+
     return {
         onMounted,
         setTimeFormat,
         getLang,
         getTime,
         getOdds,
+        getSports,
     };
 });

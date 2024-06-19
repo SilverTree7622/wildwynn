@@ -60,7 +60,6 @@ const setLeagueGroup = (league): boolean => {
 };
 
 const getLeagueFlag = (league: TFootBallFixtures): string => {
-    console.log('league.Fixture.Location.Name: ', league.Fixture.Location.Name);
     return `/img/${ ECommonCountry[ league.Fixture.Location.Name ] }.png`;
 };
 

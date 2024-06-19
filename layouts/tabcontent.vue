@@ -10,7 +10,12 @@
             <div class="frame-279-rkUyvw">
                 <CommonFilterFavorite />
                 <CommonFilterByTime />
-                <CommonFilterDate ref="$date" :date="new Date()" @next-tab="nextTab" />
+                <CommonFilterDate
+                    ref="$date"
+                    :date="new Date()"
+                    @prev-tab="prevTab"
+                    @next-tab="nextTab"
+                />
             </div>
         </div>
 
@@ -74,18 +79,37 @@ watch(
     }
 );
 
-const nextTab = () => {
+const prevTab = (date: Date) => {
+    console.log('date from prevTab: ', date);
     const tab = route.query['tab'];
-    let resultTab = 'live';
-    if (tab === 'live' || tab === undefined) resultTab = 'fixtures';
-    if (tab === 'fixtures') resultTab = 'odds';
-    if (tab === 'odds') resultTab = 'result';
-    if (tab === 'result') resultTab = 'league';
-    if (tab === 'league') resultTab = 'live';
+    let targetTab = '';
+    if (new Date().getTime() > date.getTime()) {
+        
+    }
+    if (tab === 'fixtures') targetTab = 'result';
+    if (!targetTab) return;
     navigateTo({
         path: `/${ props.sName }`,
         query: {
-            tab: resultTab,
+            tab: targetTab,
+        }
+    });
+};
+
+const nextTab = (date: Date) => {
+    console.log('date from nextTab: ', date);
+    return;
+    const tab = route.query['tab'];
+    let targetTab = 'live';
+    if (tab === 'live' || tab === undefined) targetTab = 'fixtures';
+    if (tab === 'fixtures') targetTab = 'odds';
+    if (tab === 'odds') targetTab = 'result';
+    if (tab === 'result') targetTab = 'league';
+    if (tab === 'league') targetTab = 'live';
+    navigateTo({
+        path: `/${ props.sName }`,
+        query: {
+            tab: targetTab,
         }
     });
 };

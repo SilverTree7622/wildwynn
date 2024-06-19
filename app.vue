@@ -33,17 +33,23 @@ const cacheStore = useCacheStore();
 
 const getInitData = async () => {
 	let initData: TInitData | {} = JSON.parse(localStorage.getItem(INIT_DATA) ?? '{}');
-	if (!Object.keys(initData).length) {
-		const res = await useApiFetch<TInitData>(
-			'loading',
-			{ method: 'GET', },
-		);
-		initData = res.data['data'] ?? {};
-	}
-	localStorage.setItem(INIT_DATA, JSON.stringify(initData));
+	// if (!Object.keys(initData).length) {
+	// 	const res = await useApiFetch<TInitData>(
+	// 		'loading',
+	// 		{ method: 'GET', },
+	// 	);
+	// 	initData = res.data['data'] ?? {};
+	// }
+	// localStorage.setItem(INIT_DATA, JSON.stringify(initData));
+	const res = await useApiFetch<TInitData>(
+		'loading',
+		{ method: 'GET', },
+	);
+	initData = res.data['data'] ?? {};
 	selectorStore.onMounted(
 		initData['st_time'] ?? [],
 		initData['st_odds'] ?? [],
+		initData['st_sports'] ?? [],
 	);
 };
 

@@ -29,6 +29,7 @@ export const useCacheStore = defineStore('cacheStore', () => {
         section: TCacheStoreSection,
         tab: TCacheStoreTab,
         path: string,
+        param?,
     ) => {
         opt.section = section;
         opt.tab = tab;
@@ -43,7 +44,10 @@ export const useCacheStore = defineStore('cacheStore', () => {
         // }
         const res = await useApiFetch<typeof opt.data>(
             path,
-            { method: 'GET', },
+            {
+                method: 'POST',
+            },
+            param,
         );
         data = res.data['data'] ?? {};
         // when user just go 2 another path then just ignore

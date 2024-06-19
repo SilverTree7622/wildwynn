@@ -46,7 +46,8 @@ const props = withDefaults(defineProps<{
 });
 
 const emit = defineEmits<{
-    (e: 'next-tab'): void;
+    (e: 'prev-tab', date: Date): void;
+    (e: 'next-tab', date: Date): void;
 }>();
 
 const {
@@ -86,15 +87,17 @@ const init = () => {
 const prev = () => {
     const yesterday = new Date(opt.date.getTime() - ONE_DAY_MILLISECOND);
     setFormat(yesterday);
+    emit('prev-tab', opt.date.getTime());
 };
 
 const next = () => {
     const tmpDate = new Date(opt.date.getTime() + ONE_DAY_MILLISECOND);
-    if (new Date().getTime() > tmpDate.getTime()) {
-        setFormat(tmpDate);
-        return;
-    }
-    // emit('next-tab');
+    setFormat(tmpDate);
+    // if (new Date().getTime() > tmpDate.getTime()) {
+    //     setFormat(tmpDate);
+    //     return;
+    // }
+    emit('next-tab', opt.date.getTime());
 };
 
 const updateCalendar = (value) => {
