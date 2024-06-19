@@ -8,3 +8,12 @@ league, match쪽 관련 페이지들 data fetching 2주
 navitalk 1주
 종목 result는 이번 주 내로 data가 오게 되는 것
 2 ~ 3주
+
+배너
+
+기본적인건 image link => ai
+odds tab => L sports
+
+- 날짜 바꾸면 자연스럽게 fixtures, results 탭이 바뀐다
+fixtures 다가오는 경기 (날짜 미래)
+results
