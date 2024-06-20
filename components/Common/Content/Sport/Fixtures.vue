@@ -1,41 +1,39 @@
 
 <template>
     <!-- set group tag or border line -->
-    <div v-if="setLeagueGroup(props.league)" class="group-17" @click="goStore.go_league('home')" style="cursor: pointer">
+    <div v-if="setLeagueGroup(props.league)" class="group-17" @click="goStore.go_league()" style="cursor: pointer">
         <div class="rectangle-28-lE9kB9 rectangle-28"></div>
         <img class="flag_-circle_eng" :src="getLeagueFlag(props.league)" :alt="getLeagueAlt(props.league)" />
         <div class="premier-league-lE9kB9 premier-league headline2">{{ getLeagueName(props.league) }}</div>
     </div>
     <img v-else class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
     <!-- match content -->
+    <!-- <div style="color: black;">{{ dateStore.getLeagueFormat(new Date(league.Fixture.LastUpdate)) }}</div> -->
     <div class="live_-match" @click="goStore.go_matchup('home')">
-        <div class="live-match-Jbo1mR live-match">
-            <div class="group-5-AKR3e5 group-5">
-                <img class="aston-villa-oDU2Nu aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
-                <div class="aston-villa-ADr9KY valign-text-middle aston-villa body2">{{ getParticipantName(props.league, 0) }}</div>
+        <div class="live-match-Y6utjY live-match">
+            <div class="group-5-Z7bohL group-5">
+                <img class="aston-villa-1xcxXp aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
+                <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(props.league, 0) }}</div>
             </div>
-            <div class="score-AKR3e5 score">
-                <img class="vector-eyBPRK vector" src="/img/vector-27@2x.png" alt="Vector" />
-                <img class="vector-n1oFur vector" src="/img/vector-28@2x.png" alt="Vector" />
-                <img class="vector-z3kuGS vector" src="/img/vector-29@2x.png" alt="Vector" />
-                <div class="txt-live !text-[10px] mt-[1px]">LIVE</div>
-                <div class="x100new pretendard-semi-bold-black-12px">
-                    <span class="span0-TpclY9 body2">100</span><span
-                        class="span1-TpclY9 pretendard-semi-bold-black-14px">’</span>
-                </div>
-                <div class="x000-eyBPRK x000 pretendard-semi-bold-black-20px">000</div>
-                <div class="x000-n1oFur x000 pretendard-semi-bold-black-20px">000</div>
+            <div class="vs-Z7bohL vs">
+                <div class="x19-30 headline">{{ getLeagueTime(props.league) }}</div>
+                <div class="vs-ij0TdP vs headline">VS</div>
             </div>
-            <div class="group-6-AKR3e5 group-6">
-                <img class="arsenal-x4WW4Z arsenal" src="/img/arsenal.png" alt="Arsenal" />
-                <div class="arsenal-tGhDC5 valign-text-middle arsenal body2 !text-center !h-[24px]">{{ getParticipantName(props.league, 1) }}</div>
+            <div class="frame-303-Z7bohL frame-303">
+                <img class="btn_-round-square2-qGs8vj btn_-round-square2"
+                    src="/img/btn-roundsquare2-2@2x.png" alt="Btn_RoundSquare2" />
+                <div class="matchup valign-text-middle body2">MATCHUP</div>
+            </div>
+            <div class="group-6-Z7bohL group-6">
+                <img class="arsenal-xEfJsb arsenal" src="/img/arsenal.png" alt="Arsenal" />
+                <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(props.league, 1) }}</div>
             </div>
         </div>
-        <CommonFavoriteStar :isToggled="false" />
-        <div class="live-tracker">
-            <a href="javascript:;" @click="goStore.go_livetraker()">
-                <img class="btn_-live-tracker" src="/img/btn-livetracker-9@2x.png" alt="Btn_LiveTracker" />
-            </a>
+        <div class="btn_-favorite_-check">
+            <div class="group-28"><img class="star" src="/img/star-23@2x.png" alt="Star" /></div>
+            <div class="group-29-rplUIj smart-layers-pointers">
+                <img class="star" src="/img/star-24@2x.png" alt="Star" />
+            </div>
         </div>
     </div>
 </template>

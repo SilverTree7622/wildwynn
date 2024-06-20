@@ -10,7 +10,7 @@
     >
         <FootBallLiveMain
             v-if="opt.tab === 'live'"
-            :result_league="list.sortedList"
+            :result_league_list="list.sortedList"
         />
         <FootBallFixturesMain
             v-if="opt.tab === 'fixtures'"
@@ -116,11 +116,6 @@ const init = () => {
  * res from first page entrance
  */
 const res = async () => {
-    // const getTime = (day: number) => {
-    //     const tmpDate = new Date(new Date().getTime() - (day * ONE_DAY_MILLISECOND));
-    //     tmpDate.setTime(tmpDate.getTime() + (Math.random() * 5 * 60 * 1000));
-    //     return tmpDate;
-    // };    
     const res = await cacheStore.onMountedTab(
         'football', opt.tab, 'fixtures',
         {

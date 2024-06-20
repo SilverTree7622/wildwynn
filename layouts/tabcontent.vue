@@ -85,7 +85,10 @@ const prevTab = (date: Date) => {
     }
     const tab = route.query['tab'];
     let targetTab = '';
-    if (tab === 'fixtures') targetTab = 'result';
+    if (
+        tab === 'live' ||
+        tab === 'fixtures'
+    ) targetTab = 'result';
     if (!targetTab) return;
     navigateTo({
         path: `/${ props.sName }`,
@@ -102,7 +105,7 @@ const nextTab = (date: Date) => {
     const tab = route.query['tab'];
     let targetTab = '';
     if (
-        tab === undefined||
+        tab === undefined ||
         tab === 'live' ||
         tab === 'result'
     ) targetTab = 'fixtures';
