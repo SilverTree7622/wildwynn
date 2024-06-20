@@ -1,0 +1,35 @@
+:root { 
+  --bggray: #f8f8f8;
+  --bk: #000000;
+  --ctgray: #d9d9d9;
+  --wt: #ffffff;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 12px;
+  --font-size-xl: 20px;
+ 
+  --font-family-pretendard-semibold: "Pretendard-SemiBold", Helvetica;
+}
+.headline2 {
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.body2 {
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.pretendard-semi-bold-black-20px {
+  color: var(--bk);
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+}

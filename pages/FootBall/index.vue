@@ -22,7 +22,7 @@
         />
         <FootBallResultMain
             v-if="opt.tab === 'result'"
-            :result_league="list.sortedList"
+            :result_league_list="list.sortedList"
         />
         <FootBallLeagueMain
             v-if="opt.tab === 'league'"

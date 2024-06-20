@@ -1,0 +1,347 @@
+/* screen - frmu95mobileu95result */
+
+.frmu95mobileu95result {
+  background-color: var(--wt);
+  display: flex;
+  min-height: 600px;
+  min-width: 360px;
+  width: 100%;
+}
+
+.frmu95mobileu95result .contents_-football_-result {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  height: 501px;
+  margin-top: -0.3px;
+  padding: 0px 10px 8px;
+  position: relative;
+  width: 360px;
+}
+
+.frmu95mobileu95result .rectangle-29 {
+  background-color: var(--bggray);
+  border-radius: 10px;
+  flex: 1;
+  flex-grow: 1;
+  height: 501px;
+  margin-bottom: -8.00px;
+  position: relative;
+}
+
+.frmu95mobileu95result .frame-315 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 251px;
+  left: 0;
+  padding: 0px 10px;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+
+.frmu95mobileu95result .group-17 {
+  height: 34px;
+  margin-right: -2.00px;
+  position: relative;
+  width: 342px;
+}
+
+.frmu95mobileu95result .overlap-group-1 {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.frmu95mobileu95result .flag_-circle_eng {
+  height: 25px;
+  width: 25px;
+}
+
+.frmu95mobileu95result .premier-league {
+  align-self: center;
+  color: var(--bk);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 1.0px;
+  min-height: 19px;
+  min-width: 132px;
+  white-space: nowrap;
+}
+
+.frmu95mobileu95result .live_-match {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  left: 6.94%;
+  position: absolute;
+  top: 35px;
+  width: 86.11%;
+}
+
+.frmu95mobileu95result .live-match {
+  flex: 1;
+  flex-grow: 1;
+  height: 108px;
+  position: relative;
+}
+
+.frmu95mobileu95result .group-5 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 108px;
+  padding: 8px 4px;
+  position: absolute;
+  top: 0;
+  width: 73px;
+}
+
+.frmu95mobileu95result .aston-villa {
+  height: 60px;
+  margin-right: 7.8px;
+  margin-top: 4px;
+  object-fit: cover;
+  width: 52px;
+}
+
+.frmu95mobileu95result .aston-villa-1 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 28px;
+  line-height: normal;
+  margin-right: 3px;
+  text-align: center;
+  width: 62px;
+}
+
+.frmu95mobileu95result .overlap-group1 {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  height: 108px;
+  left: 74px;
+  min-width: 209px;
+  position: absolute;
+  top: 0;
+}
+
+.frmu95mobileu95result .flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 7.0px;
+  min-height: 57px;
+  width: 132px;
+}
+
+.frmu95mobileu95result .overlap-group {
+  height: 42px;
+  position: relative;
+  width: 132px;
+}
+
+.frmu95mobileu95result .vector {
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 14px;
+  width: 132px;
+}
+
+.frmu95mobileu95result .vector-1 {
+  height: 19px;
+  left: 45px;
+  position: absolute;
+  top: 16px;
+  width: 41px;
+}
+
+.frmu95mobileu95result .text {
+  color: var(--bk);
+  font-weight: 600;
+  left: 50px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 33px;
+}
+
+.frmu95mobileu95result .number {
+  left: 90px;
+  top: 16px;
+}
+
+.frmu95mobileu95result .number-1 {
+  left: 3px;
+  top: 15px;
+}
+
+.frmu95mobileu95result .btn_-statistics {
+  display: flex;
+  margin-right: 1.0px;
+  width: 67px;
+}
+
+.frmu95mobileu95result .statistics {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  width: 67px;
+}
+
+.frmu95mobileu95result .group-6 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 108px;
+  padding: 12px 7px;
+  width: 73px;
+}
+
+.frmu95mobileu95result .arsenal {
+  height: 60px;
+  margin-right: 0.38px;
+  object-fit: cover;
+  width: 55px;
+}
+
+.frmu95mobileu95result .arsenal-1 {
+  color: var(--bk);
+  font-weight: 600;
+  height: 14px;
+  line-height: normal;
+  text-align: right;
+  width: 58px;
+}
+
+.frmu95mobileu95result .btn_-favorite_-check {
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.frmu95mobileu95result .frame-container {
+  height: 20px;
+  left: 2px;
+  position: relative;
+  top: 2px;
+  width: 20px;
+}
+
+.frmu95mobileu95result .frame-382 {
+  align-items: center;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.frmu95mobileu95result .star {
+  height: 18.89px;
+  margin-top: -1.9px;
+  width: 19.82px;
+}
+
+.frmu95mobileu95result .frame-381 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 20px;
+}
+
+.frmu95mobileu95result .frame-381:hover {
+  opacity: 0;
+}
+
+.frmu95mobileu95result .star-1 {
+  height: 18.09px;
+  margin-top: -1.9px;
+  width: 19.02px;
+}
+
+.frmu95mobileu95result .live_-match-1 {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  left: 6.94%;
+  position: absolute;
+  top: 143px;
+  width: 86.11%;
+}
+
+.frmu95mobileu95result .line {
+  top: 250px;
+}
+
+.frmu95mobileu95result .line-1 {
+  top: 142px;
+}
+
+.frmu95mobileu95result .frame-316 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 256px;
+  left: 0;
+  padding: 0px 10px;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+}
+
+.frmu95mobileu95result .ft-4 {
+  color: var(--bk);
+  font-weight: 600;
+  left: 54px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 17px;
+  white-space: nowrap;
+  width: 25px;
+}
+
+.frmu95mobileu95result .line-2 {
+  height: 1px;
+  left: 6.94%;
+  object-fit: cover;
+  position: absolute;
+  width: 86.67%;
+}
+
+.frmu95mobileu95result .number-2 {
+  letter-spacing: -0.60px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  width: 38px;
+}
+
+.frmu95mobileu95result .overlap-group-3 {
+  align-items: flex-start;
+  background-color: var(--ctgray);
+  display: flex;
+  gap: 6px;
+  height: 34px;
+  min-width: 340px;
+  padding: 4px 13px;
+}

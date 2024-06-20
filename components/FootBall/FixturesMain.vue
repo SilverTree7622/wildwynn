@@ -21,14 +21,14 @@
                             <div class="x19-30 headline">{{ getLeagueTime(league) }}</div>
                             <div class="vs-ij0TdP vs headline">VS</div>
                         </div>
-                        <div class="group-6-Z7bohL group-6">
-                            <img class="arsenal-xEfJsb arsenal" src="/img/arsenal.png" alt="Arsenal" />
-                            <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(league, 1) }}</div>
-                        </div>
                         <div class="frame-303-Z7bohL frame-303">
                             <img class="btn_-round-square2-qGs8vj btn_-round-square2"
                                 src="/img/btn-roundsquare2-2@2x.png" alt="Btn_RoundSquare2" />
                             <div class="matchup valign-text-middle body2">MATCHUP</div>
+                        </div>
+                        <div class="group-6-Z7bohL group-6">
+                            <img class="arsenal-xEfJsb arsenal" src="/img/arsenal.png" alt="Arsenal" />
+                            <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(league, 1) }}</div>
                         </div>
                     </div>
                     <div class="btn_-favorite_-check">
