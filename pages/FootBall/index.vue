@@ -122,7 +122,7 @@ const res = async () => {
     //     return tmpDate;
     // };    
     const res = await cacheStore.onMountedTab(
-        'football', opt.tab, opt.tab,
+        'football', opt.tab, 'fixtures',
         {
             sid: ECommonSportValue['FootBall'],
             fromdate: dateStore.getDate().getTime(),

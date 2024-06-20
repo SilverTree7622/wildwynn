@@ -86,18 +86,14 @@ const init = () => {
 
 const prev = () => {
     const yesterday = new Date(opt.date.getTime() - ONE_DAY_MILLISECOND);
-    setFormat(yesterday);
     emit('prev-tab', opt.date.getTime());
+    setFormat(yesterday);
 };
 
 const next = () => {
     const tmpDate = new Date(opt.date.getTime() + ONE_DAY_MILLISECOND);
-    setFormat(tmpDate);
-    // if (new Date().getTime() > tmpDate.getTime()) {
-    //     setFormat(tmpDate);
-    //     return;
-    // }
     emit('next-tab', opt.date.getTime());
+    setFormat(tmpDate);
 };
 
 const updateCalendar = (value) => {

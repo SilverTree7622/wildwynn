@@ -80,12 +80,11 @@ watch(
 );
 
 const prevTab = (date: Date) => {
-    console.log('date from prevTab: ', date);
+    if (new Date(Date.now()).getTime() < new Date(date).getTime()) {
+        return;
+    }
     const tab = route.query['tab'];
     let targetTab = '';
-    if (new Date().getTime() > date.getTime()) {
-        
-    }
     if (tab === 'fixtures') targetTab = 'result';
     if (!targetTab) return;
     navigateTo({
@@ -97,15 +96,14 @@ const prevTab = (date: Date) => {
 };
 
 const nextTab = (date: Date) => {
-    console.log('date from nextTab: ', date);
-    return;
+    if (new Date(Date.now()).getTime() > new Date(date).getTime()) {
+        return;
+    }
     const tab = route.query['tab'];
-    let targetTab = 'live';
+    let targetTab = '';
     if (tab === 'live' || tab === undefined) targetTab = 'fixtures';
-    if (tab === 'fixtures') targetTab = 'odds';
-    if (tab === 'odds') targetTab = 'result';
-    if (tab === 'result') targetTab = 'league';
-    if (tab === 'league') targetTab = 'live';
+    if (tab === 'result') targetTab = 'fixtures';
+    if (!targetTab) return;
     navigateTo({
         path: `/${ props.sName }`,
         query: {
