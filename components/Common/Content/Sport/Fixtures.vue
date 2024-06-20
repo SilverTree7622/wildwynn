@@ -1,14 +1,14 @@
 
 <template>
     <!-- set group tag or border line -->
-    <div v-if="setLeagueGroup(props.league)" class="group-17" @click="goStore.go_league()" style="cursor: pointer">
-        <div class="rectangle-28-lE9kB9 rectangle-28"></div>
-        <img class="flag_-circle_eng" :src="getLeagueFlag(props.league)" :alt="getLeagueAlt(props.league)" />
-        <div class="premier-league-lE9kB9 premier-league headline2">{{ getLeagueName(props.league) }}</div>
-    </div>
-    <img v-else class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
+    <CommonContentHeadDate
+        :idx="props.idx"
+        :title="getLeagueName(props.league)"
+        :hasLeagueTag="setLeagueGroup(props.league)"
+        :src="getLeagueFlag(props.league)"
+        :alt="getLeagueAlt(props.league)"
+    />
     <!-- match content -->
-    <!-- <div style="color: black;">{{ dateStore.getLeagueFormat(new Date(league.Fixture.LastUpdate)) }}</div> -->
     <div class="live_-match" @click="goStore.go_matchup('home')">
         <div class="live-match-Y6utjY live-match">
             <div class="group-5-Z7bohL group-5">
@@ -44,6 +44,7 @@ import { ECommonCountry } from '~/types/Common/country';
 import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
 
 const props = defineProps<{
+    idx: number;
     league: TFootBallFixtures;
 }>();
 

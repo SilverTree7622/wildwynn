@@ -1,8 +1,9 @@
 <template>
     <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
         <div class="leagueFrame">
-            <template v-for="league in props.result_league_list">
+            <template v-for="(league, idx) in props.result_league_list">
                 <CommonContentSportFixtures
+                    :idx="idx"
                     :league="league"
                 />
             </template>

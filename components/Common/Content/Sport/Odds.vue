@@ -1,25 +1,25 @@
 <template>
-    <div class="frame-317" :class="props.isLast ? 'rounded-b-lg' : 'rounded-t-lg'">
-        <div v-if="setLeagueGroup(props.league)" class="group-17" @click="goStore.go_league()" style="cursor: pointer">
-            <div class="rectangle-28-lE9kB9 rectangle-28"></div>
-            <img class="flag_-circle_eng" :src="getLeagueFlag(props.league)" :alt="getLeagueAlt(props.league)" />
-            <div class="premier-league-lE9kB9 premier-league headline2">{{ getLeagueName(props.league) }}</div>
-        </div>
-        <div class="live_-match">
-            <CommonContentCountry :title="getParticipantName(props.league, 0)" :src="'/img/astonvilla@2x.png'" />
-            <CommonContentMatch :time="getLeagueTime(props.league)" />
-            <CommonContentCountry :title="getParticipantName(props.league, 1)" :src="'/img/arsenal@2x.png'" />
-            <CommonFavoriteStar
-                :isToggled="false"
-            />
-        </div>
-        <CommonContentOddsGrop
-            :top="56"
-            :draw="13.5"
-            :low="1.05"
-            :value="25"
+    <CommonContentHeadDate
+        :idx="props.idx"
+        :title="getLeagueName(props.league)"
+        :hasLeagueTag="setLeagueGroup(props.league)"
+        :src="getLeagueFlag(props.league)"
+        :alt="getLeagueAlt(props.league)"
+    />
+    <div class="live_-match">
+        <CommonContentCountry :title="getParticipantName(props.league, 0)" :src="'/img/astonvilla@2x.png'" />
+        <CommonContentMatch :time="getLeagueTime(props.league)" />
+        <CommonContentCountry :title="getParticipantName(props.league, 1)" :src="'/img/arsenal@2x.png'" />
+        <CommonFavoriteStar
+            :isToggled="false"
         />
     </div>
+    <CommonContentOddsGrop
+        :top="56"
+        :draw="13.5"
+        :low="1.05"
+        :value="25"
+    />
 </template>
 
 <script setup lang="ts">
@@ -27,11 +27,8 @@ import UtilDate from "~/utils/date";
 import { ECommonCountry } from '~/types/Common/country';
 import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
 
-const goStore = useGoStore();
-
 const props = defineProps<{
     idx: number;
-    date: Date;
     isLast?: boolean;
     league;
 }>();

@@ -18,7 +18,7 @@
         />
         <FootBallOddsMain
             v-if="opt.tab === 'odds'"
-            :result_league="list.sortedList"
+            :result_league_list="list.sortedList"
         />
         <FootBallResultMain
             v-if="opt.tab === 'result'"
@@ -42,7 +42,6 @@ const filterStore = useFilterStore();
 const dateStore = useDateStore();
 const scrollStore = useScrollStore();
 const cacheStore = useCacheStore();
-const selectorStore = useSelectorStore();
 const route = useRoute();
 
 const scroll = reactive({

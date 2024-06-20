@@ -3,7 +3,7 @@
         <CommonContentHeadDate
             :idx="props.idx"
             :name="'league_name'"
-            :date="props.date"
+            :title="dateStore.getLeagueFormat(props.date, false)"
         />
         <div class="live_-match">
             <CommonContentCountry :title="'ASTON VILLA'" :src="'/img/astonvilla@2x.png'" />
@@ -17,13 +17,13 @@
 </template>
 
 <script setup lang="ts">
-
 const props = defineProps<{
     idx: number;
     date: Date;
     isLast?: boolean;
 }>();
 
+const dateStore = useDateStore();
 
 </script>
 
