@@ -87,21 +87,21 @@ const init = () => {
 const prev = () => {
     const yesterday = new Date(opt.date.getTime() - ONE_DAY_MILLISECOND);
     setFormat(yesterday);
-    emit('prev-tab', opt.date.getTime());
+    emit('prev-tab', opt.date);
 };
 
 const next = () => {
     const tmpDate = new Date(opt.date.getTime() + ONE_DAY_MILLISECOND);
     setFormat(tmpDate);
-    emit('next-tab', opt.date.getTime());
+    emit('next-tab', opt.date);
 };
 
-const updateCalendar = (value) => {
-    if (new Date().getTime() > value.getTime()) {
-        return;
-    }
-    setFormat(new Date());
-};
+// const updateCalendar = (value) => {
+//     if (new Date().getTime() > value.getTime()) {
+//         return;
+//     }
+//     setFormat(new Date());
+// };
 
 defineExpose({
     init,

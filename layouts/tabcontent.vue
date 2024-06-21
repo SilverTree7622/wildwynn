@@ -52,6 +52,8 @@
 </template>
 
 <script lang="ts" setup>
+import UtilDate from '~/utils/date';
+
 const props = defineProps<{
     isPending: boolean;
     pageIsPending: boolean;
@@ -63,6 +65,7 @@ const props = defineProps<{
 
 const opt = reactive({
     tab: <string> props.tab,
+    useInitForChangingTab: <boolean> true,
 });
 
 const filterStore = useFilterStore();
@@ -74,13 +77,19 @@ watch(
     () => route.fullPath,
     async (p) => {
         filterStore.init();
-        $date.value.init();
+        if (opt.useInitForChangingTab) {
+            $date.value.init();
+        } else {
+            opt.useInitForChangingTab = true;
+        }
         opt.tab = route.query['tab'] as string;
     }
 );
 
 const prevTab = (date: Date) => {
-    if (new Date(Date.now()).getTime() < new Date(date).getTime()) {
+    const getNow = new Date(Date.now());
+    const getDate = new Date(date);
+    if (getNow.getTime() < getDate.getTime()) {
         return;
     }
     const tab = route.query['tab'];
@@ -89,7 +98,15 @@ const prevTab = (date: Date) => {
         tab === 'live' ||
         tab === 'fixtures'
     ) targetTab = 'result';
+    // exception conditions
     if (!targetTab) return;
+    if (tab === 'fixtures' && UtilDate.chckDateIsToday(date)) {
+        return;
+    }
+    // change tab
+    if (UtilDate.chckDateIsToday(date)) {
+        opt.useInitForChangingTab = false;
+    }
     navigateTo({
         path: `/${ props.sName }`,
         query: {
@@ -99,7 +116,9 @@ const prevTab = (date: Date) => {
 };
 
 const nextTab = (date: Date) => {
-    if (new Date(Date.now()).getTime() > new Date(date).getTime()) {
+    const getNow = new Date(Date.now());
+    const getDate = new Date(date);
+    if (getNow.getTime() > getDate.getTime()) {
         return;
     }
     const tab = route.query['tab'];
@@ -110,6 +129,10 @@ const nextTab = (date: Date) => {
         tab === 'result'
     ) targetTab = 'fixtures';
     if (!targetTab) return;
+    // change tab
+    if (UtilDate.chckDateIsToday(date)) {
+        opt.useInitForChangingTab = false;   
+    }
     navigateTo({
         path: `/${ props.sName }`,
         query: {

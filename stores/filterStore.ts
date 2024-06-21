@@ -3,19 +3,25 @@ import { defineStore } from "pinia";
 
 export type TCustomDatePath = (item) => Date;
 export type TCustomLeaguePath = (item) => string;
+export type TCustomPathConfig = {
+    isWholeDate?: boolean;
+    isResult?: boolean;
+    date?: TCustomDatePath;
+    league?: TCustomLeaguePath; 
+};
 
 export const useFilterStore = defineStore('filterStore', () => {
 
     const favorite = reactive({
         isToggled: <boolean> false,
-        sortLogic: <Function>(list: any[], customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+        sortLogic: <Function>(list: any[], customPath?: TCustomPathConfig) => {
             return list;
         },
     });
 
     const time = reactive({
         isToggled: <boolean> false,
-        sortLogic: <Function> (list: any[], customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+        sortLogic: <Function> (list: any[], customPath?: TCustomPathConfig) => {
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const getLeaguePath = customPath?.league ?? ((item) => { return item.lg_name });
             const sortedList = list.sort((a, b) => {
@@ -26,7 +32,7 @@ export const useFilterStore = defineStore('filterStore', () => {
                 return match;
             });
         },
-        sortLogicBasic: <Function> (list: any[], customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+        sortLogicBasic: <Function> (list: any[], customPath?: TCustomPathConfig) => {
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const getLeaguePath = customPath?.league ?? ((item) => { return item.lg_name });
             list.map((item) => {
@@ -63,8 +69,11 @@ export const useFilterStore = defineStore('filterStore', () => {
     });
 
     const date = reactive({
-        sortLogic: <Function>(list: any[], filterDate: Date, customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+        sortLogic: <Function>(list: any[], filterDate: Date, customPath?: TCustomPathConfig) => {
+            const isWholeDate = customPath?.isWholeDate ?? false;
+            const isResult = customPath?.isResult ?? false;
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
+            const getNow = new Date(Date.now());
             const filteredList = list.filter((item) => {
                 const isSameDate = (
                     getDatePath(item).getFullYear() === filterDate.getFullYear() &&
@@ -72,6 +81,15 @@ export const useFilterStore = defineStore('filterStore', () => {
                     getDatePath(item).getDate() === filterDate.getDate()
                 );
                 return isSameDate;
+            }).filter((item) => {
+                if (isWholeDate) {
+                    return true;
+                }
+                if (isResult) {
+                    return getDatePath(item).getTime() > getNow;
+                } else {
+                    return getDatePath(item).getTime() < getNow;
+                }
             });
             return filteredList;
         },
@@ -94,7 +112,9 @@ export const useFilterStore = defineStore('filterStore', () => {
         return time.isToggled;
     };
 
-    const sortList = <T>(list: T[], filterDate: Date, customPath?: { date?: TCustomDatePath; league?: TCustomLeaguePath; }) => {
+    const sortList = <T> (
+        list: T[], filterDate: Date, customPath?: TCustomPathConfig,
+    ) => {
         opt.list = list;
         const returnList = date.sortLogic(list, filterDate, customPath);
         opt.sortedList = returnList;

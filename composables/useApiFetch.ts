@@ -20,7 +20,7 @@ const fetchTrial = async <T> (
             ...config,
         }
     );
-    console.log('trialCnt, data, pending, error: ', trialCnt, data, pending, error);
+    console.log('url, trialCnt, data, pending, error: ', url, trialCnt, data, pending, error);
     if (error.value) {
         if (trialCnt >= FETCH_TRIAL_MAX_CNT) {
             return {

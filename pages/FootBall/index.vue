@@ -104,6 +104,7 @@ watch(
 );
 
 const init = () => {
+    console.log(`init from football index page`);
     filterStore.init();
     scrollStore.setScroll2Top();
     page.idx = 0;
@@ -162,10 +163,19 @@ const loadSortedContent = async (isFilter: boolean, list: any[]) => {
  * @param isFilter 
  */
 const callNextContents = async (isFilter: boolean = false): Promise<boolean> => {
+    const isWholeDate = (opt.tab === 'odds' || opt.tab === 'league');
+    const isResult = (opt.tab === 'result');
+    
+    console.log('opt.tab: ', opt.tab);
+    console.log('isWholeDate: ', isWholeDate);
+    console.log('isResult: ', isResult);
+
     const pagedList = filterStore.sortList(
         list.totalList,
         dateStore.getDate(),
         {
+            isWholeDate,
+            isResult,
             date: (item) => {
                 return new Date(item.Fixture.StartDate);
             },
