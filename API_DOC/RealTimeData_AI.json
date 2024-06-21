@@ -1,0 +1,155 @@
+{
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "integer"
+      },
+      "results": {
+        "type": "array",
+        "description": "Real-time data list",
+        "items": {
+          "type": "object",
+          "description": "Data details",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Match id"
+            },
+            "score": {
+              "type": "array",
+              "description": "Score field description<br/>example：[\"1l4rjnh22p2wm7v\", 8, [1, 0, 0, 0, -1, 0, 0], [1, 0, 0, 0, -1, 0, 0], 0, \"\"]",
+              "items": "",
+              "enum": [
+                "Match id                                                                                                  (String type)",
+                "Match status，please refer to Status Code -> Match Status                                                 (Integer type)",
+                [
+                  "Home Team Score (regular time)                                                                          (Integer type)",
+                  "Home Team Halftime score                                                                                (Integer type)",
+                  "Home Team Red cards                                                                                     (Integer type)",
+                  "Home Team Yellow cards                                                                                  (Integer type)",
+                  "Home Team Corners，-1 means no corner kick data                                                         (Integer type)",
+                  "Home Team Overtime score (120 minutes，including regular time)，only available in overtime              (Integer type)",
+                  "Home Team Penalty shootout score，only penalty shootout                                                 (Integer type)"
+                ],
+                [
+                  "Away Team Score (regular time)                                                                          (Integer type)",
+                  "Away Team Halftime score                                                                                (Integer type)",
+                  "Away Team Red cards                                                                                     (Integer type)",
+                  "Away Team Yellow cards                                                                                  (Integer type)",
+                  "Away Team Corners，-1 means no corner kick data                                                         (Integer type)",
+                  "Away Team Overtime score (120 minutes，including regular time)，only available in overtime              (Integer type)",
+                  "Away Team Penalty shootout score，only penalty shootout                                                 (Integer type)"
+                ],
+                "Kick-off timestamp，kick-off time of the first/second half (judged according to the state of the match)   (Integer type)",
+                "Compatible ignore                                                                                         (String type)"
+              ]
+            },
+            "stats": {
+              "type": "array",
+              "description": "Match statistics",
+              "items": {
+                "type": "object",
+                "description": "Data details",
+                "properties": {
+                  "type": {
+                    "type": "integer",
+                    "description": "Type，see status code -> technical statistics"
+                  },
+                  "home": {
+                    "type": "integer",
+                    "description": "Home team value"
+                  },
+                  "away": {
+                    "type": "integer",
+                    "description": "Away team value"
+                  }
+                }
+              }
+            },
+            "incidents": {
+              "type": "array",
+              "description": "Match incidents",
+              "items": {
+                "type": "object",
+                "description": "Data details",
+                "properties": {
+                  "type": {
+                    "type": "integer",
+                    "description": "Type，see status code -> technical statistics"
+                  },
+                  "position": {
+                    "type": "integer",
+                    "description": "The incident occurred，0-neutral，1- home team，2- away team"
+                  },
+                  "time": {
+                    "type": "integer",
+                    "description": "Time (minutes)"
+                  },
+                  "player_id": {
+                    "type": "string",
+                    "description": "Player id related to the incident，may not exist"
+                  },
+                  "player_name": {
+                    "type": "string",
+                    "description": "Player name related to the incident，may not exist"
+                  },
+                  "assist1_id": {
+                    "type": "string",
+                    "description": "Assist player 1 id，related to the goal incident，may not exist"
+                  },
+                  "assist1_name": {
+                    "type": "string",
+                    "description": "Assist player 1 name，related to the goal incident，may not exist"
+                  },
+                  "assist2_id": {
+                    "type": "string",
+                    "description": "Assist player 2 id，related to the goal incident，may not exist"
+                  },
+                  "assist2_name": {
+                    "type": "string",
+                    "description": "Assist player 2 name，related to the goal incident，may not exist"
+                  },
+                  "home_score": {
+                    "type": "integer",
+                    "description": "Home team score，related to the goal incident，may not exist"
+                  },
+                  "away_score": {
+                    "type": "integer",
+                    "description": "Away team score，related to the goal incident，may not exist"
+                  },
+                  "in_player_id": {
+                    "type": "string",
+                    "description": "Replace the player id(Put on)，which is related to the substitution incident and may not exist"
+                  },
+                  "in_player_name": {
+                    "type": "string",
+                    "description": "Replace the player name(Put on)，which is related to the substitution incident and may not exist"
+                  },
+                  "out_player_id": {
+                    "type": "string",
+                    "description": "Replace the player id(Replace)，which is related to the substitution incident and may not exist"
+                  },
+                  "out_player_name": {
+                    "type": "string",
+                    "description": "Replace the player name(Replace)，which is related to the substitution incident and may not exist"
+                  },
+                  "var_reason": {
+                    "type": "integer",
+                    "description": "VAR reason，related to var incident<br/>1-Goal awarded<br/>2-Goal not awarded<br/>3-Penalty awarded<br/>4-Penalty not awarded<br/>5 -Red card given<br/>6-Card upgrade<br/>7-Mistaken identity<br/>0-Other"
+                  },
+                  "var_result": {
+                    "type": "integer",
+                    "description": "VAR result，related to var incident<br/>1-Goal confirmed<br/>2-Goal cancelled<br/>3-Penalty confirmed<br/>4-Penalty cancelled<br/>5-Red card confirmed<br/>6-Red card cancelled<br/>7-Card upgrade confirmed<br/>8-Card upgrade cancelled<br/>9-Original decision<br/>10-Original decision changed<br/>0-Unknown"
+                  },
+                  "reason_type": {
+                    "type": "integer",
+                    "description": "The reason for the red and yellow cards and substitution events, please refer to the status code -> event reason (the red and yellow cards and substitution events related field)"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
