@@ -1,63 +1,26 @@
 <template>
     <div class="contents_-football_-live-Mzx5SR" id="contents_-football_-live">
         <div class="leagueFrame">
-            <template v-for="league in props.result_league">
-                <!-- set group tag or border line -->
-                <div v-if="setLeagueGroup(league)" class="group-17" @click="goStore.go_league()" style="cursor: pointer">
-                    <div class="rectangle-28-lE9kB9 rectangle-28"></div>
-                    <img class="flag_-circle_eng" src="/img/flag-circle-eng@2x.png" alt="Flag_Circle_ENG" />
-                    <div class="premier-league-lE9kB9 premier-league headline2">{{ league['lg_name'] }}</div>
-                </div>
-                <img v-else class="line-1" src="/img/line-1@2x.png" alt="Line 1" />
-                <!-- match content -->
-                <div style="color: black;">{{ dateStore.getLeagueFormat(league.date) }}</div>
-                <div class="live_-match" @click="goStore.go_matchup('home')">
-                    <div class="live-match-Y6utjY live-match">
-                        <div class="group-5-Z7bohL group-5">
-                            <img class="aston-villa-1xcxXp aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
-                            <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">ASTON VILLA</div>
-                        </div>
-                        <div class="vs-Z7bohL vs">
-                            <div class="x19-30 headline">19: 30</div>
-                            <div class="vs-ij0TdP vs headline">VS</div>
-                        </div>
-                        <div class="group-6-Z7bohL group-6">
-                            <img class="arsenal-xEfJsb arsenal" src="/img/arsenal.png" alt="Arsenal" />
-                            <div class="arsenal-ex9GAr valign-text-middle arsenal body2">ARSENAL</div>
-                        </div>
-                        <div class="frame-303-Z7bohL frame-303">
-                            <img class="btn_-round-square2-qGs8vj btn_-round-square2" src="/img/btn-roundsquare2-2@2x.png"
-                                alt="Btn_RoundSquare2" />
-                            <div class="matchup valign-text-middle body2">MATCHUP</div>
-                        </div>
-                    </div>
-                    <div class="btn_-favorite_-check">
-                        <div class="group-28"><img class="star" src="/img/star-23@2x.png" alt="Star" /></div>
-                        <div class="group-29-rplUIj smart-layers-pointers">
-                            <img class="star" src="/img/star-24@2x.png" alt="Star" />
-                        </div>
-                    </div>
-                </div>
+            <template v-for="(league, idx) in props.result_league_list">
+                <CommonContentSportFixtures
+                    :idx="idx"
+                    :league="league"
+                />
             </template>
         </div>
     </div>
 </template>
 
-
 <script setup lang="ts">
+import type { TBasketBallFixtures } from '~/types/BasketBall/fixtures';
+
 const props = defineProps<{
-    result_league;
+    result_league_list: TBasketBallFixtures[];
 }>();
 
-const dateStore = useDateStore();
-const goStore = useGoStore();
-
-const setLeagueGroup = (league): boolean => {
-    return league.hasLeagueTag ?? false;
-};
-
+onMounted(async () => {
+    await nextTick();
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

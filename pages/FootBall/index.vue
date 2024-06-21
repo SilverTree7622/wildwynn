@@ -104,7 +104,6 @@ watch(
 );
 
 const init = () => {
-    console.log(`init from football index page`);
     filterStore.init();
     scrollStore.setScroll2Top();
     page.idx = 0;
@@ -116,12 +115,17 @@ const init = () => {
  * res from first page entrance
  */
 const res = async () => {
+    // console.log('dateStore.getDate(): ', dateStore.getDate());
+    // const tmpDate = new Date(dateStore.getDate().getTime() - (ONE_DAY_MILLISECOND * 2));
+    // console.log('tmpDate: ', tmpDate);
     const res = await cacheStore.onMountedTab(
-        'football', opt.tab, 'fixtures',
+        'football',
+        opt.tab,
+        'fixtures',
         {
             sid: ECommonSportValue['FootBall'],
             fromdate: dateStore.getDate().getTime(),
-        }
+        },
     );
     list.totalList = res['data']['Body'];
     await callNextContents();
@@ -147,15 +151,6 @@ const loadSortedContent = async (isFilter: boolean, list: any[]) => {
     const slicedList = list.slice(0, MAX_PAGINATION_CONTENT * page.idx);
     page.isPending = false;
     return slicedList;
-    // return new Promise((res, rej) => {
-    //     setTimeout(() => {
-    //         const pagedList = list.slice(0, MAX_PAGINATION_CONTENT * page.idx);
-    //         res(pagedList);
-    //         page.isPending = false;
-    //     }, (Math.random() + 1) * 1 * 1000);
-    // }).then((itemList: any) => {
-    //     return itemList;
-    // });
 };
 
 /**
@@ -165,11 +160,6 @@ const loadSortedContent = async (isFilter: boolean, list: any[]) => {
 const callNextContents = async (isFilter: boolean = false): Promise<boolean> => {
     const isWholeDate = (opt.tab === 'odds' || opt.tab === 'league');
     const isResult = (opt.tab === 'result');
-    
-    console.log('opt.tab: ', opt.tab);
-    console.log('isWholeDate: ', isWholeDate);
-    console.log('isResult: ', isResult);
-
     const pagedList = filterStore.sortList(
         list.totalList,
         dateStore.getDate(),

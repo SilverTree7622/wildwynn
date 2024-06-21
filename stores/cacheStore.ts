@@ -33,8 +33,8 @@ export const useCacheStore = defineStore('cacheStore', () => {
     ) => {
         opt.section = section;
         opt.tab = tab;
-        const storageKey = `${ INIT_DATA }_${ section }_${ tab }`;
-        let data: typeof opt.data | {} = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
+        // const storageKey = `${ INIT_DATA }_${ section }_${ tab }`;
+        // let data: typeof opt.data | {} = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
         // if (!Object.keys(data).length) {
         //     const res = await useApiFetch<typeof opt.data>(
         //         path,
@@ -49,12 +49,12 @@ export const useCacheStore = defineStore('cacheStore', () => {
             },
             param,
         );
-        data = res.data['data'] ?? {};
+        const data = res.data['data'] ?? {};
         // when user just go 2 another path then just ignore
         if (opt.section !== section || opt.tab !== tab) {
             return;
         }
-        localStorage.setItem(storageKey, JSON.stringify(data));
+        // localStorage.setItem(storageKey, JSON.stringify(data));
         opt.data = data;
         // TODO: have to add compare logic between fetch res & local storage later
 

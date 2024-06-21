@@ -11,16 +11,18 @@ const fetchTrial = async <T> (
     const {
         FETCH_TRIAL_MAX_CNT,
     } = useRuntimeConfig().public.CONSTANTS;
-
+    const fetchConfig = {
+        ...config,
+    };
+    if (config.method === 'POST' || config.method === 'PUT') {
+        fetchConfig.body = {
+            ...reqConfig,
+        };
+    }
     const { data, pending, error, refresh } = await useFetch<T>(
-        `${ apiURL }/${ url }`, {
-            // body: {
-            //     ...reqConfig,
-            // },
-            ...config,
-        }
+        `${ apiURL }/${ url }`, fetchConfig,
     );
-    console.log('url, trialCnt, data, pending, error: ', url, trialCnt, data, pending, error);
+    console.log('url, trialCnt, data, pending, error, fetchConfig: ', url, trialCnt, data, pending, error, fetchConfig);
     if (error.value) {
         if (trialCnt >= FETCH_TRIAL_MAX_CNT) {
             return {
@@ -117,6 +119,8 @@ export const useApiFetch = async <T> (
             reqConfig.c.param.fromdate = param['fromdate'] ?? 0;
         }
     }
+
+    // console.log('url, reqConfig: ', url, reqConfig);
 
     const opt = reactive({
         delayTime: 1500,
