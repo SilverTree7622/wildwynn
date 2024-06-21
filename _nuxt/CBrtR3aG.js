@@ -1,0 +1,1 @@
+const a={syncDigit:(e,t=2)=>(typeof e=="number"&&(e=`${e}`),e.length===1&&(e=`0${e}`),e),chckSameDay:(e,t)=>e.getFullYear()===t.getFullYear()&&e.getMonth()===t.getMonth()&&e.getDate()===t.getDate(),chckDateIsToday:e=>a.chckSameDay(e,new Date(Date.now()))};export{a as U};
