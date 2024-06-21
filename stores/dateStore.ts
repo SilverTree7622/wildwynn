@@ -35,11 +35,16 @@ export const useDateStore = defineStore('dateStore', () => {
         return month + '/' + day + '/' + year + ', ' + dayNames[weekDay] + (isShowInDetail ? ` // ${ time.toString() }` : '');
     };
 
+    const getFromDate = (): number => {
+        return Math.floor( getDate().getTime() / 1000 );
+    };
+
     return {
         init,
         setDate,
         getDate,
         getFilterFormat,
         getLeagueFormat,
+        getFromDate,
     };
 });

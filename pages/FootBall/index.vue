@@ -115,19 +115,18 @@ const init = () => {
  * res from first page entrance
  */
 const res = async () => {
-    // console.log('dateStore.getDate(): ', dateStore.getDate());
-    // const tmpDate = new Date(dateStore.getDate().getTime() - (ONE_DAY_MILLISECOND * 2));
-    // console.log('tmpDate: ', tmpDate);
     const res = await cacheStore.onMountedTab(
         'football',
         opt.tab,
         'fixtures',
         {
             sid: ECommonSportValue['FootBall'],
-            fromdate: dateStore.getDate().getTime(),
+            fromdate: dateStore.getFromDate(),
         },
     );
+    console.log('res: ', res);
     list.totalList = res['data']['Body'];
+    console.log('list.totalList: ', list.totalList);
     await callNextContents();
     opt.isPending = false;
     opt.isBooting = false;

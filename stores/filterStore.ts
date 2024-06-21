@@ -69,7 +69,7 @@ export const useFilterStore = defineStore('filterStore', () => {
     });
 
     const date = reactive({
-        sortLogic: <Function>(list: any[], filterDate: Date, customPath?: TCustomPathConfig) => {
+        sortLogic: <Function> (list: any[], filterDate: Date, customPath?: TCustomPathConfig) => {
             const isWholeDate = customPath?.isWholeDate ?? false;
             const isResult = customPath?.isResult ?? false;
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
