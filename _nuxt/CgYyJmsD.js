@@ -1,1 +1,0 @@
-import{d as e,m as o,p as t,a,c as n}from"./AXEMsDeV.js";const s={style:{background:"#001226"}},d=e({__name:"index",setup(c){return o(()=>{t("/FootBall")}),(r,_)=>(a(),n("div",s))}});export{d as default};
