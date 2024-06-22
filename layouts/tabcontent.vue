@@ -111,6 +111,14 @@ watch(
     }
 );
 
+// by time toggle evt
+watch(
+    () => filterStore.getTimeIsToggled(),
+    async (p) => {
+        await props.toggleByTime();
+    }
+);
+
 const prevDate = (date: Date) => {
     const getNow = new Date(Date.now());
     const getDate = new Date(date);
