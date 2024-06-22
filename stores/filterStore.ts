@@ -73,7 +73,7 @@ export const useFilterStore = defineStore('filterStore', () => {
             const isWholeDate = customPath?.isWholeDate ?? false;
             const isResult = customPath?.isResult ?? false;
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
-            const getNow = new Date(Date.now());
+            const getNow = new Date(Date.now()).getTime();
             const filteredList = list.filter((item) => {
                 const isSameDate = (
                     getDatePath(item).getFullYear() === filterDate.getFullYear() &&
@@ -86,9 +86,9 @@ export const useFilterStore = defineStore('filterStore', () => {
                     return true;
                 }
                 if (isResult) {
-                    return getDatePath(item).getTime() > getNow;
-                } else {
                     return getDatePath(item).getTime() < getNow;
+                } else {
+                    return getDatePath(item).getTime() > getNow;
                 }
             });
             return filteredList;
@@ -128,8 +128,6 @@ export const useFilterStore = defineStore('filterStore', () => {
             // time 비활성화시 분류
             opt.sortedList = time.sortLogicBasic(opt.sortedList, customPath);
         }
-        console.log('opt.sortedList: ', opt.sortedList);
-
         return opt.sortedList;
     };
 

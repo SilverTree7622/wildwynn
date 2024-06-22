@@ -159,6 +159,7 @@ const loadSortedContent = async (isFilter: boolean, list: any[]) => {
 const callNextContents = async (isFilter: boolean = false): Promise<boolean> => {
     const isWholeDate = (opt.tab === 'odds' || opt.tab === 'league');
     const isResult = (opt.tab === 'result');
+    console.log('opt.tab, isWholeDate, isResult: ', opt.tab, isWholeDate, isResult);
     const pagedList = filterStore.sortList(
         list.totalList,
         dateStore.getDate(),
@@ -173,12 +174,15 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
             }
         }
     );
+    console.log('pagedList: ', pagedList);
     if ((pagedList.length === list.sortedList.length) && pagedList.length !== 0) {
         if (isFilter) list.sortedList = pagedList;
         opt.isOutOfContent = true;
+        console.log('list.sortedList: ', list.sortedList);
         return opt.isOutOfContent;
     }
     list.sortedList = await loadSortedContent(isFilter, pagedList);
+    console.log('list.sortedList: ', list.sortedList);
     opt.isOutOfContent = (pagedList.length === list.sortedList.length);
     return opt.isOutOfContent;
 };
