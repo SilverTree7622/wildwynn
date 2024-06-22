@@ -1,10 +1,9 @@
 import { defineStore } from "pinia";
-import type { TCommonLeagueSection, TCommonMatchUpSection, TCommonSportSection } from "~/types/Common/sport";
-import type { TCommonLeagueTab, TCommonMatchUpTab, TCommonSportTab } from "~/types/Common/tab";
+import { ECommonSportSectionValue, type TCommonLeagueSection, type TCommonMatchUpSection, type TCommonSportSection } from "~/types/Common/sport";
+import type { TCommonTabTypes } from "~/types/Common/tab";
 
 
 export type TCacheStoreSection = TCommonSportSection | TCommonMatchUpSection | TCommonLeagueSection;
-export type TCacheStoreTab = TCommonSportTab | TCommonMatchUpTab | TCommonLeagueTab;
 
 export const useCacheStore = defineStore('cacheStore', () => {
     const {
@@ -13,7 +12,7 @@ export const useCacheStore = defineStore('cacheStore', () => {
 
     const opt = reactive({
         section: <TCacheStoreSection> 'football',
-        tab: <TCacheStoreTab> 'live',
+        tab: <TCommonTabTypes> 'live',
         data: <any> {},
     });
     
@@ -27,21 +26,12 @@ export const useCacheStore = defineStore('cacheStore', () => {
 
     const onMountedTab = async (
         section: TCacheStoreSection,
-        tab: TCacheStoreTab,
-        path: string,
+        tab: TCommonTabTypes,
         param?,
     ) => {
         opt.section = section;
         opt.tab = tab;
-        // const storageKey = `${ INIT_DATA }_${ section }_${ tab }`;
-        // let data: typeof opt.data | {} = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
-        // if (!Object.keys(data).length) {
-        //     const res = await useApiFetch<typeof opt.data>(
-        //         path,
-        //         { method: 'GET', },
-        //     );
-        //     data = res.data['data'] ?? {};
-        // }
+        const path = `${ ECommonSportSectionValue[ section ] }Schedule`;
         const res = await useApiFetch<typeof opt.data>(
             path,
             {

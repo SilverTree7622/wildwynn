@@ -15,7 +15,7 @@ export const useDateStore = defineStore('dateStore', () => {
         opt.date = date;
     };
 
-    const getDate = () => {
+    const getDate = (): Date => {
         return opt.date;
     };
 
@@ -36,7 +36,7 @@ export const useDateStore = defineStore('dateStore', () => {
     };
 
     const getFromDate = (): number => {
-        return Math.floor( getDate().getTime() / 1000 );
+        return Math.floor( getDate().getUTCDate() / 1000 );
     };
 
     return {

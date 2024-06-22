@@ -12,7 +12,7 @@
     <div class="live_-match" @click="goStore.go_matchup('home')">
         <div class="live-match-Jbo1mR live-match">
             <div class="group-5-AKR3e5 group-5">
-                <img class="aston-villa-oDU2Nu aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
+                <img class="aston-villa-oDU2Nu aston-villa" :src="getParticipantSrc(props.league, 0)" :alt="getParticipantName(props.league, 0)" />
                 <div class="aston-villa-ADr9KY valign-text-middle aston-villa body2">{{ getParticipantName(props.league, 0) }}</div>
             </div>
             <div class="score-AKR3e5 score">
@@ -24,11 +24,11 @@
                     <span class="span0-TpclY9 body2">100</span><span
                         class="span1-TpclY9 pretendard-semi-bold-black-14px">’</span>
                 </div>
-                <div class="x000-eyBPRK x000 pretendard-semi-bold-black-20px">000</div>
-                <div class="x000-n1oFur x000 pretendard-semi-bold-black-20px">000</div>
+                <div class="x000-eyBPRK x000 pretendard-semi-bold-black-20px">{{ getLeagueScore(props.league, 0) }}</div>
+                <div class="x000-n1oFur x000 pretendard-semi-bold-black-20px">{{ getLeagueScore(props.league, 1) }}</div>
             </div>
             <div class="group-6-AKR3e5 group-6">
-                <img class="arsenal-x4WW4Z arsenal" src="/img/arsenal.png" alt="Arsenal" />
+                <img class="arsenal-x4WW4Z arsenal" :src="getParticipantSrc(props.league, 1)" :alt="getParticipantName(props.league, 1)" />
                 <div class="arsenal-tGhDC5 valign-text-middle arsenal body2 !text-center !h-[24px]">{{ getParticipantName(props.league, 1) }}</div>
             </div>
         </div>
@@ -43,44 +43,53 @@
 
 <script setup lang="ts">
 import UtilDate from "~/utils/date";
-import { ECommonCountry } from '~/types/Common/country';
-import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
+import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
     idx: number;
-    league: TFootBallFixtures;
+    league: TFootBallSchedule;
 }>();
 
-const dateStore = useDateStore();
 const goStore = useGoStore();
 
 const setLeagueGroup = (league): boolean => {
     return league.hasLeagueTag ?? false;
 };
 
-const getLeagueFlag = (league: TFootBallFixtures): string => {
-    return `/img/${ ECommonCountry[ league.Fixture.Location.Name ] }.png`;
+const getLeagueFlag = (league: TFootBallSchedule): string => {
+    return league.ai_competition_img;
 };
 
-const getLeagueAlt = (league: TFootBallFixtures): string => {
-    return league.Fixture.Location.Name;
+const getLeagueAlt = (league: TFootBallSchedule): string => {
+    return league.ai_competition_short_name;
 };
 
-const getLeagueName = (league: TFootBallFixtures): string => {
-    return league.Fixture.League.Name;
+const getLeagueName = (league: TFootBallSchedule): string => {
+    return league.ai_competition_name;
 };
 
-const getLeagueTime = (league: TFootBallFixtures): string => {
-    const date = new Date(league.Fixture.StartDate);
+const getLeagueTime = (league: TFootBallSchedule): string => {
+    const date = new Date(league.ai_match_time);
     const time = `${UtilDate.syncDigit(date.getHours())}:${UtilDate.syncDigit(date.getMinutes())}`;
     return time;
 };
 
-// const getParticipantSrc = (league: TFootBallFixtures, position: number = 1): string => {
-//     return league.Fixture.Participants[position].Id;
-// };
-
-const getParticipantName = (league: TFootBallFixtures, position: number = 0): string => {
-    return league.Fixture.Participants[position].Name;
+const getLeagueScore = (league: TFootBallSchedule, position: number = 0): string => {
+    const prefix = goStore.go_prefix_via_position(position);
+    return league[`ai_${ prefix }_scores`][0];
 };
+
+const getParticipantName = (league: TFootBallSchedule, position: number = 0): string => {
+    const prefix = goStore.go_prefix_via_position(position);
+    return league[`ai_${ prefix }_team_name`];
+};
+
+const getParticipantSrc = (league: TFootBallSchedule, position: number = 0): string => {
+    const prefix = goStore.go_prefix_via_position(position);
+    return league[`ai_${ prefix }_team_img`];
+};
+
+onMounted(async () => {
+    await nextTick();
+});
 </script>

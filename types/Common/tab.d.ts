@@ -29,3 +29,5 @@ export type TCommonSportTab = typeof ECommonSportTab[ keyof typeof ECommonSportT
 export type TCommonMatchUpTab = typeof ECommonMatchUpTab[ keyof typeof ECommonMatchUpTab ];
 
 export type TCommonLeagueTab = typeof ECommonLeagueTab[ keyof typeof ECommonLeagueTab ];
+
+export type TCommonTabTypes = TCommonSportTab | TCommonMatchUpTab | TCommonLeagueTab;

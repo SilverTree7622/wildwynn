@@ -23,9 +23,21 @@ export const useGoStore = defineStore('goStore', () => {
         console.log('go livetraker');
     };
 
+    const go_prefix_via_position = (position: number = 0) => {
+        let prefix = '';
+        if (position === 0) {
+            prefix = 'home';
+        }
+        if (position === 1) {
+            prefix = 'away';
+        }
+        return prefix;
+    };
+
     return {
         go_matchup,
         go_league,
         go_livetraker,
+        go_prefix_via_position,
     };
 });

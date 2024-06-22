@@ -12,10 +12,10 @@
 </template>
 
 <script setup lang="ts">
-import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
+import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
-    result_league_list: TFootBallFixtures[];
+    result_league_list: TFootBallSchedule[];
 }>();
 
 onMounted(async () => {

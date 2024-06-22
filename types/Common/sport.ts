@@ -9,6 +9,15 @@ export const ECommonSportSection = {
     Icehockey: 'icehockey',
 } as const;
 
+export const ECommonSportSectionValue = {
+    'football': 'FootBall',
+    'basketball': 'BasketBall',
+    'baseball': 'BaseBall',
+    'volleyball': 'VolleyBall',
+    'tennis': 'Tennis',
+    'icehockey': 'Icehockey',
+} as const;
+
 export const ECommonSportValue = {
     FootBall: 6046,
     BasketBall: 48242,

@@ -11,6 +11,9 @@ const fetchTrial = async <T> (
     const {
         FETCH_TRIAL_MAX_CNT,
     } = useRuntimeConfig().public.CONSTANTS;
+    const opt = reactive({
+        delayTime: 1500,
+    });
     const fetchConfig = {
         ...config,
     };
@@ -123,7 +126,6 @@ export const useApiFetch = async <T> (
     // console.log('url, reqConfig: ', url, reqConfig);
 
     const opt = reactive({
-        delayTime: 1500,
         trialCnt: <number> 0,
     });
 

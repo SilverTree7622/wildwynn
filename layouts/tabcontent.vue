@@ -104,9 +104,6 @@ watch(
 watch(
     () => dateStore.getDate(),
     async (p) => {
-        // if (opt.useInitForChangingTab) {
-        //     return;
-        // }
         await props.changeDate();
     }
 );

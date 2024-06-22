@@ -1,10 +1,13 @@
 import { defineStore } from "pinia";
+import type { TCommonTabTypes } from "~/types/Common/tab";
 
 
 export type TCustomDatePath = (item) => Date;
 export type TCustomLeaguePath = (item) => string;
 export type TCustomPathConfig = {
+    tab?: TCommonTabTypes;
     isWholeDate?: boolean;
+    isLive?: boolean;
     isResult?: boolean;
     date?: TCustomDatePath;
     league?: TCustomLeaguePath; 
@@ -72,18 +75,34 @@ export const useFilterStore = defineStore('filterStore', () => {
         sortLogic: <Function> (list: any[], filterDate: Date, customPath?: TCustomPathConfig) => {
             const isWholeDate = customPath?.isWholeDate ?? false;
             const isResult = customPath?.isResult ?? false;
+            const isLive  = customPath?.isLive ?? false;
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const getNow = new Date(Date.now()).getTime();
             const filteredList = list.filter((item, idx) => {
+
                 const isSameDate = (
                     getDatePath(item).getFullYear() === filterDate.getFullYear() &&
                     getDatePath(item).getMonth() === filterDate.getMonth() &&
                     getDatePath(item).getDate() === filterDate.getDate()
                 );
                 return isSameDate;
-            }).filter((item, idx) => {
+            });
+            const configFilteredList = filteredList.filter((item) => {
                 if (isWholeDate) {
                     return true;
+                }
+                if (isLive) {
+                    return (
+                        item.ai_status_id === 2 ||
+                        item.ai_status_id === 3 ||
+                        item.ai_status_id === 4 ||
+                        item.ai_status_id === 5 ||
+                        item.ai_status_id === 7 ||
+                        item.ai_status_id === 8 ||
+                        item.ai_status_id === 9 ||
+                        item.ai_status_id === 10 ||
+                        item.ai_status_id === 11
+                    );
                 }
                 if (isResult) {
                     return getDatePath(item).getTime() < getNow;
@@ -91,7 +110,7 @@ export const useFilterStore = defineStore('filterStore', () => {
                     return getDatePath(item).getTime() > getNow;
                 }
             });
-            return filteredList;
+            return configFilteredList;
         },
     });
 
@@ -116,6 +135,12 @@ export const useFilterStore = defineStore('filterStore', () => {
         list: T[], filterDate: Date, customPath?: TCustomPathConfig,
     ) => {
         opt.list = list;
+        if (customPath && customPath.tab) {
+            const { tab } = customPath;
+            customPath.isWholeDate = (tab === 'odds' || tab === 'league');
+            customPath.isLive = (tab === 'live');
+            customPath.isResult = (tab === 'result');
+        }
         const returnList = date.sortLogic(list, filterDate, customPath);
         opt.sortedList = returnList;
         if (favorite.isToggled) {

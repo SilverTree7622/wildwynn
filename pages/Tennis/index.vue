@@ -54,7 +54,7 @@ const scroll = reactive({
 const opt = reactive({
     isBooting: <boolean> true,
     isPending: <boolean> true,
-    tab: <string> route.query['tab'] as TCacheStoreTab ?? 'live',
+    tab: <string> route.query['tab'] as TCommonTabTypes ?? 'live',
     isOutOfContent: scrollStore.getIsOutOfContent(scroll.key) ?? false,
     result: {
         nav_code: 'S006',
@@ -82,7 +82,7 @@ const init = () => {
 };
 
 const changeTab = async () => {
-    opt.tab = route.query['tab'] as TCacheStoreTab;
+    opt.tab = route.query['tab'] as TCommonTabTypes;
     list.totalList = [];
     opt.isBooting = true;
     opt.isPending = true;

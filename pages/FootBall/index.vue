@@ -19,14 +19,14 @@
             v-if="opt.tab === 'fixtures'"
             :result_league_list="list.sortedList"
         />
-        <FootBallOddsMain
+        <!-- <FootBallOddsMain
             v-if="opt.tab === 'odds'"
             :result_league_list="list.sortedList"
         />
         <FootBallResultMain
             v-if="opt.tab === 'result'"
             :result_league_list="list.sortedList"
-        />
+        /> -->
         <FootBallLeagueMain
             v-if="opt.tab === 'league'"
         />
@@ -35,7 +35,10 @@
 
 <script setup lang="ts">
 import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
-import { ECommonSportValue } from '~/types/Common/sport';
+import { ECommonSportSectionValue, ECommonSportValue, type TCommonSportSection } from '~/types/Common/sport';
+import type { TFootBallSchedule } from "~/types/FootBall/schedule";
+import type { TCommonTabTypes } from "~/types/Common/tab";
+import type { TSportLiveRealTimeTypes } from '~/types/live';
 
 const {
     ONE_DAY_MILLISECOND,
@@ -45,6 +48,7 @@ const filterStore = useFilterStore();
 const dateStore = useDateStore();
 const scrollStore = useScrollStore();
 const cacheStore = useCacheStore();
+const liveIntervalLoadingStore = useLiveIntervalLoadingStore();
 const route = useRoute();
 
 const scroll = reactive({
@@ -54,7 +58,7 @@ const scroll = reactive({
 const opt = reactive({
     isBooting: <boolean> true,
     isPending: <boolean> true,
-    tab: <string> route.query['tab'] as TCacheStoreTab ?? 'live',
+    tab: <TCommonTabTypes> route.query['tab'] as TCommonTabTypes ?? 'live',
     isOutOfContent: scrollStore.getIsOutOfContent(scroll.key) ?? false,
     result: {
         nav_code: 'S001',
@@ -63,9 +67,9 @@ const opt = reactive({
 
 const list = reactive({
     // total list
-    totalList: <TFootBallFixtures[]> [],
+    totalList: <TFootBallSchedule[]> [],
     // sorted list from total list (= visaulized list)
-    sortedList: <TFootBallFixtures[]> [],
+    sortedList: <TFootBallSchedule[]> [],
 });
 
 const page = reactive({
@@ -82,7 +86,7 @@ const init = () => {
 };
 
 const changeTab = async () => {
-    opt.tab = route.query['tab'] as TCacheStoreTab;
+    opt.tab = route.query['tab'] as TCommonTabTypes;
     list.totalList = [];
     opt.isBooting = true;
     opt.isPending = true;
@@ -109,13 +113,12 @@ const res = async () => {
     const res = await cacheStore.onMountedTab(
         'football',
         opt.tab,
-        'fixtures',
         {
             sid: ECommonSportValue['FootBall'],
             fromdate: dateStore.getFromDate(),
         },
     );
-    list.totalList = res['data']['Body'];
+    list.totalList = res['data'];
     await callNextContents();
     opt.isPending = false;
     opt.isBooting = false;
@@ -146,19 +149,16 @@ const loadSortedContent = async (isFilter: boolean, list: any[]) => {
  * @param isFilter 
  */
 const callNextContents = async (isFilter: boolean = false): Promise<boolean> => {
-    const isWholeDate = (opt.tab === 'odds' || opt.tab === 'league');
-    const isResult = (opt.tab === 'result');
     const pagedList = filterStore.sortList(
         list.totalList,
         dateStore.getDate(),
         {
-            isWholeDate,
-            isResult,
+            tab: opt.tab,
             date: (item) => {
-                return new Date(item.Fixture.StartDate);
+                return new Date(Number(`${ item.ai_match_time }000`));
             },
             league: (item) => {
-                return item.Fixture.League.Id;
+                return item.ai_competition_id;
             }
         }
     );
@@ -173,17 +173,19 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
 };
 
 onMounted(async () => {
+    opt.tab = route.query['tab'] as TCommonTabTypes;
     opt.isPending = true;
     await nextTick();
     scrollStore.setScroll2Top();
     await res();
     scrollStore.register(scroll.key, callNextContents);
+    await liveIntervalLoadingStore.onMounted('football');
 });
 
 onBeforeUnmount(async () => {
     init();
     scrollStore.onBeforeUnmount(scroll.key);
-    cacheStore.onBeforeUnmountTab();
+    liveIntervalLoadingStore.onBeforeUnmount();
 });
 </script>
 
