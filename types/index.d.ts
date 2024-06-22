@@ -1,15 +1,6 @@
 import type { TAuthGuest, TAuthUser } from "./Auth";
 import type { TSelectorTime } from "./Selector";
 
-
-export type TInitData = {
-    nav_code: string;
-    st_odds: TSelectorOdds[];
-    st_sports: TSelectorSports[];
-    st_time: TSelectorTime[];
-    result: number;
-};
-
 export enum EError {
     SUCCESS = { code: 0, type: null, title: '', message: '', },
     FAILURE = { code: 1, type: 1, title: 'NOTICE', message: 'An error has occurred. Please try again under normal circumstances.', },

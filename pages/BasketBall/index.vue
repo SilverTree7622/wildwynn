@@ -7,6 +7,9 @@
         :sName="'BasketBall'"
         :tab="opt.tab"
         :result="opt.result"
+        :changeTab="changeTab"
+        :changeDate="changeDate"
+        :toggleByTime="toggleByTime"
     >
         <BasketBallLiveMain
             v-if="opt.tab === 'live'"
@@ -70,45 +73,33 @@ const page = reactive({
     idx: <number> 0,
 });
 
-// tab changed event
-watch(
-    () => route.fullPath,
-    async (p) => {
-        opt.tab = route.query['tab'] as TCacheStoreTab;
-        list.totalList = [];
-        opt.isBooting = true;
-        opt.isPending = true;
-        init();
-        await res();
-    }
-);
-
-// date changed event
-watch(
-    () => dateStore.getDate(),
-    async (p) => {
-        if (opt.isBooting) return;
-        init();
-        opt.isPending = true;
-        await callNextContents();
-        opt.isPending = false;
-    }
-);
-
-// ByTime toggled event
-watch(
-    () => filterStore.getTimeIsToggled(),
-    async (p) => {
-        await callNextContents(true);
-    }
-);
-
 const init = () => {
     filterStore.init();
     scrollStore.setScroll2Top();
     page.idx = 0;
     list.sortedList = [];
     scrollStore.setIsOutOfContent(scroll.key, false);
+};
+
+const changeTab = async () => {
+    opt.tab = route.query['tab'] as TCacheStoreTab;
+    list.totalList = [];
+    opt.isBooting = true;
+    opt.isPending = true;
+    init();
+    await res();
+};
+
+const changeDate = async () => {
+    if (opt.isBooting) return;
+    init();
+    opt.isPending = true;
+    await callNextContents();
+    opt.isPending = false;
+};
+
+const toggleByTime = async () => {
+    await callNextContents(true);
 };
 
 /**

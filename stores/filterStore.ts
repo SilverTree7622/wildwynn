@@ -74,14 +74,14 @@ export const useFilterStore = defineStore('filterStore', () => {
             const isResult = customPath?.isResult ?? false;
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const getNow = new Date(Date.now()).getTime();
-            const filteredList = list.filter((item) => {
+            const filteredList = list.filter((item, idx) => {
                 const isSameDate = (
                     getDatePath(item).getFullYear() === filterDate.getFullYear() &&
                     getDatePath(item).getMonth() === filterDate.getMonth() &&
                     getDatePath(item).getDate() === filterDate.getDate()
                 );
                 return isSameDate;
-            }).filter((item) => {
+            }).filter((item, idx) => {
                 if (isWholeDate) {
                     return true;
                 }

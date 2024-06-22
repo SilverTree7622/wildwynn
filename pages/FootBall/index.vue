@@ -7,6 +7,9 @@
         :sName="'FootBall'"
         :tab="opt.tab"
         :result="opt.result"
+        :changeTab="changeTab"
+        :changeDate="changeDate"
+        :toggleByTime="toggleByTime"
     >
         <FootBallLiveMain
             v-if="opt.tab === 'live'"
@@ -70,45 +73,33 @@ const page = reactive({
     idx: <number> 0,
 });
 
-// tab changed event
-watch(
-    () => route.fullPath,
-    async (p) => {
-        opt.tab = route.query['tab'] as TCacheStoreTab;
-        list.totalList = [];
-        opt.isBooting = true;
-        opt.isPending = true;
-        init();
-        await res();
-    }
-);
-
-// date changed event
-watch(
-    () => dateStore.getDate(),
-    async (p) => {
-        if (opt.isBooting) return;
-        init();
-        opt.isPending = true;
-        await callNextContents();
-        opt.isPending = false;
-    }
-);
-
-// ByTime toggled event
-watch(
-    () => filterStore.getTimeIsToggled(),
-    async (p) => {
-        await callNextContents(true);
-    }
-);
-
 const init = () => {
     filterStore.init();
     scrollStore.setScroll2Top();
     page.idx = 0;
     list.sortedList = [];
     scrollStore.setIsOutOfContent(scroll.key, false);
+};
+
+const changeTab = async () => {
+    opt.tab = route.query['tab'] as TCacheStoreTab;
+    list.totalList = [];
+    opt.isBooting = true;
+    opt.isPending = true;
+    init();
+    await res();
+};
+
+const changeDate = async () => {
+    if (opt.isBooting) return;
+    init();
+    opt.isPending = true;
+    await callNextContents();
+    opt.isPending = false;
+};
+
+const toggleByTime = async () => {
+    await callNextContents(true);
 };
 
 /**
@@ -124,9 +115,7 @@ const res = async () => {
             fromdate: dateStore.getFromDate(),
         },
     );
-    console.log('res: ', res);
     list.totalList = res['data']['Body'];
-    console.log('list.totalList: ', list.totalList);
     await callNextContents();
     opt.isPending = false;
     opt.isBooting = false;
@@ -159,7 +148,6 @@ const loadSortedContent = async (isFilter: boolean, list: any[]) => {
 const callNextContents = async (isFilter: boolean = false): Promise<boolean> => {
     const isWholeDate = (opt.tab === 'odds' || opt.tab === 'league');
     const isResult = (opt.tab === 'result');
-    console.log('opt.tab, isWholeDate, isResult: ', opt.tab, isWholeDate, isResult);
     const pagedList = filterStore.sortList(
         list.totalList,
         dateStore.getDate(),
@@ -174,15 +162,12 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
             }
         }
     );
-    console.log('pagedList: ', pagedList);
     if ((pagedList.length === list.sortedList.length) && pagedList.length !== 0) {
         if (isFilter) list.sortedList = pagedList;
         opt.isOutOfContent = true;
-        console.log('list.sortedList: ', list.sortedList);
         return opt.isOutOfContent;
     }
     list.sortedList = await loadSortedContent(isFilter, pagedList);
-    console.log('list.sortedList: ', list.sortedList);
     opt.isOutOfContent = (pagedList.length === list.sortedList.length);
     return opt.isOutOfContent;
 };

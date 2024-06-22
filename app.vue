@@ -21,36 +21,39 @@
 </template>
 
 <script lang="ts" setup>
-import initDataJson from '~/dummy/initData.json';
-import type { TInitData } from "~/types";
-
-const {
-	INIT_DATA,
-} = useRuntimeConfig().public.CONSTANTS;
+import { ECommonSportInitDataPrefix } from "~/types/Common/sport";
+import type { TCommonSportSectionTabName } from "~/types/Common/sport";
+import type { TInitData } from "~/types/loading";
 
 const selectorStore = useSelectorStore();
+const matchStateStore = useMatchStateStore();
 const cacheStore = useCacheStore();
+const route = useRoute();
 
 const getInitData = async () => {
-	let initData: TInitData | {} = JSON.parse(localStorage.getItem(INIT_DATA) ?? '{}');
-	// if (!Object.keys(initData).length) {
-	// 	const res = await useApiFetch<TInitData>(
-	// 		'loading',
-	// 		{ method: 'GET', },
-	// 	);
-	// 	initData = res.data['data'] ?? {};
-	// }
-	// localStorage.setItem(INIT_DATA, JSON.stringify(initData));
-	const res = await useApiFetch<TInitData>(
-		'loading',
-		{ method: 'GET', },
-	);
-	initData = res.data['data'] ?? {};
+	const tabName = route.name as TCommonSportSectionTabName;
+	let initData: TInitData | {} = {};
+	let res = {};
+	try {
+		res = await useApiFetch<TInitData>(
+			`${ ECommonSportInitDataPrefix[tabName] }loading`,
+			{ method: 'GET', },
+		);
+	}
+	catch (e) {
+		console.warn('e from loading: ', e);
+		res = await useApiFetch<TInitData>(
+			'loading',
+			{ method: 'GET', },
+		);
+	}
+	initData = res['data']['data'] ?? {};
 	selectorStore.onMounted(
 		initData['st_time'] ?? [],
 		initData['st_odds'] ?? [],
 		initData['st_sports'] ?? [],
 	);
+	matchStateStore.onMounted(initData);
 };
 
 onMounted(async () => {

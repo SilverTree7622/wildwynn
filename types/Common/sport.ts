@@ -18,6 +18,17 @@ export const ECommonSportValue = {
     Icehockey: 35232,
 } as const;
 
+export const ECommonSportInitDataPrefix = {
+    FootBall: 'fb',
+    BasketBall: 'bk',
+    BaseBall: 'bs',
+    VolleyBall: 'vy',
+    Tennis: 'ts',
+    Icehockey: 'ih',
+} as const;
+
+export type TCommonSportSectionTabName = keyof typeof ECommonSportSection;
+
 export const ECommonMatchUpSection = 'matchup';
 
 export const ECommonLeagueSection = 'league';

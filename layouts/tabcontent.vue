@@ -13,8 +13,8 @@
                 <CommonFilterDate
                     ref="$date"
                     :date="new Date()"
-                    @prev-tab="prevTab"
-                    @next-tab="nextTab"
+                    @prev-tab="prevDate"
+                    @next-tab="nextDate"
                 />
             </div>
         </div>
@@ -61,32 +61,57 @@ const props = defineProps<{
     sName: string;
     tab: string;
     result: any;
+    changeTab: () => Promise<void>;
+    changeDate: () => Promise<void>;
+    toggleByTime: () => Promise<void>;
+}>();
+
+const emit = defineEmits<{
+    (e: 'change-tab'): void;
+    (e: 'change-date'): void;
 }>();
 
 const opt = reactive({
     tab: <string> props.tab,
-    useInitForChangingTab: <boolean> true,
+    useInitForChangingTab: <boolean> true,      // when init date filter section
 });
 
 const filterStore = useFilterStore();
+const dateStore = useDateStore();
 const route = useRoute();
 
 const $date = ref();
 
+// tab changed evt
 watch(
     () => route.fullPath,
     async (p) => {
         filterStore.init();
         if (opt.useInitForChangingTab) {
             $date.value.init();
-        } else {
-            opt.useInitForChangingTab = true;
         }
         opt.tab = route.query['tab'] as string;
+        if (opt.useInitForChangingTab) {
+            await props.changeTab();
+        }
+        if (!opt.useInitForChangingTab) {
+            opt.useInitForChangingTab = true;
+        }
     }
 );
 
-const prevTab = (date: Date) => {
+// date changed evt
+watch(
+    () => dateStore.getDate(),
+    async (p) => {
+        // if (opt.useInitForChangingTab) {
+        //     return;
+        // }
+        await props.changeDate();
+    }
+);
+
+const prevDate = (date: Date) => {
     const getNow = new Date(Date.now());
     const getDate = new Date(date);
     if (getNow.getTime() < getDate.getTime()) {
@@ -99,7 +124,9 @@ const prevTab = (date: Date) => {
         tab === 'fixtures'
     ) targetTab = 'result';
     // exception conditions
-    if (!targetTab) return;
+    if (!targetTab) {
+        return;
+    }
     if (tab === 'fixtures' && UtilDate.chckDateIsToday(date)) {
         return;
     }
@@ -113,9 +140,10 @@ const prevTab = (date: Date) => {
             tab: targetTab,
         }
     });
+
 };
 
-const nextTab = (date: Date) => {
+const nextDate = (date: Date) => {
     const getNow = new Date(Date.now());
     const getDate = new Date(date);
     if (getNow.getTime() > getDate.getTime()) {
@@ -128,7 +156,9 @@ const nextTab = (date: Date) => {
         tab === 'live' ||
         tab === 'result'
     ) targetTab = 'fixtures';
-    if (!targetTab) return;
+    if (!targetTab) {
+        return;
+    }
     // change tab
     if (UtilDate.chckDateIsToday(date)) {
         opt.useInitForChangingTab = false;   
