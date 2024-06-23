@@ -30,4 +30,6 @@ export type TCommonSchedule = {
     "ai_season_id": string;
     "ai_status_id": TCommonMatchStatus;
     "match_id": string;
+
+    "ai_kickoff_timestamp"?: number;
 };

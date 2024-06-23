@@ -4,15 +4,17 @@
         :isPending="opt.isPending"
         :pageIsPending="page.isPending"
         :isOutOfContent="opt.isOutOfContent"
-        :sName="'FootBall'"
+        :sName="'football'"
         :tab="opt.tab"
         :result="opt.result"
         :changeTab="changeTab"
         :changeDate="changeDate"
         :toggleByTime="toggleByTime"
+        :updateLiveRealTime="updateLiveRealTime"
     >
         <FootBallLiveMain
             v-if="opt.tab === 'live'"
+            ref="$liveMain"
             :result_league_list="list.sortedList"
         />
         <FootBallFixturesMain
@@ -34,11 +36,14 @@
 </template>
 
 <script setup lang="ts">
-import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
-import { ECommonSportSectionValue, ECommonSportValue, type TCommonSportSection } from '~/types/Common/sport';
+import { ECommonSportSectionValue, ECommonSportValue, type TCommonSportNavCode, type TCommonSportSection } from '~/types/Common/sport';
+import UtilObj from '~/utils/obj';
+import UtilArray from '~/utils/array';
 import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 import type { TCommonTabTypes } from "~/types/Common/tab";
 import type { TSportLiveRealTimeTypes } from '~/types/live';
+import type { TSportScheduleTypes } from '~/types/schedule';
+import UtilDate from '~/utils/date';
 
 const {
     ONE_DAY_MILLISECOND,
@@ -61,15 +66,19 @@ const opt = reactive({
     tab: <TCommonTabTypes> route.query['tab'] as TCommonTabTypes ?? 'live',
     isOutOfContent: scrollStore.getIsOutOfContent(scroll.key) ?? false,
     result: {
-        nav_code: 'S001',
+        nav_code: <TCommonSportNavCode> 'S001',
     },
 });
+
+const $liveMain = ref();
 
 const list = reactive({
     // total list
     totalList: <TFootBallSchedule[]> [],
+    totalKickOffList: <{ idx: number; match_id: string; ai_kickoff_timestamp: number; }[]> [],
     // sorted list from total list (= visaulized list)
     sortedList: <TFootBallSchedule[]> [],
+    sortedKickOffList: <{ idx: number; match_id: string; ai_kickoff_timestamp: number; }[]> [],
 });
 
 const page = reactive({
@@ -106,6 +115,77 @@ const toggleByTime = async () => {
     await callNextContents(true);
 };
 
+const updateLiveRealTime = async () => {
+    const prevSortedList = [ ...list.sortedList ];
+    const prevSortedListMatchUpList = list.sortedList.map( item => item.match_id );
+    const prevSortedListScore1List = list.sortedList.map( item => item.ai_home_scores[0] );
+    const prevSortedListScore2List = list.sortedList.map( item => item.ai_away_scores[0] );
+    const prevSortedKickOffList = [ ...list.sortedKickOffList ];
+    
+    list.totalList = liveIntervalLoadingStore.updateLiveRealTime(list.totalList);
+    list.totalKickOffList = liveIntervalLoadingStore.updateLiveKickOff(list.totalList);
+    list.sortedList = liveIntervalLoadingStore.updateLiveRealTime(list.sortedList);
+    list.sortedKickOffList = liveIntervalLoadingStore.updateLiveKickOff(list.sortedList);
+    
+    // opt.tab = '' as TCommonTabTypes;
+    // setTimeout(() => {
+    //     opt.tab = 'live';
+    // }, 1);
+    // return;
+
+    await callNextContents(true);
+
+    const isListEqual = UtilObj.compareEquals(prevSortedList, list.sortedList);
+    // compare matchup id list
+    const newSortedListMatchUpList = list.sortedList.map( item => item.match_id );
+    const isMatchUpListEqual = UtilArray.compareList(
+        prevSortedListMatchUpList, newSortedListMatchUpList
+    );
+    const newSortedListScore1List = list.sortedList.map( item => item.ai_home_scores[0] );
+    const isScore1ListEqual = UtilArray.compareList(
+        prevSortedListScore1List, newSortedListScore1List
+    );
+    const newSortedListScore2List = list.sortedList.map( item => item.ai_away_scores[0] );
+    const isScore2ListEqual = UtilArray.compareList(
+        prevSortedListScore2List, newSortedListScore2List
+    );
+    // const newSortedListTimeList = list.sortedList.map( item => item.ai_kickoff_timestamp );
+    const isTimeListEqual = UtilArray.compareList(
+        prevSortedKickOffList, list.sortedKickOffList
+    );
+    console.log('prevSortedKickOffList, list.sortedKickOffList: ', prevSortedKickOffList, list.sortedKickOffList);
+
+    
+    // if (
+    //     isListEqual && isMatchUpListEqual && isScore1ListEqual && isScore2ListEqual && isTimeListEqual
+    // ) {
+    //     console.log(`nothing changed`);
+    //     return;
+    // }
+    console.log('isListEqual, isMatchUpListEqual, isScore1ListEqual, isScore2ListEqual, isTimeListEqual: ', isListEqual, isMatchUpListEqual, isScore1ListEqual, isScore2ListEqual, isTimeListEqual);
+
+    console.log('list.totalList: ', list.totalList);
+    console.log('list.sortedList: ', list.sortedList);
+    
+    list.sortedList.map((item, idx) => {
+        const filteredKickOffList = list.sortedKickOffList.find((filterItem) => {
+            return filterItem.idx === idx;
+        });
+        const prevFilteredKickOffList = prevSortedKickOffList.find((filterItem) => {
+            return filterItem.idx === idx;
+        }) ?? 0;
+        const ai_kickoff_timestamp = filteredKickOffList ? filteredKickOffList['ai_kickoff_timestamp'] : prevFilteredKickOffList['ai_kickoff_timestamp'];
+        // console.log('idx, filteredKickOffList: ', filteredKickOffList);
+        $liveMain.value.update(idx, {
+            ai_away_scores: item.ai_away_scores,
+            ai_home_scores: item.ai_home_scores,
+            ai_kickoff_timestamp,
+            ai_match_status: item.ai_status_id,
+            match_id: item.match_id,
+        });
+    });
+};
+
 /**
  * res from first page entrance
  */
@@ -114,12 +194,14 @@ const res = async () => {
         'football',
         opt.tab,
         {
-            sid: ECommonSportValue['FootBall'],
+            sid: ECommonSportValue[ ECommonSportSectionValue['football'] ],
             fromdate: dateStore.getFromDate(),
         },
     );
     list.totalList = res['data'];
+    console.log('list.totalList from res: ', list.totalList);
     await callNextContents();
+    // await updateLiveRealTime();
     opt.isPending = false;
     opt.isBooting = false;
 };
@@ -155,7 +237,7 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
         {
             tab: opt.tab,
             date: (item) => {
-                return new Date(Number(`${ item.ai_match_time }000`));
+                return UtilDate.addMillisecond(item.ai_match_time);
             },
             league: (item) => {
                 return item.ai_competition_id;
@@ -178,14 +260,16 @@ onMounted(async () => {
     await nextTick();
     scrollStore.setScroll2Top();
     await res();
-    scrollStore.register(scroll.key, callNextContents);
-    await liveIntervalLoadingStore.onMounted('football');
+    scrollStore.register(scroll.key, async () => {
+        const resut = await callNextContents();
+        await updateLiveRealTime();
+        return resut;
+    });
 });
 
 onBeforeUnmount(async () => {
     init();
     scrollStore.onBeforeUnmount(scroll.key);
-    liveIntervalLoadingStore.onBeforeUnmount();
 });
 </script>
 

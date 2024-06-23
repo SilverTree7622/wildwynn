@@ -52,18 +52,21 @@
 </template>
 
 <script lang="ts" setup>
+import { ECommonSportSectionValue, type TCommonSportSection } from '~/types/Common/sport';
+import type { TCommonTabTypes } from '~/types/Common/tab';
 import UtilDate from '~/utils/date';
 
 const props = defineProps<{
     isPending: boolean;
     pageIsPending: boolean;
     isOutOfContent: boolean;
-    sName: string;
-    tab: string;
+    sName: TCommonSportSection;
+    tab: TCommonTabTypes;
     result: any;
     changeTab: () => Promise<void>;
     changeDate: () => Promise<void>;
     toggleByTime: () => Promise<void>;
+    updateLiveRealTime: () => void;
 }>();
 
 const emit = defineEmits<{
@@ -72,12 +75,13 @@ const emit = defineEmits<{
 }>();
 
 const opt = reactive({
-    tab: <string> props.tab,
+    tab: <TCommonTabTypes> props.tab,
     useInitForChangingTab: <boolean> true,      // when init date filter section
 });
 
 const filterStore = useFilterStore();
 const dateStore = useDateStore();
+const liveIntervalLoadingStore = useLiveIntervalLoadingStore();
 const route = useRoute();
 
 const $date = ref();
@@ -90,9 +94,10 @@ watch(
         if (opt.useInitForChangingTab) {
             $date.value.init();
         }
-        opt.tab = route.query['tab'] as string;
+        opt.tab = route.query['tab'] as TCommonTabTypes;
         if (opt.useInitForChangingTab) {
             await props.changeTab();
+            await liveIntervalLoadingStore.changeTab(opt.tab);
         }
         if (!opt.useInitForChangingTab) {
             opt.useInitForChangingTab = true;
@@ -105,6 +110,7 @@ watch(
     () => dateStore.getDate(),
     async (p) => {
         await props.changeDate();
+        liveIntervalLoadingStore.setTabActive(false);
     }
 );
 
@@ -113,6 +119,14 @@ watch(
     () => filterStore.getTimeIsToggled(),
     async (p) => {
         await props.toggleByTime();
+    }
+);
+
+// live tab, update infos
+watch(
+    () => liveIntervalLoadingStore.getRealTimeData(),
+    async () => {
+        await props.updateLiveRealTime();
     }
 );
 
@@ -140,12 +154,11 @@ const prevDate = (date: Date) => {
         opt.useInitForChangingTab = false;
     }
     navigateTo({
-        path: `/${ props.sName }`,
+        path: `/${ ECommonSportSectionValue[ props.sName ] }`,
         query: {
             tab: targetTab,
         }
     });
-
 };
 
 const nextDate = (date: Date) => {
@@ -169,13 +182,22 @@ const nextDate = (date: Date) => {
         opt.useInitForChangingTab = false;   
     }
     navigateTo({
-        path: `/${ props.sName }`,
+        path: `/${ ECommonSportSectionValue[ props.sName ] }`,
         query: {
             tab: targetTab,
         }
     });
 };
 
+onMounted(async () => {
+    await nextTick();
+    await liveIntervalLoadingStore.onMounted(props.sName);
+    await props.updateLiveRealTime();
+});
+
+onBeforeUnmount(() => {
+    liveIntervalLoadingStore.onBeforeUnmount();
+});
 </script>
 
 <style scoped></style>

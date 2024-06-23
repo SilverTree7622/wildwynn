@@ -36,6 +36,16 @@ export const ECommonSportInitDataPrefix = {
     Icehockey: 'ih',
 } as const;
 
+export const ECommonSportNavCode = {
+    FootBall: 'S001',
+    FootBall2: 'S002',
+    BasketBall: 'S003',
+    BaseBall: 'S004',
+    VolleyBall: 'S005',
+    Tennis: 'S006',
+    Icehockey: 'S007',
+} as const;
+
 export type TCommonSportSectionTabName = keyof typeof ECommonSportSection;
 
 export const ECommonMatchUpSection = 'matchup';
@@ -47,3 +57,5 @@ export type TCommonSportSection = typeof ECommonSportSection[ keyof typeof EComm
 export type TCommonMatchUpSection = typeof ECommonMatchUpSection;
 
 export type TCommonLeagueSection = typeof ECommonLeagueSection;
+
+export type TCommonSportNavCode = typeof ECommonSportNavCode[ keyof typeof ECommonSportNavCode ];

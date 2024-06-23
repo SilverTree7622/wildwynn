@@ -19,6 +19,14 @@ const UtilDate = {
     chckDateIsToday: (d: Date) => {
         return UtilDate.chckSameDay(d, new Date(Date.now()));
     },
+
+    getWithOutMillisecond: (timestamp: number) => {
+        return ~~( timestamp / 1000 );
+    },
+
+    addMillisecond: (timestamp: number) => {
+        return new Date(Number(`${ timestamp }000`));
+    },
 };
 
 export default UtilDate;

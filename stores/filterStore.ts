@@ -97,11 +97,11 @@ export const useFilterStore = defineStore('filterStore', () => {
                         item.ai_status_id === 3 ||
                         item.ai_status_id === 4 ||
                         item.ai_status_id === 5 ||
-                        item.ai_status_id === 7 ||
-                        item.ai_status_id === 8 ||
-                        item.ai_status_id === 9 ||
-                        item.ai_status_id === 10 ||
-                        item.ai_status_id === 11
+                        item.ai_status_id === 7
+                        // item.ai_status_id === 8 ||
+                        // item.ai_status_id === 9 ||
+                        // item.ai_status_id === 10 ||
+                        // item.ai_status_id === 11
                     );
                 }
                 if (isResult) {

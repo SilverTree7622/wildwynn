@@ -38,12 +38,12 @@ letter-spacing: -0.30px;
 .frmu95mobile .x100new {
   background-color: transparent;
   height: auto;
-  left: calc(50.00% - 17px);
   line-height: normal;
-  position: absolute;
+  position: relative;
   text-align: center;
   white-space: nowrap;
-  width: 25px;
+  width: calc(100% - 4px);
+  margin-top: -3px;
 }
 
 .frmu95mobile .leagueFrame {

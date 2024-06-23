@@ -1,21 +1,30 @@
 import { defineStore } from "pinia";
 import { ECommonSportSectionValue, ECommonSportValue, type TCommonSportSection } from "~/types/Common/sport";
+import type { TCommonTabTypes } from "~/types/Common/tab";
 import type { TSportLiveRealTimeTypes } from "~/types/live";
+import type { TSportScheduleTypes } from "~/types/schedule";
 
 
 export const useLiveIntervalLoadingStore = defineStore('liveIntervalLoadingStore', () => {
     const opt = reactive({
+        sport: <TCommonSportSection> 'football',
         isOnLiveTab: <boolean> false,
         isPending: <boolean> false,
         termDuration: <number> 10 * 1000,
-        realTimeData: <TSportLiveRealTimeTypes | {}> {},
+        realTimeData: <TSportLiveRealTimeTypes[] | []> [],
+        timeOutInstance: <any> undefined,
     });
 
-    const callLoading = async (sport: TCommonSportSection) => {
+    const tmp = reactive({
+        cnt: <number> 0,
+    });
+
+    const callLoading = async () => {
         if (!opt.isOnLiveTab) return;
         opt.isPending = true;
+        tmp.cnt++;
         const res = await useApiFetch<TSportLiveRealTimeTypes>(
-            `${ ECommonSportSectionValue[ sport ] }RealTime`,
+            `${ ECommonSportSectionValue[ opt.sport ] }RealTime`,
             {
                 method: 'POST',
             },
@@ -24,32 +33,80 @@ export const useLiveIntervalLoadingStore = defineStore('liveIntervalLoadingStore
                 fromdate: useDateStore().getFromDate(),
             },
         );
-        console.log('res from interval loading: ', res);
-
-        opt.realTimeData = res['data'];
+        console.log('cnt, res from interval loading: ', tmp.cnt, res);
+        opt.realTimeData = res['data']['data']['data'];
         opt.isPending = false;
-        setTimeout(async () => {
+        opt.timeOutInstance = setTimeout(async () => {
             if (!opt.isOnLiveTab) return;
-            await callLoading(sport);
+            await callLoading();
         }, opt.termDuration);
     };
     
     const onMounted = async (sport: TCommonSportSection) => {
         opt.isOnLiveTab = true;
-        await callLoading(sport);
+        opt.sport = sport;
+        await callLoading();
     };
 
     const onBeforeUnmount = () => {
-        opt.isOnLiveTab = false;
+        setTabActive(false);
+    };
+
+    const changeTab = async (tabName: TCommonTabTypes) => {
+        setTabActive(tabName === 'live');
+        if (opt.isOnLiveTab) {
+            await callLoading();
+        }
     };
 
     const setTabActive = (value: boolean) => {
         opt.isOnLiveTab = value;
+        if (value === false) {
+            clearTimeout(opt.timeOutInstance);
+        }
+    };
+
+    const updateLiveRealTime = (list: TSportScheduleTypes[]): TSportScheduleTypes[] => {
+        const returnList = [ ...list ];
+        opt.realTimeData.map((item: TSportLiveRealTimeTypes) => {
+            const { match_id } = item;
+            const totalIdx = returnList.findIndex( totalItem => totalItem.match_id === match_id );
+            if (totalIdx < 0) return;
+            // find matchup via id
+            returnList[ totalIdx ].ai_away_scores = item.ai_away_scores;
+            returnList[ totalIdx ].ai_home_scores = item.ai_home_scores;
+            returnList[ totalIdx ].ai_status_id = item.ai_match_status;
+        });
+        return returnList;
+    };
+
+    const updateLiveKickOff = (list: TSportScheduleTypes[]): { idx: number; match_id: string; ai_kickoff_timestamp: number; }[] => {
+        const kickOffList: { idx: number; match_id: string; ai_kickoff_timestamp: number; }[] = [];
+        opt.realTimeData.map((item: TSportLiveRealTimeTypes) => {
+            const { match_id } = item;
+            const totalIdx = list.findIndex( totalItem => totalItem.match_id === match_id );
+            if (totalIdx < 0) return;
+            // find matchup via id
+            kickOffList.push({
+                idx: totalIdx,
+                match_id: match_id,
+                ai_kickoff_timestamp: item.ai_kickoff_timestamp
+            });
+        });
+        return kickOffList;
+    };
+
+    const getRealTimeData = () => {
+        return opt.realTimeData;
     };
 
     return {
         onMounted,
         onBeforeUnmount,
+        changeTab,
         setTabActive,
+        updateLiveRealTime,
+        updateLiveKickOff,
+        getRealTimeData,
     };
 });
