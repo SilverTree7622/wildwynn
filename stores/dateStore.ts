@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import UtilDate from "~/utils/date";
 
 
 export const useDateStore = defineStore('dateStore', () => {
@@ -36,7 +37,7 @@ export const useDateStore = defineStore('dateStore', () => {
     };
 
     const getFromDate = (): number => {
-        return Math.floor( getDate().getUTCDate() / 1000 );
+        return UtilDate.getWithOutMillisecond(getDate().getUTCDate());
     };
 
     return {

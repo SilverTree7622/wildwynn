@@ -8,7 +8,7 @@ export type TCommonMatchStatus =
     5 |                                         // Overtime
     6 |                                         // Overtime(deprecated)
     7 |                                         // Penalty Shoot-out
-    8 |                                         // Penalty Shoot-out
+    8 |                                         // End
     9 |                                         // Delay
     10 |                                        // Interrupt
     11 |                                        // Cut in half

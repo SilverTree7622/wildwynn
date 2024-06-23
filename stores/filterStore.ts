@@ -24,18 +24,19 @@ export const useFilterStore = defineStore('filterStore', () => {
 
     const time = reactive({
         isToggled: <boolean> false,
-        sortLogic: <Function> (list: any[], customPath?: TCustomPathConfig) => {
+        sortLogicTime: <Function> (list: any[], customPath?: TCustomPathConfig) => {
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const getLeaguePath = customPath?.league ?? ((item) => { return item.lg_name });
             const sortedList = list.sort((a, b) => {
                 return getDatePath(a).getTime() - getDatePath(b).getTime();
             });
-            return sortedList.map((match, index, array) => {
+            sortedList.forEach((match, index, array) => {
                 match.hasLeagueTag = index === 0 || getLeaguePath(array[index - 1]) !== getLeaguePath(match);
                 return match;
             });
+            return sortedList;
         },
-        sortLogicBasic: <Function> (list: any[], customPath?: TCustomPathConfig) => {
+        sortLogicDefault: <Function> (list: any[], customPath?: TCustomPathConfig) => {
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
             const getLeaguePath = customPath?.league ?? ((item) => { return item.lg_name });
             list.map((item) => {
@@ -73,13 +74,8 @@ export const useFilterStore = defineStore('filterStore', () => {
 
     const date = reactive({
         sortLogic: <Function> (list: any[], filterDate: Date, customPath?: TCustomPathConfig) => {
-            const isWholeDate = customPath?.isWholeDate ?? false;
-            const isResult = customPath?.isResult ?? false;
-            const isLive  = customPath?.isLive ?? false;
             const getDatePath = customPath?.date ?? ((item) => { return item.date });
-            const getNow = new Date(Date.now()).getTime();
             const filteredList = list.filter((item, idx) => {
-
                 const isSameDate = (
                     getDatePath(item).getFullYear() === filterDate.getFullYear() &&
                     getDatePath(item).getMonth() === filterDate.getMonth() &&
@@ -87,30 +83,7 @@ export const useFilterStore = defineStore('filterStore', () => {
                 );
                 return isSameDate;
             });
-            const configFilteredList = filteredList.filter((item) => {
-                if (isWholeDate) {
-                    return true;
-                }
-                if (isLive) {
-                    return (
-                        item.ai_status_id === 2 ||
-                        item.ai_status_id === 3 ||
-                        item.ai_status_id === 4 ||
-                        item.ai_status_id === 5 ||
-                        item.ai_status_id === 7
-                        // item.ai_status_id === 8 ||
-                        // item.ai_status_id === 9 ||
-                        // item.ai_status_id === 10 ||
-                        // item.ai_status_id === 11
-                    );
-                }
-                if (isResult) {
-                    return getDatePath(item).getTime() < getNow;
-                } else {
-                    return getDatePath(item).getTime() > getNow;
-                }
-            });
-            return configFilteredList;
+            return filteredList;
         },
     });
 
@@ -118,6 +91,35 @@ export const useFilterStore = defineStore('filterStore', () => {
         list: <any[]>[],
         sortedList: <any[]>[],
     });
+
+    const filterViaConfig = (list: any[], customPath?: TCustomPathConfig) => {
+        const isWholeDate = customPath?.isWholeDate ?? false;
+        const isResult = customPath?.isResult ?? false;
+        const isLive  = customPath?.isLive ?? false;
+        const getDatePath = customPath?.date ?? ((item) => { return item.date });
+        const getNow = new Date(Date.now()).getTime();
+        const configFilteredList = list.filter((item) => {
+            if (isWholeDate) {
+                return true;
+            }
+            if (isLive) {
+                return (
+                    item.ai_status_id === 2 ||
+                    item.ai_status_id === 3 ||
+                    item.ai_status_id === 4 ||
+                    item.ai_status_id === 5 ||
+                    item.ai_status_id === 6 ||
+                    item.ai_status_id === 7
+                );
+            }
+            if (isResult) {
+                return getDatePath(item).getTime() < getNow;
+            } else {
+                return getDatePath(item).getTime() > getNow;
+            }
+        });
+        return configFilteredList;
+    };
 
     const init = () => {
         favorite.isToggled = false;
@@ -142,16 +144,18 @@ export const useFilterStore = defineStore('filterStore', () => {
             customPath.isResult = (tab === 'result');
         }
         const returnList = date.sortLogic(list, filterDate, customPath);
-        opt.sortedList = returnList;
+        opt.sortedList = filterViaConfig(returnList, customPath);
         if (favorite.isToggled) {
             opt.sortedList = favorite.sortLogic(opt.sortedList, customPath);
         }
+        console.log('time.isToggled: ', time.isToggled);
+
         if (time.isToggled) {
             // time 활성화시 분류
-            opt.sortedList = time.sortLogic(opt.sortedList, customPath);
+            opt.sortedList = time.sortLogicTime(opt.sortedList, customPath);
         } else {
             // time 비활성화시 분류
-            opt.sortedList = time.sortLogicBasic(opt.sortedList, customPath);
+            opt.sortedList = time.sortLogicDefault(opt.sortedList, customPath);
         }
         return opt.sortedList;
     };

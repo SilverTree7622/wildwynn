@@ -92,13 +92,20 @@ const getLeagueTime = (newLeague: TCommonLiveRealTime): string => {
     const currentTime = UtilDate.getWithOutMillisecond(new Date(Date.now()).getTime());
     const kickOffTime = newLeague.ai_kickoff_timestamp;
     const gapTime = currentTime - kickOffTime;
-    // console.log('currentTime, kickOffTime, gapTime: ', currentTime, kickOffTime, gapTime);
     let dateTime = 0;
     if (kickOffTime !== 0) {
         if (newLeague.ai_match_status === 2) {
             dateTime = gapTime / 60 + 1;
         }
-        if (newLeague.ai_match_status === 4) {
+        if (newLeague.ai_match_status === 3) {
+            dateTime = 45;
+        }
+        if (
+            newLeague.ai_match_status === 4 ||
+            newLeague.ai_match_status === 5 ||
+            newLeague.ai_match_status === 6 ||
+            newLeague.ai_match_status === 7
+        ) {
             dateTime = gapTime / 60 + 45 + 1;
         }
     }

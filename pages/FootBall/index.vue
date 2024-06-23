@@ -112,7 +112,8 @@ const changeDate = async () => {
 };
 
 const toggleByTime = async () => {
-    await callNextContents(true);
+    // await callNextContents(true);
+    await updateLiveRealTime();
 };
 
 const updateLiveRealTime = async () => {

@@ -29,7 +29,7 @@ export const useLiveIntervalLoadingStore = defineStore('liveIntervalLoadingStore
                 method: 'POST',
             },
             {
-                sid: ECommonSportValue['FootBall'],
+                sid: ECommonSportValue[ ECommonSportSectionValue['football'] ],
                 fromdate: useDateStore().getFromDate(),
             },
         );
@@ -63,6 +63,7 @@ export const useLiveIntervalLoadingStore = defineStore('liveIntervalLoadingStore
         opt.isOnLiveTab = value;
         if (value === false) {
             clearTimeout(opt.timeOutInstance);
+            opt.timeOutInstance = undefined;
         }
     };
 
