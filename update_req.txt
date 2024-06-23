@@ -24,12 +24,24 @@ http://localhost:3000/FootBall?tab=live
 sport
     live tab
         - 10초마다 로딩하여 데이터 가져와서 ui상에 matchup id를 맞춰서 데이터(score, 전반 후반 시간)를 update 해주기
-    - 모든 sport (6개) 항목 전부 적용시켜주기
+    - 일단 football쪽만 해서 보기 좋게끔하기 (live, fixtures, result)
     
 http://localhost:3000/Matchup?tab=matchup
 matchup
     live-tracker
-        - matchup home에 위에서 아래 순서로 premier league section / live-tracker (width: 100%, height: 404px) section / 기존에 있던 tab 및 이하동문 이런식으로 구성
+        - matchup home에 위에서 아래 순서로 premier league section / live-tracker (iframe - width: 100%, height: 404px) section / 기존에 있던 tab 및 이하동문 이런식으로 구성
+        - live-tracker 화면은 iframe으로 파서
+        (https://widgets.thesports01.com/en/3d/football?profile=q66hjngdk6xswun&uuid=1l4rjnh42ywom7v)
+        위에 있는 url로 넣어서 맨 뒤에 있는 uuid를 matchup id로 dynamic으로 변환시킬 수 있게만 함
+        참고로 확인은 authorized 때문에 서버에 올려야 제대로 확인할 수 있음
+        - premier league section info 얻을 수 있는 API로 update (스코어, 리소스, 등등)
+
+// 06 24
+tab별 순서 배치 (By Time 비활성화시)
+    기본 schedule 인기도 순으로 나오니 최대한 비슷하게끔 나오도록 유도 (by time 비활성화시 인기 리그들이 최대한 위로 오게끔, 활성화시 그냥 시간 순서로)
+    
+    live-tracker
+        - matchup home에 위에서 아래 순서로 premier league section / live-tracker (iframe - width: 100%, height: 404px) section / 기존에 있던 tab 및 이하동문 이런식으로 구성
         - live-tracker 화면은 iframe으로 파서
         (https://widgets.thesports01.com/en/3d/football?profile=q66hjngdk6xswun&uuid=1l4rjnh42ywom7v)
         위에 있는 url로 넣어서 맨 뒤에 있는 uuid를 matchup id로 dynamic으로 변환시킬 수 있게만 함
