@@ -3,17 +3,17 @@
     <!-- set group tag or border line -->
     <CommonContentHeadDate
         :idx="props.idx"
-        :title="getLeagueName(props.league)"
-        :hasLeagueTag="setLeagueGroup(props.league)"
-        :src="getLeagueFlag(props.league)"
-        :alt="getLeagueAlt(props.league)"
+        :title="contentStore.getLeagueName(props.league)"
+        :hasLeagueTag="contentStore.setLeagueGroup(props.league)"
+        :src="contentStore.getLeagueFlag(props.league)"
+        :alt="contentStore.getLeagueAlt(props.league)"
     />
     <!-- match content -->
     <div class="live_-match" @click="goStore.go_matchup('home')">
         <div class="live-match-Jbo1mR live-match">
             <div class="group-5-AKR3e5 group-5">
-                <img class="aston-villa-oDU2Nu aston-villa" :src="getParticipantSrc(props.league, 0)" :alt="getParticipantName(props.league, 0)" />
-                <div class="aston-villa-ADr9KY valign-text-middle aston-villa body2">{{ getParticipantName(props.league, 0) }}</div>
+                <img class="aston-villa-oDU2Nu aston-villa" :src="contentStore.getParticipantSrc(props.league, 0)" :alt="contentStore.getParticipantName(props.league, 0)" />
+                <div class="aston-villa-ADr9KY valign-text-middle aston-villa body2">{{ contentStore.getParticipantName(props.league, 0) }}</div>
             </div>
             <div class="score-AKR3e5 score">
                 <img class="vector-eyBPRK vector" src="/img/vector-27@2x.png" alt="Vector" />
@@ -25,12 +25,12 @@
                     <!-- <span v-else class="span0-TpclY9 body2">{{ getLeagueTime(opt) }}</span> -->
                     <span class="span1-TpclY9 pretendard-semi-bold-black-14px">’</span>
                 </div>
-                <div v-if="updateOpt.score1" class="x000-eyBPRK x000 pretendard-semi-bold-black-20px">{{ getLeagueScore(opt, 0) }}</div>
-                <div v-if="updateOpt.score2" class="x000-n1oFur x000 pretendard-semi-bold-black-20px">{{ getLeagueScore(opt, 1) }}</div>
+                <div v-if="updateOpt.score1" class="x000-eyBPRK x000 pretendard-semi-bold-black-20px">{{ contentStore.getLeagueScore(opt, 0) }}</div>
+                <div v-if="updateOpt.score2" class="x000-n1oFur x000 pretendard-semi-bold-black-20px">{{ contentStore.getLeagueScore(opt, 1) }}</div>
             </div>
             <div class="group-6-AKR3e5 group-6">
-                <img class="arsenal-x4WW4Z arsenal" :src="getParticipantSrc(props.league, 1)" :alt="getParticipantName(props.league, 1)" />
-                <div class="arsenal-tGhDC5 valign-text-middle arsenal body2 !text-center !h-[24px]">{{ getParticipantName(props.league, 1) }}</div>
+                <img class="arsenal-x4WW4Z arsenal" :src="contentStore.getParticipantSrc(props.league, 1)" :alt="contentStore.getParticipantName(props.league, 1)" />
+                <div class="arsenal-tGhDC5 valign-text-middle arsenal body2 !text-center !h-[24px]">{{ contentStore.getParticipantName(props.league, 1) }}</div>
             </div>
         </div>
         <CommonFavoriteStar :isToggled="false" />
@@ -65,28 +65,13 @@ const opt = reactive({
 });
 
 const goStore = useGoStore();
+const contentStore = useContentStore();
 
 const updateOpt = reactive({
     time: <boolean> true,
     score1: <boolean> true,
     score2: <boolean> true,
 });
-
-const setLeagueGroup = (league): boolean => {
-    return league.hasLeagueTag ?? false;
-};
-
-const getLeagueFlag = (league: TFootBallSchedule): string => {
-    return league.ai_competition_img;
-};
-
-const getLeagueAlt = (league: TFootBallSchedule): string => {
-    return league.ai_competition_short_name;
-};
-
-const getLeagueName = (league: TFootBallSchedule): string => {
-    return league.ai_competition_name;
-};
 
 const getLeagueTime = (newLeague: TCommonLiveRealTime): string => {
     const currentTime = UtilDate.getWithOutMillisecond(new Date(Date.now()).getTime());
@@ -108,24 +93,16 @@ const getLeagueTime = (newLeague: TCommonLiveRealTime): string => {
         ) {
             dateTime = gapTime / 60 + 45 + 1;
         }
+    } else {
+        // dateTime = currentTime - props.league.ai_match_time;
     }
+
+    if (props.idx === 0) {
+        console.log('kickOffTime, dateTime, props.league.ai_match_time: ', kickOffTime, dateTime, props.league.ai_match_time);
+    }
+
     const matchUpTime = `${ UtilDate.syncDigit(~~(dateTime)) }’`;
     return matchUpTime;
-};
-
-const getLeagueScore = (newLeague: TCommonLiveRealTime, position: number = 0): string => {
-    const prefix = goStore.go_prefix_via_position(position);
-    return newLeague[`ai_${ prefix }_scores`][0];
-};
-
-const getParticipantName = (league: TFootBallSchedule, position: number = 0): string => {
-    const prefix = goStore.go_prefix_via_position(position);
-    return league[`ai_${ prefix }_team_name`];
-};
-
-const getParticipantSrc = (league: TFootBallSchedule, position: number = 0): string => {
-    const prefix = goStore.go_prefix_via_position(position);
-    return league[`ai_${ prefix }_team_img`];
 };
 
 const update = (newLeague: TCommonLiveRealTime) => {

@@ -191,12 +191,12 @@ const nextDate = (date: Date) => {
 
 onMounted(async () => {
     await nextTick();
-    await liveIntervalLoadingStore.onMounted(props.sName);
+    // await liveIntervalLoadingStore.onMounted(props.sName);
     await props.updateLiveRealTime();
 });
 
 onBeforeUnmount(() => {
-    liveIntervalLoadingStore.onBeforeUnmount();
+    // liveIntervalLoadingStore.onBeforeUnmount();
 });
 </script>
 

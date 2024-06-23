@@ -148,7 +148,6 @@ export const useFilterStore = defineStore('filterStore', () => {
         if (favorite.isToggled) {
             opt.sortedList = favorite.sortLogic(opt.sortedList, customPath);
         }
-        console.log('time.isToggled: ', time.isToggled);
 
         if (time.isToggled) {
             // time 활성화시 분류

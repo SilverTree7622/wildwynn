@@ -2,16 +2,16 @@
     <!-- set group tag or border line -->
     <CommonContentHeadDate
         :idx="props.idx"
-        :title="getLeagueName(props.league)"
-        :hasLeagueTag="setLeagueGroup(props.league)"
-        :src="getLeagueFlag(props.league)"
-        :alt="getLeagueAlt(props.league)"
+        :title="contentStore.getLeagueName(props.league)"
+        :hasLeagueTag="contentStore.setLeagueGroup(props.league)"
+        :src="contentStore.getLeagueFlag(props.league)"
+        :alt="contentStore.getLeagueAlt(props.league)"
     />
     <div class="live_-match" @click="goStore.go_matchup('home')">
         <div class="live-match-Y6utjY live-match">
             <div class="group-5-Z7bohL group-5">
-                <img class="aston-villa-1xcxXp aston-villa" src="/img/astonvilla.png" alt="AstonVilla" />
-                <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(league, 0) }}</div>
+                <img class="aston-villa-1xcxXp aston-villa" :src="contentStore.getParticipantSrc(props.league, 0)" :alt="contentStore.getParticipantName(props.league, 0)" />
+                <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ contentStore.getParticipantName(league, 0) }}</div>
             </div>
             <div class="flex-col-result">
                 <div class="overlap-group">
@@ -19,16 +19,16 @@
                     <img class="vector-1" src="~/public/img/vector-1@2x.png" alt="Vector" />
                     <div class="text text-center text-xs">{{ getLeagueTime(league) }}</div>
                     <div class="ft-4 text-xs">FT</div>
-                    <div class="number number-2 pretendard-semi-bold-black-20px">0</div>
-                    <div class="number-1 number-2 pretendard-semi-bold-black-20px">0</div>
+                    <div class="number number-2 pretendard-semi-bold-black-20px">{{ contentStore.getLeagueScoreResult(props.league, 0) }}</div>
+                    <div class="number-1 number-2 pretendard-semi-bold-black-20px">{{ contentStore.getLeagueScoreResult(props.league, 1) }}</div>
                 </div>
                 <div class="btn_-statistics text-[13px]">
                     <div class="statistics">STATISTICS</div>
                 </div>
             </div>
             <div class="group-6-Z7bohL group-6">
-                <img class="arsenal-xEfJsb arsenal" src="/img/arsenal.png" alt="Arsenal" />
-                <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ getParticipantName(league, 1) }}</div>
+                <img class="arsenal-xEfJsb arsenal" :src="contentStore.getParticipantSrc(props.league, 1)" :alt="contentStore.getParticipantName(props.league, 1)" />
+                <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ contentStore.getParticipantName(league, 1) }}</div>
             </div>
         </div>
         <div class="btn_-favorite_-check">
@@ -42,36 +42,36 @@
 
 <script setup lang="ts">
 import UtilDate from "~/utils/date";
-import { ECommonCountry } from '~/types/Common/country';
-import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
+import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
     idx: number;
-    league: TFootBallFixtures;
+    league: TFootBallSchedule;
 }>();
 
 const dateStore = useDateStore();
 const goStore = useGoStore();
+const contentStore = useContentStore();
 
-const setLeagueGroup = (league): boolean => {
-    return league.hasLeagueTag ?? false;
-};
+// const setLeagueGroup = (league): boolean => {
+//     return league.hasLeagueTag ?? false;
+// };
 
-const getLeagueFlag = (league: TFootBallFixtures): string => {
-    return `/img/${ECommonCountry[league.Fixture.Location.Name]}.png`;
-};
+// const getLeagueFlag = (league: TFootBallFixtures): string => {
+//     return `/img/${ECommonCountry[league.Fixture.Location.Name]}.png`;
+// };
 
-const getLeagueAlt = (league: TFootBallFixtures): string => {
-    return league.Fixture.Location.Name;
-};
+// const getLeagueAlt = (league: TFootBallFixtures): string => {
+//     return league.Fixture.Location.Name;
+// };
 
-const getLeagueName = (league: TFootBallFixtures): string => {
-    return league.Fixture.League.Name;
-};
+// const getLeagueName = (league: TFootBallFixtures): string => {
+//     return league.Fixture.League.Name;
+// };
 
-const getLeagueTime = (league: TFootBallFixtures): string => {
-    const date = new Date(league.Fixture.StartDate);
-    const time = `${UtilDate.syncDigit(date.getHours())}:${UtilDate.syncDigit(date.getMinutes())}`;
+const getLeagueTime = (league: TFootBallSchedule): string => {
+    const date = new Date(league.ai_match_time);
+    const time = `${UtilDate.syncDigit(date.getUTCHours())}:${UtilDate.syncDigit(date.getUTCMinutes())}`;
     return time;
 };
 
@@ -79,9 +79,9 @@ const getLeagueTime = (league: TFootBallFixtures): string => {
 //     return league.Fixture.Participants[position].Id;
 // };
 
-const getParticipantName = (league: TFootBallFixtures, position: number = 0): string => {
-    return league.Fixture.Participants[position].Name;
-};
+// const getParticipantName = (league: TFootBallFixtures, position: number = 0): string => {
+//     return league.Fixture.Participants[position].Name;
+// };
 
 onMounted(async () => {
     await nextTick();

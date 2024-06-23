@@ -16,6 +16,7 @@
             v-if="opt.tab === 'live'"
             ref="$liveMain"
             :result_league_list="list.sortedList"
+            :onMounted="updateLiveRealTime"
         />
         <FootBallFixturesMain
             v-if="opt.tab === 'fixtures'"
@@ -24,11 +25,11 @@
         <!-- <FootBallOddsMain
             v-if="opt.tab === 'odds'"
             :result_league_list="list.sortedList"
-        />
+        /> -->
         <FootBallResultMain
             v-if="opt.tab === 'result'"
             :result_league_list="list.sortedList"
-        /> -->
+        />
         <FootBallLeagueMain
             v-if="opt.tab === 'league'"
         />
@@ -41,8 +42,6 @@ import UtilObj from '~/utils/obj';
 import UtilArray from '~/utils/array';
 import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 import type { TCommonTabTypes } from "~/types/Common/tab";
-import type { TSportLiveRealTimeTypes } from '~/types/live';
-import type { TSportScheduleTypes } from '~/types/schedule';
 import UtilDate from '~/utils/date';
 
 const {
@@ -150,24 +149,22 @@ const updateLiveRealTime = async () => {
     const isScore2ListEqual = UtilArray.compareList(
         prevSortedListScore2List, newSortedListScore2List
     );
-    // const newSortedListTimeList = list.sortedList.map( item => item.ai_kickoff_timestamp );
     const isTimeListEqual = UtilArray.compareList(
         prevSortedKickOffList, list.sortedKickOffList
     );
-    console.log('prevSortedKickOffList, list.sortedKickOffList: ', prevSortedKickOffList, list.sortedKickOffList);
 
-    
+    // console.log('prevSortedKickOffList, list.sortedKickOffList: ', prevSortedKickOffList, list.sortedKickOffList);
     // if (
     //     isListEqual && isMatchUpListEqual && isScore1ListEqual && isScore2ListEqual && isTimeListEqual
     // ) {
     //     console.log(`nothing changed`);
     //     return;
     // }
-    console.log('isListEqual, isMatchUpListEqual, isScore1ListEqual, isScore2ListEqual, isTimeListEqual: ', isListEqual, isMatchUpListEqual, isScore1ListEqual, isScore2ListEqual, isTimeListEqual);
-
-    console.log('list.totalList: ', list.totalList);
-    console.log('list.sortedList: ', list.sortedList);
+    // console.log('isListEqual, isMatchUpListEqual, isScore1ListEqual, isScore2ListEqual, isTimeListEqual: ', isListEqual, isMatchUpListEqual, isScore1ListEqual, isScore2ListEqual, isTimeListEqual);
+    // console.log('list.totalList: ', list.totalList);
+    // console.log('list.sortedList: ', list.sortedList);
     
+    if (!$liveMain.value) return;
     list.sortedList.map((item, idx) => {
         const filteredKickOffList = list.sortedKickOffList.find((filterItem) => {
             return filterItem.idx === idx;
@@ -176,7 +173,6 @@ const updateLiveRealTime = async () => {
             return filterItem.idx === idx;
         }) ?? 0;
         const ai_kickoff_timestamp = filteredKickOffList ? filteredKickOffList['ai_kickoff_timestamp'] : prevFilteredKickOffList['ai_kickoff_timestamp'];
-        // console.log('idx, filteredKickOffList: ', filteredKickOffList);
         $liveMain.value.update(idx, {
             ai_away_scores: item.ai_away_scores,
             ai_home_scores: item.ai_home_scores,
@@ -185,6 +181,8 @@ const updateLiveRealTime = async () => {
             match_id: item.match_id,
         });
     });
+    console.log('list.sortedList: ', list.sortedList);
+
 };
 
 /**
@@ -200,9 +198,9 @@ const res = async () => {
         },
     );
     list.totalList = res['data'];
-    console.log('list.totalList from res: ', list.totalList);
+    // console.log('list.totalList from res: ', list.totalList);
     await callNextContents();
-    // await updateLiveRealTime();
+    await updateLiveRealTime();
     opt.isPending = false;
     opt.isBooting = false;
 };
@@ -262,9 +260,9 @@ onMounted(async () => {
     scrollStore.setScroll2Top();
     await res();
     scrollStore.register(scroll.key, async () => {
-        const resut = await callNextContents();
+        const result = await callNextContents();
         await updateLiveRealTime();
-        return resut;
+        return result;
     });
 });
 

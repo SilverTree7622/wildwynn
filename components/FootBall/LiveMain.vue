@@ -21,20 +21,26 @@ import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
     result_league_list: TFootBallSchedule[];
+    onMounted: () => Promise<void>;
 }>();
 
 const $live = ref();
 
+const liveIntervalLoadingStore = useLiveIntervalLoadingStore();
+
 const update = (idx: number, newLeague: TCommonLiveRealTime) => {
+    if (!$live.value[idx]) return;
     $live.value[idx].update(newLeague);
 };
 
 onMounted(async () => {
     await nextTick();
+    await liveIntervalLoadingStore.onMounted('football');
+    await props.onMounted();
 });
 
 onBeforeUnmount(() => {
-
+    liveIntervalLoadingStore.onBeforeUnmount();
 });
 
 defineExpose({
