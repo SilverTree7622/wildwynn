@@ -1,5 +1,5 @@
 <template>
-    <div class="frame-342-all-breakpoints screen">
+    <div class="frame-342-all-breakpoints screen !bg-[#011e3d]">
         <div class="header_-short">
             <div class="frame-496">
                 <a target="_blank"><img class="icon_-line-arrow" src="/img/icon-linearrow@2x.png"

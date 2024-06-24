@@ -16,7 +16,7 @@
                 <div class="aston-villa-O0Qend valign-text-middle aston-villa body2">{{ contentStore.getParticipantName(props.league, 0) }}</div>
             </div>
             <div class="vs-Z7bohL vs">
-                <div class="x19-30 headline">{{ getLeagueTime(props.league) }}</div>
+                <div class="x19-30 headline">{{ contentStore.getMatchTime(props.league) }}</div>
                 <div class="vs-ij0TdP vs headline">VS</div>
             </div>
             <div class="frame-303-Z7bohL frame-303">
@@ -39,8 +39,6 @@
 </template>
 
 <script setup lang="ts">
-import UtilDate from "~/utils/date";
-import { ECommonCountry } from '~/types/Common/country';
 import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
@@ -48,14 +46,6 @@ const props = defineProps<{
     league: TFootBallSchedule;
 }>();
 
-const dateStore = useDateStore();
 const goStore = useGoStore();
 const contentStore = useContentStore();
-
-const getLeagueTime = (league: TFootBallSchedule): string => {
-    const date = new Date(league.ai_match_time);
-    const time = `${UtilDate.syncDigit(date.getUTCHours())}:${UtilDate.syncDigit(date.getUTCMinutes())}`;
-    return time;
-};
-
 </script>

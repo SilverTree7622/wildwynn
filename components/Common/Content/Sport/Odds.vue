@@ -1,15 +1,15 @@
 <template>
     <CommonContentHeadDate
         :idx="props.idx"
-        :title="getLeagueName(props.league)"
-        :hasLeagueTag="setLeagueGroup(props.league)"
-        :src="getLeagueFlag(props.league)"
-        :alt="getLeagueAlt(props.league)"
+        :title="contentStore.getLeagueName(props.league)"
+        :hasLeagueTag="contentStore.setLeagueGroup(props.league)"
+        :src="contentStore.getLeagueFlag(props.league)"
+        :alt="contentStore.getLeagueAlt(props.league)"
     />
     <div class="live_-match">
-        <CommonContentCountry :title="getParticipantName(props.league, 0)" :src="'/img/astonvilla@2x.png'" />
-        <CommonContentMatch :time="getLeagueTime(props.league)" />
-        <CommonContentCountry :title="getParticipantName(props.league, 1)" :src="'/img/arsenal@2x.png'" />
+        <CommonContentCountry :title="contentStore.getParticipantName(props.league, 0)" :src="contentStore.getParticipantSrc(props.league, 0)" />
+        <CommonContentMatch :time="contentStore.getMatchTime(props.league)" />
+        <CommonContentCountry :title="contentStore.getParticipantName(props.league, 1)" :src="contentStore.getParticipantSrc(props.league, 1)" />
         <CommonFavoriteStar
             :isToggled="false"
         />
@@ -23,46 +23,15 @@
 </template>
 
 <script setup lang="ts">
-import UtilDate from "~/utils/date";
-import { ECommonCountry } from '~/types/Common/country';
-import type { TFootBallFixtures } from '~/types/FootBall/fixtures';
+import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
     idx: number;
     isLast?: boolean;
-    league;
+    league: TFootBallSchedule;
 }>();
 
-const setLeagueGroup = (league): boolean => {
-    return league.hasLeagueTag ?? false;
-};
-
-const getLeagueFlag = (league: TFootBallFixtures): string => {
-    return `/img/${ ECommonCountry[ league.Fixture.Location.Name ] }.png`;
-};
-
-const getLeagueAlt = (league: TFootBallFixtures): string => {
-    return league.Fixture.Location.Name;
-};
-
-const getLeagueName = (league: TFootBallFixtures): string => {
-    return league.Fixture.League.Name;
-};
-
-const getLeagueTime = (league: TFootBallFixtures): string => {
-    const date = new Date(league.Fixture.StartDate);
-    const time = `${UtilDate.syncDigit(date.getHours())}:${UtilDate.syncDigit(date.getMinutes())}`;
-    return time;
-};
-
-// const getParticipantSrc = (league: TFootBallFixtures, position: number = 1): string => {
-//     return league.Fixture.Participants[position].Id;
-// };
-
-const getParticipantName = (league: TFootBallFixtures, position: number = 0): string => {
-    return league.Fixture.Participants[position].Name;
-};
-
+const contentStore = useContentStore();
 </script>
 
 <style scoped>

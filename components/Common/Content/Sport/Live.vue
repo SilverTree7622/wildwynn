@@ -9,7 +9,7 @@
         :alt="contentStore.getLeagueAlt(props.league)"
     />
     <!-- match content -->
-    <div class="live_-match" @click="goStore.go_matchup('home')">
+    <div class="live_-match">
         <div class="live-match-Jbo1mR live-match">
             <div class="group-5-AKR3e5 group-5">
                 <img class="aston-villa-oDU2Nu aston-villa" :src="contentStore.getParticipantSrc(props.league, 0)" :alt="contentStore.getParticipantName(props.league, 0)" />
@@ -21,7 +21,7 @@
                 <img class="vector-z3kuGS vector" src="/img/vector-29@2x.png" alt="Vector" />
                 <div class="txt-live !text-[10px] mt-[1px]">LIVE</div>
                 <div class="x100new pretendard-semi-bold-black-12px">
-                    <span v-if="updateOpt.time" class="span0-TpclY9 body2">{{ getLeagueTime(opt) }}</span>
+                    <span v-if="updateOpt.time" class="span0-TpclY9 body2">{{ getLeagueTime(opt.ai_match_status, opt.ai_kickoff_timestamp) }}</span>
                     <!-- <span v-else class="span0-TpclY9 body2">{{ getLeagueTime(opt) }}</span> -->
                     <span class="span1-TpclY9 pretendard-semi-bold-black-14px">’</span>
                 </div>
@@ -35,7 +35,7 @@
         </div>
         <CommonFavoriteStar :isToggled="false" />
         <div class="live-tracker">
-            <a href="javascript:;" @click="goStore.go_livetraker()">
+            <a href="javascript:;" @click="goStore.go_livetraker(league.match_id)">
                 <img class="btn_-live-tracker" src="/img/btn-livetracker-9@2x.png" alt="Btn_LiveTracker" />
             </a>
         </div>
@@ -53,7 +53,7 @@ const props = defineProps<{
 }>();
 
 const prev = reactive({
-    time: <TCommonLiveRealTime['ai_kickoff_timestamp']> 0,
+    timestamp: <TCommonLiveRealTime['ai_kickoff_timestamp']> 0,
 });
 
 const opt = reactive({
@@ -73,23 +73,26 @@ const updateOpt = reactive({
     score2: <boolean> true,
 });
 
-const getLeagueTime = (newLeague: TCommonLiveRealTime): string => {
+const getLeagueTime = (
+    ai_match_status: TCommonLiveRealTime['ai_match_status'],
+    ai_kickoff_timestamp: number,
+): string => {
     const currentTime = UtilDate.getWithOutMillisecond(new Date(Date.now()).getTime());
-    const kickOffTime = newLeague.ai_kickoff_timestamp;
+    const kickOffTime = ai_kickoff_timestamp;
     const gapTime = currentTime - kickOffTime;
     let dateTime = 0;
     if (kickOffTime !== 0) {
-        if (newLeague.ai_match_status === 2) {
+        if (ai_match_status === 2) {
             dateTime = gapTime / 60 + 1;
         }
-        if (newLeague.ai_match_status === 3) {
+        if (ai_match_status === 3) {
             dateTime = 45;
         }
         if (
-            newLeague.ai_match_status === 4 ||
-            newLeague.ai_match_status === 5 ||
-            newLeague.ai_match_status === 6 ||
-            newLeague.ai_match_status === 7
+            ai_match_status === 4 ||
+            ai_match_status === 5 ||
+            ai_match_status === 6 ||
+            ai_match_status === 7
         ) {
             dateTime = gapTime / 60 + 45 + 1;
         }
@@ -98,29 +101,51 @@ const getLeagueTime = (newLeague: TCommonLiveRealTime): string => {
     }
 
     if (props.idx === 0) {
-        console.log('kickOffTime, dateTime, props.league.ai_match_time: ', kickOffTime, dateTime, props.league.ai_match_time);
+        // console.log('kickOffTime, dateTime, props.league.ai_match_time: ', kickOffTime, dateTime, props.league.ai_match_time);
     }
 
     const matchUpTime = `${ UtilDate.syncDigit(~~(dateTime)) }’`;
+    prev.timestamp = kickOffTime;
     return matchUpTime;
 };
 
 const update = (newLeague: TCommonLiveRealTime) => {
     // console.log('newLeague: ', newLeague);
-    opt.ai_away_scores = newLeague.ai_away_scores;
-    opt.ai_home_scores = newLeague.ai_home_scores;
-    opt.ai_kickoff_timestamp = newLeague.ai_kickoff_timestamp ?? prev.time;
+    if (newLeague?.ai_home_scores) {
+        opt.ai_home_scores = newLeague.ai_home_scores;
+    }
+    if (newLeague?.ai_away_scores) {
+        opt.ai_away_scores = newLeague.ai_away_scores;
+    }
+    const isKickOffTimestampChanged = newLeague?.ai_kickoff_timestamp !== prev.timestamp;
+    if (isKickOffTimestampChanged) {
+        opt.ai_kickoff_timestamp = newLeague.ai_kickoff_timestamp ?? prev.timestamp;
+    }
     opt.ai_match_status = newLeague.ai_match_status;
-    toggle(false);
+    off(
+        !!newLeague?.ai_home_scores,
+        !!newLeague?.ai_away_scores,
+        isKickOffTimestampChanged,
+    );
     setTimeout(() => {
-        toggle(true);
+        on(
+            !!newLeague?.ai_home_scores,
+            !!newLeague?.ai_away_scores,
+            isKickOffTimestampChanged,
+        );
     }, 0);
 };
 
-const toggle = (value: boolean) => {
-    updateOpt.time = value;
-    updateOpt.score1 = value;
-    updateOpt.score2 = value;
+const off = (home: boolean, away: boolean, time: boolean) => {
+    if (home) updateOpt.score1 = false;
+    if (away) updateOpt.score2 = false;
+    if (time) updateOpt.time = false;
+};
+
+const on = (home: boolean, away: boolean, time: boolean) => {
+    if (home) updateOpt.score1 = true;
+    if (away) updateOpt.score2 = true;
+    if (time) updateOpt.time = true;
 };
 
 onMounted(async () => {

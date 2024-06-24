@@ -34,7 +34,11 @@ const UtilObj = {
         // allows x[ p ] to be set to undefined
 
         return true;
-    }
+    },
+
+    chckIsEmpty: (obj): boolean => {
+        return !Object.keys(obj).length;
+    },
 };
 
 export default UtilObj;

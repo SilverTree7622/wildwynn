@@ -53,7 +53,7 @@ export const useFilterStore = defineStore('filterStore', () => {
                 const [ lg_name, matches, ] = item;
                 // const rlg_name = getLeaguePath(matches);
                 const matchesList = matches as any;
-                matchesList.sort((a, b) => getDatePath(a).getTime() - getDatePath(b).getTime());
+                // matchesList.sort((a, b) => getDatePath(a).getTime() - getDatePath(b).getTime());
                 matchesList.forEach((match, index) => {
                     match.hasLeagueTag = index === 0;
                 });
@@ -63,9 +63,10 @@ export const useFilterStore = defineStore('filterStore', () => {
                 };
             });
             const finalList: any[] = [];
-            sortedLeague.sort((a, b) => {
-                return getDatePath(a.matches[0]).getTime() - getDatePath(b.matches[0]).getTime();
-            }).map((item) => {
+            // const sortedLeagueViaTime = sortedLeague.sort((a, b) => {
+            //     return getDatePath(a.matches[0]).getTime() - getDatePath(b.matches[0]).getTime();
+            // })
+            sortedLeague.map((item) => {
                 finalList.push(...item.matches);
             });
             return finalList;
@@ -113,8 +114,10 @@ export const useFilterStore = defineStore('filterStore', () => {
                 );
             }
             if (isResult) {
+                // result tab
                 return getDatePath(item).getTime() < getNow;
             } else {
+                // fixtures tab
                 return getDatePath(item).getTime() > getNow;
             }
         });
@@ -148,7 +151,6 @@ export const useFilterStore = defineStore('filterStore', () => {
         if (favorite.isToggled) {
             opt.sortedList = favorite.sortLogic(opt.sortedList, customPath);
         }
-
         if (time.isToggled) {
             // time 활성화시 분류
             opt.sortedList = time.sortLogicTime(opt.sortedList, customPath);

@@ -40,6 +40,10 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps<{
+    match_id: string;
+}>();
+
 const router = useRouter()
 
 const clickBack = () => {

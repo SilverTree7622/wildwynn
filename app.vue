@@ -21,6 +21,7 @@
 </template>
 
 <script lang="ts" setup>
+import UtilObj from '~/utils/obj';
 import { ECommonSportInitDataPrefix } from "~/types/Common/sport";
 import type { TCommonSportSectionTabName } from "~/types/Common/sport";
 import type { TInitData } from "~/types/loading";
@@ -31,12 +32,12 @@ const cacheStore = useCacheStore();
 const route = useRoute();
 
 const getInitData = async () => {
-	const tabName = route.name as TCommonSportSectionTabName;
+	const sportType = route.name as TCommonSportSectionTabName;
 	let initData: TInitData | {} = {};
 	let res = {};
 	try {
 		res = await useApiFetch<TInitData>(
-			`${ ECommonSportInitDataPrefix[tabName] }loading`,
+			`${ ECommonSportInitDataPrefix[sportType] }loading`,
 			{ method: 'GET', },
 		);
 	}
@@ -47,13 +48,16 @@ const getInitData = async () => {
 			{ method: 'GET', },
 		);
 	}
-	initData = res['data']['data'] ?? {};
-	selectorStore.onMounted(
-		initData['st_time'] ?? [],
-		initData['st_odds'] ?? [],
-		initData['st_sports'] ?? [],
-	);
-	matchStateStore.onMounted(initData);
+	console.log('res: ', res);
+	if (!UtilObj.chckIsEmpty(res)) {
+		initData = res['data']['data'] ?? {};
+		selectorStore.onMounted(
+			initData['st_time'] ?? [],
+			initData['st_odds'] ?? [],
+			initData['st_sports'] ?? [],
+		);
+		matchStateStore.onMounted(initData);
+	}
 };
 
 onMounted(async () => {

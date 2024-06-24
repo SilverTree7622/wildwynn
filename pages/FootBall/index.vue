@@ -22,10 +22,10 @@
             v-if="opt.tab === 'fixtures'"
             :result_league_list="list.sortedList"
         />
-        <!-- <FootBallOddsMain
+        <FootBallOddsMain
             v-if="opt.tab === 'odds'"
             :result_league_list="list.sortedList"
-        /> -->
+        />
         <FootBallResultMain
             v-if="opt.tab === 'result'"
             :result_league_list="list.sortedList"
@@ -45,7 +45,6 @@ import type { TCommonTabTypes } from "~/types/Common/tab";
 import UtilDate from '~/utils/date';
 
 const {
-    ONE_DAY_MILLISECOND,
     MAX_PAGINATION_CONTENT,
 } = useRuntimeConfig().public.CONSTANTS;
 const filterStore = useFilterStore();
@@ -118,8 +117,9 @@ const toggleByTime = async () => {
 const updateLiveRealTime = async () => {
     const prevSortedList = [ ...list.sortedList ];
     const prevSortedListMatchUpList = list.sortedList.map( item => item.match_id );
-    const prevSortedListScore1List = list.sortedList.map( item => item.ai_home_scores[0] );
-    const prevSortedListScore2List = list.sortedList.map( item => item.ai_away_scores[0] );
+    const prevSortedListHomeScoreList = list.sortedList.map( item => item.ai_home_scores[0] );
+    const prevSortedListAwayScoreList = list.sortedList.map( item => item.ai_away_scores[0] );
+    const prevSortedListMatchStatusList = list.sortedList.map( item => item.ai_status_id );
     const prevSortedKickOffList = [ ...list.sortedKickOffList ];
     
     list.totalList = liveIntervalLoadingStore.updateLiveRealTime(list.totalList);
@@ -127,12 +127,6 @@ const updateLiveRealTime = async () => {
     list.sortedList = liveIntervalLoadingStore.updateLiveRealTime(list.sortedList);
     list.sortedKickOffList = liveIntervalLoadingStore.updateLiveKickOff(list.sortedList);
     
-    // opt.tab = '' as TCommonTabTypes;
-    // setTimeout(() => {
-    //     opt.tab = 'live';
-    // }, 1);
-    // return;
-
     await callNextContents(true);
 
     const isListEqual = UtilObj.compareEquals(prevSortedList, list.sortedList);
@@ -143,11 +137,11 @@ const updateLiveRealTime = async () => {
     );
     const newSortedListScore1List = list.sortedList.map( item => item.ai_home_scores[0] );
     const isScore1ListEqual = UtilArray.compareList(
-        prevSortedListScore1List, newSortedListScore1List
+        prevSortedListHomeScoreList, newSortedListScore1List
     );
     const newSortedListScore2List = list.sortedList.map( item => item.ai_away_scores[0] );
     const isScore2ListEqual = UtilArray.compareList(
-        prevSortedListScore2List, newSortedListScore2List
+        prevSortedListAwayScoreList, newSortedListScore2List
     );
     const isTimeListEqual = UtilArray.compareList(
         prevSortedKickOffList, list.sortedKickOffList
@@ -172,17 +166,23 @@ const updateLiveRealTime = async () => {
         const prevFilteredKickOffList = prevSortedKickOffList.find((filterItem) => {
             return filterItem.idx === idx;
         }) ?? 0;
-        const ai_kickoff_timestamp = filteredKickOffList ? filteredKickOffList['ai_kickoff_timestamp'] : prevFilteredKickOffList['ai_kickoff_timestamp'];
-        $liveMain.value.update(idx, {
-            ai_away_scores: item.ai_away_scores,
-            ai_home_scores: item.ai_home_scores,
-            ai_kickoff_timestamp,
-            ai_match_status: item.ai_status_id,
-            match_id: item.match_id,
-        });
+        const ai_kickoff_timestamp = filteredKickOffList ?
+            filteredKickOffList['ai_kickoff_timestamp'] :
+            prevFilteredKickOffList['ai_kickoff_timestamp']
+        ;
+        const config = {};
+        if (prevSortedListAwayScoreList[idx] !== item.ai_away_scores[0]) {
+            config['ai_away_scores'] = item.ai_away_scores;
+        }
+        if (prevSortedListHomeScoreList[idx] !== item.ai_home_scores[0]) {
+            config['ai_home_scores'] = item.ai_home_scores;
+        }
+        config['ai_kickoff_timestamp'] = ai_kickoff_timestamp;
+        config['ai_match_status'] = item.ai_status_id;
+        config['match_id'] = item.match_id;
+        // console.log('config: ', config);
+        $liveMain.value.update(idx, config);
     });
-    console.log('list.sortedList: ', list.sortedList);
-
 };
 
 /**
@@ -198,7 +198,6 @@ const res = async () => {
         },
     );
     list.totalList = res['data'];
-    // console.log('list.totalList from res: ', list.totalList);
     await callNextContents();
     await updateLiveRealTime();
     opt.isPending = false;

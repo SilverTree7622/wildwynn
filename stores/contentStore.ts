@@ -58,6 +58,12 @@ export const useContentStore = defineStore('contentStore', () => {
         return league[`ai_${ prefix }_scores`][0];
     };
 
+    const getMatchTime = (league: TSportScheduleTypes): string => {
+        const date = new Date(league.ai_match_time);
+        const time = `${UtilDate.syncDigit(date.getUTCHours())}:${UtilDate.syncDigit(date.getUTCMinutes())}`;
+        return time;
+    };
+
     return {
         setLeagueGroup,
         getLeagueFlag,
@@ -67,5 +73,6 @@ export const useContentStore = defineStore('contentStore', () => {
         getParticipantName,
         getParticipantSrc,
         getLeagueScoreResult,
+        getMatchTime,
     };
 });

@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import type { TCommonLiveRealTime } from "~/types/Common/Live";
+import type { TCommonLiveRealTimeConfig } from "~/types/Common/Live";
 import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 
 const props = defineProps<{
@@ -28,7 +28,8 @@ const $live = ref();
 
 const liveIntervalLoadingStore = useLiveIntervalLoadingStore();
 
-const update = (idx: number, newLeague: TCommonLiveRealTime) => {
+const update = (idx: number, newLeague: TCommonLiveRealTimeConfig) => {
+    if (!$live.value) return;
     if (!$live.value[idx]) return;
     $live.value[idx].update(newLeague);
 };

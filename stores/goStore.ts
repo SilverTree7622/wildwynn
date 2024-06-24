@@ -19,8 +19,8 @@ export const useGoStore = defineStore('goStore', () => {
         }
     };
     
-    const go_livetraker = () => {
-        console.log('go livetraker');
+    const go_livetraker = (match_id: string) => {
+        navigateTo(`/Matchup?tab=stats?uuid${ match_id }`);
     };
 
     return {
