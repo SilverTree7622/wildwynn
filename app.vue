@@ -37,7 +37,7 @@ const getInitData = async () => {
 	let res = {};
 	try {
 		res = await useApiFetch<TInitData>(
-			`${ ECommonSportInitDataPrefix[sportType] }loading`,
+			`${ ECommonSportInitDataPrefix[sportType] ?? '' }loading`,
 			{ method: 'GET', },
 		);
 	}

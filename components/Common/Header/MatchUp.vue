@@ -5,8 +5,9 @@
                     @click="clickBack" />
             </a>
             <div class="frame-415 frame-1 ml-10">
-                <div class="premier-league leaguetitle !text-2xl">Premier League</div>
-                <div class="x0000-04092024-tue body2">00:00, 04/09/2024, TUE</div>
+                <div class="premier-league leaguetitle !text-2xl">{{ props.leagueName }}</div>
+                <!-- <div class="x0000-04092024-tue body2">00:00, 04/09/2024, TUE</div> -->
+                <div class="x0000-04092024-tue body2">{{ getTime(props.timestamp) }}</div>
             </div>
             <!-- <div class="btn_-favorite_-check2-1"><img class="star-1" src="/img/star-1@2x.png" alt="Star" /></div> -->
             <CommonFavoriteStar class="mr-2" />
@@ -16,21 +17,21 @@
             <CommonFavoriteStar class="mr-4" />
             <div class="live-match-matchup">
                 <div class="frame-414 frame-1">
-                    <img class="aston-villa-2" src="/img/astonvilla.png" alt="AstonVilla" />
-                    <div class="aston-villa-3 valign-text-middle body2">ASTON VILLA</div>
+                    <img class="aston-villa-2" :src="props.homeLogo" :alt="props.homeName" />
+                    <div class="aston-villa-3 valign-text-middle body2">{{ props.homeName }}</div>
                 </div>
                 <div class="frame-matchup frame-1">
                     <div class="frame frame-1">
-                        <div class="finished headline3">FINISHED</div>
-                        <h1 class="text-2 title !text-4xl">0 - 2</h1>
+                        <div v-show="getIsFinished(props.matchStatus)" class="finished headline3">FINISHED</div>
+                        <h1 class="text-2 title !text-4xl">{{ `${ props.homeScore } - ${ props.awayScore }` }}</h1>
                     </div>
-                    <a href="/LiveTrack" target="_blank"><img class="btn_-live-tracker-matchup"
+                    <a target="_blank"><img class="btn_-live-tracker-matchup"
                             src="/img/btn-livetracker@2x.png" alt="Btn_LiveTracker" />
                     </a>
                 </div>
                 <div class="frame-412-matchup frame-1">
-                    <img class="arsenal-2" src="/img/arsenal.png" alt="Arsenal" />
-                    <div class="arsenal-3 valign-text-middle body2">ARSENAL</div>
+                    <img class="arsenal-2" :src="props.awayLogo" :alt="props.awayName" />
+                    <div class="arsenal-3 valign-text-middle body2">{{ props.awayName }}</div>
                 </div>
             </div>
             <!-- <div class="btn_-favorite_-check2-1"><img class="star-1" src="/img/star-1@2x.png" alt="Star" /></div> -->
@@ -40,14 +41,30 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
-    match_id: string;
-}>();
+import type { TCommonMatchStatus } from '~/types/Common/status';
+import type { TMatchUpStoreConfig } from '~/types/matchUp';
 
-const router = useRouter()
+const props = defineProps<TMatchUpStoreConfig>();
+
+const router = useRouter();
 
 const clickBack = () => {
     router.back();
+};
+
+const getTime = (timestamp: number) => {
+    
+};
+
+const getIsFinished = (matchStatus: TCommonMatchStatus): boolean => {
+    return !(
+        matchStatus === 2 ||
+        matchStatus === 3 ||
+        matchStatus === 4 ||
+        matchStatus === 5 ||
+        matchStatus === 6 ||
+        matchStatus === 7
+    );
 };
 </script>
 
@@ -74,7 +91,7 @@ const clickBack = () => {
 }
 
 .header .btn_-live-tracker-matchup {
-  cursor: pointer;
+  /* cursor: pointer; */
   height: 24px;
   position: relative;
   width: 36px;

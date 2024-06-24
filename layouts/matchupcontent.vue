@@ -3,11 +3,35 @@
         <CommonHeaderMain :result_nav_code="props.result.nav_code" />
 
         <div ref="$headerSticky" class="sticky top-0 z-[1]">
-            <CommonHeaderMatchUp v-show="!opt.isSticky" :match_id="info.match_id" />
+            <CommonHeaderMatchUp
+                v-show="!opt.isSticky"
+                :match_id="info.match_id"
+                :matchStatus="info.matchStatus"
+                :leagueName="info.leagueName"
+                :timestamp="info.timestamp"
+                :homeLogo="info.homeLogo"
+                :homeName="info.homeName"
+                :homeScore="info.homeScore"
+                :awayLogo="info.awayLogo"
+                :awayName="info.awayName"
+                :awayScore="info.awayScore"
+            />
         </div>
         
         <div class="sticky top-0 z-[1] p-0 m-0">
-            <CommonHeaderMatchUpSticky v-show="opt.isSticky" />
+            <CommonHeaderMatchUpSticky
+                v-show="opt.isSticky"
+                :match_id="info.match_id"
+                :matchStatus="info.matchStatus"
+                :leagueName="info.leagueName"
+                :timestamp="info.timestamp"
+                :homeLogo="info.homeLogo"
+                :homeName="info.homeName"
+                :homeScore="info.homeScore"
+                :awayLogo="info.awayLogo"
+                :awayName="info.awayName"
+                :awayScore="info.awayScore"
+            />
             <CommonHeaderLiveTracker v-show="!opt.isSticky" :match_id="info.match_id" />
             <CommonHeaderTabMatchUp :sName="props.sName" :tab="props.tab" />
             <MatchUpStatsMainTab v-if="props.tab === 'stats'" :selectedIdx="opt.selectedIdx" @selectTab="clickTab" />
@@ -23,6 +47,9 @@
 </template>
 
 <script lang="ts" setup>
+import type { TCommonMatchStatus } from '~/types/Common/status';
+import type { TMatchUpStoreConfig } from '~/types/matchUp';
+
 const props = defineProps<{
     isPending: boolean;
     sName: string;
@@ -45,8 +72,17 @@ const opt = reactive({
     observer: <IntersectionObserver | undefined> undefined,
 });
 
-const info = reactive({
+const info = reactive<TMatchUpStoreConfig>({
     match_id: <string> '',
+    matchStatus: <TCommonMatchStatus> 1,
+    leagueName: <string> '',
+    timestamp: <number> 0,
+    homeLogo: <string> '',
+    homeName: <string> '',
+    homeScore: <number> 0,
+    awayLogo: <string> '',
+    awayName: <string> '',
+    awayScore: <number> 0,
 });
 
 const $headerSticky = ref();
@@ -65,7 +101,7 @@ onMounted(async () => {
         opt.observer = undefined;
         opt.observer = new IntersectionObserver(
             ([ e ]) => {
-                console.log('e: ', e);
+                // console.log('e: ', e);
                 if (!e.isIntersecting) {
                     opt.isSticky = true;
                 } else {
@@ -75,7 +111,6 @@ onMounted(async () => {
             {
                 threshold: [ 1 ],
                 rootMargin: "-4% 0px 0px 0px"
-                // rootMargin: " 0px 0px 0px"
             }
         );
         opt.observer.observe($headerSticky.value);
@@ -86,6 +121,7 @@ onBeforeUnmount(() => {
     if (opt.observer) {
         opt.observer.unobserve($headerSticky.value);
         opt.observer.disconnect();
+        opt.observer = undefined;
     }
 });
 </script>

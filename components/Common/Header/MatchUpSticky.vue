@@ -8,15 +8,15 @@
                 <div class="frame-497">
                     <div class="frame-container">
                         <div class="frame-49">
-                            <div class="aston-villa valign-text-middle body2">ASTON VILLA</div>
-                            <img class="aston-villa-1" src="/img/astonvilla.png" alt="AstonVilla" />
+                            <div class="aston-villa valign-text-middle body2">{{ props.homeName }}</div>
+                            <img class="aston-villa-1" :src="props.homeLogo" :alt="props.homeName" />
                         </div>
                         <div class="frame-494">
-                            <h1 class="text-1 leaguetitle !text-2xl">0 - 2</h1>
+                            <h1 class="text-1 leaguetitle !text-2xl">{{ `${ props.homeScore } - ${ props.awayScore }` }}</h1>
                         </div>
                         <div class="frame-49">
-                            <img class="arsenal" src="/img/arsenal.png" alt="Arsenal" />
-                            <div class="arsenal-1 valign-text-middle body2">ARSENAL</div>
+                            <img class="arsenal" :src="props.awayLogo" :alt="props.awayName" />
+                            <div class="arsenal-1 valign-text-middle body2">{{ props.awayName }}</div>
                         </div>
                     </div>
                 </div>
@@ -28,9 +28,9 @@
 </template>
 
 <script setup lang="ts">
-// const props = defineProps<{
+import type { TMatchUpStoreConfig } from '~/types/matchUp';
 
-// }>();
+const props = defineProps<TMatchUpStoreConfig>();
 
 const router = useRouter();
 

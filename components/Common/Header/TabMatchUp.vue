@@ -1,8 +1,8 @@
 <template>
-    <div class="tap-Mzx5SR">
-        <NuxtLink :to="`/${props.sName}?tab=stats`">
+    <div class="tap-Mzx5SR mx-0">
+        <NuxtLink :to="`/${ props.sName }?tab=stats`">
             <!-- <a href="/{{result.sName}}?tab=stats"> -->
-            <div class="tap_-live-6bZO9Y ">
+            <div class="tap_-live-6bZO9Y">
                 <div class="btn_-tap_-dis-selected">
                     <div class="btn_-tap_-hov">
                         <div class="rectangle-2044"></div>
@@ -27,7 +27,7 @@
             </div>
             <!-- </a> -->
         </NuxtLink>
-        <NuxtLink :to="`/${props.sName}?tab=navitalk`">
+        <NuxtLink :to="`/${ props.sName }?tab=navitalk`">
             <!-- <a href="/{{result.sName}}?tab=navitalk"> -->
             <div class="tap_-fixtures-6bZO9Y">
                 <div class="btn_-tap_-dis-selected">
@@ -51,7 +51,7 @@
             </div>
             <!-- </a> -->
         </NuxtLink>
-        <NuxtLink :to="`/${props.sName}?tab=odds`">
+        <NuxtLink :to="`/${ props.sName }?tab=odds`">
             <!-- <a href="/{{result.sName}}?tab=odds"> -->
             <div class="tap_-odds-6bZO9Y">
                 <div class="btn_-tap_-dis-selected">
@@ -75,7 +75,7 @@
             </div>
             <!-- </a> -->
         </NuxtLink>
-        <NuxtLink :to="`/${props.sName}?tab=lineup`">
+        <NuxtLink :to="`/${ props.sName }?tab=lineup`">
             <!-- <a href="/{{result.sName}}?tab=lineup"> -->
             <div class="tap_-league-6bZO9Y">
                 <div class="btn_-tap_-dis-selected">
@@ -99,7 +99,7 @@
             </div>
             <!-- </a> -->
         </NuxtLink>
-        <NuxtLink :to="`/${props.sName}?tab=h2h`">
+        <NuxtLink :to="`/${ props.sName }?tab=h2h`">
             <!-- <a href="/{{result.sName}}?tab=h2h"> -->
             <div class="tap_-result-6bZO9Y">
                 <div class="btn_-tap_-dis-selected">

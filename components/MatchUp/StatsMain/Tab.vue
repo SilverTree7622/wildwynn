@@ -1,6 +1,6 @@
 <template>
     <div class="frmu95mobileu95matchup !bg-opacity-0 !bg-white">
-        <div class="frame-492 mb-[12px] ml-3">
+        <div class="frame-492 mb-[12px] pl-3">
             <article class="btn-1">
                 <div class="frame-container">
                     <div class="frame-376">
