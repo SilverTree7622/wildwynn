@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare",
     "ref": "cd ref && http-server -p 9999 -c-1 -o",
     "deploy": "npm run generate && gh-pages --dotfiles -d .output/public",
+    "deploybuild": "npm run deploy && npm run build",
     "figma": "cd figma/AnimaPackage-Flex-dE1HS && http-server -p 9999 -c-1"
   },
   "dependencies": {
