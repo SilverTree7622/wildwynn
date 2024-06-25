@@ -53,7 +53,7 @@ export const useFilterStore = defineStore('filterStore', () => {
                 const [ lg_name, matches, ] = item;
                 // const rlg_name = getLeaguePath(matches);
                 const matchesList = matches as any;
-                // matchesList.sort((a, b) => getDatePath(a).getTime() - getDatePath(b).getTime());
+                matchesList.sort((a, b) => getDatePath(a).getTime() - getDatePath(b).getTime());
                 matchesList.forEach((match, index) => {
                     match.hasLeagueTag = index === 0;
                 });
@@ -66,6 +66,7 @@ export const useFilterStore = defineStore('filterStore', () => {
             // const sortedLeagueViaTime = sortedLeague.sort((a, b) => {
             //     return getDatePath(a.matches[0]).getTime() - getDatePath(b.matches[0]).getTime();
             // })
+            // sortedLeagueViaTime.map((item) => {finalList.push(...item.matches); });
             sortedLeague.map((item) => {
                 finalList.push(...item.matches);
             });

@@ -35,7 +35,7 @@
         </div>
         <CommonFavoriteStar :isToggled="false" />
         <div class="live-tracker">
-            <a href="javascript:;" @click="goStore.go_livetraker(league.match_id)">
+            <a href="javascript:;" @click="goLiveTracker(league)">
                 <img class="btn_-live-tracker" src="/img/btn-livetracker-9@2x.png" alt="Btn_LiveTracker" />
             </a>
         </div>
@@ -46,6 +46,7 @@
 import UtilDate from "~/utils/date";
 import type { TFootBallSchedule } from "~/types/FootBall/schedule";
 import type { TCommonLiveRealTime } from "~/types/Common/Live";
+import type { TMatchUpStoreConfig } from "~/types/matchUp";
 
 const props = defineProps<{
     idx: number;
@@ -146,6 +147,22 @@ const on = (home: boolean, away: boolean, time: boolean) => {
     if (home) updateOpt.score1 = true;
     if (away) updateOpt.score2 = true;
     if (time) updateOpt.time = true;
+};
+
+const goLiveTracker = (league: TFootBallSchedule) => {
+    const config: TMatchUpStoreConfig = {
+        match_id: league.match_id,
+        leagueName: league.ai_competition_name,
+        timestamp: league.ai_match_time,
+        homeLogo: league.ai_home_team_img,
+        homeName: league.ai_home_team_name,
+        homeScore: league.ai_home_scores[0],
+        awayLogo: league.ai_away_team_img,
+        awayName: league.ai_away_team_name,
+        awayScore: league.ai_away_scores[0],
+        matchStatus: league.ai_status_id,
+    };
+    goStore.go_livetraker(league.match_id, config);
 };
 
 onMounted(async () => {

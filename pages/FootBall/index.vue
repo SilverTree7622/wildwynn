@@ -93,7 +93,8 @@ const init = () => {
 };
 
 const changeTab = async () => {
-    opt.tab = route.query['tab'] as TCommonTabTypes;
+    console.log(`change tab`);
+    opt.tab = route.query['tab'] as TCommonTabTypes ?? 'live';
     list.totalList = [];
     opt.isBooting = true;
     opt.isPending = true;
@@ -105,7 +106,11 @@ const changeDate = async () => {
     if (opt.isBooting) return;
     init();
     opt.isPending = true;
-    await callNextContents();
+    if (opt.tab === 'live') {
+        await callNextContents();
+    } else {
+        await res();
+    }
     opt.isPending = false;
 };
 
@@ -189,17 +194,27 @@ const updateLiveRealTime = async () => {
  * res from first page entrance
  */
 const res = async () => {
+    const isToday = UtilDate.chckDateIsToday(
+        UtilDate.addMillisecond(dateStore.getFromDate())
+    );
     const res = await cacheStore.onMountedTab(
         'football',
         opt.tab,
         {
             sid: ECommonSportValue[ ECommonSportSectionValue['football'] ],
-            fromdate: dateStore.getFromDate(),
+            fromdate: isToday ? 0 : dateStore.getFromDate(),
         },
     );
-    list.totalList = res['data'];
-    await callNextContents();
-    await updateLiveRealTime();
+    console.log('res from page index: ', res);
+    try {
+        list.totalList = res['data'];
+        await callNextContents();
+        if (opt.tab === 'live') {
+            await updateLiveRealTime();
+        }
+    } catch (e) {
+
+    }
     opt.isPending = false;
     opt.isBooting = false;
 };
@@ -253,7 +268,7 @@ const callNextContents = async (isFilter: boolean = false): Promise<boolean> => 
 };
 
 onMounted(async () => {
-    opt.tab = route.query['tab'] as TCommonTabTypes;
+    opt.tab = route.query['tab'] as TCommonTabTypes ?? 'live';
     opt.isPending = true;
     await nextTick();
     scrollStore.setScroll2Top();

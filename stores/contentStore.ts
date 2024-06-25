@@ -59,7 +59,7 @@ export const useContentStore = defineStore('contentStore', () => {
     };
 
     const getMatchTime = (league: TSportScheduleTypes): string => {
-        const date = new Date(league.ai_match_time);
+        const date = new Date(Number(`${ league.ai_match_time }000`));
         const time = `${UtilDate.syncDigit(date.getUTCHours())}:${UtilDate.syncDigit(date.getUTCMinutes())}`;
         return time;
     };

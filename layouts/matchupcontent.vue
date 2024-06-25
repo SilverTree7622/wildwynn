@@ -4,7 +4,8 @@
 
         <div ref="$headerSticky" class="sticky top-0 z-[1]">
             <CommonHeaderMatchUp
-                v-show="!opt.isSticky"
+                ref="controlMatchUp"
+                v-show="!opt.isSticky && updateOpt.basic"
                 :match_id="info.match_id"
                 :matchStatus="info.matchStatus"
                 :leagueName="info.leagueName"
@@ -20,7 +21,8 @@
         
         <div class="sticky top-0 z-[1] p-0 m-0">
             <CommonHeaderMatchUpSticky
-                v-show="opt.isSticky"
+                ref="controlMatchUpSticky"
+                v-show="opt.isSticky && updateOpt.sticky"
                 :match_id="info.match_id"
                 :matchStatus="info.matchStatus"
                 :leagueName="info.leagueName"
@@ -49,6 +51,7 @@
 <script lang="ts" setup>
 import type { TCommonMatchStatus } from '~/types/Common/status';
 import type { TMatchUpStoreConfig } from '~/types/matchUp';
+import UtilObj from '~/utils/obj';
 
 const props = defineProps<{
     isPending: boolean;
@@ -57,12 +60,24 @@ const props = defineProps<{
     result: any;
 }>();
 
-const scrollStore = useScrollStore();
-const route = useRoute();
-
 const emit = defineEmits<{
     (e: 'clickTab', idx: number): void;
 }>();
+
+const {
+    INIT_DATA,
+} = useRuntimeConfig().public.CONSTANTS;
+const matchUpStore = useMatchUpStore();
+const scrollStore = useScrollStore();
+const route = useRoute();
+
+const $controlMatchUp = ref();
+const $controlMatchUpSticky = ref();
+
+const updateOpt = reactive({
+    basic: <boolean> true,
+    sticky: <boolean> true,
+});
 
 const opt = reactive({
     isSticky: <boolean>false,
@@ -74,7 +89,7 @@ const opt = reactive({
 
 const info = reactive<TMatchUpStoreConfig>({
     match_id: <string> '',
-    matchStatus: <TCommonMatchStatus> 1,
+    matchStatus: <TCommonMatchStatus> 0,
     leagueName: <string> '',
     timestamp: <number> 0,
     homeLogo: <string> '',
@@ -96,7 +111,37 @@ const clickTab = (idx: number) => {
 onMounted(async () => {
     await nextTick();
     scrollStore.setScroll2Top();
-    info.match_id = route.query['tab'] as string;
+    // set matchup info config
+    const matchUpConfig = matchUpStore.getConfig();
+    info.match_id = route.query['uuid'] as string ?? matchUpConfig.match_id;
+    const storageKey = `${ INIT_DATA }_${ 'matchup' }_${ info.match_id }`;
+    const storageItem = JSON.parse(localStorage.getItem(storageKey) ?? '{}');
+    info.matchStatus = matchUpConfig.matchStatus || storageItem.matchStatus;
+    info.leagueName = matchUpConfig.leagueName || storageItem.leagueName;
+    info.timestamp = matchUpConfig.timestamp || storageItem.timestamp;
+    info.homeLogo = matchUpConfig.homeLogo || storageItem.homeLogo;
+    info.homeName = matchUpConfig.homeName || storageItem.homeName;
+    info.homeScore = matchUpConfig.homeScore || storageItem.homeScore;
+    info.awayLogo = matchUpConfig.awayLogo || storageItem.awayLogo;
+    info.awayName = matchUpConfig.awayName || storageItem.awayName;
+    info.awayScore = matchUpConfig.awayScore || storageItem.awayScore;
+    if (info.leagueName) {
+        localStorage.setItem(storageKey, JSON.stringify(info));
+    }
+    
+    console.log('storageKey: ', storageKey);
+    console.log('matchUpConfig: ', matchUpConfig);
+    console.log('storageItem: ', storageItem);
+    console.log('info: ', info);
+
+    updateOpt.basic = false;
+    updateOpt.sticky = false;
+    setTimeout(() => {
+        updateOpt.basic = true;
+        updateOpt.sticky = true;
+    }, 0);
+
+    // set sticky logic
     if ($headerSticky.value) {
         opt.observer = undefined;
         opt.observer = new IntersectionObserver(

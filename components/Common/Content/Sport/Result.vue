@@ -17,7 +17,7 @@
                 <div class="overlap-group">
                     <img class="vector" src="~/public/img/vector@2x.png" alt="Vector" />
                     <img class="vector-1" src="~/public/img/vector-1@2x.png" alt="Vector" />
-                    <div class="text text-center text-xs">{{ getLeagueTime(league) }}</div>
+                    <div class="text text-center text-xs">{{ contentStore.getMatchTime(league) }}</div>
                     <div class="ft-4 text-xs">FT</div>
                     <div class="number number-2 pretendard-semi-bold-black-20px">{{ contentStore.getLeagueScoreResult(props.league, 0) }}</div>
                     <div class="number-1 number-2 pretendard-semi-bold-black-20px">{{ contentStore.getLeagueScoreResult(props.league, 1) }}</div>

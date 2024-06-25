@@ -22,7 +22,7 @@
                 </div>
                 <div class="frame-matchup frame-1">
                     <div class="frame frame-1">
-                        <div v-show="getIsFinished(props.matchStatus)" class="finished headline3">FINISHED</div>
+                        <div v-show="getIsFinished(props.matchStatus) ?? false" class="finished headline3">{{ '_' }}</div>
                         <h1 class="text-2 title !text-4xl">{{ `${ props.homeScore } - ${ props.awayScore }` }}</h1>
                     </div>
                     <a target="_blank"><img class="btn_-live-tracker-matchup"
@@ -31,7 +31,7 @@
                 </div>
                 <div class="frame-412-matchup frame-1">
                     <img class="arsenal-2" :src="props.awayLogo" :alt="props.awayName" />
-                    <div class="arsenal-3 valign-text-middle body2">{{ props.awayName }}</div>
+                    <div class="aston-villa-3 valign-text-middle body2">{{ props.awayName }}</div>
                 </div>
             </div>
             <!-- <div class="btn_-favorite_-check2-1"><img class="star-1" src="/img/star-1@2x.png" alt="Star" /></div> -->
@@ -43,9 +43,11 @@
 <script setup lang="ts">
 import type { TCommonMatchStatus } from '~/types/Common/status';
 import type { TMatchUpStoreConfig } from '~/types/matchUp';
+import UtilDate from '~/utils/date';
 
 const props = defineProps<TMatchUpStoreConfig>();
 
+const dateStore = useDateStore();
 const router = useRouter();
 
 const clickBack = () => {
@@ -53,10 +55,15 @@ const clickBack = () => {
 };
 
 const getTime = (timestamp: number) => {
-    
+    // 00:00, 04/09/2024, TUE
+    const standard = new Date(UtilDate.addMillisecond(timestamp));
+    const time = `${ UtilDate.syncDigit(standard.getUTCHours()) }:${ UtilDate.syncDigit(standard.getUTCMinutes()) }`;
+    const weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][standard.getUTCDay()];
+    return `${ time }, ${ dateStore.getFilterFormat(standard) }, ${ weekday }`;
 };
 
 const getIsFinished = (matchStatus: TCommonMatchStatus): boolean => {
+    console.log('matchStatus: ', matchStatus);
     return !(
         matchStatus === 2 ||
         matchStatus === 3 ||
@@ -66,6 +73,15 @@ const getIsFinished = (matchStatus: TCommonMatchStatus): boolean => {
         matchStatus === 7
     );
 };
+
+onMounted(async () => {
+    await nextTick();
+    
+});
+
+onBeforeUnmount(() => {
+
+});
 </script>
 
 <style scoped>

@@ -139,6 +139,7 @@ const prevDate = (date: Date) => {
     const tab = route.query['tab'];
     let targetTab = '';
     if (
+        tab === undefined ||
         tab === 'live' ||
         tab === 'fixtures'
     ) targetTab = 'result';
@@ -191,12 +192,11 @@ const nextDate = (date: Date) => {
 
 onMounted(async () => {
     await nextTick();
-    // await liveIntervalLoadingStore.onMounted(props.sName);
     await props.updateLiveRealTime();
 });
 
 onBeforeUnmount(() => {
-    // liveIntervalLoadingStore.onBeforeUnmount();
+
 });
 </script>
 

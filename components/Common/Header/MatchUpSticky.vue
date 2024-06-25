@@ -29,14 +29,24 @@
 
 <script setup lang="ts">
 import type { TMatchUpStoreConfig } from '~/types/matchUp';
+import UtilDate from '~/utils/date';
 
 const props = defineProps<TMatchUpStoreConfig>();
 
+const dateStore = useDateStore();
 const router = useRouter();
 
 const clickBack = () => {
     router.back();
 };
+
+// const getTime = (timestamp: number) => {
+//     // 00:00, 04/09/2024, TUE
+//     const standard = new Date(UtilDate.addMillisecond(timestamp));
+//     const time = `${ UtilDate.syncDigit(standard.getUTCHours()) }:${ UtilDate.syncDigit(standard.getUTCMinutes()) }`;
+//     const weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][standard.getUTCDay()];
+//     return `${ time }, ${ dateStore.getFilterFormat(standard) }, ${ weekday }`;
+// };
 </script>
 
 <style scoped>

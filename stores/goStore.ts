@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import type { TMatchUpStoreConfig } from "~/types/matchUp";
 
 
 export const useGoStore = defineStore('goStore', () => {
@@ -19,8 +20,9 @@ export const useGoStore = defineStore('goStore', () => {
         }
     };
     
-    const go_livetraker = (match_id: string) => {
-        navigateTo(`/Matchup?tab=stats?uuid${ match_id }`);
+    const go_livetraker = (match_id: string, config: TMatchUpStoreConfig) => {
+        useMatchUpStore().setConfig(config);
+        navigateTo(`/Matchup?tab=stats&uuid=${ match_id }`);
     };
 
     return {

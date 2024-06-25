@@ -5,7 +5,7 @@ import UtilDate from "~/utils/date";
 export const useDateStore = defineStore('dateStore', () => {
 
     const opt = reactive({
-        date: <any> new Date(),
+        date: <any> new Date(Date.now()),
     });
 
     const init = () => {
@@ -37,7 +37,9 @@ export const useDateStore = defineStore('dateStore', () => {
     };
 
     const getFromDate = (): number => {
-        return UtilDate.getWithOutMillisecond(getDate().getUTCDate());
+
+        console.log('opt.date: ', opt.date, getDate(), getDate().getUTCDate());
+        return UtilDate.getWithOutMillisecond(getDate().getTime());
     };
 
     return {
