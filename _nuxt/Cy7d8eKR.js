@@ -1,0 +1,1 @@
+import{d as e,p as o,q as t,a,c as n}from"./CaeWsWSi.js";const s={style:{background:"#001226"}},d=e({__name:"index",setup(c){return o(()=>{t("/FootBall")}),(r,_)=>(a(),n("div",s))}});export{d as default};
