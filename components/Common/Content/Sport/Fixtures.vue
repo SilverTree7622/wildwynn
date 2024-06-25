@@ -9,7 +9,7 @@
         :alt="contentStore.getLeagueAlt(props.league)"
     />
     <!-- match content -->
-    <div class="live_-match" @click="goStore.go_matchup('home')">
+    <div class="live_-match" @click="goLiveTracker(league)">
         <div class="live-match-Y6utjY live-match">
             <div class="group-5-Z7bohL group-5">
                 <img class="aston-villa-1xcxXp aston-villa" :src="contentStore.getParticipantSrc(props.league, 0)" :alt="contentStore.getParticipantName(props.league, 0)" />
@@ -40,6 +40,7 @@
 
 <script setup lang="ts">
 import type { TFootBallSchedule } from "~/types/FootBall/schedule";
+import type { TMatchUpStoreConfig } from "~/types/matchUp";
 
 const props = defineProps<{
     idx: number;
@@ -48,4 +49,21 @@ const props = defineProps<{
 
 const goStore = useGoStore();
 const contentStore = useContentStore();
+
+const goLiveTracker = (league: TFootBallSchedule) => {
+    const config: TMatchUpStoreConfig = {
+        match_id: league.match_id,
+        leagueName: league.ai_competition_name,
+        timestamp: league.ai_match_time,
+        homeLogo: league.ai_home_team_img,
+        homeName: league.ai_home_team_name,
+        homeScore: league.ai_home_scores[0],
+        awayLogo: league.ai_away_team_img,
+        awayName: league.ai_away_team_name,
+        awayScore: league.ai_away_scores[0],
+        matchStatus: league.ai_status_id,
+    };
+    goStore.go_livetraker(league.match_id, config);
+};
+
 </script>

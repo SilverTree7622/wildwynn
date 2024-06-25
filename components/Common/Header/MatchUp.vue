@@ -23,7 +23,7 @@
                 <div class="frame-matchup frame-1">
                     <div class="frame frame-1">
                         <div v-show="getIsFinished(props.matchStatus) ?? false" class="finished headline3">{{ '_' }}</div>
-                        <h1 class="text-2 title !text-4xl">{{ `${ props.homeScore } - ${ props.awayScore }` }}</h1>
+                        <h1 class="text-2 title !text-4xl">{{ getScore(props.matchStatus, props.homeScore) }}</h1>
                     </div>
                     <a target="_blank"><img class="btn_-live-tracker-matchup"
                             src="/img/btn-livetracker@2x.png" alt="Btn_LiveTracker" />
@@ -46,12 +46,20 @@ import type { TMatchUpStoreConfig } from '~/types/matchUp';
 import UtilDate from '~/utils/date';
 
 const props = defineProps<TMatchUpStoreConfig>();
+console.log('props: ', props);
 
 const dateStore = useDateStore();
 const router = useRouter();
 
 const clickBack = () => {
     router.back();
+};
+
+const getScore = (matchStatus: TCommonMatchStatus, homeScore: number) => {
+    const isFixtures = (
+        matchStatus === 1
+    );
+    return isFixtures ? `` : `${ props.homeScore } - ${ props.awayScore }`;
 };
 
 const getTime = (timestamp: number) => {
