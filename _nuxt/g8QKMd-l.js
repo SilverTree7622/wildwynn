@@ -1,1 +1,0 @@
-import{d as e,q as o,s as t,a,c as n}from"./B5MixV_i.js";const s={style:{background:"#001226"}},i=e({__name:"index",setup(c){return o(()=>{t("/FootBall")}),(r,_)=>(a(),n("div",s))}});export{i as default};
