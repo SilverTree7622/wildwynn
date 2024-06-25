@@ -1,5 +1,5 @@
 <template>
-    <div class="frame-342-all-breakpoints screen !bg-[#011e3d]">
+    <div class="frame-342-all-breakpoints screen !bg-[#011e3d] z-[2]">
         <div class="header_-short">
             <div class="frame-496">
                 <a target="_blank"><img class="icon_-line-arrow" src="/img/icon-linearrow@2x.png"
@@ -12,11 +12,11 @@
                             <img class="aston-villa-1" :src="props.homeLogo" :alt="props.homeName" />
                         </div>
                         <div class="frame-494">
-                            <h1 class="text-1 leaguetitle !text-2xl">{{ `${ props.homeScore } - ${ props.awayScore }` }}</h1>
+                            <h1 class="text-1 leaguetitle !text-2xl">{{ getScore(props.matchStatus, props.homeScore, props.awayScore) }}</h1>
                         </div>
                         <div class="frame-49">
                             <img class="arsenal" :src="props.awayLogo" :alt="props.awayName" />
-                            <div class="arsenal-1 valign-text-middle body2">{{ props.awayName }}</div>
+                            <div class="aston-villa valign-text-middle body2">{{ props.awayName }}</div>
                         </div>
                     </div>
                 </div>
@@ -28,25 +28,24 @@
 </template>
 
 <script setup lang="ts">
+import type { TCommonMatchStatus } from '~/types/Common/status';
 import type { TMatchUpStoreConfig } from '~/types/matchUp';
-import UtilDate from '~/utils/date';
 
 const props = defineProps<TMatchUpStoreConfig>();
 
-const dateStore = useDateStore();
 const router = useRouter();
 
 const clickBack = () => {
     router.back();
 };
 
-// const getTime = (timestamp: number) => {
-//     // 00:00, 04/09/2024, TUE
-//     const standard = new Date(UtilDate.addMillisecond(timestamp));
-//     const time = `${ UtilDate.syncDigit(standard.getUTCHours()) }:${ UtilDate.syncDigit(standard.getUTCMinutes()) }`;
-//     const weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][standard.getUTCDay()];
-//     return `${ time }, ${ dateStore.getFilterFormat(standard) }, ${ weekday }`;
-// };
+const getScore = (matchStatus: TCommonMatchStatus, homeScore: number, awayScore: number) => {
+    const isFixtures = (
+        matchStatus === 0 ||
+        matchStatus === 1
+    );
+    return isFixtures ? `` : `${ awayScore ?? 0 } - ${ homeScore ?? 0 }`;
+};
 </script>
 
 <style scoped>

@@ -22,14 +22,16 @@
                 </div>
                 <div class="frame-matchup frame-1">
                     <div class="frame frame-1">
-                        <div v-show="getIsFinished(props.matchStatus) ?? false" class="finished headline3">{{ '_' }}</div>
-                        <h1 class="text-2 title !text-4xl">{{ getScore(props.matchStatus, props.homeScore) }}</h1>
+                        <div v-if="getIsFinished(props.matchStatus) ?? false" class="finished headline3">{{ 'FINISHED' }}</div>
+                        <div v-else class="finished headline3 w-full h-full p-1">{{ '' }}</div>
+
+                        <h1 class="text-2 title !text-4xl">{{ getScore(props.matchStatus, props.homeScore, props.awayScore) }}</h1>
                     </div>
                     <a target="_blank"><img class="btn_-live-tracker-matchup"
                             src="/img/btn-livetracker@2x.png" alt="Btn_LiveTracker" />
                     </a>
                 </div>
-                <div class="frame-412-matchup frame-1">
+                <div class="frame-414 frame-1">
                     <img class="arsenal-2" :src="props.awayLogo" :alt="props.awayName" />
                     <div class="aston-villa-3 valign-text-middle body2">{{ props.awayName }}</div>
                 </div>
@@ -55,11 +57,12 @@ const clickBack = () => {
     router.back();
 };
 
-const getScore = (matchStatus: TCommonMatchStatus, homeScore: number) => {
+const getScore = (matchStatus: TCommonMatchStatus, homeScore: number, awayScore: number) => {
     const isFixtures = (
+        matchStatus === 0 ||
         matchStatus === 1
     );
-    return isFixtures ? `` : `${ props.homeScore } - ${ props.awayScore }`;
+    return isFixtures ? `` : `${ awayScore ?? 0 } - ${ homeScore ?? 0 }`;
 };
 
 const getTime = (timestamp: number) => {
@@ -71,7 +74,7 @@ const getTime = (timestamp: number) => {
 };
 
 const getIsFinished = (matchStatus: TCommonMatchStatus): boolean => {
-    console.log('matchStatus: ', matchStatus);
+    // console.log('matchStatus: ', matchStatus);
     return !(
         matchStatus === 2 ||
         matchStatus === 3 ||
