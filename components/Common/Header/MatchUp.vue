@@ -62,7 +62,7 @@ const getScore = (matchStatus: TCommonMatchStatus, homeScore: number, awayScore:
         matchStatus === 0 ||
         matchStatus === 1
     );
-    return isFixtures ? `` : `${ awayScore ?? 0 } - ${ homeScore ?? 0 }`;
+    return isFixtures ? `` : `${ homeScore ?? 0 } - ${ awayScore ?? 0 }`;
 };
 
 const getTime = (timestamp: number) => {

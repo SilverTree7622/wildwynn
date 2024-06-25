@@ -34,6 +34,10 @@ export const useContentStore = defineStore('contentStore', () => {
     };
     
     const getLeagueScore = (newLeague: TCommonLiveRealTime, position: number = 0): string => {
+        // make oppositie for just now something wrong
+        if (position === 0) position = 1;
+        else position = 0;
+        // end
         const prefix = go_prefix_via_position(position);
         return newLeague[`ai_${ prefix }_scores`][0];
     };

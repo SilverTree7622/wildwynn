@@ -138,14 +138,18 @@ const update = (newLeague: TCommonLiveRealTime) => {
 };
 
 const off = (home: boolean, away: boolean, time: boolean) => {
-    if (home) updateOpt.score1 = false;
-    if (away) updateOpt.score2 = false;
+    if (home || away) {
+        updateOpt.score1 = false;
+        updateOpt.score2 = false;
+    }
     if (time) updateOpt.time = false;
 };
 
 const on = (home: boolean, away: boolean, time: boolean) => {
-    if (home) updateOpt.score1 = true;
-    if (away) updateOpt.score2 = true;
+    if (home || away) {
+        updateOpt.score1 = true;
+        updateOpt.score2 = true;
+    }
     if (time) updateOpt.time = true;
 };
 
